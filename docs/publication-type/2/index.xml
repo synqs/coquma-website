@@ -2,197 +2,197 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2 | Jendrzejewski Group</title>
-    <link>/publication-type/2/</link>
-      <atom:link href="/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://synqs.github.io/coquma-website/publication-type/2/</link>
+      <atom:link href="https://synqs.github.io/coquma-website/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Tue, 13 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://synqs.github.io/coquma-website/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>2</title>
-      <link>/publication-type/2/</link>
+      <link>https://synqs.github.io/coquma-website/publication-type/2/</link>
     </image>
     
     <item>
       <title>From the Jaynes–Cummings model to non-abelian gauge theories: a guided tour for the quantum engineer Valentin</title>
-      <link>/publication/2020-kasper-jaynes/</link>
+      <link>https://synqs.github.io/coquma-website/publication/2020-kasper-jaynes/</link>
       <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/2020-kasper-jaynes/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/2020-kasper-jaynes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A scalable realization of local U(1) gauge invariance in cold atomic mixtures</title>
-      <link>/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</link>
+      <link>https://synqs.github.io/coquma-website/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</link>
       <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Direct control of high magnetic fields for cold atom experiments based on NV centers</title>
-      <link>/publication/hesse-2020/</link>
+      <link>https://synqs.github.io/coquma-website/publication/hesse-2020/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/hesse-2020/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/hesse-2020/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Universal quantum computation and quantum error correction with ultracold atomic mixtures</title>
-      <link>/publication/kasper-2020/</link>
+      <link>https://synqs.github.io/coquma-website/publication/kasper-2020/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/kasper-2020/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/kasper-2020/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Quantized refrigerator for an atomic cloud</title>
-      <link>/publication/niedenzu-2019/</link>
+      <link>https://synqs.github.io/coquma-website/publication/niedenzu-2019/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/niedenzu-2019/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/niedenzu-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Elastic Scattering Time of Matter Waves in Disordered Potentials</title>
-      <link>/publication/richard-2019/</link>
+      <link>https://synqs.github.io/coquma-website/publication/richard-2019/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/richard-2019/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/richard-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dynamical Topological Transitions in the Massive Schwinger Model with a $\theta$ Term</title>
-      <link>/publication/zache-2019/</link>
+      <link>https://synqs.github.io/coquma-website/publication/zache-2019/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/zache-2019/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/zache-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ultracold atoms in disordered potentials: elastic scattering time in the strong scattering regime</title>
-      <link>/publication/2019-signoles/</link>
+      <link>https://synqs.github.io/coquma-website/publication/2019-signoles/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/2019-signoles/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/2019-signoles/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Quantum simulation of lattice gauge theories using Wilson fermions</title>
-      <link>/publication/zache-2018/</link>
+      <link>https://synqs.github.io/coquma-website/publication/zache-2018/</link>
       <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/zache-2018/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/zache-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Coherent optical nano-tweezers for ultra-cold atoms</title>
-      <link>/publication/bienias-2018/</link>
+      <link>https://synqs.github.io/coquma-website/publication/bienias-2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/bienias-2018/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/bienias-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Implementing quantum electrodynamics with ultracold atomic systems</title>
-      <link>/publication/kasper-2017/</link>
+      <link>https://synqs.github.io/coquma-website/publication/kasper-2017/</link>
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/kasper-2017/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/kasper-2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Temperature induced decay of persistent currents in superfluid ultracold gas</title>
-      <link>/publication/kumar-2017/</link>
+      <link>https://synqs.github.io/coquma-website/publication/kumar-2017/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/kumar-2017/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/kumar-2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Contact resistance and phase slips in mesoscopic superfluid-atom transport</title>
-      <link>/publication/lee-2015-a/</link>
+      <link>https://synqs.github.io/coquma-website/publication/lee-2015-a/</link>
       <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/lee-2015-a/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/lee-2015-a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Observation of the phononic Lamb shift with a synthetic vacuum</title>
-      <link>/publication/rentrop-2016/</link>
+      <link>https://synqs.github.io/coquma-website/publication/rentrop-2016/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/rentrop-2016/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/rentrop-2016/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Subwavelength-width optical tunnel junctions for ultracold atoms</title>
-      <link>/publication/jendrzejewski-2016/</link>
+      <link>https://synqs.github.io/coquma-website/publication/jendrzejewski-2016/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/jendrzejewski-2016/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/jendrzejewski-2016/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Resonant wavepackets and shock waves in an atomtronic SQUID</title>
-      <link>/publication/wang-2015/</link>
+      <link>https://synqs.github.io/coquma-website/publication/wang-2015/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/wang-2015/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/wang-2015/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Self-heterodyne detection of the textlessitextgreaterin situtextless/itextgreater phase of an atomic superconducting quantum interference device</title>
-      <link>/publication/mathew-2015/</link>
+      <link>https://synqs.github.io/coquma-website/publication/mathew-2015/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/mathew-2015/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/mathew-2015/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Interferometric Measurement of the Current-Phase Relationship of a Superfluid Weak Link</title>
-      <link>/publication/eckel-2014-a/</link>
+      <link>https://synqs.github.io/coquma-website/publication/eckel-2014-a/</link>
       <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
-      <guid>/publication/eckel-2014-a/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/eckel-2014-a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Resistive Flow in a Weakly Interacting Bose-Einstein Condensate</title>
-      <link>/publication/jendrzejewski-2014/</link>
+      <link>https://synqs.github.io/coquma-website/publication/jendrzejewski-2014/</link>
       <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
-      <guid>/publication/jendrzejewski-2014/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/jendrzejewski-2014/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hysteresis in a quantized superfluid &#39;atomtronic&#39; circuit.</title>
-      <link>/publication/eckel-2014/</link>
+      <link>https://synqs.github.io/coquma-website/publication/eckel-2014/</link>
       <pubDate>Sat, 01 Feb 2014 00:00:00 +0000</pubDate>
-      <guid>/publication/eckel-2014/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/eckel-2014/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Coherent Backscattering of Ultracold Atoms</title>
-      <link>/publication/jendrzejewski-2012/</link>
+      <link>https://synqs.github.io/coquma-website/publication/jendrzejewski-2012/</link>
       <pubDate>Thu, 01 Nov 2012 00:00:00 +0000</pubDate>
-      <guid>/publication/jendrzejewski-2012/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/jendrzejewski-2012/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Three-dimensional localization of ultracold atoms in an optical disordered potential</title>
-      <link>/publication/jendrzejewski-2012-a/</link>
+      <link>https://synqs.github.io/coquma-website/publication/jendrzejewski-2012-a/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>/publication/jendrzejewski-2012-a/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/jendrzejewski-2012-a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Quasi-continuous horizontally guided atom laser: coupling spectrum and flux limits</title>
-      <link>/publication/bernard-2011/</link>
+      <link>https://synqs.github.io/coquma-website/publication/bernard-2011/</link>
       <pubDate>Wed, 01 Jun 2011 00:00:00 +0000</pubDate>
-      <guid>/publication/bernard-2011/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/bernard-2011/</guid>
       <description></description>
     </item>
     

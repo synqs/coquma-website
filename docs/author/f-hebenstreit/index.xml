@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>F Hebenstreit | Jendrzejewski Group</title>
-    <link>/author/f-hebenstreit/</link>
-      <atom:link href="/author/f-hebenstreit/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://synqs.github.io/coquma-website/author/f-hebenstreit/</link>
+      <atom:link href="https://synqs.github.io/coquma-website/author/f-hebenstreit/index.xml" rel="self" type="application/rss+xml" />
     <description>F Hebenstreit</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Tue, 01 Aug 2017 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://synqs.github.io/coquma-website/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>F Hebenstreit</title>
-      <link>/author/f-hebenstreit/</link>
+      <link>https://synqs.github.io/coquma-website/author/f-hebenstreit/</link>
     </image>
     
     <item>
       <title>Implementing quantum electrodynamics with ultracold atomic systems</title>
-      <link>/publication/kasper-2017/</link>
+      <link>https://synqs.github.io/coquma-website/publication/kasper-2017/</link>
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/kasper-2017/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/kasper-2017/</guid>
       <description></description>
     </item>
     

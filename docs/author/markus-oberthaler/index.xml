@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Markus Oberthaler | Jendrzejewski Group</title>
-    <link>/author/markus-oberthaler/</link>
-      <atom:link href="/author/markus-oberthaler/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://synqs.github.io/coquma-website/author/markus-oberthaler/</link>
+      <atom:link href="https://synqs.github.io/coquma-website/author/markus-oberthaler/index.xml" rel="self" type="application/rss+xml" />
     <description>Markus Oberthaler</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://synqs.github.io/coquma-website/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>Markus Oberthaler</title>
-      <link>/author/markus-oberthaler/</link>
+      <link>https://synqs.github.io/coquma-website/author/markus-oberthaler/</link>
     </image>
     
     <item>
       <title>Quantum simulation of dynamical gauge fields using ultracold atomic mixtures</title>
-      <link>/publication/posters/2020-hegde-coolme/</link>
+      <link>https://synqs.github.io/coquma-website/publication/posters/2020-hegde-coolme/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/posters/2020-hegde-coolme/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/posters/2020-hegde-coolme/</guid>
       <description></description>
     </item>
     

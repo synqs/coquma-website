@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>T Tiecke | Jendrzejewski Group</title>
-    <link>/author/t-tiecke/</link>
-      <atom:link href="/author/t-tiecke/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://synqs.github.io/coquma-website/author/t-tiecke/</link>
+      <atom:link href="https://synqs.github.io/coquma-website/author/t-tiecke/index.xml" rel="self" type="application/rss+xml" />
     <description>T Tiecke</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://synqs.github.io/coquma-website/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>T Tiecke</title>
-      <link>/author/t-tiecke/</link>
+      <link>https://synqs.github.io/coquma-website/author/t-tiecke/</link>
     </image>
     
     <item>
       <title>Coherent optical nano-tweezers for ultra-cold atoms</title>
-      <link>/publication/bienias-2018/</link>
+      <link>https://synqs.github.io/coquma-website/publication/bienias-2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/bienias-2018/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/bienias-2018/</guid>
       <description></description>
     </item>
     

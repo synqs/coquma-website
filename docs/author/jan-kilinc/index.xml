@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jan Kilinc | Jendrzejewski Group</title>
-    <link>/author/jan-kilinc/</link>
-      <atom:link href="/author/jan-kilinc/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://synqs.github.io/coquma-website/author/jan-kilinc/</link>
+      <atom:link href="https://synqs.github.io/coquma-website/author/jan-kilinc/index.xml" rel="self" type="application/rss+xml" />
     <description>Jan Kilinc</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright>
     <image>
-      <url>/author/jan-kilinc/avatar_hu4723fc8891220a6657a5f96fcf82c477_5885_270x270_fill_q75_lanczos_center.jpg</url>
+      <url>https://synqs.github.io/coquma-website/author/jan-kilinc/avatar_hu4723fc8891220a6657a5f96fcf82c477_5885_270x270_fill_q75_lanczos_center.jpg</url>
       <title>Jan Kilinc</title>
-      <link>/author/jan-kilinc/</link>
+      <link>https://synqs.github.io/coquma-website/author/jan-kilinc/</link>
     </image>
     
     <item>
       <title>Dynamical Gauge Fields</title>
-      <link>/project/lattice-gauge/</link>
+      <link>https://synqs.github.io/coquma-website/project/lattice-gauge/</link>
       <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>/project/lattice-gauge/</guid>
+      <guid>https://synqs.github.io/coquma-website/project/lattice-gauge/</guid>
       <description>&lt;p&gt;Within the Standard Model of Particle Physics, the interaction between fundamental particles is described by gauge theories. These theories have an enormous predictive power, but to compute the dynamics they generate is an extremely hard task. As a consequence, high-energy physics contains many unsolved problems such as quark confinement or the dynamics of quarks and gluons during heavy-ion collisions. Instead of computing them in classical devices or investigating them in enormous accelerator facilities, we aim at implementing lattice gauge theories on the optical table by having atomic gases in optical lattices mimic the interplay between particles, anti-particles, and gauge bosons. In this way, experiments at temperatures just above absolute zero could give insights into unsolved phenomena that in Nature appear at very high energies.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>A new Na-K apparatus for simulating quantum many-body phenomena</title>
-      <link>/publication/posters/2020-jan-damop/</link>
+      <link>https://synqs.github.io/coquma-website/publication/posters/2020-jan-damop/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/posters/2020-jan-damop/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/posters/2020-jan-damop/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A new Na-K apparatus to study quantum thermodynamics</title>
-      <link>/publication/posters/2020-lilo-qtd/</link>
+      <link>https://synqs.github.io/coquma-website/publication/posters/2020-lilo-qtd/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/posters/2020-lilo-qtd/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/posters/2020-lilo-qtd/</guid>
       <description></description>
     </item>
     

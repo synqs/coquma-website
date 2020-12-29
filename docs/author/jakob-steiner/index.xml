@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jakob Steiner | Jendrzejewski Group</title>
-    <link>/author/jakob-steiner/</link>
-      <atom:link href="/author/jakob-steiner/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://synqs.github.io/coquma-website/author/jakob-steiner/</link>
+      <atom:link href="https://synqs.github.io/coquma-website/author/jakob-steiner/index.xml" rel="self" type="application/rss+xml" />
     <description>Jakob Steiner</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://synqs.github.io/coquma-website/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>Jakob Steiner</title>
-      <link>/author/jakob-steiner/</link>
+      <link>https://synqs.github.io/coquma-website/author/jakob-steiner/</link>
     </image>
     
     <item>
       <title>Direct control of high magnetic fields for cold atom experiments based on NV centers</title>
-      <link>/publication/hesse-2020/</link>
+      <link>https://synqs.github.io/coquma-website/publication/hesse-2020/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/hesse-2020/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/hesse-2020/</guid>
       <description></description>
     </item>
     

@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Charles W. Clark | Jendrzejewski Group</title>
-    <link>/author/charles-w.-clark/</link>
-      <atom:link href="/author/charles-w.-clark/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://synqs.github.io/coquma-website/author/charles-w.-clark/</link>
+      <atom:link href="https://synqs.github.io/coquma-website/author/charles-w.-clark/index.xml" rel="self" type="application/rss+xml" />
     <description>Charles W. Clark</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://synqs.github.io/coquma-website/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>Charles W. Clark</title>
-      <link>/author/charles-w.-clark/</link>
+      <link>https://synqs.github.io/coquma-website/author/charles-w.-clark/</link>
     </image>
     
     <item>
       <title>Resonant wavepackets and shock waves in an atomtronic SQUID</title>
-      <link>/publication/wang-2015/</link>
+      <link>https://synqs.github.io/coquma-website/publication/wang-2015/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/wang-2015/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/wang-2015/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hysteresis in a quantized superfluid &#39;atomtronic&#39; circuit.</title>
-      <link>/publication/eckel-2014/</link>
+      <link>https://synqs.github.io/coquma-website/publication/eckel-2014/</link>
       <pubDate>Sat, 01 Feb 2014 00:00:00 +0000</pubDate>
-      <guid>/publication/eckel-2014/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/eckel-2014/</guid>
       <description></description>
     </item>
     

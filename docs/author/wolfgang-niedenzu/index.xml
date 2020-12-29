@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wolfgang Niedenzu | Jendrzejewski Group</title>
-    <link>/author/wolfgang-niedenzu/</link>
-      <atom:link href="/author/wolfgang-niedenzu/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://synqs.github.io/coquma-website/author/wolfgang-niedenzu/</link>
+      <atom:link href="https://synqs.github.io/coquma-website/author/wolfgang-niedenzu/index.xml" rel="self" type="application/rss+xml" />
     <description>Wolfgang Niedenzu</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://synqs.github.io/coquma-website/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>Wolfgang Niedenzu</title>
-      <link>/author/wolfgang-niedenzu/</link>
+      <link>https://synqs.github.io/coquma-website/author/wolfgang-niedenzu/</link>
     </image>
     
     <item>
       <title>Quantized refrigerator for an atomic cloud</title>
-      <link>/publication/niedenzu-2019/</link>
+      <link>https://synqs.github.io/coquma-website/publication/niedenzu-2019/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/niedenzu-2019/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/niedenzu-2019/</guid>
       <description></description>
     </item>
     

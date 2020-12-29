@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vincent Denechaud | Jendrzejewski Group</title>
-    <link>/author/vincent-denechaud/</link>
-      <atom:link href="/author/vincent-denechaud/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://synqs.github.io/coquma-website/author/vincent-denechaud/</link>
+      <atom:link href="https://synqs.github.io/coquma-website/author/vincent-denechaud/index.xml" rel="self" type="application/rss+xml" />
     <description>Vincent Denechaud</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Fri, 01 Mar 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://synqs.github.io/coquma-website/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>Vincent Denechaud</title>
-      <link>/author/vincent-denechaud/</link>
+      <link>https://synqs.github.io/coquma-website/author/vincent-denechaud/</link>
     </image>
     
     <item>
       <title>Elastic Scattering Time of Matter Waves in Disordered Potentials</title>
-      <link>/publication/richard-2019/</link>
+      <link>https://synqs.github.io/coquma-website/publication/richard-2019/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/richard-2019/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/richard-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ultracold atoms in disordered potentials: elastic scattering time in the strong scattering regime</title>
-      <link>/publication/2019-signoles/</link>
+      <link>https://synqs.github.io/coquma-website/publication/2019-signoles/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/2019-signoles/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/2019-signoles/</guid>
       <description></description>
     </item>
     

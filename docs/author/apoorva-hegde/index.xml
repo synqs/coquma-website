@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Apoorva Hegde | Jendrzejewski Group</title>
-    <link>/author/apoorva-hegde/</link>
-      <atom:link href="/author/apoorva-hegde/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://synqs.github.io/coquma-website/author/apoorva-hegde/</link>
+      <atom:link href="https://synqs.github.io/coquma-website/author/apoorva-hegde/index.xml" rel="self" type="application/rss+xml" />
     <description>Apoorva Hegde</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright>
     <image>
-      <url>/author/apoorva-hegde/avatar_hu0c1031deb2f062e9fb2fceeef42aa9ae_7973_270x270_fill_q75_lanczos_center.jpg</url>
+      <url>https://synqs.github.io/coquma-website/author/apoorva-hegde/avatar_hu0c1031deb2f062e9fb2fceeef42aa9ae_7973_270x270_fill_q75_lanczos_center.jpg</url>
       <title>Apoorva Hegde</title>
-      <link>/author/apoorva-hegde/</link>
+      <link>https://synqs.github.io/coquma-website/author/apoorva-hegde/</link>
     </image>
     
     <item>
       <title>Dynamical Gauge Fields</title>
-      <link>/project/lattice-gauge/</link>
+      <link>https://synqs.github.io/coquma-website/project/lattice-gauge/</link>
       <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>/project/lattice-gauge/</guid>
+      <guid>https://synqs.github.io/coquma-website/project/lattice-gauge/</guid>
       <description>&lt;p&gt;Within the Standard Model of Particle Physics, the interaction between fundamental particles is described by gauge theories. These theories have an enormous predictive power, but to compute the dynamics they generate is an extremely hard task. As a consequence, high-energy physics contains many unsolved problems such as quark confinement or the dynamics of quarks and gluons during heavy-ion collisions. Instead of computing them in classical devices or investigating them in enormous accelerator facilities, we aim at implementing lattice gauge theories on the optical table by having atomic gases in optical lattices mimic the interplay between particles, anti-particles, and gauge bosons. In this way, experiments at temperatures just above absolute zero could give insights into unsolved phenomena that in Nature appear at very high energies.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>A scalable realization of local U(1) gauge invariance in cold atomic mixtures</title>
-      <link>/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</link>
+      <link>https://synqs.github.io/coquma-website/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</link>
       <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Quantum simulation of dynamical gauge fields using ultracold atomic mixtures</title>
-      <link>/publication/posters/2020-hegde-coolme/</link>
+      <link>https://synqs.github.io/coquma-website/publication/posters/2020-hegde-coolme/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/posters/2020-hegde-coolme/</guid>
+      <guid>https://synqs.github.io/coquma-website/publication/posters/2020-hegde-coolme/</guid>
       <description></description>
     </item>
     

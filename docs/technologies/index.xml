@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Technologies | Jendrzejewski Group</title>
-    <link>/technologies/</link>
-      <atom:link href="/technologies/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://synqs.github.io/coquma-website/technologies/</link>
+      <atom:link href="https://synqs.github.io/coquma-website/technologies/index.xml" rel="self" type="application/rss+xml" />
     <description>Technologies</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright>
     <image>
-      <url>/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://synqs.github.io/coquma-website/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>Technologies</title>
-      <link>/technologies/</link>
+      <link>https://synqs.github.io/coquma-website/technologies/</link>
     </image>
     
     <item>
       <title>Devices for labscript</title>
-      <link>/technologies/labscript-devices/</link>
+      <link>https://synqs.github.io/coquma-website/technologies/labscript-devices/</link>
       <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>/technologies/labscript-devices/</guid>
+      <guid>https://synqs.github.io/coquma-website/technologies/labscript-devices/</guid>
       <description>&lt;p&gt;More details to come.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Pennylane-ls</title>
-      <link>/technologies/pennylane-ls-/</link>
+      <link>https://synqs.github.io/coquma-website/technologies/pennylane-ls-/</link>
       <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>/technologies/pennylane-ls-/</guid>
+      <guid>https://synqs.github.io/coquma-website/technologies/pennylane-ls-/</guid>
       <description>&lt;p&gt;More details to come.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Temperature control</title>
-      <link>/technologies/temp-control/</link>
+      <link>https://synqs.github.io/coquma-website/technologies/temp-control/</link>
       <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>/technologies/temp-control/</guid>
+      <guid>https://synqs.github.io/coquma-website/technologies/temp-control/</guid>
       <description>&lt;p&gt;More details to come.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Transimpedance board</title>
-      <link>/technologies/pd-board/</link>
+      <link>https://synqs.github.io/coquma-website/technologies/pd-board/</link>
       <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>/technologies/pd-board/</guid>
+      <guid>https://synqs.github.io/coquma-website/technologies/pd-board/</guid>
       <description>&lt;p&gt;More details to come.&lt;/p&gt;
 </description>
     </item>

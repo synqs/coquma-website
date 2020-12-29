@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hauke | Jendrzejewski Group</title>
-    <link>/author/hauke/</link>
-      <atom:link href="/author/hauke/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://synqs.github.io/coquma-website/author/hauke/</link>
+      <atom:link href="https://synqs.github.io/coquma-website/author/hauke/index.xml" rel="self" type="application/rss+xml" />
     <description>hauke</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Tue, 07 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://synqs.github.io/coquma-website/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>hauke</title>
-      <link>/author/hauke/</link>
+      <link>https://synqs.github.io/coquma-website/author/hauke/</link>
     </image>
     
     <item>
       <title>Advanced AMO</title>
-      <link>/teaching/2018-aamo/</link>
+      <link>https://synqs.github.io/coquma-website/teaching/2018-aamo/</link>
       <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/teaching/2018-aamo/</guid>
+      <guid>https://synqs.github.io/coquma-website/teaching/2018-aamo/</guid>
       <description>&lt;p&gt;More details to come.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Advanced AMO</title>
-      <link>/teaching/2019-aamo/</link>
+      <link>https://synqs.github.io/coquma-website/teaching/2019-aamo/</link>
       <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/teaching/2019-aamo/</guid>
+      <guid>https://synqs.github.io/coquma-website/teaching/2019-aamo/</guid>
       <description>&lt;p&gt;More details to come.&lt;/p&gt;
 </description>
     </item>
