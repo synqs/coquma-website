@@ -1,6 +1,6 @@
 +++
 # A Projects section created with the Portfolio widget.
-widget = "portfolio"  # See https://sourcethemes.com/academic/docs/page-builder/
+widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 30  # Order that this section will appear.
@@ -10,7 +10,8 @@ subtitle = ""
 
 [content]
   # Page type to display. E.g. project.
-  page_type = "project"
+  page_type = "publication"
+  count = 3
 
   # Filter toolbar (optional).
   # Add or remove as many filters (`[[content.filter_button]]` instances) as you like.
@@ -20,6 +21,10 @@ subtitle = ""
 
   # Default filter index (e.g. 0 corresponds to the first `[[filter_button]]` instance below).
   filter_default = 0
+
+  [content.filters]
+    tag = 'Poster'
+    # publication_type = '0'
 
   # [[content.filter_button]]
   #   name = "All"
@@ -42,7 +47,7 @@ subtitle = ""
   #   2 = Compact
   #   3 = Card
   #   5 = Showcase
-  view = 5
+  view = 3
 
   # For Showcase view, flip alternate rows?
   flip_alt_rows = false
@@ -75,6 +80,6 @@ subtitle = ""
  css_class = ""
 +++
 
-Our research is geared towards leveraging the potentials of synthetic quantum systems with the aim of developing novel quantum technologies such as quantum simulation, quantum computation, and quantum metrology.
+Our research is geared towards leveraging the potentials of atomic mixtures with the aim of developing novel quantum technologies such as quantum simulation, quantum computation, and quantum metrology.
 
-Go ahead and find out more about our research topics by clicking on the project cards below.
+As the detailled description is most of the time out-of-date as soon as we write it, we provide here access to our conference posters. They should give a timely impression of the problems under investigation. Further details can be found under [publications]({{< ref "publication" >}}).
