@@ -3,7 +3,7 @@
 
 title: 'Quantum simulation of dynamical gauge fields using ultracold atomic mixtures'
 subtitle: ''
-summary: ''
+summary: 'We discuss our experimental progress on the implementation of local U(1) symmetries in cold atomic mixtures.'
 authors:
 - hegde
 - Alexander Mil
@@ -40,28 +40,6 @@ projects: []
 publishDate: '2020-12-28T14:25:24.998500Z'
 publication_types:
 - '0'
-abstract: We study the elastic scattering time $\tau_S$ of ultracold atoms propagating
-  in optical disordered potentials in the strong scattering regime, going beyond the
-  recent work of J. Richard et al., Phys. Rev. Lett. 122 100403 (2019). There, we
-  identified the crossover between the weak and the strong scattering regimes by comparing
-  direct measurements and numerical simulations to the first order Born approximation.
-  Here we focus specifically on the strong scattering regime, where first order Born
-  approximation is not valid anymore and the scattering time is strongly influenced
-  by the nature of the disorder. To interpret our observations, we connect the scattering
-  time $τ_S$ to the profiles of the spectral functions that we estimate using higher
-  order Born perturbation theory or self-consistent Born approximation. The comparison
-  reveals that self-consistent methods are well suited to describe $τ_S$ for Gaussian-distributed
-  disorder, but fails for laser speckle disorder. For the latter, we show that the
-  peculiar profiles of the spectral functions, as measured independently in V. Volchkov
-  et al., Phys. Rev. Lett. 120, 060404 (2018), must be taken into account. Altogether
-  our study characterizes the validity range of usual theoretical methods to predict
-  the elastic scattering time of matter waves, which is essential for future close
-  comparison between theory and experiments, for instance regarding the ongoing studies
-  on Anderson localization
-publication: 'New Journal of Physics,  Vol. **21**, pp 105002'
-publication_short: "New J. Phys. **21**, 105002"
-url_pdf: http://iopscience.iop.org/10.1088/1367-2630/ab466f
-doi: 10.1088/1367-2630/ab466f
 # Enable math on this page?
 math: true
 ---
