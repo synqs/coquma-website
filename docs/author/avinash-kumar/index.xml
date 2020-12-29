@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Avinash Kumar | Jendrzejewski Group</title>
+    <link>/author/avinash-kumar/</link>
+      <atom:link href="/author/avinash-kumar/index.xml" rel="self" type="application/rss+xml" />
+    <description>Avinash Kumar</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <title>Avinash Kumar</title>
+      <link>/author/avinash-kumar/</link>
+    </image>
+    
+    <item>
+      <title>Temperature induced decay of persistent currents in superfluid ultracold gas</title>
+      <link>/publication/kumar-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/kumar-2017/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

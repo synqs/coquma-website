@@ -23,6 +23,10 @@ copyright = "&copy; SynQS"
 # Get last modified date for content from Git?
 enableGitInfo = true
 
+# prepare things for github pages.
+publishDir = "docs"
+
+
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
 hasCJKLanguage = false  # Set `true` for Chinese/Japanese/Korean languages.

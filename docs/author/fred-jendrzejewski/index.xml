@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fred Jendrzejewski | Jendrzejewski Group</title>
+    <link>/author/fred-jendrzejewski/</link>
+      <atom:link href="/author/fred-jendrzejewski/index.xml" rel="self" type="application/rss+xml" />
+    <description>Fred Jendrzejewski</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright>
+    <image>
+      <url>/author/fred-jendrzejewski/avatar_hu8a4ca81b43cdb712256470b33f5a3081_9951_270x270_fill_q75_lanczos_center.jpg</url>
+      <title>Fred Jendrzejewski</title>
+      <link>/author/fred-jendrzejewski/</link>
+    </image>
+    
+    <item>
+      <title>Dynamical Gauge Fields</title>
+      <link>/project/lattice-gauge/</link>
+      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/project/lattice-gauge/</guid>
+      <description>&lt;p&gt;Within the Standard Model of Particle Physics, the interaction between fundamental particles is described by gauge theories. These theories have an enormous predictive power, but to compute the dynamics they generate is an extremely hard task. As a consequence, high-energy physics contains many unsolved problems such as quark confinement or the dynamics of quarks and gluons during heavy-ion collisions. Instead of computing them in classical devices or investigating them in enormous accelerator facilities, we aim at implementing lattice gauge theories on the optical table by having atomic gases in optical lattices mimic the interplay between particles, anti-particles, and gauge bosons. In this way, experiments at temperatures just above absolute zero could give insights into unsolved phenomena that in Nature appear at very high energies.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Devices for labscript</title>
+      <link>/technologies/labscript-devices/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/technologies/labscript-devices/</guid>
+      <description>&lt;p&gt;More details to come.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pennylane-ls</title>
+      <link>/technologies/pennylane-ls-/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/technologies/pennylane-ls-/</guid>
+      <description>&lt;p&gt;More details to come.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Temperature control</title>
+      <link>/technologies/temp-control/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/technologies/temp-control/</guid>
+      <description>&lt;p&gt;More details to come.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Transimpedance board</title>
+      <link>/technologies/pd-board/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/technologies/pd-board/</guid>
+      <description>&lt;p&gt;More details to come.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>From the Jaynes–Cummings model to non-abelian gauge theories: a guided tour for the quantum engineer Valentin</title>
+      <link>/publication/2020-kasper-jaynes/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/2020-kasper-jaynes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Building synthetic quantum systems with photons, ions and neutral atoms</title>
+      <link>/teaching/2021-quantum-simulation-seminar/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/teaching/2021-quantum-simulation-seminar/</guid>
+      <description>&lt;p&gt;In the upcoming summer semester, I am seminar on quantum experiments together with Lauriane Chomaz.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Solving problems on quantum hardware</title>
+      <link>/teaching/2020-solving-problems/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/teaching/2020-solving-problems/</guid>
+      <description>&lt;p&gt;More details to come.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A scalable realization of local U(1) gauge invariance in cold atomic mixtures</title>
+      <link>/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</link>
+      <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Direct control of high magnetic fields for cold atom experiments based on NV centers</title>
+      <link>/publication/hesse-2020/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/hesse-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A new Na-K apparatus for simulating quantum many-body phenomena</title>
+      <link>/publication/posters/2020-jan-damop/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/posters/2020-jan-damop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A new Na-K apparatus to study quantum thermodynamics</title>
+      <link>/publication/posters/2020-lilo-qtd/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/posters/2020-lilo-qtd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamical Topological Transitions in the Massive Schwinger Model with a $\theta$ Term</title>
+      <link>/publication/zache-2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/zache-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantum simulation of dynamical gauge fields using ultracold atomic mixtures</title>
+      <link>/publication/posters/2020-hegde-coolme/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/posters/2020-hegde-coolme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ultracold atoms in disordered potentials: elastic scattering time in the strong scattering regime</title>
+      <link>/publication/2019-signoles/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/2019-signoles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantum simulation of lattice gauge theories using Wilson fermions</title>
+      <link>/publication/zache-2018/</link>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/zache-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Implementing quantum electrodynamics with ultracold atomic systems</title>
+      <link>/publication/kasper-2017/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/kasper-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Observation of the phononic Lamb shift with a synthetic vacuum</title>
+      <link>/publication/rentrop-2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/rentrop-2016/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

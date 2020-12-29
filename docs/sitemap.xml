@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/project/correlation/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/lattice-gauge/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/entanglement/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/fred-jendrzejewski/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/jan-kilinc/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/rohit-prasad-bhatt/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/lilo-hocker/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/apoorva-hegde/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/andy-xia/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/technologies/labscript-devices/</loc>
+    <lastmod>2020-12-29T08:19:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/technologies/pennylane-ls-/</loc>
+    <lastmod>2020-12-29T08:19:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/technologies/temp-control/</loc>
+    <lastmod>2020-12-29T08:19:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/technologies/pd-board/</loc>
+    <lastmod>2020-12-29T08:19:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/20-12-02-icml-best-paper/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/20-12-01-wowchemy-prize/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication-type/2/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/erez-zohar/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/2020-kasper-jaynes/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/gediminas-juzeliunas/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/lattice-gauge-theory/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/maciej-lewenstein/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/quantum-simulation/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/valentin-kasper/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/teaching/2021-quantum-simulation-seminar/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/teaching/2020-solving-problems/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/teaching/2018-aamo/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/teaching/2019-aamo/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/hauke/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/alexander-mil/</loc>
+    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/jurgen-berges/</loc>
+    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/oberthaler/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/philipp-hauke/</loc>
+    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/torsten-v.-zache/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/alexander-hesse/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/alexandre-dauphin/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/andy-xia/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/apoorva-hegde/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/daniel-gonzalez-cuadra/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/hesse-2020/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/durga-dasari/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/eberhard-tiemann/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/felix-huber/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/fred-jendrzejewski/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/jakob-steiner/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/julia-michl/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/jorg-wrachtrup/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/kerim-koster/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/kasper-2020/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/vadim-vorobyov/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/gershon-kurizki/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/igor-mazets/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/niedenzu-2019/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/wolfgang-niedenzu/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/adrien-signoles/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/alain-aspect/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/baptiste-lecoutre/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/richard-2019/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/jeremie-richard/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/laurent-sanchez-palencia/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/lih-king-lim/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/musawwadah-mukhtar/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/valentin-v.-volchkov/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/vincent-denechaud/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/vincent-josse/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication-type/0/</loc>
+    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/posters/2020-jan-damop/</loc>
+    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/posters/2020-lilo-qtd/</loc>
+    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/zache-2019/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/j.-berges/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/j.-t.-schneider/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/lih-king-king-lim/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/markus-oberthaler/</loc>
+    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/n.-mueller/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/p.-hauke/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/poster/</loc>
+    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/category/poster/</loc>
+    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/posters/2020-hegde-coolme/</loc>
+    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/t.-v.-zache/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/torsten-zache/</loc>
+    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/2019-signoles/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/valentin-v-volchkov/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/vasiliki-angelopoulou/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/f.-hebenstreit/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/zache-2018/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/a-v-gorshkov/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/bienias-2018/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/f-jendrzejewski/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/j-v-porto/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/l-jiang/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/p-bienias/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/s-l-rolston/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/s-subhankar/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/t-tiecke/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/t-c-tsui/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/y-wang/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/original-content-from-this/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/schwinger-pair-production/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/f-hebenstreit/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/kasper-2017/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/avinash-kumar/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/gretchen-k.-campbell/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/stephen-eckel/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/kumar-2017/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/c.-j.-lobb/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/lee-2015-a/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/f.-jendrzejewski/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/jeffrey-g.-lee/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/s.-eckel/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/w.-t.-hill/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/atomic-and-molecular-physics/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/a.-komnik/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/a.-trautmann/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/f.-a.-olivares/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/g-k-campbell/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/liang-jiang/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/rentrop-2016/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/s-eckel/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/jendrzejewski-2016/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/t-g-tiecke/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/t.-rentrop/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/atom-trap/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/atomtronics/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/boseeinstein-condensation/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/quasiparticle/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/shock-waves/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/sodium/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/soliton/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/a.-kumar/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/charles-w.-clark/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/e.-tiesinga/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/g.-k.-campbell/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/mark-edwards/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/r.-mathew/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/wang-2015/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/ryan-m.-wilson/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/mathew-2015/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/yi-hsieh-wang/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/1/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/2/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/3/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/a-variety-of-quantum/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/and-quantum-interference/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/can-be-observed/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/condensed-matter-physics/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/effects/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/phenomena/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/such-as-josephson/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/superfluidity/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/a-kumar/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/eckel-2014-a/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/c-lanier/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/m-edwards/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/n-murray/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/jendrzejewski-2014/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/christopher-j.-lobb/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/eckel-2014/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/noel-murray/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/william-d.-phillips/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/aditya-date/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/jendrzejewski-2012/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/kilian-muller/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/philippe-bouyer/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/thomas-plisson/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/anderson-localization/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/bose-einstein-condensate/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/coherent-backscattering/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/cold-atoms/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/disorder/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/matter-wave/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/quantum-transport/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/ultracold-atoms/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication-type/7/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/alain-bernard/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/luca-pezze/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/marie-piraud/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/patrick-cheinet/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/jendrzejewski-2012-b/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/jendrzejewski-2012-a/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/juliette-billy/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/bernard-2011/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/william-guerin/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/contact/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/people/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/doi10.1103/physrevlett.122.050403-urlhttps/doi/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/teaching/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/technologies/</loc>
+    <lastmod>2020-12-29T15:07:20+01:00</lastmod>
+  </url>
+  
+</urlset>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Valentin Kasper | Jendrzejewski Group</title>
+    <link>/author/valentin-kasper/</link>
+      <atom:link href="/author/valentin-kasper/index.xml" rel="self" type="application/rss+xml" />
+    <description>Valentin Kasper</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Tue, 13 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <title>Valentin Kasper</title>
+      <link>/author/valentin-kasper/</link>
+    </image>
+    
+    <item>
+      <title>From the Jaynes–Cummings model to non-abelian gauge theories: a guided tour for the quantum engineer Valentin</title>
+      <link>/publication/2020-kasper-jaynes/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/2020-kasper-jaynes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Universal quantum computation and quantum error correction with ultracold atomic mixtures</title>
+      <link>/publication/kasper-2020/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/kasper-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Implementing quantum electrodynamics with ultracold atomic systems</title>
+      <link>/publication/kasper-2017/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/kasper-2017/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

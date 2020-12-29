@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>W. T. Hill | Jendrzejewski Group</title>
+    <link>/author/w.-t.-hill/</link>
+      <atom:link href="/author/w.-t.-hill/index.xml" rel="self" type="application/rss+xml" />
+    <description>W. T. Hill</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Wed, 01 Jun 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <title>W. T. Hill</title>
+      <link>/author/w.-t.-hill/</link>
+    </image>
+    
+    <item>
+      <title>Contact resistance and phase slips in mesoscopic superfluid-atom transport</title>
+      <link>/publication/lee-2015-a/</link>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/lee-2015-a/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

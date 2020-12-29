@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research | Jendrzejewski Group</title>
+    <link>/project/</link>
+      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Research</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright>
+    <image>
+      <url>/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <title>Research</title>
+      <link>/project/</link>
+    </image>
+    
+    <item>
+      <title>Correlations</title>
+      <link>/project/correlation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/correlation/</guid>
+      <description>&lt;p&gt;If one throws a rock into a calm pond, circular waves spread around the position where it hit the surface. Several seconds later one can still reconstruct the position of the impact from the waves it caused. How well two events (rock impact and waves) at different positions and times are correlated, tells us something about how regular or chaotic the dynamics of a system is. If it was windy and the pond surface wasn&amp;rsquo;t calm but turbulent, the regular waves would disappear much more quickly. The general physical concept behind this simple observation is the one of dynamical response functions. Measuring these objects requires to measure correlations between different positions and times.
+In the lab, we can prepare and control quantum systems nearly perfectly and thus study these correlation functions in engineered model systems. The ability to resolve the dynamical response function in such highly tunable systems allows us to study the transition from regular to chaotic behavior. An additional twist is added by the fact that we can also time-reverse the dynamics, i.e. let the waves propagate backwards again. If, before starting the backwards evolution, the wave pattern is displaced slightly, in a regular system, the waves will refocus near the original impact position of the rock, but in a chaotic system, they might not refocus at all&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dynamical Gauge Fields</title>
+      <link>/project/lattice-gauge/</link>
+      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/project/lattice-gauge/</guid>
+      <description>&lt;p&gt;Within the Standard Model of Particle Physics, the interaction between fundamental particles is described by gauge theories. These theories have an enormous predictive power, but to compute the dynamics they generate is an extremely hard task. As a consequence, high-energy physics contains many unsolved problems such as quark confinement or the dynamics of quarks and gluons during heavy-ion collisions. Instead of computing them in classical devices or investigating them in enormous accelerator facilities, we aim at implementing lattice gauge theories on the optical table by having atomic gases in optical lattices mimic the interplay between particles, anti-particles, and gauge bosons. In this way, experiments at temperatures just above absolute zero could give insights into unsolved phenomena that in Nature appear at very high energies.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Entanglement</title>
+      <link>/project/entanglement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/entanglement/</guid>
+      <description>&lt;p&gt;In  quantum mechanics, two distant particles can be in an entangled state, meaning that they are &amp;ldquo;connected&amp;rdquo; in a way that cannot be described by classical correlations. It seems that measuring one of the particles can instantaneously affect the other one. This &amp;ldquo;spooky action at a distance&amp;rdquo;, as Einstein called it, has puzzled physicists since the early days of quantum mechanics and is still an active research topic. Besides being of fundamental interest, entanglement is the fuel that quantum computers and quantum communication devices consume.
+In the SynQS group we use perfectly controlled gases of ultracold atoms to explore both the fundamental aspects and applications of entanglement. For example, we observed the &amp;ldquo;spooky action&amp;rdquo; between two spatially separated parts of an atomic cloud and generated entanglement that can help improving the precision of atomic clocks and magnetometers.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

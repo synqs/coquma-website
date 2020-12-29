@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Marie Piraud | Jendrzejewski Group</title>
+    <link>/author/marie-piraud/</link>
+      <atom:link href="/author/marie-piraud/index.xml" rel="self" type="application/rss+xml" />
+    <description>Marie Piraud</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Sun, 01 Jan 2012 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <title>Marie Piraud</title>
+      <link>/author/marie-piraud/</link>
+    </image>
+    
+    <item>
+      <title>Three-dimensional localization of ultracold atoms in an optical disordered potential</title>
+      <link>/publication/jendrzejewski-2012-a/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/jendrzejewski-2012-a/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

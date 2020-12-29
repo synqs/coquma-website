@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Poster | Jendrzejewski Group</title>
+    <link>/category/poster/</link>
+      <atom:link href="/category/poster/index.xml" rel="self" type="application/rss+xml" />
+    <description>Poster</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <title>Poster</title>
+      <link>/category/poster/</link>
+    </image>
+    
+    <item>
+      <title>A new Na-K apparatus for simulating quantum many-body phenomena</title>
+      <link>/publication/posters/2020-jan-damop/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/posters/2020-jan-damop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A new Na-K apparatus to study quantum thermodynamics</title>
+      <link>/publication/posters/2020-lilo-qtd/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/posters/2020-lilo-qtd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantum simulation of dynamical gauge fields using ultracold atomic mixtures</title>
+      <link>/publication/posters/2020-hegde-coolme/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/posters/2020-hegde-coolme/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

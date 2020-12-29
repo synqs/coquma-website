@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>G. K. Campbell | Jendrzejewski Group</title>
+    <link>/author/g.-k.-campbell/</link>
+      <atom:link href="/author/g.-k.-campbell/index.xml" rel="self" type="application/rss+xml" />
+    <description>G. K. Campbell</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <title>G. K. Campbell</title>
+      <link>/author/g.-k.-campbell/</link>
+    </image>
+    
+    <item>
+      <title>Resonant wavepackets and shock waves in an atomtronic SQUID</title>
+      <link>/publication/wang-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/wang-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Self-heterodyne detection of the textlessitextgreaterin situtextless/itextgreater phase of an atomic superconducting quantum interference device</title>
+      <link>/publication/mathew-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/mathew-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interferometric Measurement of the Current-Phase Relationship of a Superfluid Weak Link</title>
+      <link>/publication/eckel-2014-a/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/eckel-2014-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resistive Flow in a Weakly Interacting Bose-Einstein Condensate</title>
+      <link>/publication/jendrzejewski-2014/</link>
+      <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/jendrzejewski-2014/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
