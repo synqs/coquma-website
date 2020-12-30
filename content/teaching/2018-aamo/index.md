@@ -1,5 +1,5 @@
 ---
-title: 'Advanced AMO'
+title: 'Advanced Atomic, Molecular and Optical Physics'
 subtitle: 'Winter semester 2018/19'
 summary: "A detailled introduction into the concepts beyond modern atomic, molecular and optical physics."
 authors:
