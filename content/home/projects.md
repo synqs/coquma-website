@@ -23,8 +23,7 @@ subtitle = ""
   filter_default = 0
 
   [content.filters]
-    tag = 'Poster'
-    # publication_type = '0'
+    #tag = 'Poster'
 
   # [[content.filter_button]]
   #   name = "All"
@@ -82,4 +81,6 @@ subtitle = ""
 
 Our research is geared towards leveraging the potentials of atomic mixtures with the aim of developing novel quantum technologies such as quantum simulation, quantum computation, and quantum metrology.
 
-As the detailled description is most of the time out-of-date as soon as we write it, we provide here access to our conference posters. They should give a timely impression of the problems under investigation. Further details can be found under [publications]({{< ref "publication" >}}).
+{{% alert note %}}
+Quickly discover relevant content by [filtering publications]({{< ref "/publication/_index.md" >}}).
+{{% /alert %}}

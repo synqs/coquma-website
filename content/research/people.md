@@ -5,9 +5,8 @@ widget: people
 
 # This file represents a page section.
 headless: true
-
 # Order that this section appears on the page.
-weight: 20
+weight: 30
 
 title: Meet the Team
 subtitle:
@@ -23,6 +22,7 @@ content:
   - Visitors
   - Alumni
 design:
+  columns: '2'
   show_interests: false
   show_role: true
   show_social: true
