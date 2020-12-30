@@ -8,11 +8,10 @@ authors:
 - Wolfgang Niedenzu
 - Igor Mazets
 - Gershon Kurizki
-- Fred Jendrzejewski
+- jendrzejewski
 tags: []
 categories: []
 date: '2019-06-01'
-lastmod: 2020-12-28T15:25:24+01:00
 featured: false
 draft: false
 
@@ -29,8 +28,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects: []
-publishDate: '2020-12-28T14:25:23.701378Z'
+projects: ['quantum-thermo', 'atomic-mixtures', 'quantum-heat-engine', 'theory', 'kip']
 publication_types:
 - '2'
 abstract: We propose to implement a quantized thermal machine based on a mixture of
@@ -41,7 +39,7 @@ abstract: We propose to implement a quantized thermal machine based on a mixture
   cycle and discuss the prospects for continuous-cycle operation, addressing the experimental
   as well as theoretical limitations. Beyond its applicative significance, this setup
   has a potential for the study of fundamental questions of quantum thermodynamics.
-publication: '*Quantum*'
+publication: 'Quantum **3**, 155'
 url_pdf: https://quantum-journal.org/papers/q-2019-06-28-155/
 doi: 10.22331/q-2019-06-28-155
 ---

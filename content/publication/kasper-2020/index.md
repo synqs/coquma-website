@@ -8,18 +8,17 @@ summary: ''
 authors:
 - Valentin Kasper
 - Daniel González-Cuadra
-- Apoorva Hegde
-- Andy Xia
+- hegde
+- xia
 - Alexandre Dauphin
 - Felix Huber
 - Eberhard Tiemann
 - Maciej Lewenstein
-- Fred Jendrzejewski
+- jendrzejewski
 - Philipp Hauke
-tags: []
+tags: ['quantum-simulation', 'quantum-computation', 'theory', 'atomic-mixtures', 'kip']
 categories: []
-date: '2020-01-01'
-lastmod: 2020-12-28T15:25:21+01:00
+date: '2020-10-29'
 featured: false
 draft: false
 
@@ -36,10 +35,10 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects: []
-publishDate: '2020-12-28T14:25:21.290669Z'
+projects: ['lattice-gauge']
+publishDate: '2020-10-29'
 publication_types:
-- '2'
+- '3'
 abstract: Quantum information platforms made great progress in the control of many-body
   entanglement and the implementation of quantum error correction, but it remains
   a challenge to realize both in the same setup. Here, we propose a mixture of two
@@ -52,6 +51,6 @@ abstract: Quantum information platforms made great progress in the control of ma
   code to protect quantum information encoded in the collective spins, opening up
   the possibility to universal fault-tolerant quantum computation in ultracold atom
   systems.
-publication: ''
-url_pdf: http://arxiv.org/abs/2010.15923
+publication: 'arxiv:2010.15923'
+url_preprint: http://arxiv.org/abs/2010.15923
 ---

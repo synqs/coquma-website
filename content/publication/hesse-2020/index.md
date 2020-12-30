@@ -14,10 +14,9 @@ authors:
 - Durga Dasari
 - Jörg Wrachtrup
 - jendrzejewski
-tags: []
+tags: ['NV', 'magnetometry', 'under-grad', 'atomic-mixtures', 'experiment', 'ultracold', 'kip']
 categories: []
-date: '2020-01-01'
-lastmod: 2020-12-28T15:25:18+01:00
+date: '2020-03-18'
 featured: false
 draft: false
 
@@ -35,9 +34,8 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: ["lattice-gauge"]
-publishDate: '2020-12-28T14:25:17.978686Z'
 publication_types:
-- '2'
+- '3'
 abstract: In atomic physics experiments, magnetic fields allow to control the interactions
   between atoms, eg. near Feshbach resonances, or by employing spin changing collisions.
   The magnetic field control is typically performed indirectly, by stabilizing the
