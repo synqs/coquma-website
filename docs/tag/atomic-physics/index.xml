@@ -34,5 +34,29 @@
 </description>
     </item>
     
+    <item>
+      <title>Running a Quantum Computer: Theory and Experiment</title>
+      <link>https://jendrzejewski.synqs.org/teaching/2019-running-qc/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/teaching/2019-running-qc/</guid>
+      <description>&lt;p&gt;In this lecture, we will explore the possibilities of first quantum computers like IBM-Q. We will discuss underlying concepts and different architectures. We will put special focus on a practical implementation of simple algorithms through the publicly available IBM-Q machine in the exercises. Please be aware that this is a completely new lecture as the field is rapidly evolving. So, expect some unexpected things. But the currently planned topics include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Quantum computing gates&lt;/li&gt;
+&lt;li&gt;Algorithms like Shor or Grover&lt;/li&gt;
+&lt;li&gt;Quantum simulation and annealing&lt;/li&gt;
+&lt;li&gt;Entanglement&lt;/li&gt;
+&lt;li&gt;Error correction and topological quantum computing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The discussed hardware architectures will (possibly) include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ions&lt;/li&gt;
+&lt;li&gt;Superconducting qubits&lt;/li&gt;
+&lt;li&gt;Cold atoms&lt;/li&gt;
+&lt;li&gt;Photons&lt;/li&gt;
+&lt;li&gt;Majorana fermions&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
