@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Laser | Jendrzejewski Group</title>
+    <link>https://jendrzejewski.synqs.org/tag/laser/</link>
+      <atom:link href="https://jendrzejewski.synqs.org/tag/laser/index.xml" rel="self" type="application/rss+xml" />
+    <description>Laser</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <title>Laser</title>
+      <link>https://jendrzejewski.synqs.org/tag/laser/</link>
+    </image>
+    
+    <item>
+      <title>Advanced Atomic, Molecular and Optical Physics</title>
+      <link>https://jendrzejewski.synqs.org/teaching/2019-aamo/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/teaching/2019-aamo/</guid>
+      <description>&lt;p&gt;This course will be your ideal preparation to enter the broad field of atomic, molecular and optical physics. It is advised to take this course before starting a master&amp;rsquo;s thesis in one of the many research groups working on these topics in Heidelberg.&lt;/p&gt;
+&lt;p&gt;We will put a lot of emphasis on modern topics, such that at the end of the course you will be able to understand current research publications, and judge for yourself which topics you will find most exciting.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;J.-L. Basdevant/J. Dalibard: Quantum Mechanics, Springer, ISBN 3540277064.&lt;/li&gt;
+&lt;li&gt;B.H. Bransden/C.J. Joachain: Physics of Atoms and Molecules, 2nd edition, Prentice Hall, ISBN 047116433X.&lt;/li&gt;
+&lt;li&gt;W. Demtröder: Atoms, Molecules and Photons, 2nd edition, Springer, ISBN 3642102972.&lt;/li&gt;
+&lt;li&gt;P.W. Atkins/R.S. Friedman: Molecular Quantum Mechanics, 5th edition, Oxford University Press, ISBN 0199541426.&lt;/li&gt;
+&lt;li&gt;C. Cohen-Tannoudji/B. Diu/F. Laloë: Quantum Mechanics, John Wiley &amp;amp; Sons, ISBN 047116433X.&lt;/li&gt;
+&lt;li&gt;D. Budker/D.F. Kimball/D. deMille: Atomic Physics - An Exploration through Problems and Solutions, 2nd edition, Oxford University Press, ISBN 0199532419.&lt;/li&gt;
+&lt;li&gt;C. Cohen-Tannoudji/D. Guéry-Odelin: Advances in Atomic Physics, World Scientific, ISBN 9812774963.&lt;/li&gt;
+&lt;li&gt;H. Haken/H.-C. Wolf: The Physics of Atoms and Quanta, 7th edition, Springer, ISBN 3540208070.&lt;/li&gt;
+&lt;li&gt;C.J. Foot: Atomic Physics, Oxford University Press, ISBN 0198506961.&lt;/li&gt;
+&lt;li&gt;I.V. Hertel/C.P. Schulz: Atoms, Molecules and Optical Physics, Springer, ISBN 9783642543227.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

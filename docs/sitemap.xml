@@ -78,13 +78,18 @@
   </url>
   
   <url>
-    <loc>https://jendrzejewski.synqs.org/technologies/labscript-devices/</loc>
-    <lastmod>2020-12-29T08:19:54+01:00</lastmod>
+    <loc>https://jendrzejewski.synqs.org/teaching/2021-quantum-simulation-seminar/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://jendrzejewski.synqs.org/</loc>
     <lastmod>2020-12-30T16:20:12+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/technologies/labscript-devices/</loc>
+    <lastmod>2020-12-29T08:19:54+01:00</lastmod>
   </url>
   
   <url>
@@ -263,7 +268,17 @@
   </url>
   
   <url>
-    <loc>https://jendrzejewski.synqs.org/teaching/2021-quantum-simulation-seminar/</loc>
+    <loc>https://jendrzejewski.synqs.org/tag/block-seminar/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/ibmq/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/master/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
   </url>
   
@@ -273,23 +288,13 @@
   </url>
   
   <url>
+    <loc>https://jendrzejewski.synqs.org/tag/teaching/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jendrzejewski.synqs.org/talk/2020-jan-damop/</loc>
     <lastmod>2020-12-30T16:04:47+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/teaching/2018-aamo/</loc>
-    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/teaching/2019-aamo/</loc>
-    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/author/hauke/</loc>
-    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
   </url>
   
   <url>
@@ -364,6 +369,31 @@
   
   <url>
     <loc>https://jendrzejewski.synqs.org/author/torsten-v.-zache/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/teaching/2019-aamo/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/atomic-physics/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/laser/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/optics/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/quantum-mechanics/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
   </url>
   
@@ -499,6 +529,11 @@
   
   <url>
     <loc>https://jendrzejewski.synqs.org/author/vasiliki-angelopoulou/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/teaching/2018-aamo/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
   </url>
   

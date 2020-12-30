@@ -5,7 +5,7 @@
     <link>https://jendrzejewski.synqs.org/</link>
       <atom:link href="https://jendrzejewski.synqs.org/index.xml" rel="self" type="application/rss+xml" />
     <description>Jendrzejewski Group</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Tue, 29 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>Jendrzejewski Group</title>
@@ -38,6 +38,15 @@ In the lab, we can prepare and control quantum systems nearly perfectly and thus
       <guid>https://jendrzejewski.synqs.org/project/entanglement/</guid>
       <description>&lt;p&gt;In  quantum mechanics, two distant particles can be in an entangled state, meaning that they are &amp;ldquo;connected&amp;rdquo; in a way that cannot be described by classical correlations. It seems that measuring one of the particles can instantaneously affect the other one. This &amp;ldquo;spooky action at a distance&amp;rdquo;, as Einstein called it, has puzzled physicists since the early days of quantum mechanics and is still an active research topic. Besides being of fundamental interest, entanglement is the fuel that quantum computers and quantum communication devices consume.
 In the SynQS group we use perfectly controlled gases of ultracold atoms to explore both the fundamental aspects and applications of entanglement. For example, we observed the &amp;ldquo;spooky action&amp;rdquo; between two spatially separated parts of an atomic cloud and generated entanglement that can help improving the precision of atomic clocks and magnetometers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Building synthetic quantum systems with photons, ions and neutral atoms</title>
+      <link>https://jendrzejewski.synqs.org/teaching/2021-quantum-simulation-seminar/</link>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/teaching/2021-quantum-simulation-seminar/</guid>
+      <description>&lt;p&gt;In the upcoming summer semester, I am seminar on quantum experiments together with Lauriane Chomaz.&lt;/p&gt;
 </description>
     </item>
     
@@ -132,20 +141,34 @@ In the SynQS group we use perfectly controlled gases of ultracold atoms to explo
     </item>
     
     <item>
-      <title>Building synthetic quantum systems with photons, ions and neutral atoms</title>
-      <link>https://jendrzejewski.synqs.org/teaching/2021-quantum-simulation-seminar/</link>
-      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>https://jendrzejewski.synqs.org/teaching/2021-quantum-simulation-seminar/</guid>
-      <description>&lt;p&gt;In the upcoming summer semester, I am seminar on quantum experiments together with Lauriane Chomaz.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Solving problems on quantum hardware</title>
       <link>https://jendrzejewski.synqs.org/teaching/2020-solving-problems/</link>
-      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 05 Oct 2020 00:00:00 +0000</pubDate>
       <guid>https://jendrzejewski.synqs.org/teaching/2020-solving-problems/</guid>
-      <description>&lt;p&gt;More details to come.&lt;/p&gt;
+      <description>&lt;p&gt;This is a block seminar, which will be organized together with experts from IBM-Q, we will explore the possibilities of quantum hardware like cold atom machines and IBM-Q to solve a variety of problems. It will run during the week of October 5th to October 9th for the full day.&lt;/p&gt;
+&lt;p&gt;We will put special focus on a practical implementation of simple algorithms through the publicly available IBM-Q machine in the exercises and benchmark them with hardware, which is developed in Heidelberg. Hereby, we put the largest possible focus on a hands-on experience, where we try to support the students to solve specific problems.&lt;/p&gt;
+&lt;p&gt;The seminar is planned to be loosely based on the ideas of hackathons. As such, we have roughly planned the following schedule:&lt;/p&gt;
+&lt;p&gt;Each day has a morning session starting at 9am and an afternoon session.
+On Monday you will obtain an introduction into the two main platforms we would like to employ in this lecture.
+On Tuesday morning we discuss the proposed tools for coding, which will be most likely jupyter environments, github and python.
+Starting on Tuesday afternoon you have until Friday morning to work through a project in team of a few people.
+On Friday afternoon you will present the results in a short presentation and discuss them with the other students.
+During the week you will be supported by members of IBMQ and teaching stuff from our University.&lt;/p&gt;
+&lt;p&gt;Further technical points:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The seminar lectures and presentations will happen online. We will provide you a room if the members of the team are in HD, but this is optional.&lt;/li&gt;
+&lt;li&gt;The lectures will be given through zoom, the links will be provided later.&lt;/li&gt;
+&lt;li&gt;Communication during the week will happen through a slack channel on qiskit.slack.com&lt;/li&gt;
+&lt;li&gt;Quantum code can be run on the ibm quantum experience. Instructions for registration will follow.&lt;/li&gt;
+&lt;li&gt;Communication will be most likely happening through slack.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Projects are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Random walks&lt;/li&gt;
+&lt;li&gt;Optimization&lt;/li&gt;
+&lt;li&gt;Quantum chemistry&lt;/li&gt;
+&lt;li&gt;Lattice gauge theories&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -155,24 +178,6 @@ In the SynQS group we use perfectly controlled gases of ultracold atoms to explo
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       <guid>https://jendrzejewski.synqs.org/talk/2020-jan-damop/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Advanced AMO</title>
-      <link>https://jendrzejewski.synqs.org/teaching/2018-aamo/</link>
-      <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://jendrzejewski.synqs.org/teaching/2018-aamo/</guid>
-      <description>&lt;p&gt;More details to come.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Advanced AMO</title>
-      <link>https://jendrzejewski.synqs.org/teaching/2019-aamo/</link>
-      <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://jendrzejewski.synqs.org/teaching/2019-aamo/</guid>
-      <description>&lt;p&gt;More details to come.&lt;/p&gt;
-</description>
     </item>
     
     <item>
@@ -189,6 +194,28 @@ In the SynQS group we use perfectly controlled gases of ultracold atoms to explo
       <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://jendrzejewski.synqs.org/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Advanced Atomic, Molecular and Optical Physics</title>
+      <link>https://jendrzejewski.synqs.org/teaching/2019-aamo/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/teaching/2019-aamo/</guid>
+      <description>&lt;p&gt;This course will be your ideal preparation to enter the broad field of atomic, molecular and optical physics. It is advised to take this course before starting a master&amp;rsquo;s thesis in one of the many research groups working on these topics in Heidelberg.&lt;/p&gt;
+&lt;p&gt;We will put a lot of emphasis on modern topics, such that at the end of the course you will be able to understand current research publications, and judge for yourself which topics you will find most exciting.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;J.-L. Basdevant/J. Dalibard: Quantum Mechanics, Springer, ISBN 3540277064.&lt;/li&gt;
+&lt;li&gt;B.H. Bransden/C.J. Joachain: Physics of Atoms and Molecules, 2nd edition, Prentice Hall, ISBN 047116433X.&lt;/li&gt;
+&lt;li&gt;W. Demtröder: Atoms, Molecules and Photons, 2nd edition, Springer, ISBN 3642102972.&lt;/li&gt;
+&lt;li&gt;P.W. Atkins/R.S. Friedman: Molecular Quantum Mechanics, 5th edition, Oxford University Press, ISBN 0199541426.&lt;/li&gt;
+&lt;li&gt;C. Cohen-Tannoudji/B. Diu/F. Laloë: Quantum Mechanics, John Wiley &amp;amp; Sons, ISBN 047116433X.&lt;/li&gt;
+&lt;li&gt;D. Budker/D.F. Kimball/D. deMille: Atomic Physics - An Exploration through Problems and Solutions, 2nd edition, Oxford University Press, ISBN 0199532419.&lt;/li&gt;
+&lt;li&gt;C. Cohen-Tannoudji/D. Guéry-Odelin: Advances in Atomic Physics, World Scientific, ISBN 9812774963.&lt;/li&gt;
+&lt;li&gt;H. Haken/H.-C. Wolf: The Physics of Atoms and Quanta, 7th edition, Springer, ISBN 3540208070.&lt;/li&gt;
+&lt;li&gt;C.J. Foot: Atomic Physics, Oxford University Press, ISBN 0198506961.&lt;/li&gt;
+&lt;li&gt;I.V. Hertel/C.P. Schulz: Atoms, Molecules and Optical Physics, Springer, ISBN 9783642543227.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -221,6 +248,28 @@ In the SynQS group we use perfectly controlled gases of ultracold atoms to explo
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       <guid>https://jendrzejewski.synqs.org/publication/2019-signoles/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Advanced AMO</title>
+      <link>https://jendrzejewski.synqs.org/teaching/2018-aamo/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/teaching/2018-aamo/</guid>
+      <description>&lt;p&gt;This course will be your ideal preparation to enter the broad field of atomic, molecular and optical physics. It is advised to take this course before starting a master&amp;rsquo;s thesis in one of the many research groups working on these topics in Heidelberg.&lt;/p&gt;
+&lt;p&gt;We will put a lot of emphasis on modern topics, such that at the end of the course you will be able to understand current research publications, and judge for yourself which topics you will find most exciting.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;J.-L. Basdevant/J. Dalibard: Quantum Mechanics, Springer, ISBN 3540277064.&lt;/li&gt;
+&lt;li&gt;B.H. Bransden/C.J. Joachain: Physics of Atoms and Molecules, 2nd edition, Prentice Hall, ISBN 047116433X.&lt;/li&gt;
+&lt;li&gt;W. Demtröder: Atoms, Molecules and Photons, 2nd edition, Springer, ISBN 3642102972.&lt;/li&gt;
+&lt;li&gt;P.W. Atkins/R.S. Friedman: Molecular Quantum Mechanics, 5th edition, Oxford University Press, ISBN 0199541426.&lt;/li&gt;
+&lt;li&gt;C. Cohen-Tannoudji/B. Diu/F. Laloë: Quantum Mechanics, John Wiley &amp;amp; Sons, ISBN 047116433X.&lt;/li&gt;
+&lt;li&gt;D. Budker/D.F. Kimball/D. deMille: Atomic Physics - An Exploration through Problems and Solutions, 2nd edition, Oxford University Press, ISBN 0199532419.&lt;/li&gt;
+&lt;li&gt;C. Cohen-Tannoudji/D. Guéry-Odelin: Advances in Atomic Physics, World Scientific, ISBN 9812774963.&lt;/li&gt;
+&lt;li&gt;H. Haken/H.-C. Wolf: The Physics of Atoms and Quanta, 7th edition, Springer, ISBN 3540208070.&lt;/li&gt;
+&lt;li&gt;C.J. Foot: Atomic Physics, Oxford University Press, ISBN 0198506961.&lt;/li&gt;
+&lt;li&gt;I.V. Hertel/C.P. Schulz: Atoms, Molecules and Optical Physics, Springer, ISBN 9783642543227.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
