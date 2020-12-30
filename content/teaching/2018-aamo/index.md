@@ -1,6 +1,6 @@
 ---
 title: 'Advanced AMO'
-subtitle: 'Winter semester 2019'
+subtitle: 'Winter semester 2018/19'
 summary: "A detailled introduction into the concepts beyond modern atomic, molecular and optical physics."
 authors:
 - jendrzejewski
