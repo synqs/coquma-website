@@ -5,7 +5,7 @@
     <link>https://jendrzejewski.synqs.org/tag/anderson-localization/</link>
       <atom:link href="https://jendrzejewski.synqs.org/tag/anderson-localization/index.xml" rel="self" type="application/rss+xml" />
     <description>Anderson localization</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Tue, 01 May 2012 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Thu, 01 Nov 2012 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>Anderson localization</title>
@@ -13,18 +13,18 @@
     </image>
     
     <item>
-      <title>Three-dimensional localization of ultracold atoms in an optical disordered potential</title>
-      <link>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012-a/</link>
-      <pubDate>Tue, 01 May 2012 00:00:00 +0000</pubDate>
-      <guid>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012-a/</guid>
+      <title>Quantum transport of ultracold atoms in disordered potentials</title>
+      <link>https://jendrzejewski.synqs.org/publication/thesis/jendrzejewski-2012-b/</link>
+      <pubDate>Thu, 01 Nov 2012 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/thesis/jendrzejewski-2012-b/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Quantum transport of ultracold atoms in disordered potentials</title>
-      <link>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012-b/</link>
-      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012-b/</guid>
+      <title>Three-dimensional localization of ultracold atoms in an optical disordered potential</title>
+      <link>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012-a/</link>
+      <pubDate>Tue, 01 May 2012 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012-a/</guid>
       <description></description>
     </item>
     

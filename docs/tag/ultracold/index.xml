@@ -5,12 +5,20 @@
     <link>https://jendrzejewski.synqs.org/tag/ultracold/</link>
       <atom:link href="https://jendrzejewski.synqs.org/tag/ultracold/index.xml" rel="self" type="application/rss+xml" />
     <description>ultracold</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Wed, 18 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>ultracold</title>
       <link>https://jendrzejewski.synqs.org/tag/ultracold/</link>
     </image>
+    
+    <item>
+      <title>Experimental realization of U(1) gauge invariance in ultracold atomic mixtures</title>
+      <link>https://jendrzejewski.synqs.org/publication/thesis/mil-2020/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/thesis/mil-2020/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Direct control of high magnetic fields for cold atom experiments based on NV centers</title>
@@ -41,6 +49,14 @@
       <link>https://jendrzejewski.synqs.org/publication/kumar-2017/</link>
       <pubDate>Fri, 24 Feb 2017 00:00:00 +0000</pubDate>
       <guid>https://jendrzejewski.synqs.org/publication/kumar-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Design and Implementation of a Versatile Imaging Objective for Imaging of Ultracold Mixtures of Sodium and Lithium</title>
+      <link>https://jendrzejewski.synqs.org/publication/thesis/mil-2016/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/thesis/mil-2016/</guid>
       <description></description>
     </item>
     

@@ -29,6 +29,14 @@
     </item>
     
     <item>
+      <title>Experimental realization of U(1) gauge invariance in ultracold atomic mixtures</title>
+      <link>https://jendrzejewski.synqs.org/publication/thesis/mil-2020/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/thesis/mil-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Direct control of high magnetic fields for cold atom experiments based on NV centers</title>
       <link>https://jendrzejewski.synqs.org/publication/hesse-2020/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
@@ -41,6 +49,14 @@
       <link>https://jendrzejewski.synqs.org/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</link>
       <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://jendrzejewski.synqs.org/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A NV center based magnetic field stabilization for atomic physics experiments</title>
+      <link>https://jendrzejewski.synqs.org/publication/thesis/hesse-2019/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/thesis/hesse-2019/</guid>
       <description></description>
     </item>
     
@@ -105,6 +121,14 @@
       <link>https://jendrzejewski.synqs.org/publication/kumar-2017/</link>
       <pubDate>Fri, 24 Feb 2017 00:00:00 +0000</pubDate>
       <guid>https://jendrzejewski.synqs.org/publication/kumar-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Design and Implementation of a Versatile Imaging Objective for Imaging of Ultracold Mixtures of Sodium and Lithium</title>
+      <link>https://jendrzejewski.synqs.org/publication/thesis/mil-2016/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/thesis/mil-2016/</guid>
       <description></description>
     </item>
     
@@ -181,18 +205,18 @@
     </item>
     
     <item>
-      <title>Three-dimensional localization of ultracold atoms in an optical disordered potential</title>
-      <link>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012-a/</link>
-      <pubDate>Tue, 01 May 2012 00:00:00 +0000</pubDate>
-      <guid>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012-a/</guid>
+      <title>Quantum transport of ultracold atoms in disordered potentials</title>
+      <link>https://jendrzejewski.synqs.org/publication/thesis/jendrzejewski-2012-b/</link>
+      <pubDate>Thu, 01 Nov 2012 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/thesis/jendrzejewski-2012-b/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Quantum transport of ultracold atoms in disordered potentials</title>
-      <link>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012-b/</link>
-      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012-b/</guid>
+      <title>Three-dimensional localization of ultracold atoms in an optical disordered potential</title>
+      <link>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012-a/</link>
+      <pubDate>Tue, 01 May 2012 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012-a/</guid>
       <description></description>
     </item>
     
