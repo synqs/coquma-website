@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markus K. Oberthaler | Jendrzejewski Group</title>
+    <link>https://synqs.github.io/coquma-website/author/markus-k.-oberthaler/</link>
+      <atom:link href="https://synqs.github.io/coquma-website/author/markus-k.-oberthaler/index.xml" rel="self" type="application/rss+xml" />
+    <description>Markus K. Oberthaler</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright>
+    <image>
+      <url>https://synqs.github.io/coquma-website/author/markus-k.-oberthaler/avatar_hu7f0242b85c4f88414d3fadaa6dc5999b_7431_270x270_fill_q75_lanczos_center.jpg</url>
+      <title>Markus K. Oberthaler</title>
+      <link>https://synqs.github.io/coquma-website/author/markus-k.-oberthaler/</link>
+    </image>
+    
+    <item>
+      <title>A scalable realization of local U(1) gauge invariance in cold atomic mixtures</title>
+      <link>https://synqs.github.io/coquma-website/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</link>
+      <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://synqs.github.io/coquma-website/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantum simulation of lattice gauge theories using Wilson fermions</title>
+      <link>https://synqs.github.io/coquma-website/publication/zache-2018/</link>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://synqs.github.io/coquma-website/publication/zache-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Implementing quantum electrodynamics with ultracold atomic systems</title>
+      <link>https://synqs.github.io/coquma-website/publication/kasper-2017/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>https://synqs.github.io/coquma-website/publication/kasper-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Observation of the phononic Lamb shift with a synthetic vacuum</title>
+      <link>https://synqs.github.io/coquma-website/publication/rentrop-2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://synqs.github.io/coquma-website/publication/rentrop-2016/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

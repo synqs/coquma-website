@@ -100,7 +100,15 @@ In the SynQS group we use perfectly controlled gases of ultracold atoms to explo
     </item>
     
     <item>
-      <title>From the Jaynes–Cummings model to non-abelian gauge theories: a guided tour for the quantum engineer Valentin</title>
+      <title>Universal quantum computation and quantum error correction with ultracold atomic mixtures</title>
+      <link>https://synqs.github.io/coquma-website/publication/kasper-2020/</link>
+      <pubDate>Thu, 29 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://synqs.github.io/coquma-website/publication/kasper-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>From the Jaynes–Cummings model to non-abelian gauge theories: a guided tour for the quantum engineer.</title>
       <link>https://synqs.github.io/coquma-website/publication/2020-kasper-jaynes/</link>
       <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
       <guid>https://synqs.github.io/coquma-website/publication/2020-kasper-jaynes/</guid>
@@ -144,26 +152,18 @@ In the SynQS group we use perfectly controlled gases of ultracold atoms to explo
     </item>
     
     <item>
-      <title>A scalable realization of local U(1) gauge invariance in cold atomic mixtures</title>
-      <link>https://synqs.github.io/coquma-website/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</link>
-      <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Direct control of high magnetic fields for cold atom experiments based on NV centers</title>
       <link>https://synqs.github.io/coquma-website/publication/hesse-2020/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://synqs.github.io/coquma-website/publication/hesse-2020/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Universal quantum computation and quantum error correction with ultracold atomic mixtures</title>
-      <link>https://synqs.github.io/coquma-website/publication/kasper-2020/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/kasper-2020/</guid>
+      <title>A scalable realization of local U(1) gauge invariance in cold atomic mixtures</title>
+      <link>https://synqs.github.io/coquma-website/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</link>
+      <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://synqs.github.io/coquma-website/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</guid>
       <description></description>
     </item>
     
@@ -224,18 +224,18 @@ In the SynQS group we use perfectly controlled gases of ultracold atoms to explo
     </item>
     
     <item>
-      <title>Quantum simulation of lattice gauge theories using Wilson fermions</title>
-      <link>https://synqs.github.io/coquma-website/publication/zache-2018/</link>
-      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/zache-2018/</guid>
+      <title>Coherent optical nano-tweezers for ultra-cold atoms</title>
+      <link>https://synqs.github.io/coquma-website/publication/bienias-2018/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://synqs.github.io/coquma-website/publication/bienias-2018/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Coherent optical nano-tweezers for ultra-cold atoms</title>
-      <link>https://synqs.github.io/coquma-website/publication/bienias-2018/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/bienias-2018/</guid>
+      <title>Quantum simulation of lattice gauge theories using Wilson fermions</title>
+      <link>https://synqs.github.io/coquma-website/publication/zache-2018/</link>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://synqs.github.io/coquma-website/publication/zache-2018/</guid>
       <description></description>
     </item>
     
@@ -250,7 +250,7 @@ In the SynQS group we use perfectly controlled gases of ultracold atoms to explo
     <item>
       <title>Temperature induced decay of persistent currents in superfluid ultracold gas</title>
       <link>https://synqs.github.io/coquma-website/publication/kumar-2017/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 24 Feb 2017 00:00:00 +0000</pubDate>
       <guid>https://synqs.github.io/coquma-website/publication/kumar-2017/</guid>
       <description></description>
     </item>
@@ -258,7 +258,7 @@ In the SynQS group we use perfectly controlled gases of ultracold atoms to explo
     <item>
       <title>Contact resistance and phase slips in mesoscopic superfluid-atom transport</title>
       <link>https://synqs.github.io/coquma-website/publication/lee-2015-a/</link>
-      <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 15 Jun 2016 00:00:00 +0000</pubDate>
       <guid>https://synqs.github.io/coquma-website/publication/lee-2015-a/</guid>
       <description></description>
     </item>
@@ -282,15 +282,15 @@ In the SynQS group we use perfectly controlled gases of ultracold atoms to explo
     <item>
       <title>Resonant wavepackets and shock waves in an atomtronic SQUID</title>
       <link>https://synqs.github.io/coquma-website/publication/wang-2015/</link>
-      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 17 Dec 2015 00:00:00 +0000</pubDate>
       <guid>https://synqs.github.io/coquma-website/publication/wang-2015/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Self-heterodyne detection of the textlessitextgreaterin situtextless/itextgreater phase of an atomic superconducting quantum interference device</title>
+      <title>Self-heterodyne detection of the in situ phase of an atomic superconducting quantum interference device</title>
       <link>https://synqs.github.io/coquma-website/publication/mathew-2015/</link>
-      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 03 Sep 2015 00:00:00 +0000</pubDate>
       <guid>https://synqs.github.io/coquma-website/publication/mathew-2015/</guid>
       <description></description>
     </item>
@@ -298,7 +298,7 @@ In the SynQS group we use perfectly controlled gases of ultracold atoms to explo
     <item>
       <title>Interferometric Measurement of the Current-Phase Relationship of a Superfluid Weak Link</title>
       <link>https://synqs.github.io/coquma-website/publication/eckel-2014-a/</link>
-      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 22 Sep 2014 00:00:00 +0000</pubDate>
       <guid>https://synqs.github.io/coquma-website/publication/eckel-2014-a/</guid>
       <description></description>
     </item>
@@ -306,15 +306,15 @@ In the SynQS group we use perfectly controlled gases of ultracold atoms to explo
     <item>
       <title>Resistive Flow in a Weakly Interacting Bose-Einstein Condensate</title>
       <link>https://synqs.github.io/coquma-website/publication/jendrzejewski-2014/</link>
-      <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 25 Jul 2014 00:00:00 +0000</pubDate>
       <guid>https://synqs.github.io/coquma-website/publication/jendrzejewski-2014/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Hysteresis in a quantized superfluid &#39;atomtronic&#39; circuit.</title>
+      <title>Hysteresis in a quantized superfluid &#39;atomtronic&#39; circuit</title>
       <link>https://synqs.github.io/coquma-website/publication/eckel-2014/</link>
-      <pubDate>Sat, 01 Feb 2014 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 13 Feb 2014 00:00:00 +0000</pubDate>
       <guid>https://synqs.github.io/coquma-website/publication/eckel-2014/</guid>
       <description></description>
     </item>
@@ -328,6 +328,14 @@ In the SynQS group we use perfectly controlled gases of ultracold atoms to explo
     </item>
     
     <item>
+      <title>Three-dimensional localization of ultracold atoms in an optical disordered potential</title>
+      <link>https://synqs.github.io/coquma-website/publication/jendrzejewski-2012-a/</link>
+      <pubDate>Tue, 01 May 2012 00:00:00 +0000</pubDate>
+      <guid>https://synqs.github.io/coquma-website/publication/jendrzejewski-2012-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Quantum transport of ultracold atoms in disordered potentials</title>
       <link>https://synqs.github.io/coquma-website/publication/jendrzejewski-2012-b/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
@@ -336,17 +344,9 @@ In the SynQS group we use perfectly controlled gases of ultracold atoms to explo
     </item>
     
     <item>
-      <title>Three-dimensional localization of ultracold atoms in an optical disordered potential</title>
-      <link>https://synqs.github.io/coquma-website/publication/jendrzejewski-2012-a/</link>
-      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/jendrzejewski-2012-a/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Quasi-continuous horizontally guided atom laser: coupling spectrum and flux limits</title>
       <link>https://synqs.github.io/coquma-website/publication/bernard-2011/</link>
-      <pubDate>Wed, 01 Jun 2011 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 28 Jun 2011 00:00:00 +0000</pubDate>
       <guid>https://synqs.github.io/coquma-website/publication/bernard-2011/</guid>
       <description></description>
     </item>

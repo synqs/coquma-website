@@ -21,6 +21,7 @@ content:
   - Grad Students
   - Administration
   - Visitors
+  - Collaborators
   - Alumni
 design:
   show_interests: false

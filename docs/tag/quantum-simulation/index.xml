@@ -5,7 +5,7 @@
     <link>https://synqs.github.io/coquma-website/tag/quantum-simulation/</link>
       <atom:link href="https://synqs.github.io/coquma-website/tag/quantum-simulation/index.xml" rel="self" type="application/rss+xml" />
     <description>Quantum Simulation</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Tue, 13 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Thu, 29 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://synqs.github.io/coquma-website/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>Quantum Simulation</title>
@@ -13,7 +13,15 @@
     </image>
     
     <item>
-      <title>From the Jaynes–Cummings model to non-abelian gauge theories: a guided tour for the quantum engineer Valentin</title>
+      <title>Universal quantum computation and quantum error correction with ultracold atomic mixtures</title>
+      <link>https://synqs.github.io/coquma-website/publication/kasper-2020/</link>
+      <pubDate>Thu, 29 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://synqs.github.io/coquma-website/publication/kasper-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>From the Jaynes–Cummings model to non-abelian gauge theories: a guided tour for the quantum engineer.</title>
       <link>https://synqs.github.io/coquma-website/publication/2020-kasper-jaynes/</link>
       <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
       <guid>https://synqs.github.io/coquma-website/publication/2020-kasper-jaynes/</guid>

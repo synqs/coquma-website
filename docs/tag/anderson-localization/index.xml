@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>&#34;Anderson Localization&#34; | Jendrzejewski Group</title>
+    <title>Anderson localization | Jendrzejewski Group</title>
     <link>https://synqs.github.io/coquma-website/tag/anderson-localization/</link>
       <atom:link href="https://synqs.github.io/coquma-website/tag/anderson-localization/index.xml" rel="self" type="application/rss+xml" />
-    <description>&#34;Anderson Localization&#34;</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Sun, 01 Jan 2012 00:00:00 +0000</lastBuildDate>
+    <description>Anderson localization</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Tue, 01 May 2012 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://synqs.github.io/coquma-website/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
-      <title>&#34;Anderson Localization&#34;</title>
+      <title>Anderson localization</title>
       <link>https://synqs.github.io/coquma-website/tag/anderson-localization/</link>
     </image>
+    
+    <item>
+      <title>Three-dimensional localization of ultracold atoms in an optical disordered potential</title>
+      <link>https://synqs.github.io/coquma-website/publication/jendrzejewski-2012-a/</link>
+      <pubDate>Tue, 01 May 2012 00:00:00 +0000</pubDate>
+      <guid>https://synqs.github.io/coquma-website/publication/jendrzejewski-2012-a/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Quantum transport of ultracold atoms in disordered potentials</title>

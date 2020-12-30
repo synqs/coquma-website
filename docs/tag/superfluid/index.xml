@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Superfluid | Jendrzejewski Group</title>
+    <link>https://synqs.github.io/coquma-website/tag/superfluid/</link>
+      <atom:link href="https://synqs.github.io/coquma-website/tag/superfluid/index.xml" rel="self" type="application/rss+xml" />
+    <description>Superfluid</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Fri, 24 Feb 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://synqs.github.io/coquma-website/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <title>Superfluid</title>
+      <link>https://synqs.github.io/coquma-website/tag/superfluid/</link>
+    </image>
+    
+    <item>
+      <title>Temperature induced decay of persistent currents in superfluid ultracold gas</title>
+      <link>https://synqs.github.io/coquma-website/publication/kumar-2017/</link>
+      <pubDate>Fri, 24 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>https://synqs.github.io/coquma-website/publication/kumar-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Subwavelength-width optical tunnel junctions for ultracold atoms</title>
+      <link>https://synqs.github.io/coquma-website/publication/jendrzejewski-2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://synqs.github.io/coquma-website/publication/jendrzejewski-2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Self-heterodyne detection of the in situ phase of an atomic superconducting quantum interference device</title>
+      <link>https://synqs.github.io/coquma-website/publication/mathew-2015/</link>
+      <pubDate>Thu, 03 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://synqs.github.io/coquma-website/publication/mathew-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interferometric Measurement of the Current-Phase Relationship of a Superfluid Weak Link</title>
+      <link>https://synqs.github.io/coquma-website/publication/eckel-2014-a/</link>
+      <pubDate>Mon, 22 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>https://synqs.github.io/coquma-website/publication/eckel-2014-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resistive Flow in a Weakly Interacting Bose-Einstein Condensate</title>
+      <link>https://synqs.github.io/coquma-website/publication/jendrzejewski-2014/</link>
+      <pubDate>Fri, 25 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>https://synqs.github.io/coquma-website/publication/jendrzejewski-2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hysteresis in a quantized superfluid &#39;atomtronic&#39; circuit</title>
+      <link>https://synqs.github.io/coquma-website/publication/eckel-2014/</link>
+      <pubDate>Thu, 13 Feb 2014 00:00:00 +0000</pubDate>
+      <guid>https://synqs.github.io/coquma-website/publication/eckel-2014/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
