@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>S Eckel | Jendrzejewski Group</title>
-    <link>https://synqs.github.io/coquma-website/author/s-eckel/</link>
-      <atom:link href="https://synqs.github.io/coquma-website/author/s-eckel/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://jendrzejewski.synqs.org/author/s-eckel/</link>
+      <atom:link href="https://jendrzejewski.synqs.org/author/s-eckel/index.xml" rel="self" type="application/rss+xml" />
     <description>S Eckel</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://synqs.github.io/coquma-website/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>S Eckel</title>
-      <link>https://synqs.github.io/coquma-website/author/s-eckel/</link>
+      <link>https://jendrzejewski.synqs.org/author/s-eckel/</link>
     </image>
     
     <item>
       <title>Subwavelength-width optical tunnel junctions for ultracold atoms</title>
-      <link>https://synqs.github.io/coquma-website/publication/jendrzejewski-2016/</link>
+      <link>https://jendrzejewski.synqs.org/publication/jendrzejewski-2016/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/jendrzejewski-2016/</guid>
+      <guid>https://jendrzejewski.synqs.org/publication/jendrzejewski-2016/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Interferometric Measurement of the Current-Phase Relationship of a Superfluid Weak Link</title>
-      <link>https://synqs.github.io/coquma-website/publication/eckel-2014-a/</link>
+      <link>https://jendrzejewski.synqs.org/publication/eckel-2014-a/</link>
       <pubDate>Mon, 22 Sep 2014 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/eckel-2014-a/</guid>
+      <guid>https://jendrzejewski.synqs.org/publication/eckel-2014-a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Resistive Flow in a Weakly Interacting Bose-Einstein Condensate</title>
-      <link>https://synqs.github.io/coquma-website/publication/jendrzejewski-2014/</link>
+      <link>https://jendrzejewski.synqs.org/publication/jendrzejewski-2014/</link>
       <pubDate>Fri, 25 Jul 2014 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/jendrzejewski-2014/</guid>
+      <guid>https://jendrzejewski.synqs.org/publication/jendrzejewski-2014/</guid>
       <description></description>
     </item>
     

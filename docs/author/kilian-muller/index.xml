@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kilian Müller | Jendrzejewski Group</title>
-    <link>https://synqs.github.io/coquma-website/author/kilian-muller/</link>
-      <atom:link href="https://synqs.github.io/coquma-website/author/kilian-muller/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://jendrzejewski.synqs.org/author/kilian-muller/</link>
+      <atom:link href="https://jendrzejewski.synqs.org/author/kilian-muller/index.xml" rel="self" type="application/rss+xml" />
     <description>Kilian Müller</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Thu, 01 Nov 2012 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://synqs.github.io/coquma-website/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>Kilian Müller</title>
-      <link>https://synqs.github.io/coquma-website/author/kilian-muller/</link>
+      <link>https://jendrzejewski.synqs.org/author/kilian-muller/</link>
     </image>
     
     <item>
       <title>Coherent Backscattering of Ultracold Atoms</title>
-      <link>https://synqs.github.io/coquma-website/publication/jendrzejewski-2012/</link>
+      <link>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012/</link>
       <pubDate>Thu, 01 Nov 2012 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/jendrzejewski-2012/</guid>
+      <guid>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Three-dimensional localization of ultracold atoms in an optical disordered potential</title>
-      <link>https://synqs.github.io/coquma-website/publication/jendrzejewski-2012-a/</link>
+      <link>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012-a/</link>
       <pubDate>Tue, 01 May 2012 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/jendrzejewski-2012-a/</guid>
+      <guid>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012-a/</guid>
       <description></description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>&#34;Ultracold Atoms&#34; | Jendrzejewski Group</title>
-    <link>https://synqs.github.io/coquma-website/tag/ultracold-atoms/</link>
-      <atom:link href="https://synqs.github.io/coquma-website/tag/ultracold-atoms/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://jendrzejewski.synqs.org/tag/ultracold-atoms/</link>
+      <atom:link href="https://jendrzejewski.synqs.org/tag/ultracold-atoms/index.xml" rel="self" type="application/rss+xml" />
     <description>&#34;Ultracold Atoms&#34;</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Sun, 01 Jan 2012 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://synqs.github.io/coquma-website/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>&#34;Ultracold Atoms&#34;</title>
-      <link>https://synqs.github.io/coquma-website/tag/ultracold-atoms/</link>
+      <link>https://jendrzejewski.synqs.org/tag/ultracold-atoms/</link>
     </image>
     
     <item>
       <title>Quantum transport of ultracold atoms in disordered potentials</title>
-      <link>https://synqs.github.io/coquma-website/publication/jendrzejewski-2012-b/</link>
+      <link>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012-b/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/jendrzejewski-2012-b/</guid>
+      <guid>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012-b/</guid>
       <description></description>
     </item>
     

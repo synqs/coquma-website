@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Patrick Cheinet | Jendrzejewski Group</title>
-    <link>https://synqs.github.io/coquma-website/author/patrick-cheinet/</link>
-      <atom:link href="https://synqs.github.io/coquma-website/author/patrick-cheinet/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://jendrzejewski.synqs.org/author/patrick-cheinet/</link>
+      <atom:link href="https://jendrzejewski.synqs.org/author/patrick-cheinet/index.xml" rel="self" type="application/rss+xml" />
     <description>Patrick Cheinet</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Tue, 01 May 2012 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://synqs.github.io/coquma-website/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>Patrick Cheinet</title>
-      <link>https://synqs.github.io/coquma-website/author/patrick-cheinet/</link>
+      <link>https://jendrzejewski.synqs.org/author/patrick-cheinet/</link>
     </image>
     
     <item>
       <title>Three-dimensional localization of ultracold atoms in an optical disordered potential</title>
-      <link>https://synqs.github.io/coquma-website/publication/jendrzejewski-2012-a/</link>
+      <link>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012-a/</link>
       <pubDate>Tue, 01 May 2012 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/jendrzejewski-2012-a/</guid>
+      <guid>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012-a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Quasi-continuous horizontally guided atom laser: coupling spectrum and flux limits</title>
-      <link>https://synqs.github.io/coquma-website/publication/bernard-2011/</link>
+      <link>https://jendrzejewski.synqs.org/publication/bernard-2011/</link>
       <pubDate>Tue, 28 Jun 2011 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/bernard-2011/</guid>
+      <guid>https://jendrzejewski.synqs.org/publication/bernard-2011/</guid>
       <description></description>
     </item>
     

@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stephen Eckel | Jendrzejewski Group</title>
-    <link>https://synqs.github.io/coquma-website/author/stephen-eckel/</link>
-      <atom:link href="https://synqs.github.io/coquma-website/author/stephen-eckel/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://jendrzejewski.synqs.org/author/stephen-eckel/</link>
+      <atom:link href="https://jendrzejewski.synqs.org/author/stephen-eckel/index.xml" rel="self" type="application/rss+xml" />
     <description>Stephen Eckel</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Fri, 24 Feb 2017 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://synqs.github.io/coquma-website/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>Stephen Eckel</title>
-      <link>https://synqs.github.io/coquma-website/author/stephen-eckel/</link>
+      <link>https://jendrzejewski.synqs.org/author/stephen-eckel/</link>
     </image>
     
     <item>
       <title>Temperature induced decay of persistent currents in superfluid ultracold gas</title>
-      <link>https://synqs.github.io/coquma-website/publication/kumar-2017/</link>
+      <link>https://jendrzejewski.synqs.org/publication/kumar-2017/</link>
       <pubDate>Fri, 24 Feb 2017 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/kumar-2017/</guid>
+      <guid>https://jendrzejewski.synqs.org/publication/kumar-2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hysteresis in a quantized superfluid &#39;atomtronic&#39; circuit</title>
-      <link>https://synqs.github.io/coquma-website/publication/eckel-2014/</link>
+      <link>https://jendrzejewski.synqs.org/publication/eckel-2014/</link>
       <pubDate>Thu, 13 Feb 2014 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/eckel-2014/</guid>
+      <guid>https://jendrzejewski.synqs.org/publication/eckel-2014/</guid>
       <description></description>
     </item>
     

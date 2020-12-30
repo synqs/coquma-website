@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Valentin V. Volchkov | Jendrzejewski Group</title>
-    <link>https://synqs.github.io/coquma-website/author/valentin-v.-volchkov/</link>
-      <atom:link href="https://synqs.github.io/coquma-website/author/valentin-v.-volchkov/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://jendrzejewski.synqs.org/author/valentin-v.-volchkov/</link>
+      <atom:link href="https://jendrzejewski.synqs.org/author/valentin-v.-volchkov/index.xml" rel="self" type="application/rss+xml" />
     <description>Valentin V. Volchkov</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Fri, 01 Mar 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://synqs.github.io/coquma-website/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>Valentin V. Volchkov</title>
-      <link>https://synqs.github.io/coquma-website/author/valentin-v.-volchkov/</link>
+      <link>https://jendrzejewski.synqs.org/author/valentin-v.-volchkov/</link>
     </image>
     
     <item>
       <title>Elastic Scattering Time of Matter Waves in Disordered Potentials</title>
-      <link>https://synqs.github.io/coquma-website/publication/richard-2019/</link>
+      <link>https://jendrzejewski.synqs.org/publication/richard-2019/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/richard-2019/</guid>
+      <guid>https://jendrzejewski.synqs.org/publication/richard-2019/</guid>
       <description></description>
     </item>
     

@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Maciej Lewenstein | Jendrzejewski Group</title>
-    <link>https://synqs.github.io/coquma-website/author/maciej-lewenstein/</link>
-      <atom:link href="https://synqs.github.io/coquma-website/author/maciej-lewenstein/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://jendrzejewski.synqs.org/author/maciej-lewenstein/</link>
+      <atom:link href="https://jendrzejewski.synqs.org/author/maciej-lewenstein/index.xml" rel="self" type="application/rss+xml" />
     <description>Maciej Lewenstein</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Thu, 29 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://synqs.github.io/coquma-website/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>Maciej Lewenstein</title>
-      <link>https://synqs.github.io/coquma-website/author/maciej-lewenstein/</link>
+      <link>https://jendrzejewski.synqs.org/author/maciej-lewenstein/</link>
     </image>
     
     <item>
       <title>Universal quantum computation and quantum error correction with ultracold atomic mixtures</title>
-      <link>https://synqs.github.io/coquma-website/publication/kasper-2020/</link>
+      <link>https://jendrzejewski.synqs.org/publication/kasper-2020/</link>
       <pubDate>Thu, 29 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/kasper-2020/</guid>
+      <guid>https://jendrzejewski.synqs.org/publication/kasper-2020/</guid>
       <description></description>
     </item>
     
     <item>
       <title>From the Jaynes–Cummings model to non-abelian gauge theories: a guided tour for the quantum engineer.</title>
-      <link>https://synqs.github.io/coquma-website/publication/2020-kasper-jaynes/</link>
+      <link>https://jendrzejewski.synqs.org/publication/2020-kasper-jaynes/</link>
       <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/2020-kasper-jaynes/</guid>
+      <guid>https://jendrzejewski.synqs.org/publication/2020-kasper-jaynes/</guid>
       <description></description>
     </item>
     

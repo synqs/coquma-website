@@ -2,61 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>atomtronics | Jendrzejewski Group</title>
-    <link>https://synqs.github.io/coquma-website/tag/atomtronics/</link>
-      <atom:link href="https://synqs.github.io/coquma-website/tag/atomtronics/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://jendrzejewski.synqs.org/tag/atomtronics/</link>
+      <atom:link href="https://jendrzejewski.synqs.org/tag/atomtronics/index.xml" rel="self" type="application/rss+xml" />
     <description>atomtronics</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Fri, 24 Feb 2017 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://synqs.github.io/coquma-website/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>atomtronics</title>
-      <link>https://synqs.github.io/coquma-website/tag/atomtronics/</link>
+      <link>https://jendrzejewski.synqs.org/tag/atomtronics/</link>
     </image>
     
     <item>
       <title>Temperature induced decay of persistent currents in superfluid ultracold gas</title>
-      <link>https://synqs.github.io/coquma-website/publication/kumar-2017/</link>
+      <link>https://jendrzejewski.synqs.org/publication/kumar-2017/</link>
       <pubDate>Fri, 24 Feb 2017 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/kumar-2017/</guid>
+      <guid>https://jendrzejewski.synqs.org/publication/kumar-2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Contact resistance and phase slips in mesoscopic superfluid-atom transport</title>
-      <link>https://synqs.github.io/coquma-website/publication/lee-2015-a/</link>
+      <link>https://jendrzejewski.synqs.org/publication/lee-2015-a/</link>
       <pubDate>Wed, 15 Jun 2016 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/lee-2015-a/</guid>
+      <guid>https://jendrzejewski.synqs.org/publication/lee-2015-a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Resonant wavepackets and shock waves in an atomtronic SQUID</title>
-      <link>https://synqs.github.io/coquma-website/publication/wang-2015/</link>
+      <link>https://jendrzejewski.synqs.org/publication/wang-2015/</link>
       <pubDate>Thu, 17 Dec 2015 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/wang-2015/</guid>
+      <guid>https://jendrzejewski.synqs.org/publication/wang-2015/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Self-heterodyne detection of the in situ phase of an atomic superconducting quantum interference device</title>
-      <link>https://synqs.github.io/coquma-website/publication/mathew-2015/</link>
+      <link>https://jendrzejewski.synqs.org/publication/mathew-2015/</link>
       <pubDate>Thu, 03 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/mathew-2015/</guid>
+      <guid>https://jendrzejewski.synqs.org/publication/mathew-2015/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Interferometric Measurement of the Current-Phase Relationship of a Superfluid Weak Link</title>
-      <link>https://synqs.github.io/coquma-website/publication/eckel-2014-a/</link>
+      <link>https://jendrzejewski.synqs.org/publication/eckel-2014-a/</link>
       <pubDate>Mon, 22 Sep 2014 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/eckel-2014-a/</guid>
+      <guid>https://jendrzejewski.synqs.org/publication/eckel-2014-a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Resistive Flow in a Weakly Interacting Bose-Einstein Condensate</title>
-      <link>https://synqs.github.io/coquma-website/publication/jendrzejewski-2014/</link>
+      <link>https://jendrzejewski.synqs.org/publication/jendrzejewski-2014/</link>
       <pubDate>Fri, 25 Jul 2014 00:00:00 +0000</pubDate>
-      <guid>https://synqs.github.io/coquma-website/publication/jendrzejewski-2014/</guid>
+      <guid>https://jendrzejewski.synqs.org/publication/jendrzejewski-2014/</guid>
       <description></description>
     </item>
     
