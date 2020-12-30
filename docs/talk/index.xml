@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks &amp; Posters | Jendrzejewski Group</title>
+    <link>https://jendrzejewski.synqs.org/talk/</link>
+      <atom:link href="https://jendrzejewski.synqs.org/talk/index.xml" rel="self" type="application/rss+xml" />
+    <description>Talks &amp; Posters</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Mon, 23 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <title>Talks &amp; Posters</title>
+      <link>https://jendrzejewski.synqs.org/talk/</link>
+    </image>
+    
+    <item>
+      <title>A new Na-K apparatus to study quantum thermodynamics</title>
+      <link>https://jendrzejewski.synqs.org/talk/2020-lilo-qtd/</link>
+      <pubDate>Mon, 23 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/talk/2020-lilo-qtd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantum simulation of dynamical gauge fields using ultracold atomic mixtures</title>
+      <link>https://jendrzejewski.synqs.org/talk/2020-hegde-coolme/</link>
+      <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/talk/2020-hegde-coolme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A new Na-K apparatus for simulating quantum many-body phenomena</title>
+      <link>https://jendrzejewski.synqs.org/talk/2020-jan-damop/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/talk/2020-jan-damop/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

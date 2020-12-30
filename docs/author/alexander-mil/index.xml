@@ -5,7 +5,7 @@
     <link>https://jendrzejewski.synqs.org/author/alexander-mil/</link>
       <atom:link href="https://jendrzejewski.synqs.org/author/alexander-mil/index.xml" rel="self" type="application/rss+xml" />
     <description>Alexander Mil</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Fri, 06 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Mon, 16 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>Alexander Mil</title>
@@ -13,18 +13,18 @@
     </image>
     
     <item>
-      <title>A scalable realization of local U(1) gauge invariance in cold atomic mixtures</title>
-      <link>https://jendrzejewski.synqs.org/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</link>
-      <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://jendrzejewski.synqs.org/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</guid>
+      <title>Quantum simulation of dynamical gauge fields using ultracold atomic mixtures</title>
+      <link>https://jendrzejewski.synqs.org/talk/2020-hegde-coolme/</link>
+      <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/talk/2020-hegde-coolme/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Quantum simulation of dynamical gauge fields using ultracold atomic mixtures</title>
-      <link>https://jendrzejewski.synqs.org/publication/posters/2020-hegde-coolme/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://jendrzejewski.synqs.org/publication/posters/2020-hegde-coolme/</guid>
+      <title>A scalable realization of local U(1) gauge invariance in cold atomic mixtures</title>
+      <link>https://jendrzejewski.synqs.org/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</link>
+      <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</guid>
       <description></description>
     </item>
     

@@ -27,6 +27,12 @@
   weight = 20
 
 [[main]]
+  name = "Talks & Posters"
+    url = "talk"
+    parent = "research"
+    weight = 30
+
+[[main]]
   name = "Teaching"
   url = "teaching"
   weight = 40

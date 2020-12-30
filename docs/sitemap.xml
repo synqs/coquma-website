@@ -93,6 +93,66 @@
   </url>
   
   <url>
+    <loc>https://jendrzejewski.synqs.org/talk/2020-lilo-qtd/</loc>
+    <lastmod>2020-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/categories/</loc>
+    <lastmod>2020-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/poster/</loc>
+    <lastmod>2020-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/category/poster/</loc>
+    <lastmod>2020-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tags/</loc>
+    <lastmod>2020-12-30T12:38:23+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/talk/</loc>
+    <lastmod>2020-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/author/alexander-mil/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/author/jurgen-berges/</loc>
+    <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/author/markus-oberthaler/</loc>
+    <lastmod>2020-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/author/philipp-hauke/</loc>
+    <lastmod>2020-12-30T07:46:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/talk/2020-hegde-coolme/</loc>
+    <lastmod>2020-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/author/torsten-zache/</loc>
+    <lastmod>2020-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jendrzejewski.synqs.org/publication-type/3/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
   </url>
@@ -133,11 +193,6 @@
   </url>
   
   <url>
-    <loc>https://jendrzejewski.synqs.org/author/philipp-hauke/</loc>
-    <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jendrzejewski.synqs.org/publication_types/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
   </url>
@@ -150,11 +205,6 @@
   <url>
     <loc>https://jendrzejewski.synqs.org/tag/quantum-computation/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/tags/</loc>
-    <lastmod>2020-12-30T12:38:23+01:00</lastmod>
   </url>
   
   <url>
@@ -205,6 +255,11 @@
   <url>
     <loc>https://jendrzejewski.synqs.org/teaching/2020-solving-problems/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/talk/2020-jan-damop/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -290,16 +345,6 @@
   <url>
     <loc>https://jendrzejewski.synqs.org/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/author/alexander-mil/</loc>
-    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/author/jurgen-berges/</loc>
-    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
   </url>
   
   <url>
@@ -393,26 +438,6 @@
   </url>
   
   <url>
-    <loc>https://jendrzejewski.synqs.org/publication-type/0/</loc>
-    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/publication/posters/2020-jan-damop/</loc>
-    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/publication/posters/2020-lilo-qtd/</loc>
-    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/categories/</loc>
-    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jendrzejewski.synqs.org/publication/zache-2019/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
   </url>
@@ -433,11 +458,6 @@
   </url>
   
   <url>
-    <loc>https://jendrzejewski.synqs.org/author/markus-oberthaler/</loc>
-    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jendrzejewski.synqs.org/author/n.-mueller/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
   </url>
@@ -448,28 +468,8 @@
   </url>
   
   <url>
-    <loc>https://jendrzejewski.synqs.org/tag/poster/</loc>
-    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/category/poster/</loc>
-    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/publication/posters/2020-hegde-coolme/</loc>
-    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jendrzejewski.synqs.org/author/t.-v.-zache/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/author/torsten-zache/</loc>
-    <lastmod>2020-12-29T15:25:59+01:00</lastmod>
   </url>
   
   <url>
