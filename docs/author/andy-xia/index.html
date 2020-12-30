@@ -242,6 +242,44 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2845W2HYQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-N2845W2HYQ', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
   
@@ -280,8 +318,8 @@
   <meta property="og:site_name" content="Jendrzejewski Group">
   <meta property="og:url" content="https://jendrzejewski.synqs.org/author/andy-xia/">
   <meta property="og:title" content="Andy Xia | Jendrzejewski Group">
-  <meta property="og:description" content="Investigating synthetic quantum systems with ultracold matter."><meta property="og:image" content="https://jendrzejewski.synqs.org/author/andy-xia/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q75_lanczos_center.jpg">
-  <meta property="twitter:image" content="https://jendrzejewski.synqs.org/author/andy-xia/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q75_lanczos_center.jpg"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Investigating synthetic quantum systems with ultracold matter."><meta property="og:image" content="https://jendrzejewski.synqs.org/author/andy-xia/avatar_hu1aacf081aa250477c737048dc942b483_557393_270x270_fill_q75_lanczos_center.jpg">
+  <meta property="twitter:image" content="https://jendrzejewski.synqs.org/author/andy-xia/avatar_hu1aacf081aa250477c737048dc942b483_557393_270x270_fill_q75_lanczos_center.jpg"><meta property="og:locale" content="en-us">
   
     
   
@@ -651,7 +689,7 @@
 
       
       
-      <img class="avatar avatar-circle" src="/author/andy-xia/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q75_lanczos_center.jpg" alt="Andy Xia">
+      <img class="avatar avatar-circle" src="/author/andy-xia/avatar_hu1aacf081aa250477c737048dc942b483_557393_270x270_fill_q75_lanczos_center.jpg" alt="Andy Xia">
       
 
       <div class="portrait-title">
