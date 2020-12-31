@@ -28,4 +28,11 @@ image:
 projects: []
 ---
 
-More details to come.
+A flask server that should simplify the logging of our experimental components. The details can be found [here](https://github.com/synqs/DeviceControlServer). Most of the time the components are Arduinos. The website assumes that the Arduinos are connected via ethernet. For the moment we have to following abilities:
+
+- Add a few arduinos.
+- Give setpoint and live temperature in overview.
+- It shows data in a long list for the moment.
+- The setpoint can be changed in the config page.
+- The data can be exported to csv.
+- PID values can be set from the interface.

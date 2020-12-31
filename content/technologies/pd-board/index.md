@@ -27,5 +27,4 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
-
-More details to come.
+ A very simple transimpedance board for photodiodes. Details might be found [here](https://github.com/synqs/Electronics/tree/master/simplePDboard).
