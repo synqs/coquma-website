@@ -5,7 +5,7 @@
     <link>https://jendrzejewski.synqs.org/tag/cold-atoms/</link>
       <atom:link href="https://jendrzejewski.synqs.org/tag/cold-atoms/index.xml" rel="self" type="application/rss+xml" />
     <description>Cold atoms</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Tue, 19 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Fri, 13 Mar 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>Cold atoms</title>
@@ -13,10 +13,34 @@
     </image>
     
     <item>
+      <title>Exploring and Benchmarking Quantum-assisted Neural Networks with Qubit Layers</title>
+      <link>https://jendrzejewski.synqs.org/publication/thesis/rudolph-2020/</link>
+      <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/thesis/rudolph-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>A NV center based magnetic field stabilization for atomic physics experiments</title>
       <link>https://jendrzejewski.synqs.org/publication/thesis/hesse-2019/</link>
       <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
       <guid>https://jendrzejewski.synqs.org/publication/thesis/hesse-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Building up a modular Na-K quantum gas experiment</title>
+      <link>https://jendrzejewski.synqs.org/publication/thesis/hoecker-2019/</link>
+      <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/thesis/hoecker-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Starting a Na-K experiment for simulating quantum many-body phenomena</title>
+      <link>https://jendrzejewski.synqs.org/publication/thesis/kilinc-2019/</link>
+      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/thesis/kilinc-2019/</guid>
       <description></description>
     </item>
     

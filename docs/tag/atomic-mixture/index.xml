@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Atomic mixture | Jendrzejewski Group</title>
+    <title>atomic mixture | Jendrzejewski Group</title>
     <link>https://jendrzejewski.synqs.org/tag/atomic-mixture/</link>
       <atom:link href="https://jendrzejewski.synqs.org/tag/atomic-mixture/index.xml" rel="self" type="application/rss+xml" />
-    <description>Atomic mixture</description>
+    <description>atomic mixture</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
-      <title>Atomic mixture</title>
+      <title>atomic mixture</title>
       <link>https://jendrzejewski.synqs.org/tag/atomic-mixture/</link>
     </image>
     
@@ -17,6 +17,30 @@
       <link>https://jendrzejewski.synqs.org/publication/thesis/mil-2020/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://jendrzejewski.synqs.org/publication/thesis/mil-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Building up a modular Na-K quantum gas experiment</title>
+      <link>https://jendrzejewski.synqs.org/publication/thesis/hoecker-2019/</link>
+      <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/thesis/hoecker-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Starting a Na-K experiment for simulating quantum many-body phenomena</title>
+      <link>https://jendrzejewski.synqs.org/publication/thesis/kilinc-2019/</link>
+      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/thesis/kilinc-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Implementing an Optical Accordion Lattice for the Realization of a Quantized Otto Cycle</title>
+      <link>https://jendrzejewski.synqs.org/publication/thesis/schymik-2018/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/thesis/schymik-2018/</guid>
       <description></description>
     </item>
     

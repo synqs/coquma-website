@@ -79,7 +79,7 @@
   
   <url>
     <loc>https://jendrzejewski.synqs.org/authors/</loc>
-    <lastmod>2020-12-30T21:18:52+01:00</lastmod>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
   </url>
   
   <url>
@@ -89,7 +89,7 @@
   
   <url>
     <loc>https://jendrzejewski.synqs.org/</loc>
-    <lastmod>2020-12-30T21:18:52+01:00</lastmod>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
   </url>
   
   <url>
@@ -144,7 +144,7 @@
   
   <url>
     <loc>https://jendrzejewski.synqs.org/tags/</loc>
-    <lastmod>2020-12-30T21:18:52+01:00</lastmod>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
   </url>
   
   <url>
@@ -219,7 +219,7 @@
   
   <url>
     <loc>https://jendrzejewski.synqs.org/publication_types/</loc>
-    <lastmod>2020-12-30T21:18:52+01:00</lastmod>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
   </url>
   
   <url>
@@ -304,12 +304,12 @@
   
   <url>
     <loc>https://jendrzejewski.synqs.org/publication-type/7/</loc>
-    <lastmod>2020-12-30T21:18:52+01:00</lastmod>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://jendrzejewski.synqs.org/tag/atomic-mixture/</loc>
-    <lastmod>2020-12-30T21:18:52+01:00</lastmod>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
   </url>
   
   <url>
@@ -324,17 +324,17 @@
   
   <url>
     <loc>https://jendrzejewski.synqs.org/tag/lithium/</loc>
-    <lastmod>2020-12-30T21:18:52+01:00</lastmod>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://jendrzejewski.synqs.org/tag/sodium/</loc>
-    <lastmod>2020-12-30T21:18:52+01:00</lastmod>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://jendrzejewski.synqs.org/tag/ultracold/</loc>
-    <lastmod>2020-12-30T21:18:52+01:00</lastmod>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
   </url>
   
   <url>
@@ -398,6 +398,41 @@
   </url>
   
   <url>
+    <loc>https://jendrzejewski.synqs.org/tag/cold-atoms/</loc>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/publication/thesis/rudolph-2020/</loc>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/generative-models/</loc>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/machine-learning/</loc>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/author/manuel-rudolph/</loc>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/quantum-computing/</loc>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/vacuum/</loc>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jendrzejewski.synqs.org/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
   </url>
@@ -409,11 +444,6 @@
   
   <url>
     <loc>https://jendrzejewski.synqs.org/publication/thesis/hesse-2019/</loc>
-    <lastmod>2020-12-30T21:18:52+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/tag/cold-atoms/</loc>
     <lastmod>2020-12-30T21:18:52+01:00</lastmod>
   </url>
   
@@ -440,6 +470,21 @@
   <url>
     <loc>https://jendrzejewski.synqs.org/tag/quantum-mechanics/</loc>
     <lastmod>2020-12-30T20:27:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/publication/thesis/hoecker-2019/</loc>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/sopa/</loc>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/spectroscopy/</loc>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
   </url>
   
   <url>
@@ -470,6 +515,11 @@
   <url>
     <loc>https://jendrzejewski.synqs.org/tag/trapped-ions/</loc>
     <lastmod>2020-12-30T20:27:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/publication/thesis/kilinc-2019/</loc>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
   </url>
   
   <url>
@@ -590,6 +640,31 @@
   <url>
     <loc>https://jendrzejewski.synqs.org/teaching/2018-aamo/</loc>
     <lastmod>2020-12-30T21:18:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/accordion-lattice/</loc>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/publication/thesis/schymik-2018/</loc>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/author/kai-niklas-schymik/</loc>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/quantum-thermodynamics/</loc>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/quantumthermo/</loc>
+    <lastmod>2020-12-31T06:42:38+01:00</lastmod>
   </url>
   
   <url>
