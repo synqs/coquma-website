@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machine | Jendrzejewski Group</title>
+    <link>https://jendrzejewski.synqs.org/tag/machine/</link>
+      <atom:link href="https://jendrzejewski.synqs.org/tag/machine/index.xml" rel="self" type="application/rss+xml" />
+    <description>machine</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <title>machine</title>
+      <link>https://jendrzejewski.synqs.org/tag/machine/</link>
+    </image>
+    
+    <item>
+      <title>NaLi machine</title>
+      <link>https://jendrzejewski.synqs.org/project/nali/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/project/nali/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SoPa machine</title>
+      <link>https://jendrzejewski.synqs.org/project/sopa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/project/sopa/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

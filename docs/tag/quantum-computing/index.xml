@@ -5,12 +5,28 @@
     <link>https://jendrzejewski.synqs.org/tag/quantum-computing/</link>
       <atom:link href="https://jendrzejewski.synqs.org/tag/quantum-computing/index.xml" rel="self" type="application/rss+xml" />
     <description>quantum computing</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Fri, 13 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Tue, 29 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>quantum computing</title>
       <link>https://jendrzejewski.synqs.org/tag/quantum-computing/</link>
     </image>
+    
+    <item>
+      <title>Pennylane-ls</title>
+      <link>https://jendrzejewski.synqs.org/project/pennylane-ls-/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/project/pennylane-ls-/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://github.com/synqs/pennylane-ls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pennylane_ls&lt;/a&gt; plugin allows to run experiments that are controlled by the Labscript Suite through the interface and the with the features that Pennylane offers. Our general approach is to generate Experiment.py scripts with the Labscript syntax on the fly depending on the circuit provided through PennyLane. This experimental sequence is sent remotely to Labscripts Runmanager and the results are evaluated inside the pennylane_ls plugin.&lt;/p&gt;
+&lt;p&gt;This repo is based on the plugin template provided by pennylane. An example Pennylane plugin is of ProjectQ. It is well-designed and written by C. Gogolin.&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Proposes a higher-level control of experiment that are run controlled by the Labscript Suite through PennyLane.&lt;/li&gt;
+&lt;li&gt;A framework device that provides a template for labs with Labscript to quickly adapt code for their own setup.&lt;/li&gt;
+&lt;li&gt;Includes two devices for the SynQS group at the Kirchhoff-Institute for Physics of Prof. Fred Jendrzejewski.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Exploring and Benchmarking Quantum-assisted Neural Networks with Qubit Layers</title>

@@ -13,20 +13,27 @@
     </image>
     
     <item>
-      <title>Dynamical Gauge Fields</title>
-      <link>https://jendrzejewski.synqs.org/project/lattice-gauge/</link>
-      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://jendrzejewski.synqs.org/project/lattice-gauge/</guid>
-      <description>&lt;p&gt;Within the Standard Model of Particle Physics, the interaction between fundamental particles is described by gauge theories. These theories have an enormous predictive power, but to compute the dynamics they generate is an extremely hard task. As a consequence, high-energy physics contains many unsolved problems such as quark confinement or the dynamics of quarks and gluons during heavy-ion collisions. Instead of computing them in classical devices or investigating them in enormous accelerator facilities, we aim at implementing lattice gauge theories on the optical table by having atomic gases in optical lattices mimic the interplay between particles, anti-particles, and gauge bosons. In this way, experiments at temperatures just above absolute zero could give insights into unsolved phenomena that in Nature appear at very high energies.&lt;/p&gt;
-</description>
+      <title>NaLi machine</title>
+      <link>https://jendrzejewski.synqs.org/project/nali/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/project/nali/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SoPa machine</title>
+      <link>https://jendrzejewski.synqs.org/project/sopa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/project/sopa/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Devices for labscript</title>
-      <link>https://jendrzejewski.synqs.org/technologies/labscript-devices/</link>
+      <link>https://jendrzejewski.synqs.org/project/labscript-devices/</link>
       <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://jendrzejewski.synqs.org/technologies/labscript-devices/</guid>
-      <description>&lt;p&gt;Labscript devices as used at SynQS. The code can be found &lt;a href=&#34;https://github.com/fretchen/synqs_devices&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+      <guid>https://jendrzejewski.synqs.org/project/labscript-devices/</guid>
+      <description>&lt;p&gt;Labscript devices as used at SynQS.&lt;/p&gt;
 &lt;p&gt;Devices include:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Mako G 030-B camera. It uses Pymba as a backbone. Although this labscript code is written and tested just for Mako G030-B camera, it should work for many other camera models too (with little to zero modification), because Pymba works for them.&lt;/li&gt;
@@ -50,9 +57,9 @@
     
     <item>
       <title>Pennylane-ls</title>
-      <link>https://jendrzejewski.synqs.org/technologies/pennylane-ls-/</link>
+      <link>https://jendrzejewski.synqs.org/project/pennylane-ls-/</link>
       <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://jendrzejewski.synqs.org/technologies/pennylane-ls-/</guid>
+      <guid>https://jendrzejewski.synqs.org/project/pennylane-ls-/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;https://github.com/synqs/pennylane-ls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pennylane_ls&lt;/a&gt; plugin allows to run experiments that are controlled by the Labscript Suite through the interface and the with the features that Pennylane offers. Our general approach is to generate Experiment.py scripts with the Labscript syntax on the fly depending on the circuit provided through PennyLane. This experimental sequence is sent remotely to Labscripts Runmanager and the results are evaluated inside the pennylane_ls plugin.&lt;/p&gt;
 &lt;p&gt;This repo is based on the plugin template provided by pennylane. An example Pennylane plugin is of ProjectQ. It is well-designed and written by C. Gogolin.&lt;/p&gt;
 &lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
@@ -66,10 +73,10 @@
     
     <item>
       <title>Temperature control</title>
-      <link>https://jendrzejewski.synqs.org/technologies/temp-control/</link>
+      <link>https://jendrzejewski.synqs.org/project/temp-control/</link>
       <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://jendrzejewski.synqs.org/technologies/temp-control/</guid>
-      <description>&lt;p&gt;A flask server that should simplify the logging of our experimental components. The details can be found &lt;a href=&#34;https://github.com/synqs/DeviceControlServer&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. Most of the time the components are Arduinos. The website assumes that the Arduinos are connected via ethernet. For the moment we have to following abilities:&lt;/p&gt;
+      <guid>https://jendrzejewski.synqs.org/project/temp-control/</guid>
+      <description>&lt;p&gt;A flask server that should simplify the logging of our experimental components. Most of the time the components are Arduinos. The website assumes that the Arduinos are connected via ethernet. For the moment we have to following abilities:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Add a few arduinos.&lt;/li&gt;
 &lt;li&gt;Give setpoint and live temperature in overview.&lt;/li&gt;
@@ -83,10 +90,10 @@
     
     <item>
       <title>Transimpedance board</title>
-      <link>https://jendrzejewski.synqs.org/technologies/pd-board/</link>
+      <link>https://jendrzejewski.synqs.org/project/pd-board/</link>
       <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://jendrzejewski.synqs.org/technologies/pd-board/</guid>
-      <description>&lt;p&gt;A very simple transimpedance board for photodiodes. Details might be found &lt;a href=&#34;https://github.com/synqs/Electronics/tree/master/simplePDboard&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+      <guid>https://jendrzejewski.synqs.org/project/pd-board/</guid>
+      <description>&lt;p&gt;A very simple transimpedance board for photodiodes.&lt;/p&gt;
 </description>
     </item>
     

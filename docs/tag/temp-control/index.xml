@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>temp control | Jendrzejewski Group</title>
+    <link>https://jendrzejewski.synqs.org/tag/temp-control/</link>
+      <atom:link href="https://jendrzejewski.synqs.org/tag/temp-control/index.xml" rel="self" type="application/rss+xml" />
+    <description>temp control</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Tue, 29 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <title>temp control</title>
+      <link>https://jendrzejewski.synqs.org/tag/temp-control/</link>
+    </image>
+    
+    <item>
+      <title>Temperature control</title>
+      <link>https://jendrzejewski.synqs.org/project/temp-control/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/project/temp-control/</guid>
+      <description>&lt;p&gt;A flask server that should simplify the logging of our experimental components. Most of the time the components are Arduinos. The website assumes that the Arduinos are connected via ethernet. For the moment we have to following abilities:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add a few arduinos.&lt;/li&gt;
+&lt;li&gt;Give setpoint and live temperature in overview.&lt;/li&gt;
+&lt;li&gt;It shows data in a long list for the moment.&lt;/li&gt;
+&lt;li&gt;The setpoint can be changed in the config page.&lt;/li&gt;
+&lt;li&gt;The data can be exported to csv.&lt;/li&gt;
+&lt;li&gt;PID values can be set from the interface.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
