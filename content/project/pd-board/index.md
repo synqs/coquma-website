@@ -21,5 +21,12 @@ image:
   focal_point: ""
   preview_only: false
 
+#external_link: "https://github.com/synqs/Electronics/tree/master/simplePDboard"
+
+links:
+  - icon: github
+    icon_pack: fab
+    name: Code
+    link: https://github.com/fretchen/synqs_devices
 ---
- A very simple transimpedance board for photodiodes. Details might be found [here](https://github.com/synqs/Electronics/tree/master/simplePDboard).
+ A very simple transimpedance board for photodiodes.
