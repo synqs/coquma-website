@@ -38,7 +38,7 @@
   weight = 40
 
 [[main]]
-  name = "Technologies"
+  name = "Technology"
   url = "technologies"
   weight = 50
 

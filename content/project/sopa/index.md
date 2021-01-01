@@ -2,11 +2,16 @@
 title: SoPa machine
 summary: Atomic mixture of sodium and potassium
 
+authors:
+- jendrzejewski
+- bhatt
+- kilinc
+- hoecker
 tags:
 - machine
-
-# Short title used in page links (if not set, defaults to title)
-title_short: Entanglement
+- atomic mixture
+- sodium
+- potassium
 
 # Determines ordering of projects
 weight: 3
@@ -15,7 +20,7 @@ weight: 3
 external_link: ""
 
 image:
-  caption: "Multiple-quantum coherence spectrum as an entanglement wittness (source: [Phys. Rev. Lett. 120, 040402](/publication/2018-gaerttner))"
+  caption: ""
   focal_point: Smart
 
 # links:
@@ -37,6 +42,3 @@ slides: ""
 
 math: true
 ---
-
-In  quantum mechanics, two distant particles can be in an entangled state, meaning that they are "connected" in a way that cannot be described by classical correlations. It seems that measuring one of the particles can instantaneously affect the other one. This "spooky action at a distance", as Einstein called it, has puzzled physicists since the early days of quantum mechanics and is still an active research topic. Besides being of fundamental interest, entanglement is the fuel that quantum computers and quantum communication devices consume.
-In the SynQS group we use perfectly controlled gases of ultracold atoms to explore both the fundamental aspects and applications of entanglement. For example, we observed the "spooky action" between two spatially separated parts of an atomic cloud and generated entanglement that can help improving the precision of atomic clocks and magnetometers.
