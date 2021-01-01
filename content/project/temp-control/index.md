@@ -1,6 +1,5 @@
 ---
 title: 'Temperature control'
-subtitle: 'Winter semester 2019'
 summary: "Getting all the ovens etc stable."
 authors:
 - jendrzejewski
@@ -9,7 +8,8 @@ authors:
 lastmod: "2020-12-29T00:00:00Z"
 featured: false
 draft: false
-
+tags:
+- component
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Placement options: 1 = Full column width, 2 = Out-set, 3 = Screen-width

@@ -1,6 +1,6 @@
 ---
-title: Dynamical Gauge Fields
-summary: Engineering high energy physics in table top experiments
+title: NaLi machine
+summary: Atomic mixture of sodium and lithium
 
 authors:
 - jendrzejewski
@@ -10,7 +10,9 @@ authors:
 - bhatt
 - kilinc
 
-lastmod: "2020-12-28T00:00:00Z"
+lastmod: "2021-01-01"
+tags:
+- machine
 # tags:
 
 # Short title used in page links (if not set, defaults to title)
@@ -26,10 +28,10 @@ image:
   caption: ""
   focal_point: Smart
 
-# links:
-# - icon: twitter
-#   icon_pack: fab
-#   name: Follow
+links:
+ - icon: github
+   icon_pack: fab
+   name: Code
 #   url: https://twitter.com
 # url_code: ""
 # url_pdf: ""

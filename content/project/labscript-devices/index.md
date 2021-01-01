@@ -9,6 +9,10 @@ authors:
 lastmod: "2020-12-31"
 featured: false
 draft: false
+tags:
+- software
+- labscript
+- ultracold atoms
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

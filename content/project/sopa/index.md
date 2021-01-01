@@ -1,6 +1,9 @@
 ---
-title: Entanglement
-summary: Harnessing quantum correlations
+title: SoPa machine
+summary: Atomic mixture of sodium and potassium
+
+tags:
+- machine
 
 # Short title used in page links (if not set, defaults to title)
 title_short: Entanglement
