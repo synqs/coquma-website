@@ -5,12 +5,28 @@
     <link>https://jendrzejewski.synqs.org/tag/kip/</link>
       <atom:link href="https://jendrzejewski.synqs.org/tag/kip/index.xml" rel="self" type="application/rss+xml" />
     <description>kip</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Thu, 29 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Fri, 18 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>kip</title>
       <link>https://jendrzejewski.synqs.org/tag/kip/</link>
     </image>
+    
+    <item>
+      <title>Scalable cold-atom quantum simulator for two-dimensional QED</title>
+      <link>https://jendrzejewski.synqs.org/publication/2020-ott-scalable/</link>
+      <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/2020-ott-scalable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Non-Abelian gauge invariance from dynamical decoupling</title>
+      <link>https://jendrzejewski.synqs.org/publication/2020-kasper-decoupling/</link>
+      <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/2020-kasper-decoupling/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Universal quantum computation and quantum error correction with ultracold atomic mixtures</title>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robert Ott | Jendrzejewski Group</title>
+    <link>https://jendrzejewski.synqs.org/author/robert-ott/</link>
+      <atom:link href="https://jendrzejewski.synqs.org/author/robert-ott/index.xml" rel="self" type="application/rss+xml" />
+    <description>Robert Ott</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Fri, 18 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <title>Robert Ott</title>
+      <link>https://jendrzejewski.synqs.org/author/robert-ott/</link>
+    </image>
+    
+    <item>
+      <title>Scalable cold-atom quantum simulator for two-dimensional QED</title>
+      <link>https://jendrzejewski.synqs.org/publication/2020-ott-scalable/</link>
+      <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/2020-ott-scalable/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
