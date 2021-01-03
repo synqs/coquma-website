@@ -8083,7 +8083,7 @@ a.summary-link {
 .col-search-close {
   text-align: right; }
 
-.search-header i {
+.search-header .col-search-close i {
   font-size: 2rem;
   line-height: 1; }
 
@@ -8135,6 +8135,19 @@ a.summary-link {
 .form-control:focus {
   border-color: #2962ff;
   box-shadow: 0 0 0 0.2rem #5c87ff; }
+
+#search-common-queries ul {
+  margin-left: 0;
+  padding-left: 1.6em; }
+
+#search-common-queries li {
+  line-height: 1; }
+
+#search-common-queries li a {
+  color: inherit; }
+
+.dark #search-common-queries li a {
+  color: #f8f8f2; }
 
 /* DARK themed components. */
 /* Algolia search input */
@@ -9296,6 +9309,19 @@ div.chart {
  **************************************************/
 html[dir="rtl"] body {
   text-align: right; }
+
+.breadcrumb {
+  font-size: 14px;
+  padding: 0rem;
+  background-color: transparent;
+  border-radius: 0rem;
+  margin-bottom: 0rem; }
+
+.breadcrumb-item.active {
+  color: rgba(0, 0, 0, 0.54); }
+
+.dark .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.54); }
 
 /* Responsive iframe */
 .iframe-wrapper {

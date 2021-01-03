@@ -5,7 +5,7 @@ title: Exploring and Benchmarking Quantum-assisted Neural Networks with Qubit La
 subtitle: ''
 summary: ''
 authors:
-- Manuel Rudolph
+- manrud
 tags:
 - machine learning
 - generative models

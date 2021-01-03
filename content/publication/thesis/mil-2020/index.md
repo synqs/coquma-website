@@ -5,7 +5,7 @@ title: 'Experimental realization of U(1) gauge invariance in ultracold atomic mi
 subtitle: ''
 summary: ''
 authors:
-- Alexander Mil
+- mil
 tags:
 - Ultracold
 - Atomic mixture

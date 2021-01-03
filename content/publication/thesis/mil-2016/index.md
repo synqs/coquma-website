@@ -5,7 +5,7 @@ title: 'Design and Implementation of a Versatile Imaging Objective for Imaging o
 subtitle: ''
 summary: ''
 authors:
-- Alexander Mil
+- mil
 tags:
 - Ultracold
 - Atomic mixture

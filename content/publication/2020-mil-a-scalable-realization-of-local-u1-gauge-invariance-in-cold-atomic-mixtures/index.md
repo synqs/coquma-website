@@ -5,7 +5,7 @@ title: 'A scalable realization of local U(1) gauge invariance in cold atomic mix
 subtitle: ''
 summary: ''
 authors:
-- Alexander Mil
+- mil
 - Torsten V. Zache
 - hegde
 - xia

@@ -5,7 +5,7 @@ title: A NV center based magnetic field stabilization for atomic physics experim
 subtitle: ''
 summary: ''
 authors:
-- Alexander Hesse
+- hesse
 tags:
 - NV
 - Cold atoms

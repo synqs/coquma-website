@@ -6,7 +6,7 @@ title: Direct control of high magnetic fields for cold atom experiments based on
 subtitle: ''
 summary: ''
 authors:
-- Alexander Hesse
+- hesse
 - Kerim Köster
 - Jakob Steiner
 - Julia Michl
