@@ -1,4 +1,7 @@
 ---
+# created through pandoc -s full_article.tex -o test.md
+
+# the bib gets created through pandoc-citeproc --bib2json biblio.bib > biblio.json
 title: 'Can we run quantum circuits on ultra-cold atom devices?'
 summary: 'In this blog-post, we present our path and thoughts towards using
   ultra-cold atom experiments for quantum computation. They are the
@@ -34,9 +37,8 @@ image:
 
 projects:
 - pennylane-ls
-- nali
 
-bibFile: content/post/2020-atomic-quantum-circuits/bib.json
+bibFile: content/post/2020-atomic-quantum-circuits/biblio.json
 
 ---
 
@@ -50,7 +52,7 @@ commercial players like [IBM](https://www.ibm.com/quantum-computing/),
 [Microsoft](https://www.microsoft.com/en-us/quantum) and large
 investments in startups like [D-Wave](https://www.dwavesys.com/),
 [Rigetti](https://rigetti.com/), [Xanadu](https://www.xanadu.ai/),
-[Zapata](https://www.zapatacomputing.com/)and [Cambridge Quantum
+[Zapata](https://www.zapatacomputing.com/) and [Cambridge Quantum
 Computing](https://cambridgequantum.com/). The work of these companies
 typically focuses on **universal quantum computers**, which hold the
 premise of exponential speed-up for a variety of NP-hard problems.
@@ -64,11 +66,11 @@ of interest. Such systems are called **quantum simulators**. 
 simulators at a large scale**. Most importantly for us, they are the
 experimental platform our research group is working on. Already
 demonstrated applications involve an enormous variety of
-condensed-matter problems like e.g. the Hubbard model [@Bloch_2008],
-topological systems [@Goldman_2014] , superfluidity [@Regal_2007] and
-disorder [@Lagendijk_2009] . More recently, cold atoms started to find
-applications to Ising models [@Bernien2017] and high-energy physics
-[@Zohar2016].  
+condensed-matter problems like e.g. the Hubbard model {{< cite "Bloch_2008" >}},
+topological systems {{< cite "Goldman_2014" >}}, superfluidity {{< cite "Regal_2007" >}} and
+disorder {{< cite "Lagendijk_2009" >}}. More recently, cold atoms started to find
+applications to Ising models {{< cite "Bernien2017" >}} and high-energy physics
+{{< cite "Zohar2016" >}}.  
 
 However, **quantum simulators are** **currently** **limited to an
 academic environment** because of 
