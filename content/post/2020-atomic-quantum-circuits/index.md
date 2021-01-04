@@ -19,9 +19,10 @@ tags:
 - ultracold atoms
 - pennylane
 - quantum simulation
+- machine learning
 
 categories: []
-date: 2021-01-04T17:18:00+01:00
+date: 2020-05-25
 lastmod: 2021-01-04T17:18:00+01:00
 featured: false
 draft: false
@@ -117,7 +118,7 @@ What is the qubit equivalent of those operations? The relation is pretty
 complex - and that is the nice thing! **Cold atoms are different**.
 Given their success in the quantum simulation of many-body problems,
 they could make for an exciting quantum information processor that
-is **complementary to ****universal devices.** So as a general rule of
+is **complementary to universal devices.** So as a general rule of
 thumb, it could be argued that cold atom machines often give up some
 control over individual particles, leading to much bigger systems.
 Additionally, because we work with a large number of atoms, we can
@@ -127,13 +128,13 @@ a single state preparation and one measurement**. 
 # A concrete example from our group
 
 Before we go into more detailed discussion of our implementation, we
-will present a **concrete example of our device**, where **we** **study
+will present a **concrete example of our device**, where **we study
 lattice gauge theories**. These theories have become a popular benchmark
-for quantum simulators [@Kokail_2019] and quantum
-computers [@Martinez_2016; @tavernelli2020] in recent years. On our NaLi
+for quantum simulators {{< cite "Kokail_2019" >}} and quantum
+computers {{< cite "Martinez_2016" >}} or {{< cite "tavernelli2020" >}} in recent years. On our NaLi
 machine, we recently performed experiments on the building block for
 certain quantum simulators that would be suited for theories from
-high-energy physics [@Mil2020].  These experiments are performed with
+high-energy physics {{< cite "Mil2020" >}}.  These experiments are performed with
 two atomic species, sodium and lithium, that can be prepared in two
 internal spin states. 
 
@@ -145,8 +146,8 @@ number of sodium atoms. On a quantum computer this should be compared to
 a qubit, for which we can only measure two
 outcomes $L_z=\pm\frac{1}{2}$.
 
-The **lithium atoms** on the other hand can be **described by the states
-on two independent sites **$\left|\psi_p\right\rangle$
+The **lithium atoms** on the other hand can be **described by the states on two independent sites**
+$\left|\psi_p\right\rangle$
 and $|\psi_v\rangle$. For each site we can observe that number of atoms
 that sit on it. The observable outcomes are then $n_{p/v} = 0, \dots, n$
 where $n\sim 10^4$ is the number of lithium atoms. 
@@ -162,22 +163,16 @@ stages:
 3.  and then measured to evaluate the operators $L_z$ and $N_{p,v}$
 
 Without having to dig through all the physical details to understand the
-publication [@Mil2020], the figures in it intuitively open themselves up
+publication {{< cite "Mil2020" >}}, the figures in it intuitively open themselves up
 to **readers with varying backgrounds** when plotting the
-**corresponding circuits** next to them as shown in Fig.
-[1](#428832){reference-type="ref" reference="428832"}.
+**corresponding circuits** next to them as shown below.
 
-![Scetched quantum circuits that correspond to selected figures from Mil
-et al. [@Mil2020]. The results gain a clear intuitive meaning through
-the quantum circuits even though the system that is being simulated is
-not known. The color blue signifies the Sodium atoms and the orange
-color Lithium. [\[428832\]]{#428832 label="428832"}
-](figures/AlexAsCircuit/mil-with-circuits){#428832
-width="0.70\\columnwidth"}
+{{< figure src="mil_with_circuits.png" title="Sketched quantum circuits that correspond to selected figures from Mil et al. The results gain a clear intuitive meaning through the quantum circuits even though the system that is being simulated is not known. The color blue signifies the Sodium atoms and the orange color Lithium." numbered="true">}}
+
 
 **Additional benefits of using the circuit language** include
 
--   a **more uniform definition of *****fidelity*** for ultra-cold atom
+-   a **more uniform definition of** *fidelity* for ultra-cold atom
     experiments relative to fidelity in qubit devices where each
     operation and the final result can be quantified.
 
@@ -189,8 +184,6 @@ width="0.70\\columnwidth"}
 
 -   general accessibility and a **path towards using ultra-cold atoms
     experiments in the quantum computing community.**
-
- {#section .unnumbered}
 
 # Choice of framework software for our quantum circuits
 
@@ -217,13 +210,10 @@ importance):
     to avoid unqualified users from killing the system?
 
 Lets give a brief overview of how we answered those questions with
-regard to PennyLane. **PennyLane is designed for users to write and use
-their own *****plugin***, which is what they call the integration of
+regard to PennyLane. **PennyLane is designed for users to write and use their own** *plugin*, which is what they call the integration of
 quantum computing devices into the framework. Officially, it only
-supports *qubit *and *continuous variable* devices and not more general
-approaches but we may be able to **integrate bosonic and fermionic atoms
-flexibly** as the code itself is not very restricted. Other big platorms
-like [Qiskit](https://qiskit.org/), [Forest](http://docs.rigetti.com/en/stable/)
+supports *qubit* and *continuous variable* devices and not more general
+approaches but we may be able to **integrate bosonic and fermionic atoms flexibly** as the code itself is not very restricted. Other big platorms like [Qiskit](https://qiskit.org/), [Forest](http://docs.rigetti.com/en/stable/)
 and [Strawberry
 Fields](https://strawberryfields.readthedocs.io/en/stable/) focus
 exclusively on their own quantum computing hardware or simulator without
@@ -231,8 +221,7 @@ the possibility to integrate your own. PennyLane is **open-source and
 Python-based,** which is perfect as the *Labscript Suite* controlling
 our experiment is so, too. Additionally, the company behind
 PennyLane, [Xanadu](https://www.xanadu.ai/), is a partly academic player
-who is very open in their publications and **supports a great
-community** around the software. The framework allows to add simulators
+who is very open in their publications and **supports a great community** around the software. The framework allows to add simulators
 to the framework device which mirror the functionality of the hardware.
 It performs various parameter range checks for the system and the
 operations used. Not built-in is user a system for management which
@@ -248,36 +237,30 @@ our endeavors. Let's talk about it in more detail.
 > automatic differentiation, and optimization of hybrid
 > quantum-classical computations.*
 
-![PennyLane as the connecting puzzle piece.
-[Source](https://pennylane.readthedocs.io/en/stable/introduction/pennylane.html)
-[\[477211\]]{#477211 label="477211"}
-](figures/PennyLane-puzzle/PennyLane-puzzle){#477211
-width="0.63\\columnwidth"}
+{{< figure src="PennyLane_puzzle.png" title="PennyLane as the connecting puzzle piece." numbered="true">}}
 
-[PennyLane](https://pennylane.ai/)[(Bergholm 2018)](#killoran2018) is
-created by *[Xanadu ](https://www.xanadu.ai/)*and presents itself as
-the **connecting puzzle piece** **between powerful established python
-libraries for machine learning, and quantum computing platforms**. It
-provides readily implemented quantum algorithms for quantum machine
+[PennyLane](https://pennylane.ai/) is
+created by [Xanadu ](https://www.xanadu.ai/) and presents itself as
+the **connecting puzzle piece between powerful established python libraries for machine learning, and quantum computing platforms**. It provides readily implemented quantum algorithms for quantum machine
 learning, quantum chemistry and optimization. A particular algorithm
 provided in PennyLane is automatic differentiation of quantum circuits
 which allows to perform shot-efficient application of classical-quantum
 algorithms such as the *Variational Quantum Eigensolver* (VQE).   
 
 Existing popular quantum computing platforms such as
-[Qiskit](https://qiskit.org/)for qubits and [Strawberry
+[Qiskit](https://qiskit.org/) for qubits and [Strawberry
 Fields](https://strawberryfields.readthedocs.io/en/stable/#) (also
 created by *Xanadu*) for photons have written plugins for PennyLane
 which make their **quantum simulators or quantum hardware accessible
 through it** and with that PennyLane's quantum algorithms and automatic
 differentiation feature. 
 
-In fact, **any quantum lab can adapt the **[**plugin
-template**](https://github.com/XanaduAI/pennylane-plugin-template) **for
+In fact, **any quantum lab can adapt the** [plugin
+template](https://github.com/XanaduAI/pennylane-plugin-template) **for
 their own experiment and simulators** to assimilate their own specific
 workflow with PennyLane where users are generally able to use the same
 workflow accross platforms and know what to expect.
-Fig. [3](#757073){reference-type="ref" reference="757073"} shows a
+Fig. 3 below shows a
 typical way of using PennyLane in a classical-quantum hybrid algorithm.
 Here, the default qubit simulator by PennyLane is used. After writing
 our own plugin, we can call that device, change the quantum circuit to
@@ -285,15 +268,7 @@ contain the supported operations and the workflow is otherwise the same.
 All-in-all, **the interface is very robust towards changing up the
 quantum backend** (especially when they support the same operations).
 
-![Typical simple way of using PennyLane by instantiating the device,
-defining the parametrized quantum circuit and the cost, and calculating
-the gradient for the classical parameters.
-[Source](https://pennylane.readthedocs.io/en/stable/introduction/pennylane.html)
-[\[757073\]]{#757073 label="757073"}
-](figures/PennyLane-use/PennyLane-use){#757073
-width="0.35\\columnwidth"}
-
- {#section .unnumbered}
+{{< figure src="PennyLane_use.png" title="Typical simple way of using PennyLane by instantiating the device, defining the parametrized quantum circuit and the cost, and calculating the gradient for the classical parameters." numbered="true">}}
 
 # Our workflow and connecting PennyLane to our hardware
 
