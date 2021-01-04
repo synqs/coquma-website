@@ -81,6 +81,6 @@ subtitle = ""
 
 Our research is geared towards leveraging the potentials of atomic mixtures with the aim of developing novel quantum technologies such as quantum simulation, quantum computation, and quantum metrology.
 
-{{% alert note %}}
+{{% callout note %}}
 Quickly discover relevant content by [filtering publications]({{< ref "/publication/_index.md" >}}).
-{{% /alert %}}
+{{% /callout %}}
