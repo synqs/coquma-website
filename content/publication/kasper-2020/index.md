@@ -6,7 +6,7 @@ title: Universal quantum computation and quantum error correction with ultracold
 subtitle: ''
 summary: ''
 authors:
-- Valentin Kasper
+- kasper
 - Daniel González-Cuadra
 - hegde
 - xia

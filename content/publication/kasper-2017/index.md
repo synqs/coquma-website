@@ -5,7 +5,7 @@ title: Implementing quantum electrodynamics with ultracold atomic systems
 subtitle: ''
 summary: ''
 authors:
-- Valentin Kasper
+- kasper
 - F Hebenstreit
 - jendrzejewski
 - oberthaler
