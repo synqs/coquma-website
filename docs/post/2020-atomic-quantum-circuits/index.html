@@ -1,0 +1,2454 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Fred Jendrzejewski">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="In this blog-post, we present our path and thoughts towards using ultra-cold atom experiments for quantum computation. They are the result of a two month internship where we studied the feasibility of such an undertaking in our group. Many associate only universal devices, especially qubit devices, to be valid quantum computers. We show how we think of our ultra-cold atoms in terms of quantum circuits and implement first steps in the software framework [PennyLane](https://pennylane.ai/).">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.570c0666a24511c27bb6001877169437.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2845W2HYQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-N2845W2HYQ', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@synqs">
+  <meta property="twitter:creator" content="@synqs">
+  
+  <meta property="og:site_name" content="Jendrzejewski Group">
+  <meta property="og:url" content="https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/">
+  <meta property="og:title" content="Can we run quantum circuits on ultra-cold atom devices? | Jendrzejewski Group">
+  <meta property="og:description" content="In this blog-post, we present our path and thoughts towards using ultra-cold atom experiments for quantum computation. They are the result of a two month internship where we studied the feasibility of such an undertaking in our group. Many associate only universal devices, especially qubit devices, to be valid quantum computers. We show how we think of our ultra-cold atoms in terms of quantum circuits and implement first steps in the software framework [PennyLane](https://pennylane.ai/)."><meta property="og:image" content="https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-05-25T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-01-05T11:49:57&#43;01:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/"
+  },
+  "headline": "Can we run quantum circuits on ultra-cold atom devices?",
+  
+  "datePublished": "2020-05-25T00:00:00Z",
+  "dateModified": "2021-01-05T11:49:57+01:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Fred Jendrzejewski"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jendrzejewski Group",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "In this blog-post, we present our path and thoughts towards using ultra-cold atom experiments for quantum computation. They are the result of a two month internship where we studied the feasibility of such an undertaking in our group. Many associate only universal devices, especially qubit devices, to be valid quantum computers. We show how we think of our ultra-cold atoms in terms of quantum circuits and implement first steps in the software framework [PennyLane](https://pennylane.ai/)."
+}
+</script>
+
+  
+
+  
+
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#2962ff",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#2962ff"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "https://www.cookiesandyou.com"
+      }
+    })});
+  </script>
+
+
+
+  <link rel="stylesheet" type="text/css" href="/hugo-cite.css" />
+
+
+  <title>Can we run quantum circuits on ultra-cold atom devices? | Jendrzejewski Group</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.25bb65fc185bceea61395d5b0560127a.js"></script>
+
+  
+
+<aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Jendrzejewski Group</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Jendrzejewski Group</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Research</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/research"><span>Overview</span></a>
+            
+              <a class="dropdown-item" href="/publication"><span>Publications</span></a>
+            
+              <a class="dropdown-item" href="/talk"><span>Talks & Posters</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/teaching"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/technologies"><span>Technology</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/people"><span>People</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Can we run quantum circuits on ultra-cold atom devices?</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/fred-jendrzejewski/">Fred Jendrzejewski</a></span>, <span >
+      <a href="/author/manuel-rudolph/">Manuel Rudolph</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    2021-01-05
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    12 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="/project/pennylane-ls/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h1 id="motivation">Motivation</h1>
+<p>Over recent years, interest in quantum information processing has
+increased tremendously. This rise was fueled by activities of massive
+commercial players like <a href="https://www.ibm.com/quantum-computing/" target="_blank" rel="noopener">IBM</a>,
+<a href="https://research.google/teams/applied-science/quantum/" target="_blank" rel="noopener">Google</a>,
+<a href="https://www.microsoft.com/en-us/quantum" target="_blank" rel="noopener">Microsoft</a> and large
+investments in startups like <a href="https://www.dwavesys.com/" target="_blank" rel="noopener">D-Wave</a>,
+<a href="https://rigetti.com/" target="_blank" rel="noopener">Rigetti</a>, <a href="https://www.xanadu.ai/" target="_blank" rel="noopener">Xanadu</a>,
+<a href="https://www.zapatacomputing.com/" target="_blank" rel="noopener">Zapata</a> and <a href="https://cambridgequantum.com/" target="_blank" rel="noopener">Cambridge Quantum
+Computing</a>. The work of these companies
+typically focuses on <strong>universal quantum computers</strong>, which hold the
+premise of exponential speed-up for a variety of NP-hard problems.
+However, this <strong>universality usually comes at the price</strong> of algorithmic
+overhead for a wide range of tasks which generally leads to worse
+overall fidelity. If we give up the constraint of a universal quantum
+computer, we can build <strong>specialized quantum hardware</strong> for the problems
+of interest. Such systems are called <strong>quantum simulators</strong>. </p>
+<p><strong>Ultra-cold atoms have become</strong> <strong>a leading platform of such quantum
+simulators at a large scale</strong>. Most importantly for us, they are the
+experimental platform our research group is working on. Already
+demonstrated applications involve an enormous variety of
+condensed-matter problems like e.g. the Hubbard model 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#bloch_2008"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Immanuel"><span itemprop="familyName">Bloch</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2008</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Bloch</span>,&#32;
+    <meta itemprop="givenName" content="Immanuel" />
+    I.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Dalibard</span>,&#32;
+    <meta itemprop="givenName" content="Jean" />
+    J.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Zwerger</span>,&#32;
+    <meta itemprop="givenName" content="Wilhelm" />
+    W.</span>
+  &#32;
+    (<span itemprop="datePublished">2008</span>).
+  &#32;<span itemprop="name">Many-body physics with ultracold gases</span>.<i>
+    <span itemprop="about">Reviews of Modern Physics</span>,&#32;80(3)</i>.&#32;<span itemprop="pagination">885–964</span>.
+  <a href="https://doi.org/10.1103/revmodphys.80.885"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1103/revmodphys.80.885</a></span>
+
+
+
+</span></span>,
+topological systems 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#goldman_2014"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="N"><span itemprop="familyName">Goldman</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2014</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Goldman</span>,&#32;
+    <meta itemprop="givenName" content="N" />
+    N.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Juzeliūnas</span>,&#32;
+    <meta itemprop="givenName" content="G" />
+    G.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Öhberg</span>,&#32;
+    <meta itemprop="givenName" content="P" />
+    P.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Spielman</span>,&#32;
+    <meta itemprop="givenName" content="I B" />
+    I.</span>
+  &#32;
+    (<span itemprop="datePublished">2014</span>).
+  &#32;<span itemprop="name">Light-induced gauge fields for ultracold atoms</span>.<i>
+    <span itemprop="about">Reports on Progress in Physics</span>,&#32;77(12)</i>.&#32;<span itemprop="pagination">126401</span>.
+  <a href="https://doi.org/10.1088/0034-4885/77/12/126401"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1088/0034-4885/77/12/126401</a></span>
+
+
+
+</span></span>, superfluidity 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#regal_2007"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="C. A."><span itemprop="familyName">Regal</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2007</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope 
+      itemtype="https://schema.org/Chapter"
+      data-type="chapter">
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Regal</span>,&#32;
+    <meta itemprop="givenName" content="C. A." />
+    C.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Jin</span>,&#32;
+    <meta itemprop="givenName" content="D. S." />
+    D.</span>
+  &#32;
+    (<span itemprop="datePublished">2007</span>).
+  &#32;<span itemprop="name">Experimental Realization of the BCS-BEC Crossover with a Fermi Gas of Atoms</span>.&#32;In<span itemprop="about">
+    <i>Advances In Atomic Molecular, and Optical Physics</i></span>.&#32;(<span>pp.&#32;1–79</span>).
+  &#32;<span itemprop="publisher"
+               itemtype="http://schema.org/Organization"
+               itemscope="">
+      <span itemprop="name">Elsevier</span></span>.
+  <a href="https://doi.org/10.1016/s1049-250x%2806%2954001-7"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1016/s1049-250x(06)54001-7</a></span>
+
+
+
+</span></span> and
+disorder 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#lagendijk_2009"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Ad"><span itemprop="familyName">Lagendijk</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2009</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Lagendijk</span>,&#32;
+    <meta itemprop="givenName" content="Ad" />
+    A.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Tiggelen</span>,&#32;
+    <meta itemprop="givenName" content="Bart" />
+    B.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Wiersma</span>,&#32;
+    <meta itemprop="givenName" content="Diederik S." />
+    D.</span>
+  &#32;
+    (<span itemprop="datePublished">2009</span>).
+  &#32;<span itemprop="name">Fifty years of Anderson localization</span>.<i>
+    <span itemprop="about">Physics Today</span>,&#32;62(8)</i>.&#32;<span itemprop="pagination">24–29</span>.
+  <a href="https://doi.org/10.1063/1.3206091"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1063/1.3206091</a></span>
+
+
+
+</span></span>. More recently, cold atoms started to find
+applications to Ising models 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#bernien2017"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="H"><span itemprop="familyName">Bernien</span></span>
+      <em>&amp; al.</em></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Bernien</span>,&#32;
+    <meta itemprop="givenName" content="H" />
+    H.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Schwartz</span>,&#32;
+    <meta itemprop="givenName" content="S" />
+    S.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Keesling</span>,&#32;
+    <meta itemprop="givenName" content="A" />
+    A.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Levine</span>,&#32;
+    <meta itemprop="givenName" content="H" />
+    H.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Omran</span>,&#32;
+    <meta itemprop="givenName" content="A" />
+    A.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Pichler</span>,&#32;
+    <meta itemprop="givenName" content="H" />
+    H.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Choi</span>,&#32;
+    <meta itemprop="givenName" content="S" />
+    S.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Zibrov</span>,&#32;
+    <meta itemprop="givenName" content="AS" />
+    A.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Endres</span>,&#32;
+    <meta itemprop="givenName" content="M" />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Greiner</span>,&#32;
+    <meta itemprop="givenName" content="M" />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Vuletić</span>,&#32;
+    <meta itemprop="givenName" content="V" />
+    V.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Lukin</span>,&#32;
+    <meta itemprop="givenName" content="MD" />
+    M.</span>
+  &#32;
+  (n.d.).
+  &#32;<span itemprop="name">Probing many-body dynamics on a 51-atom quantum simulator.</span>.<i>
+    <span itemprop="about">Nature</span>,&#32;551</i>.&#32;<span itemprop="pagination">579–584</span>.</span>
+
+
+
+</span></span> and high-energy physics
+
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#zohar2016"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="E"><span itemprop="familyName">Zohar</span></span>
+      <em>&amp; al.</em></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Zohar</span>,&#32;
+    <meta itemprop="givenName" content="E" />
+    E.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Cirac</span>,&#32;
+    <meta itemprop="givenName" content="JI" />
+    J.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Reznik</span>,&#32;
+    <meta itemprop="givenName" content="B" />
+    B.</span>
+  &#32;
+  (n.d.).
+  &#32;<span itemprop="name">Quantum simulations of lattice gauge theories using ultracold atoms in optical lattices.</span>.<i>
+    <span itemprop="about">Rep Prog Phys</span>,&#32;79</i>.&#32;<span itemprop="pagination">014401</span>.
+  <a href="https://doi.org/10.1088/0034-4885/79/1/014401"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1088/0034-4885/79/1/014401</a></span>
+
+
+
+</span></span>.  </p>
+<p>However, <strong>quantum simulators are</strong> <strong>currently</strong> <strong>limited to an
+academic environment</strong> because of </p>
+<ol>
+<li>
+<p>the <strong>complexity of constructing the experimental hardware</strong>, which
+involves substantial technical know-how and funding.</p>
+</li>
+<li>
+<p>the <strong>specificity of knowledge and language required</strong> to
+understand/communicate the experiment.</p>
+</li>
+<li>
+<p>the need to <strong>formulate the target problem as a Hamiltonian</strong>.</p>
+</li>
+<li>
+<p>the <strong>manual</strong> <strong>compilation of programs</strong> on this hardware class. </p>
+</li>
+</ol>
+<p>A <strong>circuit-based approach to ultra-cold atom quantum simulators</strong> would
+alleviate points 2) and 3) as we could agree on the quantum circuit,
+given the hardware-specific operations, and run it on the experiment.
+Integrating the system with a software stack
+like <a href="https://pennylane.ai/" target="_blank" rel="noopener">PennyLane </a>would additionally allow to
+address and run the experiment on a higher level and <strong>substantially
+lower the barrier of entry for users outside of the cold-atom and
+quantum physics community</strong>.  </p>
+<p>These points motivated our research group to have a look how our
+experimental hardware, which is controlled by the <a href="http://labscriptsuite.org/" target="_blank" rel="noopener">Labscript
+Suite</a>, can be integrated into PennyLane to
+run quantum circuits on ultra-cold atom devices.  Our group is part of
+<a href="http://www.kip.uni-heidelberg.de/synqs/" target="_blank" rel="noopener">SynQS</a>, working on two
+ultra-cold atom experiments, the NaLi and SoPa (named after the two
+atomic species used in the lab).</p>
+<h1 id="why-use-ultra-cold-atoms-as-a-quantum-information-platform-">Why use ultra-cold atoms as a quantum information platform ?</h1>
+<p>For ultra-cold atoms, the <strong>processing unit is not a qubit</strong> and as
+such, the <strong>natural operations are not</strong> generally <strong>the commonly used
+and widely known qubit operations</strong> such as $X,Y,Z$ rotations,
+Hadamard $H$ gates, entangling $CNOT$ or $XX$ gates with oberservables
+like $\sigma^z$ expectations. Instead, our NaLi experiment implements
+a $X(\theta)$ <strong>rotation on a long spin</strong> of many bosons on one optical
+lattice site. Additionally, the system naturally evolves under a
+many-body Hamiltonian $H_{mb}$, coupling the the atomic species.</p>
+<p>What is the qubit equivalent of those operations? The relation is pretty
+complex - and that is the nice thing! <strong>Cold atoms are different</strong>.
+Given their success in the quantum simulation of many-body problems,
+they could make for an exciting quantum information processor that
+is <strong>complementary to universal devices.</strong> So as a general rule of
+thumb, it could be argued that cold atom machines often give up some
+control over individual particles, leading to much bigger systems.
+Additionally, because we work with a large number of atoms, we can
+measure obtain rather precise estimates of expectation values <strong>with
+a single state preparation and one measurement</strong>. </p>
+<h1 id="a-concrete-example-from-our-group">A concrete example from our group</h1>
+<p>Before we go into more detailed discussion of our implementation, we
+will present a <strong>concrete example of our device</strong>, where <strong>we study
+lattice gauge theories</strong>. These theories have become a popular benchmark
+for quantum simulators 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#kokail_2019"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="C."><span itemprop="familyName">Kokail</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2019</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Kokail</span>,&#32;
+    <meta itemprop="givenName" content="C." />
+    C.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Maier</span>,&#32;
+    <meta itemprop="givenName" content="C." />
+    C.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Bijnen</span>,&#32;
+    <meta itemprop="givenName" content="R." />
+    R.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Brydges</span>,&#32;
+    <meta itemprop="givenName" content="T." />
+    T.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Joshi</span>,&#32;
+    <meta itemprop="givenName" content="M. K." />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Jurcevic</span>,&#32;
+    <meta itemprop="givenName" content="P." />
+    P.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Muschik</span>,&#32;
+    <meta itemprop="givenName" content="C. A." />
+    C.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Silvi</span>,&#32;
+    <meta itemprop="givenName" content="P." />
+    P.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Blatt</span>,&#32;
+    <meta itemprop="givenName" content="R." />
+    R.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Roos</span>,&#32;
+    <meta itemprop="givenName" content="C. F." />
+    C.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Zoller</span>,&#32;
+    <meta itemprop="givenName" content="P." />
+    P.</span>
+  &#32;
+    (<span itemprop="datePublished">2019</span>).
+  &#32;<span itemprop="name">Self-verifying variational quantum simulation of lattice models</span>.<i>
+    <span itemprop="about">Nature</span>,&#32;569(7756)</i>.&#32;<span itemprop="pagination">355–360</span>.
+  <a href="https://doi.org/10.1038/s41586-019-1177-4"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1038/s41586-019-1177-4</a></span>
+
+
+
+</span></span> and quantum
+computers 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#martinez_2016"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Esteban A."><span itemprop="familyName">Martinez</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2016</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Martinez</span>,&#32;
+    <meta itemprop="givenName" content="Esteban A." />
+    E.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Muschik</span>,&#32;
+    <meta itemprop="givenName" content="Christine A." />
+    C.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Schindler</span>,&#32;
+    <meta itemprop="givenName" content="Philipp" />
+    P.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Nigg</span>,&#32;
+    <meta itemprop="givenName" content="Daniel" />
+    D.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Erhard</span>,&#32;
+    <meta itemprop="givenName" content="Alexander" />
+    A.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Heyl</span>,&#32;
+    <meta itemprop="givenName" content="Markus" />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Hauke</span>,&#32;
+    <meta itemprop="givenName" content="Philipp" />
+    P.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Dalmonte</span>,&#32;
+    <meta itemprop="givenName" content="Marcello" />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Monz</span>,&#32;
+    <meta itemprop="givenName" content="Thomas" />
+    T.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Zoller</span>,&#32;
+    <meta itemprop="givenName" content="Peter" />
+    P.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Blatt</span>,&#32;
+    <meta itemprop="givenName" content="Rainer" />
+    R.</span>
+  &#32;
+    (<span itemprop="datePublished">2016</span>).
+  &#32;<span itemprop="name">Real-time dynamics of lattice gauge theories with a few-qubit quantum computer</span>.<i>
+    <span itemprop="about">Nature</span>,&#32;534(7608)</i>.&#32;<span itemprop="pagination">516–519</span>.
+  <a href="https://doi.org/10.1038/nature18318"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1038/nature18318</a></span>
+
+
+
+</span></span> or 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#tavernelli2020"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Simon V."><span itemprop="familyName">Mathis</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2020</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Mathis</span>,&#32;
+    <meta itemprop="givenName" content="Simon V." />
+    S.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Mazzola</span>,&#32;
+    <meta itemprop="givenName" content="Guglielmo" />
+    G.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Tavernelli</span>,&#32;
+    <meta itemprop="givenName" content="Ivano" />
+    I.</span>
+  &#32;
+    (<span itemprop="datePublished">2020</span>).
+  &#32;<span itemprop="name">Toward scalable simulations of Lattice Gauge Theories on quantum computers</span>.&#32;Retrieved from&#32;
+  <a href="https://arxiv.org/abs/2005.10271v1"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://arxiv.org/abs/2005.10271v1</a></span>
+
+
+
+</span></span> in recent years. On our NaLi
+machine, we recently performed experiments on the building block for
+certain quantum simulators that would be suited for theories from
+high-energy physics 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#mil2020"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="A"><span itemprop="familyName">Mil</span></span>
+      <em>&amp; al.</em></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Mil</span>,&#32;
+    <meta itemprop="givenName" content="A" />
+    A.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Zache</span>,&#32;
+    <meta itemprop="givenName" content="TV" />
+    T.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Hegde</span>,&#32;
+    <meta itemprop="givenName" content="A" />
+    A.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Xia</span>,&#32;
+    <meta itemprop="givenName" content="A" />
+    A.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Bhatt</span>,&#32;
+    <meta itemprop="givenName" content="RP" />
+    R.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Oberthaler</span>,&#32;
+    <meta itemprop="givenName" content="MK" />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Hauke</span>,&#32;
+    <meta itemprop="givenName" content="P" />
+    P.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Berges</span>,&#32;
+    <meta itemprop="givenName" content="J" />
+    J.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Jendrzejewski</span>,&#32;
+    <meta itemprop="givenName" content="F" />
+    F.</span>
+  &#32;
+  (n.d.).
+  &#32;<span itemprop="name">A scalable realization of local U(1) gauge invariance in cold atomic mixtures.</span>.<i>
+    <span itemprop="about">Science</span>,&#32;367</i>.&#32;<span itemprop="pagination">1128–1130</span>.
+  <a href="https://doi.org/10.1126/science.aaz5312"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1126/science.aaz5312</a></span>
+
+
+
+</span></span>.  These experiments are performed with
+two atomic species, sodium and lithium, that can be prepared in two
+internal spin states. </p>
+<p><strong>Re-thinking our analog quantum simulation</strong> for the purpose of quantum
+circuits, we can <strong>represent the sodium atoms as a very long spin</strong>
+state $\left|\psi_N\right\rangle$. The observable outcomes
+are $L_z=-\frac{N}{2},\cdots,\frac{N}{2}$, where $N\sim10^5$ is the
+number of sodium atoms. On a quantum computer this should be compared to
+a qubit, for which we can only measure two
+outcomes $L_z=\pm\frac{1}{2}$.</p>
+<p>The <strong>lithium atoms</strong> on the other hand can be <strong>described by the states on two independent sites</strong>
+$\left|\psi_p\right\rangle$
+and $|\psi_v\rangle$. For each site we can observe that number of atoms
+that sit on it. The observable outcomes are then $n_{p/v} = 0, \dots, n$
+where $n\sim 10^4$ is the number of lithium atoms. </p>
+<p>In this formulation and <strong>analogous to other circuit-based quantum
+computing devices</strong>, the NaLi experiment then consists of three main
+stages:</p>
+<ol>
+<li>
+<p>The atoms are prepared in some initial state&hellip;</p>
+</li>
+<li>
+<p>controlled through a set of operations/gates&hellip;</p>
+</li>
+<li>
+<p>and then measured to evaluate the operators $L_z$ and $N_{p,v}$</p>
+</li>
+</ol>
+<p>Without having to dig through all the physical details to understand the
+publication 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#mil2020"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="A"><span itemprop="familyName">Mil</span></span>
+      <em>&amp; al.</em></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Mil</span>,&#32;
+    <meta itemprop="givenName" content="A" />
+    A.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Zache</span>,&#32;
+    <meta itemprop="givenName" content="TV" />
+    T.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Hegde</span>,&#32;
+    <meta itemprop="givenName" content="A" />
+    A.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Xia</span>,&#32;
+    <meta itemprop="givenName" content="A" />
+    A.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Bhatt</span>,&#32;
+    <meta itemprop="givenName" content="RP" />
+    R.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Oberthaler</span>,&#32;
+    <meta itemprop="givenName" content="MK" />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Hauke</span>,&#32;
+    <meta itemprop="givenName" content="P" />
+    P.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Berges</span>,&#32;
+    <meta itemprop="givenName" content="J" />
+    J.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Jendrzejewski</span>,&#32;
+    <meta itemprop="givenName" content="F" />
+    F.</span>
+  &#32;
+  (n.d.).
+  &#32;<span itemprop="name">A scalable realization of local U(1) gauge invariance in cold atomic mixtures.</span>.<i>
+    <span itemprop="about">Science</span>,&#32;367</i>.&#32;<span itemprop="pagination">1128–1130</span>.
+  <a href="https://doi.org/10.1126/science.aaz5312"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1126/science.aaz5312</a></span>
+
+
+
+</span></span>, the figures in it intuitively open themselves up
+to <strong>readers with varying backgrounds</strong> when plotting the
+<strong>corresponding circuits</strong> next to them as shown below.</p>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-sketched-quantum-circuits-that-correspond-to-selected-figures-from-mil-et-al-the-results-gain-a-clear-intuitive-meaning-through-the-quantum-circuits-even-though-the-system-that-is-being-simulated-is-not-known-the-color-blue-signifies-the-sodium-atoms-and-the-orange-color-lithium">
+
+
+  <a data-fancybox="" href="/post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_2000x2000_fit_lanczos_2.png" data-caption="Sketched quantum circuits that correspond to selected figures from Mil et al. The results gain a clear intuitive meaning through the quantum circuits even though the system that is being simulated is not known. The color blue signifies the Sodium atoms and the orange color Lithium.">
+
+
+  <img data-src="/post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="789" height="670">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    Sketched quantum circuits that correspond to selected figures from Mil et al. The results gain a clear intuitive meaning through the quantum circuits even though the system that is being simulated is not known. The color blue signifies the Sodium atoms and the orange color Lithium.
+  </figcaption>
+
+
+</figure>
+
+<p><strong>Additional benefits of using the circuit language</strong> include</p>
+<ul>
+<li>
+<p>a <strong>more uniform definition of</strong> <em>fidelity</em> for ultra-cold atom
+experiments relative to fidelity in qubit devices where each
+operation and the final result can be quantified.</p>
+</li>
+<li>
+<p><strong>improved communication</strong> with <strong>and feedback</strong> of theorists
+involved in the project by working on the same level of resolution.</p>
+</li>
+<li>
+<p>more easily <strong>generalizing the capabilities of the device</strong> to work
+on <strong>other problems.</strong></p>
+</li>
+<li>
+<p>general accessibility and a <strong>path towards using ultra-cold atoms
+experiments in the quantum computing community.</strong></p>
+</li>
+</ul>
+<h1 id="choice-of-framework-software-for-our-quantum-circuits">Choice of framework software for our quantum circuits</h1>
+<p>The choice of which framework software to use for our circuit-based
+approach was not a particularly hard one for us. We have our own
+experiment in the lab which implements a non-standard device for quantum
+simulation and thus some of our requirements are (roughly in order of
+importance):</p>
+<ol>
+<li>
+<p>Can we <strong>integrate our own experimental hardware</strong> into the
+framework and potentially run it from there?</p>
+</li>
+<li>
+<p>How strong of an <strong>assumption</strong> is made <strong>about the computational
+unit</strong> of the hardware? Does it have to be strictly qubits/photons
+etc.?</p>
+</li>
+<li>
+<p>Is the framework <strong>open-source</strong> and shows <strong>openness to the
+academic community</strong>?</p>
+</li>
+<li>
+<p>Can also <strong>integrate classical simulators</strong> that are based on our
+hardware?</p>
+</li>
+<li>
+<p>Does it provide some sort of <strong>user management and safety measures</strong>
+to avoid unqualified users from killing the system?</p>
+</li>
+</ol>
+<p>Lets give a brief overview of how we answered those questions with
+regard to PennyLane. <strong>PennyLane is designed for users to write and use their own</strong> <em>plugin</em>, which is what they call the integration of
+quantum computing devices into the framework. Officially, it only
+supports <em>qubit</em> and <em>continuous variable</em> devices and not more general
+approaches but we may be able to <strong>integrate bosonic and fermionic atoms flexibly</strong> as the code itself is not very restricted. Other big platorms like <a href="https://qiskit.org/" target="_blank" rel="noopener">Qiskit</a>, <a href="http://docs.rigetti.com/en/stable/" target="_blank" rel="noopener">Forest</a>
+and <a href="https://strawberryfields.readthedocs.io/en/stable/" target="_blank" rel="noopener">Strawberry
+Fields</a> focus
+exclusively on their own quantum computing hardware or simulator without
+the possibility to integrate your own. PennyLane is <strong>open-source and
+Python-based,</strong> which is perfect as the <em>Labscript Suite</em> controlling
+our experiment is so, too. Additionally, the company behind
+PennyLane, <a href="https://www.xanadu.ai/" target="_blank" rel="noopener">Xanadu</a>, is a partly academic player
+who is very open in their publications and <strong>supports a great community</strong> around the software. The framework allows to add simulators
+to the framework device which mirror the functionality of the hardware.
+It performs various parameter range checks for the system and the
+operations used. Not built-in is user a system for management which
+allows only registered users to run the experiment from a queue. We
+would have to implement this ourselves.</p>
+<p>All-in-all, <strong>PennyLane seems to be the best and likely only fit</strong> for
+our endeavors. Let&rsquo;s talk about it in more detail.</p>
+<h1 id="pennylane">Pennylane</h1>
+<blockquote>
+<p><em>A cross-platform Python library for quantum machine learning,
+automatic differentiation, and optimization of hybrid
+quantum-classical computations.</em></p>
+</blockquote>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-pennylane-as-the-connecting-puzzle-piece">
+
+
+  <a data-fancybox="" href="/post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_2000x2000_fit_lanczos_2.png" data-caption="PennyLane as the connecting puzzle piece.">
+
+
+  <img data-src="/post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="1063" height="545">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    PennyLane as the connecting puzzle piece.
+  </figcaption>
+
+
+</figure>
+
+<p><a href="https://pennylane.ai/" target="_blank" rel="noopener">PennyLane</a> is
+created by <a href="https://www.xanadu.ai/" target="_blank" rel="noopener">Xanadu </a> and presents itself as
+the <strong>connecting puzzle piece between powerful established python libraries for machine learning, and quantum computing platforms</strong>. It provides readily implemented quantum algorithms for quantum machine
+learning, quantum chemistry and optimization. A particular algorithm
+provided in PennyLane is automatic differentiation of quantum circuits
+which allows to perform shot-efficient application of classical-quantum
+algorithms such as the <em>Variational Quantum Eigensolver</em> (VQE).   </p>
+<p>Existing popular quantum computing platforms such as
+<a href="https://qiskit.org/" target="_blank" rel="noopener">Qiskit</a> for qubits and <a href="https://strawberryfields.readthedocs.io/en/stable/#" target="_blank" rel="noopener">Strawberry
+Fields</a> (also
+created by <em>Xanadu</em>) for photons have written plugins for PennyLane
+which make their <strong>quantum simulators or quantum hardware accessible
+through it</strong> and with that PennyLane&rsquo;s quantum algorithms and automatic
+differentiation feature. </p>
+<p>In fact, <strong>any quantum lab can adapt the</strong> <a href="https://github.com/XanaduAI/pennylane-plugin-template" target="_blank" rel="noopener">plugin
+template</a> <strong>for
+their own experiment and simulators</strong> to assimilate their own specific
+workflow with PennyLane where users are generally able to use the same
+workflow accross platforms and know what to expect.
+Fig. 3 below shows a
+typical way of using PennyLane in a classical-quantum hybrid algorithm.
+Here, the default qubit simulator by PennyLane is used. After writing
+our own plugin, we can call that device, change the quantum circuit to
+contain the supported operations and the workflow is otherwise the same.
+All-in-all, <strong>the interface is very robust towards changing up the
+quantum backend</strong> (especially when they support the same operations).</p>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-typical-simple-way-of-using-pennylane-by-instantiating-the-device-defining-the-parametrized-quantum-circuit-and-the-cost-and-calculating-the-gradient-for-the-classical-parameters">
+
+
+  <a data-fancybox="" href="/post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_2000x2000_fit_lanczos_2.png" data-caption="Typical simple way of using PennyLane by instantiating the device, defining the parametrized quantum circuit and the cost, and calculating the gradient for the classical parameters.">
+
+
+  <img data-src="/post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="710" height="755">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    Typical simple way of using PennyLane by instantiating the device, defining the parametrized quantum circuit and the cost, and calculating the gradient for the classical parameters.
+  </figcaption>
+
+
+</figure>
+
+<h1 id="our-workflow-and-connecting-pennylane-to-our-hardware">Our workflow and connecting PennyLane to our hardware</h1>
+<p>The current state of our <em><strong>pennylane_ls</strong></em> <strong>plugin for ultra-cold
+atom experiments</strong> can be viewed in <a href="https://github.com/synqs/pennylane-ls" target="_blank" rel="noopener"><strong>this public github
+repository</strong></a>. It provides
+examples from our labs and can guide you to adapting it to your own
+experiment and needs.</p>
+<p>Our group uses the <a href="http://labscriptsuite.org/" target="_blank" rel="noopener"><strong>Labscript suite</strong></a>
+<strong>to coordinate and execute experimental sequences</strong> with cold atoms.  </p>
+<blockquote>
+<p> <em>The labscript suite is a collection of programs, which work together
+to form a control system for autonomous, hardware timed experiments</em>.
+ </p>
+</blockquote>
+<p>On the deepest level it is very nuts and bolts with plenty of commands
+in the style of Fig. 4 below.</p>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-the-experimentpy-left-defines-the-experimental-sequence-of-a-labscript-controlled-lab-experiment-here-by-calling-functions-from-nalifunctionspy-at-given-times-the-function-umpump-right-shows-the-exact-low-level-hardware-instructions-that-are-to-be-executed">
+
+
+  <a data-fancybox="" href="/post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_2000x2000_fit_lanczos_2.png" data-caption="The Experiment.py (left) defines the experimental sequence of a Labscript-controlled lab experiment, here by calling functions from NaLiFunctions.py at given times. The function UMPUMP (right) shows the exact low level hardware instructions that are to be executed.">
+
+
+  <img data-src="/post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="1366" height="338">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    The Experiment.py (left) defines the experimental sequence of a Labscript-controlled lab experiment, here by calling functions from NaLiFunctions.py at given times. The function UMPUMP (right) shows the exact low level hardware instructions that are to be executed.
+  </figcaption>
+
+
+</figure>
+
+<p>The <em>Experiment.py</em>  <strong>file determines the exact sequence of hardware controls</strong> that is executed during the measurement. It contains Labscript syntax and is fed into the Labscript Python
+compiler <strong>Runmanager</strong>. </p>
+<p>Our approach for <strong>combining Labscript with PennyLane</strong> is sumarized in
+Fig. 5.</p>
+<p>With the help of the plugin functions <em>pre_apply()</em>,
+<em>apply()</em> and <em>post_apply()</em>, we generate a
+new <em>Experiment.py</em> on the fly depending on the quantum
+circuit programmed through the PennyLane interface.</p>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-the-functionspre_apply-applyandpost_apply-are-used-to-generate-a--newexperimentpy-on-the-fly-for-each-quantum-circuit-in-pennylaneapply-loops-through-the-operations-in-the-circuit-while--the-other-functions-always-write-the-same-necessary-code-for-the-compilation">
+
+
+  <a data-fancybox="" href="/post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_2000x2000_fit_lanczos_2.png" data-caption="The functions pre_apply(), apply() and post_apply() are used to generate a  new Experiment.py on the fly for each quantum circuit in PennyLane. apply() loops through the operations in the circuit while  the other functions always write the same necessary code for the compilation.">
+
+
+  <img data-src="/post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="654" height="518">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    The functions pre_apply(), apply() and post_apply() are used to generate a  new Experiment.py on the fly for each quantum circuit in PennyLane. apply() loops through the operations in the circuit while  the other functions always write the same necessary code for the compilation.
+  </figcaption>
+
+
+</figure>
+
+<p>In other words, <strong>our PennyLane plugin translates a quantum circuit to
+an</strong> <em>Experiment.py</em> which our control system can interpret.</p>
+<p>The <em>expval()</em> method from the plugin is then used to send the
+newly generated file to the <strong>Runmanager</strong> and engage the sequence.
+The output shots are then evaluated and the method returns an
+expectation.</p>
+<p>A detailled discussion of the technical details can be found in the
+README.md of the <a href="https://github.com/synqs/pennylane_ls" target="_blank" rel="noopener">public
+repository</a>.  The <strong>features of
+our plugin</strong> currently include:</p>
+<ul>
+<li>
+<p><strong>Proposing a higher-level control of experiments</strong> that are run
+controlled by the Labscript Suite through PennyLane.</p>
+</li>
+<li>
+<p>A <strong>framework device that provides a template for labs with
+Labscript</strong> to quickly adapt code for their own setup.</p>
+</li>
+<li>
+<p>Including <strong>two devices of the SynQS group at the
+Kirchhoff-Institute</strong> <strong>for Physics</strong> of Prof. Fred Jendrzejewski.</p>
+</li>
+</ul>
+<p>The framework device in <em>SynQSDevice.py</em> is written such that <strong>a group
+which uses the Labscript Suite</strong> to run their experiment <strong>can</strong> <strong>adapt
+the module easily to their own setup</strong>.</p>
+<p>Finishing up this project, we have <strong>succeed in providing first circuit control to our experiments</strong> through PennyLane and extract the results.
+However, much <strong>further automation will be needed</strong> to fully leverage
+the possibilities of the quantum circuits that we can run on our
+ultra-cold atom devices.</p>
+<h1 id="future-steps">Future steps</h1>
+<p>To get the project <strong>towards</strong> <strong>a full Pennylane plugin</strong>, we have to:</p>
+<ol>
+<li>
+<p>Give <em><strong>wires</strong></em> a meaning.</p>
+</li>
+<li>
+<p><strong>Operations need to be restricted to certain wires</strong>, especially
+when different atomic species are involved.</p>
+</li>
+<li>
+<p>Implement <strong>true remote control</strong> of the lab through the
+<em>pennylane_ls</em> module.</p>
+</li>
+<li>
+<p>Implement <strong>full result post-processing</strong> that is currently used in
+the lab.</p>
+</li>
+<li>
+<p>Implement some kind of <strong>user management</strong>.</p>
+</li>
+</ol>
+<p>While it seems quite clear how we can implement points 1 - 4, it seems
+to be a whole new problem to implement some kind of user management for
+our systems. </p>
+<p>In any case the <strong>first steps are remarkably promising</strong> and we will see
+how the quantum circuits can be efficiently employed in ultra-cold atom
+experiments.</p>
+
+    </div>
+
+    
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/quantum-information/">quantum information</a>
+  
+  <a class="badge badge-light" href="/tag/quantum-computing/">quantum computing</a>
+  
+  <a class="badge badge-light" href="/tag/ultracold-atoms/">ultracold atoms</a>
+  
+  <a class="badge badge-light" href="/tag/pennylane/">pennylane</a>
+  
+  <a class="badge badge-light" href="/tag/quantum-simulation/">quantum simulation</a>
+  
+  <a class="badge badge-light" href="/tag/machine-learning/">machine learning</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/&amp;text=Can%20we%20run%20quantum%20circuits%20on%20ultra-cold%20atom%20devices?" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/&amp;t=Can%20we%20run%20quantum%20circuits%20on%20ultra-cold%20atom%20devices?" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Can%20we%20run%20quantum%20circuits%20on%20ultra-cold%20atom%20devices?&amp;body=https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/&amp;title=Can%20we%20run%20quantum%20circuits%20on%20ultra-cold%20atom%20devices?" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Can%20we%20run%20quantum%20circuits%20on%20ultra-cold%20atom%20devices?%20https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/&amp;title=Can%20we%20run%20quantum%20circuits%20on%20ultra-cold%20atom%20devices?" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="/author/fred-jendrzejewski/"><img class="avatar mr-3 avatar-circle" src="/author/fred-jendrzejewski/avatar_hu8a4ca81b43cdb712256470b33f5a3081_9951_270x270_fill_q75_lanczos_center.jpg" alt="Fred Jendrzejewski"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/author/fred-jendrzejewski/">Fred Jendrzejewski</a></h5>
+      <h6 class="card-subtitle">Professor</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:fnj@kip.uni-heidelberg.de" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="tel:%28&#43;49%296221/545182" >
+        <i class="fas fa-phone"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0003-1488-7901" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/fretchen86" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=-22MXD8AAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="/author/manuel-rudolph/"><img class="avatar mr-3 avatar-circle" src="/author/manuel-rudolph/avatar_hu4264184413f98b78ecc29853ac0138fa_81261_270x270_fill_q75_lanczos_center.jpg" alt="Manuel Rudolph"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/author/manuel-rudolph/">Manuel Rudolph</a></h5>
+      <h6 class="card-subtitle">Master Student</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/manuel-rudolph/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/project/pennylane-ls/">Pennylane-ls</a></li>
+      
+      <li><a href="/publication/thesis/rudolph-2020/">Exploring and Benchmarking Quantum-assisted Neural Networks with Qubit Layers</a></li>
+      
+      <li><a href="/publication/2021-bhatt/">Stochastic dynamics of a few sodium atoms in a cold potassium cloud</a></li>
+      
+      <li><a href="/publication/2020-ott-scalable/">Scalable cold-atom quantum simulator for two-dimensional QED</a></li>
+      
+      <li><a href="/publication/2020-kasper-decoupling/">Non-Abelian gauge invariance from dynamical decoupling</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © SynQS
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'event' : "Events",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/js/wowchemy.min.572b7caf7fe601716a0f74d67d754c21.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

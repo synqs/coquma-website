@@ -1,0 +1,2011 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Fred Jendrzejewski">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="In this blog-post, we give a short introduction into feedback control for examples that are of interest to AMO experimentalists.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.570c0666a24511c27bb6001877169437.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2845W2HYQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-N2845W2HYQ', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@synqs">
+  <meta property="twitter:creator" content="@synqs">
+  
+  <meta property="og:site_name" content="Jendrzejewski Group">
+  <meta property="og:url" content="https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/">
+  <meta property="og:title" content="Feedback for AMO experimentalists | Jendrzejewski Group">
+  <meta property="og:description" content="In this blog-post, we give a short introduction into feedback control for examples that are of interest to AMO experimentalists."><meta property="og:image" content="https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2018-04-28T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-01-05T11:49:57&#43;01:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/"
+  },
+  "headline": "Feedback for AMO experimentalists",
+  
+  "datePublished": "2018-04-28T00:00:00Z",
+  "dateModified": "2021-01-05T11:49:57+01:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Kai-Niklas Schymik"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jendrzejewski Group",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "In this blog-post, we give a short introduction into feedback control for examples that are of interest to AMO experimentalists."
+}
+</script>
+
+  
+
+  
+
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#2962ff",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#2962ff"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "https://www.cookiesandyou.com"
+      }
+    })});
+  </script>
+
+
+
+  <link rel="stylesheet" type="text/css" href="/hugo-cite.css" />
+
+
+  <title>Feedback for AMO experimentalists | Jendrzejewski Group</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.25bb65fc185bceea61395d5b0560127a.js"></script>
+
+  
+
+<aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Jendrzejewski Group</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Jendrzejewski Group</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Research</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/research"><span>Overview</span></a>
+            
+              <a class="dropdown-item" href="/publication"><span>Publications</span></a>
+            
+              <a class="dropdown-item" href="/talk"><span>Talks & Posters</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/teaching"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/technologies"><span>Technology</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/people"><span>People</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Feedback for AMO experimentalists</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/kai-niklas-schymik/">Kai-Niklas Schymik</a></span>, <span >
+      <a href="/author/apoorva-hegde/">Apoorva Hegde</a></span>, <span >
+      <a href="/author/andy-xia/">Andy Xia</a></span>, <span >
+      <a href="/author/fred-jendrzejewski/">Fred Jendrzejewski</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    2021-01-05
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    11 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h1 id="introduction">Introduction</h1>
+<p>We would like to control our system. And we will walk through this
+control in the simple case of intensity control, which is a very straight-forward example, which allows us to understand the basics.</p>
+<h2 id="terminology-and-basics">Terminology and Basics</h2>
+<p>This section closely follow ideas from 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#bechhoefer_2005"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="John"><span itemprop="familyName">Bechhoefer</span></span>,&#32;
+      <span itemprop="datePublished">2005</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Bechhoefer</span>,&#32;
+    <meta itemprop="givenName" content="John" />
+    J.</span>
+  &#32;
+    (<span itemprop="datePublished">2005</span>).
+  &#32;<span itemprop="name">Feedback for physicists: A tutorial essay on control</span>.<i>
+    <span itemprop="about">Reviews of Modern Physics</span>,&#32;77(3)</i>.&#32;<span itemprop="pagination">783–836</span>.
+  <a href="https://doi.org/10.1103/revmodphys.77.783"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1103/revmodphys.77.783</a></span>
+
+
+
+</span></span> . A generic
+feedback control is seen in Fig. 1. A system $G(s)$ is being controlled with a control
+signal $r(s)$. The goal of the feedback is for the output of the system
+$y(s)$ to follow the control signal $r(s)$. The general idea is the
+following: measure the output of the system, determine its difference to
+the control voltage to get error $\epsilon$ and use this error signal as
+input for some control law $K(s)$ that tries to minimize the error signal.</p>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-block-diagram-showing-a-generic-feedback-control-the-system-gs-is-controlled-by-the-control-law-ks">
+
+
+  <a data-fancybox="" href="/post/2018-feedback-for-amo-experimentalists/text10419-5_huc335cff274b836978f0b8b676a7977d0_19219_2000x2000_fit_lanczos_2.png" data-caption="Block diagram showing a generic feedback control. The system G(s) is controlled by the control law K(s).">
+
+
+  <img data-src="/post/2018-feedback-for-amo-experimentalists/text10419-5_huc335cff274b836978f0b8b676a7977d0_19219_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="1089" height="211">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    Block diagram showing a generic feedback control. The system G(s) is controlled by the control law K(s).
+  </figcaption>
+
+
+</figure>
+
+<p>Here we analyze the system in frequency space, where $s=i\omega$. This
+is a convenient way to analyze control systems. An easy way to measure
+quantity of such a system is the closed-loop transfer function $T$:</p>
+<p>$$T= \frac{y(s)}{r(s)} = \frac{K(s)G(s)}{1+K(s)G(s)}$$</p>
+<p>For system stability the loop-shape $H$ is important and can be determined from
+$T$:
+$$
+H = K(s)G(s) = \frac{T}{1-T}
+\tag{1}
+\label{1}
+$$ Why is it important ? As we see from (\ref{1}), the
+system gets unstable if $KG= -1$. This means that a feedback system will
+get unstable if $|KG|=1$ with a simultaneous phase lag of 180°.</p>
+<p>Whereas it is good to have control over an output variable up to a
+certain frequency, we are in many cases also interested in noise
+suppression. For example, atoms in a dipole trap experience a heating
+rate proportional to intensity fluctuations at twice the trap frequency.
+Only by suppressing the laser intensity noise, you can assure long trap
+lifetimes and/or ground state atoms. For this reason we consider output
+disturbances $d(s)$ and sensor noise $\xi (s)$ (see Fig. 2):</p>
+<p>$$
+y(s) = \frac{KG}{1+KG}[ r(s)-\xi(s)] + \frac{1}{1+KG}d(s)
+$$</p>
+<p>What does this mean? There are two things to learn from that. Let&rsquo;s start with the
+disturbances, and introduce the sensitivity, sometimes also called noise
+suppression: $$S = \frac{1}{1+KG} = 1-T$$ We see that a servo with a
+high gain leads to a low sensitivity to outside disturbances. The
+trade-off is that the higher the gain, the noisier the output signal.
+The reason is that with detector noise the control signal effectively
+becomes $r(s)-\xi(s)$, meaning that we cannot distinguish the control
+signal from measurement noise. Thus the higher the gain, the noisier the
+output.</p>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-same-system-as-fig-1-but-added-disturbances-ds-and-detector-noise">
+
+
+  <a data-fancybox="" href="/post/2018-feedback-for-amo-experimentalists/path3909_hu612e52a87ca1e50fe35ee180e794dd16_25851_2000x2000_fit_lanczos_2.png" data-caption="Same system as Fig. 1, but added disturbances d(s) and detector noise.">
+
+
+  <img data-src="/post/2018-feedback-for-amo-experimentalists/path3909_hu612e52a87ca1e50fe35ee180e794dd16_25851_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="1089" height="439">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    Same system as Fig. 1, but added disturbances d(s) and detector noise.
+  </figcaption>
+
+
+</figure>
+
+<p>Another trade-off - which holds for almost all systems (to be exact: if
+KG has at least two more poles than zeros, and has no poles in the right
+half plane (is stable)) - is the following:
+$$\int_0^\infty ln|S(s)|ds =0$$ This is known as Bode&rsquo;s sensitivity
+integral. It means that if you suppress the Sensitivity to disturbances
+in some frequency regime, you necessarily increase it in some other
+frequency regime (see Fig. 3 taken from 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#stein_2003"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="G."><span itemprop="familyName">Stein</span></span>,&#32;
+      <span itemprop="datePublished">2003</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Stein</span>,&#32;
+    <meta itemprop="givenName" content="G." />
+    G.</span>
+  &#32;
+    (<span itemprop="datePublished">2003</span>).
+  &#32;<span itemprop="name">Respect the unstable</span>.<i>
+    <span itemprop="about">IEEE Control Systems Magazine</span>,&#32;23(4)</i>.&#32;<span itemprop="pagination">12–25</span>.
+  <a href="https://doi.org/10.1109/mcs.2003.1213600"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1109/mcs.2003.1213600</a></span>
+
+
+
+</span></span>).</p>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-if-the-sensitivity-to-disturbances-is-suppressed-in-the-low-frequency-regime-it-is-necessarily-increased-in-some-higher-frequency-regime">
+
+
+  <a data-fancybox="" href="/post/2018-feedback-for-amo-experimentalists/slide_51_hu6816623d607af0873b9af7de55be3880_64067_2000x2000_fit_lanczos_2.png" data-caption="If the Sensitivity to disturbances is suppressed in the low frequency regime, it is necessarily increased in some higher frequency regime.">
+
+
+  <img data-src="/post/2018-feedback-for-amo-experimentalists/slide_51_hu6816623d607af0873b9af7de55be3880_64067_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="374" height="279">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    If the Sensitivity to disturbances is suppressed in the low frequency regime, it is necessarily increased in some higher frequency regime.
+  </figcaption>
+
+
+</figure>
+
+<p>Now before looking at the different systems $G(s)$, we have a look at the
+control law $K(s)$. The most-used controller is the PID-controller, or
+very often experimentally only a PI-controller. The P stands for
+proportional gain, the I for integral gain and the D for derivative
+gain. Which makes sense if we look at the response in time domain:</p>
+<p>$$u(t) = K_p\epsilon(t) + K_i\int \epsilon(t) dt + K_D \frac{d\epsilon}{dt}$$</p>
+<p>In frequency domain the same thing has the following form:</p>
+<p>$$K(s) = \frac{u(s)}{\epsilon(s)} = K_p + \frac{K_i}{s} + K_Ds$$</p>
+<h1 id="intensity-stabilization">Intensity stabilization</h1>
+<h2 id="overview">Overview</h2>
+<p>For the control of the intensity, we typically have the set-up that is
+sketched in Fig. 4. The power of the AOM&rsquo;s first order beam is dependent on the RF power:
+$\epsilon_{1st order}\approx\sin^2(P_{RF}/P_{RF_{sat}})$. Therefore the
+power of the laser beam that leads to the experiment can be controlled
+by modulating the RF power.</p>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-a-photodiode-gets-a-fraction-of-the-first-order-aom-beam-the-power-of-this-beam-can-be-modulated-via-rf-amplitude-modulation">
+
+
+  <a data-fancybox="" href="/post/2018-feedback-for-amo-experimentalists/rect14858_hu24682bd63c5f5e4ddde27c5da8ea2c1a_124510_2000x2000_fit_lanczos_2.png" data-caption="A photodiode gets a fraction of the first order AOM beam. The power of this beam can be modulated via RF amplitude modulation.">
+
+
+  <img data-src="/post/2018-feedback-for-amo-experimentalists/rect14858_hu24682bd63c5f5e4ddde27c5da8ea2c1a_124510_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="1198" height="702">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    A photodiode gets a fraction of the first order AOM beam. The power of this beam can be modulated via RF amplitude modulation.
+  </figcaption>
+
+
+</figure>
+
+<h2 id="the-system">The System</h2>
+<p>How to characterize the system without PI contol? (&ldquo;system&rdquo; refers to
+AOM+Driver+AOM+Photodiode) The tools needed for that are a function
+generator, oscilloscope and a network analyzer. All of that can be found
+in the <a href="https://www.redpitaya.com/" target="_blank" rel="noopener">RedPitaya</a> controlled by <a href="https://github.com/lneuhaus/pyrpl" target="_blank" rel="noopener">PyRPL</a> we use (see Fig. 5).</p>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-this-shows-how-to-characetrize-the-system-without-pi-controller-the-aom-driver-expects-a-signal-from-0-to-1v-to-attenuate-the-rf-signal-accordingly-this-again-changes-the-1st-order-beam-power-and-therefore-the-voltage-on-the-photodiode-the-redpitaya-can-supply-the-control-voltage-for-the-driver-as-well-as-measure-the-signal-on-the-photodiode">
+
+
+  <a data-fancybox="" href="/post/2018-feedback-for-amo-experimentalists/text9831_huf6e232415135fb2a73a5885a58f3d88f_151335_2000x2000_fit_lanczos_2.png" data-caption="This shows how to characetrize the system without PI-controller. The AOM Driver expects a signal from 0 to 1V to attenuate the RF signal accordingly. This again changes the 1st order beam power and therefore the voltage on the photodiode. The RedPitaya can supply the control voltage for the driver as well as measure the signal on the photodiode.">
+
+
+  <img data-src="/post/2018-feedback-for-amo-experimentalists/text9831_huf6e232415135fb2a73a5885a58f3d88f_151335_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="1204" height="736">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    This shows how to characetrize the system without PI-controller. The AOM Driver expects a signal from 0 to 1V to attenuate the RF signal accordingly. This again changes the 1st order beam power and therefore the voltage on the photodiode. The RedPitaya can supply the control voltage for the driver as well as measure the signal on the photodiode.
+  </figcaption>
+
+
+</figure>
+
+<p>So what do we measure? As mentioned in the Introduction, we can measure
+the closed-loop transfer function $T$ and then calculate the open-loop transfer function $H$ to look for a desired loopshape.</p>
+<h2 id="how-to-change-laser-power-by-modulating-rf-power">How to change laser power by modulating RF power</h2>
+<p>The whole intensity stabilization is based on being able to modulate the
+RF power that goes to the AOM. In our case, we have a home-build AOM
+driver that allows for this modulation with a control voltage ranging
+from 0 to 1V. Most drivers work with a Voltage Controlled Oscillator, a
+Mixer or Variable Voltage Attenuator to attenuate the RF power, and and
+an amplifier end-stage, because the AOM usually requires 30dBm, while
+the VCO outputs something much lower.</p>
+<p>Therefore the voltage on the photodiode depends on the control voltage
+at the AOM driver and the dependency is nonlinear (see figure 6).</p>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-relationship-between-control-voltage-and-photodiode-voltage-not-that-the-y-axis-is-basically-arbitrary-as-this-depends-on-pick-off-ratio-and-initial-laser-power">
+
+
+  <a data-fancybox="" href="/post/2018-feedback-for-amo-experimentalists/nonlinearity_hu134c9bc7b615b84c354e5490970f8198_28067_2000x2000_fit_lanczos_2.png" data-caption="Relationship between control voltage and photodiode voltage. Not that the y-axis is basically arbitrary, as this depends on pick-off ratio and initial laser power.">
+
+
+  <img data-src="/post/2018-feedback-for-amo-experimentalists/nonlinearity_hu134c9bc7b615b84c354e5490970f8198_28067_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="1080" height="720">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    Relationship between control voltage and photodiode voltage. Not that the y-axis is basically arbitrary, as this depends on pick-off ratio and initial laser power.
+  </figcaption>
+
+
+</figure>
+
+<h2 id="analysis-in-frequency-space-with-bode-plots">Analysis in Frequency space with Bode plots</h2>
+<p>The RedPitaya with its network analyzer module, allows us to
+characterize the setup in frequency space. In the figure above we saw how the
+Photodiode voltage (laser power) depends on the control voltage on the
+AOM driver when applying a DC or very low frequency signal. Now we
+modulate the VCO control voltage with the following:
+$U_{control}=0.6V+0.01V\cdot\sin\left(2\cdot\pi\cdot f\cdot t\right)$
+Can the Photodiode follow this modulation up to arbitrary frequency?
+Probably not, but how can we measure this? The network analyzer can
+excite the system with above voltage $U_{control}$ and compare the
+amplitude of oscillation in the and $U_{Photodiode}$ to measure
+magnitude and phase. It does so by demodulating the photodiode signal
+with the same sine that was used for excitation and a corresponding
+cosine, then lowpass-filtering and averaging the two quadratures for a
+well-defined number of cycles (see Pyrpl API). From the two quadratures
+it is now possible to extract the magnitude and phase shift of our
+system in the probed frequency regime. In the figure below we see that for
+low frequencies the system follows without phase lag and for higher
+frequencies the phase increasingly lags as the signal magnitude
+decreases.</p>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-system-transfer-function-obtained-by-modulating-the-rf-attenuation-of-the-aom-driver-with-different-frequencies-and-measuring-the-corresponding-signal-on-the-photodiodedo-not-get-confused-by-theabsolute-magnitude-of-the-gain-values-a-sinusoidal-signal-with-1mv-amplitude-going-into-the-aom-driver-doesnot-correspond-to-a-signal-with-1mv-on-the-photodiode-this-is-for-example-dependent-on-the-offset-because-of-the-slope-or-the-photodiode-amplification-therelativenumbers-however-give-you-insight-in-attenuation-at-higher-frequencies-and-therefore-system-bandwidth">
+
+
+  <a data-fancybox="" href="/post/2018-feedback-for-amo-experimentalists/System-RF-Source&#43;AOM&#43;Photodiode_huab12a83c8241a24735c7173068226d83_28288_2000x2000_fit_lanczos_2.png" data-caption="System Transfer Function: Obtained by modulating the RF attenuation of the AOM driver with different frequencies and measuring the corresponding signal on the Photodiode. Do not get confused by the absolute Magnitude of the Gain values: A sinusoidal signal with 1mV amplitude going into the AOM driver does not correspond to a signal with 1mV on the photodiode. This is for example dependent on the offset (because of the slope) or the photodiode amplification. The relative numbers however give you insight in attenuation at higher frequencies and therefore System bandwidth.">
+
+
+  <img data-src="/post/2018-feedback-for-amo-experimentalists/System-RF-Source&#43;AOM&#43;Photodiode_huab12a83c8241a24735c7173068226d83_28288_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="720" height="540">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    System Transfer Function: Obtained by modulating the RF attenuation of the AOM driver with different frequencies and measuring the corresponding signal on the Photodiode. Do not get confused by the absolute Magnitude of the Gain values: A sinusoidal signal with 1mV amplitude going into the AOM driver does not correspond to a signal with 1mV on the photodiode. This is for example dependent on the offset (because of the slope) or the photodiode amplification. The relative numbers however give you insight in attenuation at higher frequencies and therefore System bandwidth.
+  </figcaption>
+
+
+</figure>
+
+<p>It&rsquo;s clear that this system doesn&rsquo;t have any resonances and behaves
+quiet nicely in the displayed frequency regime. Therefore time-domain
+tuning methods for a servo like Ziegler-Nichols tuning can be effective
+and quick. But not every system behaves as nicely as this, so looking at
+the frequency-regime can be interesting and a way to improve your
+control, e.g. finding and filtering resonances makes it possible to
+increase overall gain without sacrificing stability.</p>
+<h2 id="a-closed-loop">A closed loop</h2>
+<p>After connecting the PI-controller which in our case is also done by the
+RedPitaya, we close the feedback loop. Now we select
+some proportional and integral constants such that the intensity is
+locked to a setpoint we choose. That means that the voltage on the photodetector will be the same as the
+chosen setpoint. How do we characterize the lock now? How do we know how stable the lock
+is? How do we know until which frequency noise is surpressed? We take
+the closed-loop transfer function <em>T</em> using the RedPitaya. With that we
+can calculate the open-loop transfer function <em>H</em> and look at the
+sensitivity <em>S</em>.</p>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-closed-loop-transfer-function-t-measured-by-the-redpitaya-for-low-frequencies-the-photodiode-voltage-follows-the-modulation-well-for-higher-frequencies-the-gain-of-the-system-decreases-for-higher-proportional-constant-the-transfer-function-does-not-decrease-as-much-at-higher-frequencies">
+
+
+  <a data-fancybox="" href="/post/2018-feedback-for-amo-experimentalists/Closed-loop%20Transfer%20function_hudc202502fc277538f2bea1056f0e1ecb_39752_2000x2000_fit_lanczos_2.png" data-caption="Closed-loop transfer function T measured by the RedPitaya. For low frequencies the photodiode voltage follows the modulation well. For higher frequencies the gain of the system decreases. For higher proportional constant the transfer function does not decrease as much at higher frequencies.">
+
+
+  <img data-src="/post/2018-feedback-for-amo-experimentalists/Closed-loop%20Transfer%20function_hudc202502fc277538f2bea1056f0e1ecb_39752_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="720" height="540">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    Closed-loop transfer function T measured by the RedPitaya. For low frequencies the photodiode voltage follows the modulation well. For higher frequencies the gain of the system decreases. For higher proportional constant the transfer function does not decrease as much at higher frequencies.
+  </figcaption>
+
+
+</figure>
+
+<p>After measuring <em>T</em> we can can calculate <em>H</em>. As mentioned in the introduction the criterion for instability is
+$\left|H\right|&gt;1$ for a simultaneously phase lag close to 180°. Be
+careful that the unit in the figure is dB, which means that
+$\left|H\right|= 1 = 0 dB$. For low frequencies the transfer functino is
+ruled by the integrator&rsquo;s characteristics. Which means high gain, but
+only a phase lag of 90°.</p>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-open-loop-transfer-function-h">
+
+
+  <a data-fancybox="" href="/post/2018-feedback-for-amo-experimentalists/Loop-Gain_huf54deb1d176909a8dc8f4405de5b3033_42472_2000x2000_fit_lanczos_2.png" data-caption="Open-loop transfer function H.">
+
+
+  <img data-src="/post/2018-feedback-for-amo-experimentalists/Loop-Gain_huf54deb1d176909a8dc8f4405de5b3033_42472_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="720" height="540">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    Open-loop transfer function H.
+  </figcaption>
+
+
+</figure>
+
+<p>The interesting regime is where the phase lag hits -180° which happens
+for ~40kHz for the orange curve and ~90kHz for the blue curve. But
+both sets of P&amp;I-constants lead to stable behaviour, because the
+magnitude at that point is below 0dB.<br>
+The conclusion of this analysis shows that we could have gotten away
+with a higher proportional or integral constant and still have a stable
+system.</p>
+<h2 id="sensitivity-and-noise-surpression">Sensitivity and noise surpression</h2>
+<p>At this stage, we can finally analyse the level of noise suppression in the system.</p>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-noise-spectra-locked-and-unlocked">
+
+
+  <a data-fancybox="" href="/post/2018-feedback-for-amo-experimentalists/Noiseplot_hu91374a7a28ff1655f633b48b7e6f813c_32444_2000x2000_fit_lanczos_2.png" data-caption="Noise spectra locked and unlocked.">
+
+
+  <img data-src="/post/2018-feedback-for-amo-experimentalists/Noiseplot_hu91374a7a28ff1655f633b48b7e6f813c_32444_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="720" height="540">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    Noise spectra locked and unlocked.
+  </figcaption>
+
+
+</figure>
+
+<p>We observe noise suppression for frequencies up to point where the system can react actively, which is about 30kHz.</p>
+<h2 id="further-reading-problems-of-intensity-stabilization">Further Reading: Problems of Intensity stabilization</h2>
+<p>Here we can already identify the first pitfall of intensity
+stabilization. The system, mainly the attenuator inside of the AOM
+driver, has a proportional gain that depends on the control voltage and
+is proportional to the slope . The highest gain (slope) is around a control
+voltage of 0.6V, and the proportional gain for values at 0.4V and 0.9V
+is very low. On the contrary, the PI-controller has <em>fixed</em> proportional
+and integral constants.<br>
+If you only want one specific laser power in your experiment, this does
+not bother you. You are using more or less one control voltage that
+gives you the desired laser power and then you tune the proportional
+constant of your PI-controller such that the system has the biggest
+bandwidth.<br>
+But imagine you would want to change this laser power now. By choosing a
+different setpoint/control voltage you would increase/decrease your
+proportional gain drastically end end up with an oscillating system or a
+system with very low bandwidth. If you would want your system to be
+stable for all control voltages, you would have to make sure that for
+the highest system proportional gain for a control voltage of 0.6V, you
+choose your PI-controller proportional gain such that your system is
+stable. Then you have the biggest bandwidth around a control voltage of
+0.6V, but for all other control voltages you would have a smaller
+bandwidth. Imagine the worst case: You want high laser power for loading
+your laser dipole trap, and then reduce the trap depth for evaporative
+cooling by decreasing the laser power by a factor of 100. In the Figure
+this could for example mean, that you have a photodiode voltage of 9V for loading your
+trap and 90mV for evaporative cooling. In both cases the slope
+(proportional gain) is very small. If you want your laser power to be
+stable and not oscillating during the ramp-down (decrease of factor
+100), you would have to accept a low bandwidth in both cases, for the
+loading and the evaporative cooling. One work-around could be that you sacrifice system-stability during the
+ramp-down for higher proportional gains in the loading and cooling
+stage. This however could lead to atom-loss due to parametric heating.</p>
+<p>Another thing to keep in mind: usually your experimental approach is the
+following: I want 100mW during the first stage of the experiment and
+10mW during the second stage of the experiment. For you to be able to
+choose a good regime of control voltage values, e.g. 0.5-0.7V, where the
+AOM Driver gain changes minimally, you have to be able to change either
+photodiode gain, pick-off ratio or initial laser power.</p>
+
+    </div>
+
+    
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/pid/">PID</a>
+  
+  <a class="badge badge-light" href="/tag/feedback/">feedback</a>
+  
+  <a class="badge badge-light" href="/tag/laser-control/">laser control</a>
+  
+  <a class="badge badge-light" href="/tag/intensity-stabilization/">intensity stabilization</a>
+  
+  <a class="badge badge-light" href="/tag/tutorial/">tutorial</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/&amp;text=Feedback%20for%20AMO%20experimentalists" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/&amp;t=Feedback%20for%20AMO%20experimentalists" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Feedback%20for%20AMO%20experimentalists&amp;body=https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/&amp;title=Feedback%20for%20AMO%20experimentalists" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Feedback%20for%20AMO%20experimentalists%20https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/&amp;title=Feedback%20for%20AMO%20experimentalists" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="/author/kai-niklas-schymik/"><img class="avatar mr-3 avatar-circle" src="/author/kai-niklas-schymik/avatar_hucd884b8bc17c2da0954d854d8c00d164_83160_270x270_fill_q75_lanczos_center.jpg" alt="Kai-Niklas Schymik"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/author/kai-niklas-schymik/">Kai-Niklas Schymik</a></h5>
+      <h6 class="card-subtitle">Master Student</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/kai-niklas-schymik-4991b2168/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="/author/apoorva-hegde/"><img class="avatar mr-3 avatar-circle" src="/author/apoorva-hegde/avatar_hu0c1031deb2f062e9fb2fceeef42aa9ae_7973_270x270_fill_q75_lanczos_center.jpg" alt="Apoorva Hegde"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/author/apoorva-hegde/">Apoorva Hegde</a></h5>
+      <h6 class="card-subtitle">PhD Student</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="/author/andy-xia/"><img class="avatar mr-3 avatar-circle" src="/author/andy-xia/avatar_hu1aacf081aa250477c737048dc942b483_557393_270x270_fill_q75_lanczos_center.jpg" alt="Andy Xia"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/author/andy-xia/">Andy Xia</a></h5>
+      <h6 class="card-subtitle">PhD Student</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="/author/fred-jendrzejewski/"><img class="avatar mr-3 avatar-circle" src="/author/fred-jendrzejewski/avatar_hu8a4ca81b43cdb712256470b33f5a3081_9951_270x270_fill_q75_lanczos_center.jpg" alt="Fred Jendrzejewski"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/author/fred-jendrzejewski/">Fred Jendrzejewski</a></h5>
+      <h6 class="card-subtitle">Professor</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:fnj@kip.uni-heidelberg.de" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="tel:%28&#43;49%296221/545182" >
+        <i class="fas fa-phone"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0003-1488-7901" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/fretchen86" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=-22MXD8AAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © SynQS
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'event' : "Events",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/js/wowchemy.min.572b7caf7fe601716a0f74d67d754c21.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

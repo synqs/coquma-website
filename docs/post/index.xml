@@ -1,37 +1,1818 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Latest News | Jendrzejewski Group</title>
+    <title>Posts | Jendrzejewski Group</title>
     <link>https://jendrzejewski.synqs.org/post/</link>
       <atom:link href="https://jendrzejewski.synqs.org/post/index.xml" rel="self" type="application/rss+xml" />
-    <description>Latest News</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright>
+    <description>Posts</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Mon, 25 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
-      <title>Latest News</title>
+      <title>Posts</title>
       <link>https://jendrzejewski.synqs.org/post/</link>
     </image>
     
     <item>
-      <title>Jian Yang and Monica Hall Win the Best Paper Award at Wowchemy 2020</title>
-      <link>https://jendrzejewski.synqs.org/post/20-12-02-icml-best-paper/</link>
-      <pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://jendrzejewski.synqs.org/post/20-12-02-icml-best-paper/</guid>
-      <description>&lt;p&gt;Congratulations to Jian Yang and Monica Hall for winning the Best Paper Award at the 2020 Conference on Wowchemy for their paper “Learning Wowchemy”.&lt;/p&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.&lt;/p&gt;
-&lt;p&gt;Sed eu dui nec ligula bibendum dapibus. Nullam imperdiet auctor tortor, vel cursus mauris malesuada non. Quisque ultrices euismod dapibus. Aenean sed gravida risus. Sed nisi tortor, vulputate nec quam non, placerat porta nisl. Nunc varius lobortis urna, condimentum facilisis ipsum molestie eu. Ut molestie eleifend ligula sed dignissim. Duis ut tellus turpis. Praesent tincidunt, nunc sed congue malesuada, mauris enim maximus massa, eget interdum turpis urna et ante. Morbi sem nisl, cursus quis mollis et, interdum luctus augue. Aliquam laoreet, leo et accumsan tincidunt, libero neque aliquet lectus, a ultricies lorem mi a orci.&lt;/p&gt;
-&lt;p&gt;Mauris dapibus sem vel magna convallis laoreet. Donec in venenatis urna, vitae sodales odio. Praesent tortor diam, varius non luctus nec, bibendum vel est. Quisque id sem enim. Maecenas at est leo. Vestibulum tristique pellentesque ex, blandit placerat nunc eleifend sit amet. Fusce eget lectus bibendum, accumsan mi quis, luctus sem. Etiam vitae nulla scelerisque, eleifend odio in, euismod quam. Etiam porta ullamcorper massa, vitae gravida turpis euismod quis. Mauris sodales sem ac ultrices viverra. In placerat ultrices sapien. Suspendisse eu arcu hendrerit, luctus tortor cursus, maximus dolor. Proin et velit et quam gravida dapibus. Donec blandit justo ut consequat tristique.&lt;/p&gt;</description>
+      <title>Can we run quantum circuits on ultra-cold atom devices?</title>
+      <link>https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/</guid>
+      <description>&lt;h1 id=&#34;motivation&#34;&gt;Motivation&lt;/h1&gt;
+&lt;p&gt;Over recent years, interest in quantum information processing has
+increased tremendously. This rise was fueled by activities of massive
+commercial players like &lt;a href=&#34;https://www.ibm.com/quantum-computing/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IBM&lt;/a&gt;,
+&lt;a href=&#34;https://research.google/teams/applied-science/quantum/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google&lt;/a&gt;,
+&lt;a href=&#34;https://www.microsoft.com/en-us/quantum&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Microsoft&lt;/a&gt; and large
+investments in startups like &lt;a href=&#34;https://www.dwavesys.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;D-Wave&lt;/a&gt;,
+&lt;a href=&#34;https://rigetti.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rigetti&lt;/a&gt;, &lt;a href=&#34;https://www.xanadu.ai/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Xanadu&lt;/a&gt;,
+&lt;a href=&#34;https://www.zapatacomputing.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Zapata&lt;/a&gt; and &lt;a href=&#34;https://cambridgequantum.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cambridge Quantum
+Computing&lt;/a&gt;. The work of these companies
+typically focuses on &lt;strong&gt;universal quantum computers&lt;/strong&gt;, which hold the
+premise of exponential speed-up for a variety of NP-hard problems.
+However, this &lt;strong&gt;universality usually comes at the price&lt;/strong&gt; of algorithmic
+overhead for a wide range of tasks which generally leads to worse
+overall fidelity. If we give up the constraint of a universal quantum
+computer, we can build &lt;strong&gt;specialized quantum hardware&lt;/strong&gt; for the problems
+of interest. Such systems are called &lt;strong&gt;quantum simulators&lt;/strong&gt;. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ultra-cold atoms have become&lt;/strong&gt; &lt;strong&gt;a leading platform of such quantum
+simulators at a large scale&lt;/strong&gt;. Most importantly for us, they are the
+experimental platform our research group is working on. Already
+demonstrated applications involve an enormous variety of
+condensed-matter problems like e.g. the Hubbard model 
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#bloch_2008&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;Immanuel&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Bloch&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;,&amp;#32;
+      &lt;span itemprop=&#34;datePublished&#34;&gt;2008&lt;/span&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Bloch&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Immanuel&#34; /&gt;
+    I.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Dalibard&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Jean&#34; /&gt;
+    J.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Zwerger&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Wilhelm&#34; /&gt;
+    W.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2008&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Many-body physics with ultracold gases&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;Reviews of Modern Physics&lt;/span&gt;,&amp;#32;80(3)&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;885–964&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1103/revmodphys.80.885&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1103/revmodphys.80.885&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt;,
+topological systems 
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#goldman_2014&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;N&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Goldman&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;,&amp;#32;
+      &lt;span itemprop=&#34;datePublished&#34;&gt;2014&lt;/span&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Goldman&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;N&#34; /&gt;
+    N.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Juzeliūnas&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;G&#34; /&gt;
+    G.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Öhberg&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;P&#34; /&gt;
+    P.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Spielman&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;I B&#34; /&gt;
+    I.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2014&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Light-induced gauge fields for ultracold atoms&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;Reports on Progress in Physics&lt;/span&gt;,&amp;#32;77(12)&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;126401&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1088/0034-4885/77/12/126401&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1088/0034-4885/77/12/126401&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt;, superfluidity 
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#regal_2007&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;C. A.&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Regal&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;,&amp;#32;
+      &lt;span itemprop=&#34;datePublished&#34;&gt;2007&lt;/span&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope 
+      itemtype=&#34;https://schema.org/Chapter&#34;
+      data-type=&#34;chapter&#34;&gt;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Regal&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;C. A.&#34; /&gt;
+    C.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Jin&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;D. S.&#34; /&gt;
+    D.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2007&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Experimental Realization of the BCS-BEC Crossover with a Fermi Gas of Atoms&lt;/span&gt;.&amp;#32;In&lt;span itemprop=&#34;about&#34;&gt;
+    &lt;i&gt;Advances In Atomic Molecular, and Optical Physics&lt;/i&gt;&lt;/span&gt;.&amp;#32;(&lt;span&gt;pp.&amp;#32;1–79&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;publisher&#34;
+               itemtype=&#34;http://schema.org/Organization&#34;
+               itemscope=&#34;&#34;&gt;
+      &lt;span itemprop=&#34;name&#34;&gt;Elsevier&lt;/span&gt;&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1016/s1049-250x%2806%2954001-7&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1016/s1049-250x(06)54001-7&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt; and
+disorder 
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#lagendijk_2009&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;Ad&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Lagendijk&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;,&amp;#32;
+      &lt;span itemprop=&#34;datePublished&#34;&gt;2009&lt;/span&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Lagendijk&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Ad&#34; /&gt;
+    A.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Tiggelen&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Bart&#34; /&gt;
+    B.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Wiersma&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Diederik S.&#34; /&gt;
+    D.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2009&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Fifty years of Anderson localization&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;Physics Today&lt;/span&gt;,&amp;#32;62(8)&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;24–29&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1063/1.3206091&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1063/1.3206091&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt;. More recently, cold atoms started to find
+applications to Ising models 
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#bernien2017&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;H&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Bernien&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Bernien&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;H&#34; /&gt;
+    H.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Schwartz&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;S&#34; /&gt;
+    S.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Keesling&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;A&#34; /&gt;
+    A.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Levine&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;H&#34; /&gt;
+    H.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Omran&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;A&#34; /&gt;
+    A.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Pichler&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;H&#34; /&gt;
+    H.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Choi&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;S&#34; /&gt;
+    S.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Zibrov&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;AS&#34; /&gt;
+    A.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Endres&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;M&#34; /&gt;
+    M.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Greiner&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;M&#34; /&gt;
+    M.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Vuletić&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;V&#34; /&gt;
+    V.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Lukin&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;MD&#34; /&gt;
+    M.&lt;/span&gt;
+  &amp;#32;
+  (n.d.).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Probing many-body dynamics on a 51-atom quantum simulator.&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;Nature&lt;/span&gt;,&amp;#32;551&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;579–584&lt;/span&gt;.&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt; and high-energy physics
+
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#zohar2016&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;E&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Zohar&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Zohar&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;E&#34; /&gt;
+    E.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Cirac&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;JI&#34; /&gt;
+    J.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Reznik&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;B&#34; /&gt;
+    B.&lt;/span&gt;
+  &amp;#32;
+  (n.d.).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Quantum simulations of lattice gauge theories using ultracold atoms in optical lattices.&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;Rep Prog Phys&lt;/span&gt;,&amp;#32;79&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;014401&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1088/0034-4885/79/1/014401&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1088/0034-4885/79/1/014401&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt;.  &lt;/p&gt;
+&lt;p&gt;However, &lt;strong&gt;quantum simulators are&lt;/strong&gt; &lt;strong&gt;currently&lt;/strong&gt; &lt;strong&gt;limited to an
+academic environment&lt;/strong&gt; because of &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;the &lt;strong&gt;complexity of constructing the experimental hardware&lt;/strong&gt;, which
+involves substantial technical know-how and funding.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;the &lt;strong&gt;specificity of knowledge and language required&lt;/strong&gt; to
+understand/communicate the experiment.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;the need to &lt;strong&gt;formulate the target problem as a Hamiltonian&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;the &lt;strong&gt;manual&lt;/strong&gt; &lt;strong&gt;compilation of programs&lt;/strong&gt; on this hardware class. &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A &lt;strong&gt;circuit-based approach to ultra-cold atom quantum simulators&lt;/strong&gt; would
+alleviate points 2) and 3) as we could agree on the quantum circuit,
+given the hardware-specific operations, and run it on the experiment.
+Integrating the system with a software stack
+like &lt;a href=&#34;https://pennylane.ai/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PennyLane &lt;/a&gt;would additionally allow to
+address and run the experiment on a higher level and &lt;strong&gt;substantially
+lower the barrier of entry for users outside of the cold-atom and
+quantum physics community&lt;/strong&gt;.  &lt;/p&gt;
+&lt;p&gt;These points motivated our research group to have a look how our
+experimental hardware, which is controlled by the &lt;a href=&#34;http://labscriptsuite.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Labscript
+Suite&lt;/a&gt;, can be integrated into PennyLane to
+run quantum circuits on ultra-cold atom devices.  Our group is part of
+&lt;a href=&#34;http://www.kip.uni-heidelberg.de/synqs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SynQS&lt;/a&gt;, working on two
+ultra-cold atom experiments, the NaLi and SoPa (named after the two
+atomic species used in the lab).&lt;/p&gt;
+&lt;h1 id=&#34;why-use-ultra-cold-atoms-as-a-quantum-information-platform-&#34;&gt;Why use ultra-cold atoms as a quantum information platform ?&lt;/h1&gt;
+&lt;p&gt;For ultra-cold atoms, the &lt;strong&gt;processing unit is not a qubit&lt;/strong&gt; and as
+such, the &lt;strong&gt;natural operations are not&lt;/strong&gt; generally &lt;strong&gt;the commonly used
+and widely known qubit operations&lt;/strong&gt; such as $X,Y,Z$ rotations,
+Hadamard $H$ gates, entangling $CNOT$ or $XX$ gates with oberservables
+like $\sigma^z$ expectations. Instead, our NaLi experiment implements
+a $X(\theta)$ &lt;strong&gt;rotation on a long spin&lt;/strong&gt; of many bosons on one optical
+lattice site. Additionally, the system naturally evolves under a
+many-body Hamiltonian $H_{mb}$, coupling the the atomic species.&lt;/p&gt;
+&lt;p&gt;What is the qubit equivalent of those operations? The relation is pretty
+complex - and that is the nice thing! &lt;strong&gt;Cold atoms are different&lt;/strong&gt;.
+Given their success in the quantum simulation of many-body problems,
+they could make for an exciting quantum information processor that
+is &lt;strong&gt;complementary to universal devices.&lt;/strong&gt; So as a general rule of
+thumb, it could be argued that cold atom machines often give up some
+control over individual particles, leading to much bigger systems.
+Additionally, because we work with a large number of atoms, we can
+measure obtain rather precise estimates of expectation values &lt;strong&gt;with
+a single state preparation and one measurement&lt;/strong&gt;. &lt;/p&gt;
+&lt;h1 id=&#34;a-concrete-example-from-our-group&#34;&gt;A concrete example from our group&lt;/h1&gt;
+&lt;p&gt;Before we go into more detailed discussion of our implementation, we
+will present a &lt;strong&gt;concrete example of our device&lt;/strong&gt;, where &lt;strong&gt;we study
+lattice gauge theories&lt;/strong&gt;. These theories have become a popular benchmark
+for quantum simulators 
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#kokail_2019&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;C.&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Kokail&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;,&amp;#32;
+      &lt;span itemprop=&#34;datePublished&#34;&gt;2019&lt;/span&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Kokail&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;C.&#34; /&gt;
+    C.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Maier&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;C.&#34; /&gt;
+    C.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Bijnen&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;R.&#34; /&gt;
+    R.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Brydges&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;T.&#34; /&gt;
+    T.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Joshi&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;M. K.&#34; /&gt;
+    M.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Jurcevic&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;P.&#34; /&gt;
+    P.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Muschik&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;C. A.&#34; /&gt;
+    C.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Silvi&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;P.&#34; /&gt;
+    P.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Blatt&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;R.&#34; /&gt;
+    R.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Roos&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;C. F.&#34; /&gt;
+    C.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Zoller&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;P.&#34; /&gt;
+    P.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2019&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Self-verifying variational quantum simulation of lattice models&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;Nature&lt;/span&gt;,&amp;#32;569(7756)&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;355–360&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1038/s41586-019-1177-4&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1038/s41586-019-1177-4&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt; and quantum
+computers 
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#martinez_2016&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;Esteban A.&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Martinez&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;,&amp;#32;
+      &lt;span itemprop=&#34;datePublished&#34;&gt;2016&lt;/span&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Martinez&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Esteban A.&#34; /&gt;
+    E.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Muschik&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Christine A.&#34; /&gt;
+    C.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Schindler&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Philipp&#34; /&gt;
+    P.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Nigg&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Daniel&#34; /&gt;
+    D.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Erhard&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Alexander&#34; /&gt;
+    A.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Heyl&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Markus&#34; /&gt;
+    M.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Hauke&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Philipp&#34; /&gt;
+    P.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Dalmonte&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Marcello&#34; /&gt;
+    M.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Monz&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Thomas&#34; /&gt;
+    T.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Zoller&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Peter&#34; /&gt;
+    P.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Blatt&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Rainer&#34; /&gt;
+    R.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2016&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Real-time dynamics of lattice gauge theories with a few-qubit quantum computer&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;Nature&lt;/span&gt;,&amp;#32;534(7608)&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;516–519&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1038/nature18318&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1038/nature18318&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt; or 
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#tavernelli2020&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;Simon V.&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Mathis&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;,&amp;#32;
+      &lt;span itemprop=&#34;datePublished&#34;&gt;2020&lt;/span&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Mathis&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Simon V.&#34; /&gt;
+    S.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Mazzola&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Guglielmo&#34; /&gt;
+    G.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Tavernelli&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Ivano&#34; /&gt;
+    I.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2020&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Toward scalable simulations of Lattice Gauge Theories on quantum computers&lt;/span&gt;.&amp;#32;Retrieved from&amp;#32;
+  &lt;a href=&#34;https://arxiv.org/abs/2005.10271v1&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://arxiv.org/abs/2005.10271v1&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt; in recent years. On our NaLi
+machine, we recently performed experiments on the building block for
+certain quantum simulators that would be suited for theories from
+high-energy physics 
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#mil2020&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;A&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Mil&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Mil&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;A&#34; /&gt;
+    A.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Zache&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;TV&#34; /&gt;
+    T.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Hegde&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;A&#34; /&gt;
+    A.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Xia&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;A&#34; /&gt;
+    A.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Bhatt&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;RP&#34; /&gt;
+    R.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Oberthaler&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;MK&#34; /&gt;
+    M.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Hauke&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;P&#34; /&gt;
+    P.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Berges&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;J&#34; /&gt;
+    J.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Jendrzejewski&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;F&#34; /&gt;
+    F.&lt;/span&gt;
+  &amp;#32;
+  (n.d.).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;A scalable realization of local U(1) gauge invariance in cold atomic mixtures.&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;Science&lt;/span&gt;,&amp;#32;367&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;1128–1130&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1126/science.aaz5312&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1126/science.aaz5312&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt;.  These experiments are performed with
+two atomic species, sodium and lithium, that can be prepared in two
+internal spin states. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Re-thinking our analog quantum simulation&lt;/strong&gt; for the purpose of quantum
+circuits, we can &lt;strong&gt;represent the sodium atoms as a very long spin&lt;/strong&gt;
+state $\left|\psi_N\right\rangle$. The observable outcomes
+are $L_z=-\frac{N}{2},\cdots,\frac{N}{2}$, where $N\sim10^5$ is the
+number of sodium atoms. On a quantum computer this should be compared to
+a qubit, for which we can only measure two
+outcomes $L_z=\pm\frac{1}{2}$.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;lithium atoms&lt;/strong&gt; on the other hand can be &lt;strong&gt;described by the states on two independent sites&lt;/strong&gt;
+$\left|\psi_p\right\rangle$
+and $|\psi_v\rangle$. For each site we can observe that number of atoms
+that sit on it. The observable outcomes are then $n_{p/v} = 0, \dots, n$
+where $n\sim 10^4$ is the number of lithium atoms. &lt;/p&gt;
+&lt;p&gt;In this formulation and &lt;strong&gt;analogous to other circuit-based quantum
+computing devices&lt;/strong&gt;, the NaLi experiment then consists of three main
+stages:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The atoms are prepared in some initial state&amp;hellip;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;controlled through a set of operations/gates&amp;hellip;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;and then measured to evaluate the operators $L_z$ and $N_{p,v}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Without having to dig through all the physical details to understand the
+publication 
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#mil2020&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;A&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Mil&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Mil&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;A&#34; /&gt;
+    A.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Zache&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;TV&#34; /&gt;
+    T.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Hegde&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;A&#34; /&gt;
+    A.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Xia&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;A&#34; /&gt;
+    A.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Bhatt&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;RP&#34; /&gt;
+    R.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Oberthaler&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;MK&#34; /&gt;
+    M.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Hauke&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;P&#34; /&gt;
+    P.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Berges&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;J&#34; /&gt;
+    J.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Jendrzejewski&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;F&#34; /&gt;
+    F.&lt;/span&gt;
+  &amp;#32;
+  (n.d.).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;A scalable realization of local U(1) gauge invariance in cold atomic mixtures.&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;Science&lt;/span&gt;,&amp;#32;367&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;1128–1130&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1126/science.aaz5312&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1126/science.aaz5312&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt;, the figures in it intuitively open themselves up
+to &lt;strong&gt;readers with varying backgrounds&lt;/strong&gt; when plotting the
+&lt;strong&gt;corresponding circuits&lt;/strong&gt; next to them as shown below.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-sketched-quantum-circuits-that-correspond-to-selected-figures-from-mil-et-al-the-results-gain-a-clear-intuitive-meaning-through-the-quantum-circuits-even-though-the-system-that-is-being-simulated-is-not-known-the-color-blue-signifies-the-sodium-atoms-and-the-orange-color-lithium&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Sketched quantum circuits that correspond to selected figures from Mil et al. The results gain a clear intuitive meaning through the quantum circuits even though the system that is being simulated is not known. The color blue signifies the Sodium atoms and the orange color Lithium.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;789&#34; height=&#34;670&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    Sketched quantum circuits that correspond to selected figures from Mil et al. The results gain a clear intuitive meaning through the quantum circuits even though the system that is being simulated is not known. The color blue signifies the Sodium atoms and the orange color Lithium.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Additional benefits of using the circuit language&lt;/strong&gt; include&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;a &lt;strong&gt;more uniform definition of&lt;/strong&gt; &lt;em&gt;fidelity&lt;/em&gt; for ultra-cold atom
+experiments relative to fidelity in qubit devices where each
+operation and the final result can be quantified.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;improved communication&lt;/strong&gt; with &lt;strong&gt;and feedback&lt;/strong&gt; of theorists
+involved in the project by working on the same level of resolution.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;more easily &lt;strong&gt;generalizing the capabilities of the device&lt;/strong&gt; to work
+on &lt;strong&gt;other problems.&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;general accessibility and a &lt;strong&gt;path towards using ultra-cold atoms
+experiments in the quantum computing community.&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;choice-of-framework-software-for-our-quantum-circuits&#34;&gt;Choice of framework software for our quantum circuits&lt;/h1&gt;
+&lt;p&gt;The choice of which framework software to use for our circuit-based
+approach was not a particularly hard one for us. We have our own
+experiment in the lab which implements a non-standard device for quantum
+simulation and thus some of our requirements are (roughly in order of
+importance):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Can we &lt;strong&gt;integrate our own experimental hardware&lt;/strong&gt; into the
+framework and potentially run it from there?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How strong of an &lt;strong&gt;assumption&lt;/strong&gt; is made &lt;strong&gt;about the computational
+unit&lt;/strong&gt; of the hardware? Does it have to be strictly qubits/photons
+etc.?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Is the framework &lt;strong&gt;open-source&lt;/strong&gt; and shows &lt;strong&gt;openness to the
+academic community&lt;/strong&gt;?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Can also &lt;strong&gt;integrate classical simulators&lt;/strong&gt; that are based on our
+hardware?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Does it provide some sort of &lt;strong&gt;user management and safety measures&lt;/strong&gt;
+to avoid unqualified users from killing the system?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Lets give a brief overview of how we answered those questions with
+regard to PennyLane. &lt;strong&gt;PennyLane is designed for users to write and use their own&lt;/strong&gt; &lt;em&gt;plugin&lt;/em&gt;, which is what they call the integration of
+quantum computing devices into the framework. Officially, it only
+supports &lt;em&gt;qubit&lt;/em&gt; and &lt;em&gt;continuous variable&lt;/em&gt; devices and not more general
+approaches but we may be able to &lt;strong&gt;integrate bosonic and fermionic atoms flexibly&lt;/strong&gt; as the code itself is not very restricted. Other big platorms like &lt;a href=&#34;https://qiskit.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Qiskit&lt;/a&gt;, &lt;a href=&#34;http://docs.rigetti.com/en/stable/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Forest&lt;/a&gt;
+and &lt;a href=&#34;https://strawberryfields.readthedocs.io/en/stable/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Strawberry
+Fields&lt;/a&gt; focus
+exclusively on their own quantum computing hardware or simulator without
+the possibility to integrate your own. PennyLane is &lt;strong&gt;open-source and
+Python-based,&lt;/strong&gt; which is perfect as the &lt;em&gt;Labscript Suite&lt;/em&gt; controlling
+our experiment is so, too. Additionally, the company behind
+PennyLane, &lt;a href=&#34;https://www.xanadu.ai/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Xanadu&lt;/a&gt;, is a partly academic player
+who is very open in their publications and &lt;strong&gt;supports a great community&lt;/strong&gt; around the software. The framework allows to add simulators
+to the framework device which mirror the functionality of the hardware.
+It performs various parameter range checks for the system and the
+operations used. Not built-in is user a system for management which
+allows only registered users to run the experiment from a queue. We
+would have to implement this ourselves.&lt;/p&gt;
+&lt;p&gt;All-in-all, &lt;strong&gt;PennyLane seems to be the best and likely only fit&lt;/strong&gt; for
+our endeavors. Let&amp;rsquo;s talk about it in more detail.&lt;/p&gt;
+&lt;h1 id=&#34;pennylane&#34;&gt;Pennylane&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;A cross-platform Python library for quantum machine learning,
+automatic differentiation, and optimization of hybrid
+quantum-classical computations.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-pennylane-as-the-connecting-puzzle-piece&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;PennyLane as the connecting puzzle piece.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1063&#34; height=&#34;545&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    PennyLane as the connecting puzzle piece.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://pennylane.ai/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PennyLane&lt;/a&gt; is
+created by &lt;a href=&#34;https://www.xanadu.ai/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Xanadu &lt;/a&gt; and presents itself as
+the &lt;strong&gt;connecting puzzle piece between powerful established python libraries for machine learning, and quantum computing platforms&lt;/strong&gt;. It provides readily implemented quantum algorithms for quantum machine
+learning, quantum chemistry and optimization. A particular algorithm
+provided in PennyLane is automatic differentiation of quantum circuits
+which allows to perform shot-efficient application of classical-quantum
+algorithms such as the &lt;em&gt;Variational Quantum Eigensolver&lt;/em&gt; (VQE).   &lt;/p&gt;
+&lt;p&gt;Existing popular quantum computing platforms such as
+&lt;a href=&#34;https://qiskit.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Qiskit&lt;/a&gt; for qubits and &lt;a href=&#34;https://strawberryfields.readthedocs.io/en/stable/#&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Strawberry
+Fields&lt;/a&gt; (also
+created by &lt;em&gt;Xanadu&lt;/em&gt;) for photons have written plugins for PennyLane
+which make their &lt;strong&gt;quantum simulators or quantum hardware accessible
+through it&lt;/strong&gt; and with that PennyLane&amp;rsquo;s quantum algorithms and automatic
+differentiation feature. &lt;/p&gt;
+&lt;p&gt;In fact, &lt;strong&gt;any quantum lab can adapt the&lt;/strong&gt; &lt;a href=&#34;https://github.com/XanaduAI/pennylane-plugin-template&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;plugin
+template&lt;/a&gt; &lt;strong&gt;for
+their own experiment and simulators&lt;/strong&gt; to assimilate their own specific
+workflow with PennyLane where users are generally able to use the same
+workflow accross platforms and know what to expect.
+Fig. 3 below shows a
+typical way of using PennyLane in a classical-quantum hybrid algorithm.
+Here, the default qubit simulator by PennyLane is used. After writing
+our own plugin, we can call that device, change the quantum circuit to
+contain the supported operations and the workflow is otherwise the same.
+All-in-all, &lt;strong&gt;the interface is very robust towards changing up the
+quantum backend&lt;/strong&gt; (especially when they support the same operations).&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-typical-simple-way-of-using-pennylane-by-instantiating-the-device-defining-the-parametrized-quantum-circuit-and-the-cost-and-calculating-the-gradient-for-the-classical-parameters&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Typical simple way of using PennyLane by instantiating the device, defining the parametrized quantum circuit and the cost, and calculating the gradient for the classical parameters.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;710&#34; height=&#34;755&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    Typical simple way of using PennyLane by instantiating the device, defining the parametrized quantum circuit and the cost, and calculating the gradient for the classical parameters.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;our-workflow-and-connecting-pennylane-to-our-hardware&#34;&gt;Our workflow and connecting PennyLane to our hardware&lt;/h1&gt;
+&lt;p&gt;The current state of our &lt;em&gt;&lt;strong&gt;pennylane_ls&lt;/strong&gt;&lt;/em&gt; &lt;strong&gt;plugin for ultra-cold
+atom experiments&lt;/strong&gt; can be viewed in &lt;a href=&#34;https://github.com/synqs/pennylane-ls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;this public github
+repository&lt;/strong&gt;&lt;/a&gt;. It provides
+examples from our labs and can guide you to adapting it to your own
+experiment and needs.&lt;/p&gt;
+&lt;p&gt;Our group uses the &lt;a href=&#34;http://labscriptsuite.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Labscript suite&lt;/strong&gt;&lt;/a&gt;
+&lt;strong&gt;to coordinate and execute experimental sequences&lt;/strong&gt; with cold atoms.  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt; &lt;em&gt;The labscript suite is a collection of programs, which work together
+to form a control system for autonomous, hardware timed experiments&lt;/em&gt;.
+ &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;On the deepest level it is very nuts and bolts with plenty of commands
+in the style of Fig. 4 below.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-the-experimentpy-left-defines-the-experimental-sequence-of-a-labscript-controlled-lab-experiment-here-by-calling-functions-from-nalifunctionspy-at-given-times-the-function-umpump-right-shows-the-exact-low-level-hardware-instructions-that-are-to-be-executed&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;The Experiment.py (left) defines the experimental sequence of a Labscript-controlled lab experiment, here by calling functions from NaLiFunctions.py at given times. The function UMPUMP (right) shows the exact low level hardware instructions that are to be executed.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1366&#34; height=&#34;338&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    The Experiment.py (left) defines the experimental sequence of a Labscript-controlled lab experiment, here by calling functions from NaLiFunctions.py at given times. The function UMPUMP (right) shows the exact low level hardware instructions that are to be executed.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;The &lt;em&gt;Experiment.py&lt;/em&gt;  &lt;strong&gt;file determines the exact sequence of hardware controls&lt;/strong&gt; that is executed during the measurement. It contains Labscript syntax and is fed into the Labscript Python
+compiler &lt;strong&gt;Runmanager&lt;/strong&gt;. &lt;/p&gt;
+&lt;p&gt;Our approach for &lt;strong&gt;combining Labscript with PennyLane&lt;/strong&gt; is sumarized in
+Fig. 5.&lt;/p&gt;
+&lt;p&gt;With the help of the plugin functions &lt;em&gt;pre_apply()&lt;/em&gt;,
+&lt;em&gt;apply()&lt;/em&gt; and &lt;em&gt;post_apply()&lt;/em&gt;, we generate a
+new &lt;em&gt;Experiment.py&lt;/em&gt; on the fly depending on the quantum
+circuit programmed through the PennyLane interface.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-the-functionspre_apply-applyandpost_apply-are-used-to-generate-a--newexperimentpy-on-the-fly-for-each-quantum-circuit-in-pennylaneapply-loops-through-the-operations-in-the-circuit-while--the-other-functions-always-write-the-same-necessary-code-for-the-compilation&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;The functions pre_apply(), apply() and post_apply() are used to generate a  new Experiment.py on the fly for each quantum circuit in PennyLane. apply() loops through the operations in the circuit while  the other functions always write the same necessary code for the compilation.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;654&#34; height=&#34;518&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    The functions pre_apply(), apply() and post_apply() are used to generate a  new Experiment.py on the fly for each quantum circuit in PennyLane. apply() loops through the operations in the circuit while  the other functions always write the same necessary code for the compilation.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;In other words, &lt;strong&gt;our PennyLane plugin translates a quantum circuit to
+an&lt;/strong&gt; &lt;em&gt;Experiment.py&lt;/em&gt; which our control system can interpret.&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;expval()&lt;/em&gt; method from the plugin is then used to send the
+newly generated file to the &lt;strong&gt;Runmanager&lt;/strong&gt; and engage the sequence.
+The output shots are then evaluated and the method returns an
+expectation.&lt;/p&gt;
+&lt;p&gt;A detailled discussion of the technical details can be found in the
+README.md of the &lt;a href=&#34;https://github.com/synqs/pennylane_ls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;public
+repository&lt;/a&gt;.  The &lt;strong&gt;features of
+our plugin&lt;/strong&gt; currently include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Proposing a higher-level control of experiments&lt;/strong&gt; that are run
+controlled by the Labscript Suite through PennyLane.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A &lt;strong&gt;framework device that provides a template for labs with
+Labscript&lt;/strong&gt; to quickly adapt code for their own setup.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Including &lt;strong&gt;two devices of the SynQS group at the
+Kirchhoff-Institute&lt;/strong&gt; &lt;strong&gt;for Physics&lt;/strong&gt; of Prof. Fred Jendrzejewski.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The framework device in &lt;em&gt;SynQSDevice.py&lt;/em&gt; is written such that &lt;strong&gt;a group
+which uses the Labscript Suite&lt;/strong&gt; to run their experiment &lt;strong&gt;can&lt;/strong&gt; &lt;strong&gt;adapt
+the module easily to their own setup&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Finishing up this project, we have &lt;strong&gt;succeed in providing first circuit control to our experiments&lt;/strong&gt; through PennyLane and extract the results.
+However, much &lt;strong&gt;further automation will be needed&lt;/strong&gt; to fully leverage
+the possibilities of the quantum circuits that we can run on our
+ultra-cold atom devices.&lt;/p&gt;
+&lt;h1 id=&#34;future-steps&#34;&gt;Future steps&lt;/h1&gt;
+&lt;p&gt;To get the project &lt;strong&gt;towards&lt;/strong&gt; &lt;strong&gt;a full Pennylane plugin&lt;/strong&gt;, we have to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Give &lt;em&gt;&lt;strong&gt;wires&lt;/strong&gt;&lt;/em&gt; a meaning.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Operations need to be restricted to certain wires&lt;/strong&gt;, especially
+when different atomic species are involved.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Implement &lt;strong&gt;true remote control&lt;/strong&gt; of the lab through the
+&lt;em&gt;pennylane_ls&lt;/em&gt; module.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Implement &lt;strong&gt;full result post-processing&lt;/strong&gt; that is currently used in
+the lab.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Implement some kind of &lt;strong&gt;user management&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;While it seems quite clear how we can implement points 1 - 4, it seems
+to be a whole new problem to implement some kind of user management for
+our systems. &lt;/p&gt;
+&lt;p&gt;In any case the &lt;strong&gt;first steps are remarkably promising&lt;/strong&gt; and we will see
+how the quantum circuits can be efficiently employed in ultra-cold atom
+experiments.&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Richard Hendricks Wins First Place in the Wowchemy Prize</title>
-      <link>https://jendrzejewski.synqs.org/post/20-12-01-wowchemy-prize/</link>
-      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://jendrzejewski.synqs.org/post/20-12-01-wowchemy-prize/</guid>
-      <description>&lt;p&gt;Congratulations to Richard Hendricks for winning first place in the Wowchemy Prize.&lt;/p&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.&lt;/p&gt;
-&lt;p&gt;Sed eu dui nec ligula bibendum dapibus. Nullam imperdiet auctor tortor, vel cursus mauris malesuada non. Quisque ultrices euismod dapibus. Aenean sed gravida risus. Sed nisi tortor, vulputate nec quam non, placerat porta nisl. Nunc varius lobortis urna, condimentum facilisis ipsum molestie eu. Ut molestie eleifend ligula sed dignissim. Duis ut tellus turpis. Praesent tincidunt, nunc sed congue malesuada, mauris enim maximus massa, eget interdum turpis urna et ante. Morbi sem nisl, cursus quis mollis et, interdum luctus augue. Aliquam laoreet, leo et accumsan tincidunt, libero neque aliquet lectus, a ultricies lorem mi a orci.&lt;/p&gt;
-&lt;p&gt;Mauris dapibus sem vel magna convallis laoreet. Donec in venenatis urna, vitae sodales odio. Praesent tortor diam, varius non luctus nec, bibendum vel est. Quisque id sem enim. Maecenas at est leo. Vestibulum tristique pellentesque ex, blandit placerat nunc eleifend sit amet. Fusce eget lectus bibendum, accumsan mi quis, luctus sem. Etiam vitae nulla scelerisque, eleifend odio in, euismod quam. Etiam porta ullamcorper massa, vitae gravida turpis euismod quis. Mauris sodales sem ac ultrices viverra. In placerat ultrices sapien. Suspendisse eu arcu hendrerit, luctus tortor cursus, maximus dolor. Proin et velit et quam gravida dapibus. Donec blandit justo ut consequat tristique.&lt;/p&gt;</description>
+      <title>Feedback for AMO experimentalists</title>
+      <link>https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/</link>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;We would like to control our system. And we will walk through this
+control in the simple case of intensity control, which is a very straight-forward example, which allows us to understand the basics.&lt;/p&gt;
+&lt;h2 id=&#34;terminology-and-basics&#34;&gt;Terminology and Basics&lt;/h2&gt;
+&lt;p&gt;This section closely follow ideas from 
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#bechhoefer_2005&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;John&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Bechhoefer&lt;/span&gt;&lt;/span&gt;,&amp;#32;
+      &lt;span itemprop=&#34;datePublished&#34;&gt;2005&lt;/span&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Bechhoefer&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;John&#34; /&gt;
+    J.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2005&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Feedback for physicists: A tutorial essay on control&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;Reviews of Modern Physics&lt;/span&gt;,&amp;#32;77(3)&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;783–836&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1103/revmodphys.77.783&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1103/revmodphys.77.783&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt; . A generic
+feedback control is seen in Fig. 1. A system $G(s)$ is being controlled with a control
+signal $r(s)$. The goal of the feedback is for the output of the system
+$y(s)$ to follow the control signal $r(s)$. The general idea is the
+following: measure the output of the system, determine its difference to
+the control voltage to get error $\epsilon$ and use this error signal as
+input for some control law $K(s)$ that tries to minimize the error signal.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-block-diagram-showing-a-generic-feedback-control-the-system-gs-is-controlled-by-the-control-law-ks&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/text10419-5_huc335cff274b836978f0b8b676a7977d0_19219_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Block diagram showing a generic feedback control. The system G(s) is controlled by the control law K(s).&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/text10419-5_huc335cff274b836978f0b8b676a7977d0_19219_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1089&#34; height=&#34;211&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    Block diagram showing a generic feedback control. The system G(s) is controlled by the control law K(s).
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Here we analyze the system in frequency space, where $s=i\omega$. This
+is a convenient way to analyze control systems. An easy way to measure
+quantity of such a system is the closed-loop transfer function $T$:&lt;/p&gt;
+&lt;p&gt;$$T= \frac{y(s)}{r(s)} = \frac{K(s)G(s)}{1+K(s)G(s)}$$&lt;/p&gt;
+&lt;p&gt;For system stability the loop-shape $H$ is important and can be determined from
+$T$:
+$$
+H = K(s)G(s) = \frac{T}{1-T}
+\tag{1}
+\label{1}
+$$ Why is it important ? As we see from (\ref{1}), the
+system gets unstable if $KG= -1$. This means that a feedback system will
+get unstable if $|KG|=1$ with a simultaneous phase lag of 180°.&lt;/p&gt;
+&lt;p&gt;Whereas it is good to have control over an output variable up to a
+certain frequency, we are in many cases also interested in noise
+suppression. For example, atoms in a dipole trap experience a heating
+rate proportional to intensity fluctuations at twice the trap frequency.
+Only by suppressing the laser intensity noise, you can assure long trap
+lifetimes and/or ground state atoms. For this reason we consider output
+disturbances $d(s)$ and sensor noise $\xi (s)$ (see Fig. 2):&lt;/p&gt;
+&lt;p&gt;$$
+y(s) = \frac{KG}{1+KG}[ r(s)-\xi(s)] + \frac{1}{1+KG}d(s)
+$$&lt;/p&gt;
+&lt;p&gt;What does this mean? There are two things to learn from that. Let&amp;rsquo;s start with the
+disturbances, and introduce the sensitivity, sometimes also called noise
+suppression: $$S = \frac{1}{1+KG} = 1-T$$ We see that a servo with a
+high gain leads to a low sensitivity to outside disturbances. The
+trade-off is that the higher the gain, the noisier the output signal.
+The reason is that with detector noise the control signal effectively
+becomes $r(s)-\xi(s)$, meaning that we cannot distinguish the control
+signal from measurement noise. Thus the higher the gain, the noisier the
+output.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-same-system-as-fig-1-but-added-disturbances-ds-and-detector-noise&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/path3909_hu612e52a87ca1e50fe35ee180e794dd16_25851_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Same system as Fig. 1, but added disturbances d(s) and detector noise.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/path3909_hu612e52a87ca1e50fe35ee180e794dd16_25851_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1089&#34; height=&#34;439&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    Same system as Fig. 1, but added disturbances d(s) and detector noise.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Another trade-off - which holds for almost all systems (to be exact: if
+KG has at least two more poles than zeros, and has no poles in the right
+half plane (is stable)) - is the following:
+$$\int_0^\infty ln|S(s)|ds =0$$ This is known as Bode&amp;rsquo;s sensitivity
+integral. It means that if you suppress the Sensitivity to disturbances
+in some frequency regime, you necessarily increase it in some other
+frequency regime (see Fig. 3 taken from 
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#stein_2003&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;G.&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Stein&lt;/span&gt;&lt;/span&gt;,&amp;#32;
+      &lt;span itemprop=&#34;datePublished&#34;&gt;2003&lt;/span&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Stein&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;G.&#34; /&gt;
+    G.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2003&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Respect the unstable&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;IEEE Control Systems Magazine&lt;/span&gt;,&amp;#32;23(4)&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;12–25&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1109/mcs.2003.1213600&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1109/mcs.2003.1213600&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt;).&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-if-the-sensitivity-to-disturbances-is-suppressed-in-the-low-frequency-regime-it-is-necessarily-increased-in-some-higher-frequency-regime&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/slide_51_hu6816623d607af0873b9af7de55be3880_64067_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;If the Sensitivity to disturbances is suppressed in the low frequency regime, it is necessarily increased in some higher frequency regime.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/slide_51_hu6816623d607af0873b9af7de55be3880_64067_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;374&#34; height=&#34;279&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    If the Sensitivity to disturbances is suppressed in the low frequency regime, it is necessarily increased in some higher frequency regime.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Now before looking at the different systems $G(s)$, we have a look at the
+control law $K(s)$. The most-used controller is the PID-controller, or
+very often experimentally only a PI-controller. The P stands for
+proportional gain, the I for integral gain and the D for derivative
+gain. Which makes sense if we look at the response in time domain:&lt;/p&gt;
+&lt;p&gt;$$u(t) = K_p\epsilon(t) + K_i\int \epsilon(t) dt + K_D \frac{d\epsilon}{dt}$$&lt;/p&gt;
+&lt;p&gt;In frequency domain the same thing has the following form:&lt;/p&gt;
+&lt;p&gt;$$K(s) = \frac{u(s)}{\epsilon(s)} = K_p + \frac{K_i}{s} + K_Ds$$&lt;/p&gt;
+&lt;h1 id=&#34;intensity-stabilization&#34;&gt;Intensity stabilization&lt;/h1&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;For the control of the intensity, we typically have the set-up that is
+sketched in Fig. 4. The power of the AOM&amp;rsquo;s first order beam is dependent on the RF power:
+$\epsilon_{1st order}\approx\sin^2(P_{RF}/P_{RF_{sat}})$. Therefore the
+power of the laser beam that leads to the experiment can be controlled
+by modulating the RF power.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-a-photodiode-gets-a-fraction-of-the-first-order-aom-beam-the-power-of-this-beam-can-be-modulated-via-rf-amplitude-modulation&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/rect14858_hu24682bd63c5f5e4ddde27c5da8ea2c1a_124510_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;A photodiode gets a fraction of the first order AOM beam. The power of this beam can be modulated via RF amplitude modulation.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/rect14858_hu24682bd63c5f5e4ddde27c5da8ea2c1a_124510_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1198&#34; height=&#34;702&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    A photodiode gets a fraction of the first order AOM beam. The power of this beam can be modulated via RF amplitude modulation.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;the-system&#34;&gt;The System&lt;/h2&gt;
+&lt;p&gt;How to characterize the system without PI contol? (&amp;ldquo;system&amp;rdquo; refers to
+AOM+Driver+AOM+Photodiode) The tools needed for that are a function
+generator, oscilloscope and a network analyzer. All of that can be found
+in the &lt;a href=&#34;https://www.redpitaya.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RedPitaya&lt;/a&gt; controlled by &lt;a href=&#34;https://github.com/lneuhaus/pyrpl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PyRPL&lt;/a&gt; we use (see Fig. 5).&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-this-shows-how-to-characetrize-the-system-without-pi-controller-the-aom-driver-expects-a-signal-from-0-to-1v-to-attenuate-the-rf-signal-accordingly-this-again-changes-the-1st-order-beam-power-and-therefore-the-voltage-on-the-photodiode-the-redpitaya-can-supply-the-control-voltage-for-the-driver-as-well-as-measure-the-signal-on-the-photodiode&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/text9831_huf6e232415135fb2a73a5885a58f3d88f_151335_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;This shows how to characetrize the system without PI-controller. The AOM Driver expects a signal from 0 to 1V to attenuate the RF signal accordingly. This again changes the 1st order beam power and therefore the voltage on the photodiode. The RedPitaya can supply the control voltage for the driver as well as measure the signal on the photodiode.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/text9831_huf6e232415135fb2a73a5885a58f3d88f_151335_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1204&#34; height=&#34;736&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    This shows how to characetrize the system without PI-controller. The AOM Driver expects a signal from 0 to 1V to attenuate the RF signal accordingly. This again changes the 1st order beam power and therefore the voltage on the photodiode. The RedPitaya can supply the control voltage for the driver as well as measure the signal on the photodiode.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;So what do we measure? As mentioned in the Introduction, we can measure
+the closed-loop transfer function $T$ and then calculate the open-loop transfer function $H$ to look for a desired loopshape.&lt;/p&gt;
+&lt;h2 id=&#34;how-to-change-laser-power-by-modulating-rf-power&#34;&gt;How to change laser power by modulating RF power&lt;/h2&gt;
+&lt;p&gt;The whole intensity stabilization is based on being able to modulate the
+RF power that goes to the AOM. In our case, we have a home-build AOM
+driver that allows for this modulation with a control voltage ranging
+from 0 to 1V. Most drivers work with a Voltage Controlled Oscillator, a
+Mixer or Variable Voltage Attenuator to attenuate the RF power, and and
+an amplifier end-stage, because the AOM usually requires 30dBm, while
+the VCO outputs something much lower.&lt;/p&gt;
+&lt;p&gt;Therefore the voltage on the photodiode depends on the control voltage
+at the AOM driver and the dependency is nonlinear (see figure 6).&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-relationship-between-control-voltage-and-photodiode-voltage-not-that-the-y-axis-is-basically-arbitrary-as-this-depends-on-pick-off-ratio-and-initial-laser-power&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/nonlinearity_hu134c9bc7b615b84c354e5490970f8198_28067_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Relationship between control voltage and photodiode voltage. Not that the y-axis is basically arbitrary, as this depends on pick-off ratio and initial laser power.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/nonlinearity_hu134c9bc7b615b84c354e5490970f8198_28067_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1080&#34; height=&#34;720&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    Relationship between control voltage and photodiode voltage. Not that the y-axis is basically arbitrary, as this depends on pick-off ratio and initial laser power.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;analysis-in-frequency-space-with-bode-plots&#34;&gt;Analysis in Frequency space with Bode plots&lt;/h2&gt;
+&lt;p&gt;The RedPitaya with its network analyzer module, allows us to
+characterize the setup in frequency space. In the figure above we saw how the
+Photodiode voltage (laser power) depends on the control voltage on the
+AOM driver when applying a DC or very low frequency signal. Now we
+modulate the VCO control voltage with the following:
+$U_{control}=0.6V+0.01V\cdot\sin\left(2\cdot\pi\cdot f\cdot t\right)$
+Can the Photodiode follow this modulation up to arbitrary frequency?
+Probably not, but how can we measure this? The network analyzer can
+excite the system with above voltage $U_{control}$ and compare the
+amplitude of oscillation in the and $U_{Photodiode}$ to measure
+magnitude and phase. It does so by demodulating the photodiode signal
+with the same sine that was used for excitation and a corresponding
+cosine, then lowpass-filtering and averaging the two quadratures for a
+well-defined number of cycles (see Pyrpl API). From the two quadratures
+it is now possible to extract the magnitude and phase shift of our
+system in the probed frequency regime. In the figure below we see that for
+low frequencies the system follows without phase lag and for higher
+frequencies the phase increasingly lags as the signal magnitude
+decreases.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-system-transfer-function-obtained-by-modulating-the-rf-attenuation-of-the-aom-driver-with-different-frequencies-and-measuring-the-corresponding-signal-on-the-photodiodedo-not-get-confused-by-theabsolute-magnitude-of-the-gain-values-a-sinusoidal-signal-with-1mv-amplitude-going-into-the-aom-driver-doesnot-correspond-to-a-signal-with-1mv-on-the-photodiode-this-is-for-example-dependent-on-the-offset-because-of-the-slope-or-the-photodiode-amplification-therelativenumbers-however-give-you-insight-in-attenuation-at-higher-frequencies-and-therefore-system-bandwidth&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/System-RF-Source&amp;#43;AOM&amp;#43;Photodiode_huab12a83c8241a24735c7173068226d83_28288_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;System Transfer Function: Obtained by modulating the RF attenuation of the AOM driver with different frequencies and measuring the corresponding signal on the Photodiode. Do not get confused by the absolute Magnitude of the Gain values: A sinusoidal signal with 1mV amplitude going into the AOM driver does not correspond to a signal with 1mV on the photodiode. This is for example dependent on the offset (because of the slope) or the photodiode amplification. The relative numbers however give you insight in attenuation at higher frequencies and therefore System bandwidth.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/System-RF-Source&amp;#43;AOM&amp;#43;Photodiode_huab12a83c8241a24735c7173068226d83_28288_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;540&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    System Transfer Function: Obtained by modulating the RF attenuation of the AOM driver with different frequencies and measuring the corresponding signal on the Photodiode. Do not get confused by the absolute Magnitude of the Gain values: A sinusoidal signal with 1mV amplitude going into the AOM driver does not correspond to a signal with 1mV on the photodiode. This is for example dependent on the offset (because of the slope) or the photodiode amplification. The relative numbers however give you insight in attenuation at higher frequencies and therefore System bandwidth.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;It&amp;rsquo;s clear that this system doesn&amp;rsquo;t have any resonances and behaves
+quiet nicely in the displayed frequency regime. Therefore time-domain
+tuning methods for a servo like Ziegler-Nichols tuning can be effective
+and quick. But not every system behaves as nicely as this, so looking at
+the frequency-regime can be interesting and a way to improve your
+control, e.g. finding and filtering resonances makes it possible to
+increase overall gain without sacrificing stability.&lt;/p&gt;
+&lt;h2 id=&#34;a-closed-loop&#34;&gt;A closed loop&lt;/h2&gt;
+&lt;p&gt;After connecting the PI-controller which in our case is also done by the
+RedPitaya, we close the feedback loop. Now we select
+some proportional and integral constants such that the intensity is
+locked to a setpoint we choose. That means that the voltage on the photodetector will be the same as the
+chosen setpoint. How do we characterize the lock now? How do we know how stable the lock
+is? How do we know until which frequency noise is surpressed? We take
+the closed-loop transfer function &lt;em&gt;T&lt;/em&gt; using the RedPitaya. With that we
+can calculate the open-loop transfer function &lt;em&gt;H&lt;/em&gt; and look at the
+sensitivity &lt;em&gt;S&lt;/em&gt;.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-closed-loop-transfer-function-t-measured-by-the-redpitaya-for-low-frequencies-the-photodiode-voltage-follows-the-modulation-well-for-higher-frequencies-the-gain-of-the-system-decreases-for-higher-proportional-constant-the-transfer-function-does-not-decrease-as-much-at-higher-frequencies&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Closed-loop%20Transfer%20function_hudc202502fc277538f2bea1056f0e1ecb_39752_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Closed-loop transfer function T measured by the RedPitaya. For low frequencies the photodiode voltage follows the modulation well. For higher frequencies the gain of the system decreases. For higher proportional constant the transfer function does not decrease as much at higher frequencies.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Closed-loop%20Transfer%20function_hudc202502fc277538f2bea1056f0e1ecb_39752_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;540&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    Closed-loop transfer function T measured by the RedPitaya. For low frequencies the photodiode voltage follows the modulation well. For higher frequencies the gain of the system decreases. For higher proportional constant the transfer function does not decrease as much at higher frequencies.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;After measuring &lt;em&gt;T&lt;/em&gt; we can can calculate &lt;em&gt;H&lt;/em&gt;. As mentioned in the introduction the criterion for instability is
+$\left|H\right|&amp;gt;1$ for a simultaneously phase lag close to 180°. Be
+careful that the unit in the figure is dB, which means that
+$\left|H\right|= 1 = 0 dB$. For low frequencies the transfer functino is
+ruled by the integrator&amp;rsquo;s characteristics. Which means high gain, but
+only a phase lag of 90°.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-open-loop-transfer-function-h&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Loop-Gain_huf54deb1d176909a8dc8f4405de5b3033_42472_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Open-loop transfer function H.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Loop-Gain_huf54deb1d176909a8dc8f4405de5b3033_42472_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;540&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    Open-loop transfer function H.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;The interesting regime is where the phase lag hits -180° which happens
+for ~40kHz for the orange curve and ~90kHz for the blue curve. But
+both sets of P&amp;amp;I-constants lead to stable behaviour, because the
+magnitude at that point is below 0dB.&lt;br&gt;
+The conclusion of this analysis shows that we could have gotten away
+with a higher proportional or integral constant and still have a stable
+system.&lt;/p&gt;
+&lt;h2 id=&#34;sensitivity-and-noise-surpression&#34;&gt;Sensitivity and noise surpression&lt;/h2&gt;
+&lt;p&gt;At this stage, we can finally analyse the level of noise suppression in the system.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-noise-spectra-locked-and-unlocked&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Noiseplot_hu91374a7a28ff1655f633b48b7e6f813c_32444_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Noise spectra locked and unlocked.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Noiseplot_hu91374a7a28ff1655f633b48b7e6f813c_32444_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;540&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    Noise spectra locked and unlocked.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;We observe noise suppression for frequencies up to point where the system can react actively, which is about 30kHz.&lt;/p&gt;
+&lt;h2 id=&#34;further-reading-problems-of-intensity-stabilization&#34;&gt;Further Reading: Problems of Intensity stabilization&lt;/h2&gt;
+&lt;p&gt;Here we can already identify the first pitfall of intensity
+stabilization. The system, mainly the attenuator inside of the AOM
+driver, has a proportional gain that depends on the control voltage and
+is proportional to the slope . The highest gain (slope) is around a control
+voltage of 0.6V, and the proportional gain for values at 0.4V and 0.9V
+is very low. On the contrary, the PI-controller has &lt;em&gt;fixed&lt;/em&gt; proportional
+and integral constants.&lt;br&gt;
+If you only want one specific laser power in your experiment, this does
+not bother you. You are using more or less one control voltage that
+gives you the desired laser power and then you tune the proportional
+constant of your PI-controller such that the system has the biggest
+bandwidth.&lt;br&gt;
+But imagine you would want to change this laser power now. By choosing a
+different setpoint/control voltage you would increase/decrease your
+proportional gain drastically end end up with an oscillating system or a
+system with very low bandwidth. If you would want your system to be
+stable for all control voltages, you would have to make sure that for
+the highest system proportional gain for a control voltage of 0.6V, you
+choose your PI-controller proportional gain such that your system is
+stable. Then you have the biggest bandwidth around a control voltage of
+0.6V, but for all other control voltages you would have a smaller
+bandwidth. Imagine the worst case: You want high laser power for loading
+your laser dipole trap, and then reduce the trap depth for evaporative
+cooling by decreasing the laser power by a factor of 100. In the Figure
+this could for example mean, that you have a photodiode voltage of 9V for loading your
+trap and 90mV for evaporative cooling. In both cases the slope
+(proportional gain) is very small. If you want your laser power to be
+stable and not oscillating during the ramp-down (decrease of factor
+100), you would have to accept a low bandwidth in both cases, for the
+loading and the evaporative cooling. One work-around could be that you sacrifice system-stability during the
+ramp-down for higher proportional gains in the loading and cooling
+stage. This however could lead to atom-loss due to parametric heating.&lt;/p&gt;
+&lt;p&gt;Another thing to keep in mind: usually your experimental approach is the
+following: I want 100mW during the first stage of the experiment and
+10mW during the second stage of the experiment. For you to be able to
+choose a good regime of control voltage values, e.g. 0.5-0.7V, where the
+AOM Driver gain changes minimally, you have to be able to change either
+photodiode gain, pick-off ratio or initial laser power.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

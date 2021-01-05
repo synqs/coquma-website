@@ -32,9 +32,9 @@
     
     <item>
       <title>Pennylane-ls</title>
-      <link>https://jendrzejewski.synqs.org/project/pennylane-ls-/</link>
+      <link>https://jendrzejewski.synqs.org/project/pennylane-ls/</link>
       <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://jendrzejewski.synqs.org/project/pennylane-ls-/</guid>
+      <guid>https://jendrzejewski.synqs.org/project/pennylane-ls/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;https://github.com/synqs/pennylane-ls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pennylane_ls&lt;/a&gt; plugin allows to run experiments that are controlled by the Labscript Suite through the interface and the with the features that Pennylane offers. Our general approach is to generate Experiment.py scripts with the Labscript syntax on the fly depending on the circuit provided through PennyLane. This experimental sequence is sent remotely to Labscripts Runmanager and the results are evaluated inside the pennylane_ls plugin.&lt;/p&gt;
 &lt;p&gt;This repo is based on the plugin template provided by pennylane. An example Pennylane plugin is of ProjectQ. It is well-designed and written by C. Gogolin.&lt;/p&gt;
 &lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
