@@ -245,8 +245,7 @@ trap and 90mV for evaporative cooling. In both cases the slope
 (proportional gain) is very small. If you want your laser power to be
 stable and not oscillating during the ramp-down (decrease of factor
 100), you would have to accept a low bandwidth in both cases, for the
-loading and the evaporative cooling.\
-One work-around could be that you sacrifice system-stability during the
+loading and the evaporative cooling. One work-around could be that you sacrifice system-stability during the
 ramp-down for higher proportional gains in the loading and cooling
 stage. This however could lead to atom-loss due to parametric heating.
 

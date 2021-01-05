@@ -5,7 +5,7 @@ title: 'Implementing an Optical Accordion Lattice for the Realization of a Quant
 subtitle: ''
 summary: ''
 authors:
-- Kai-Niklas Schymik
+- schymik
 tags:
 - Ultracold
 - Atomic mixture
