@@ -88,23 +88,58 @@
   </url>
   
   <url>
+    <loc>https://jendrzejewski.synqs.org/publication-type/3/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jendrzejewski.synqs.org/tag/atomic-mixture/</loc>
-    <lastmod>2021-01-03T21:46:22+01:00</lastmod>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://jendrzejewski.synqs.org/authors/</loc>
-    <lastmod>2021-01-04T17:05:13+01:00</lastmod>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/impurity/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/kip/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/publication_types/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/quantum-simulation/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/publication/2021-bhatt/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tags/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://jendrzejewski.synqs.org/tag/dynamical-gauge-fields/</loc>
     <lastmod>2021-01-03T21:46:22+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/</loc>
-    <lastmod>2021-01-04T17:05:13+01:00</lastmod>
   </url>
   
   <url>
@@ -125,11 +160,6 @@
   <url>
     <loc>https://jendrzejewski.synqs.org/tag/spin-changing-collisions/</loc>
     <lastmod>2021-01-02T00:49:05+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/tags/</loc>
-    <lastmod>2021-01-04T17:05:13+01:00</lastmod>
   </url>
   
   <url>
@@ -203,27 +233,7 @@
   </url>
   
   <url>
-    <loc>https://jendrzejewski.synqs.org/publication-type/3/</loc>
-    <lastmod>2021-01-03T21:46:22+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jendrzejewski.synqs.org/author/jurgen-berges/</loc>
-    <lastmod>2021-01-03T21:46:22+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/tag/kip/</loc>
-    <lastmod>2021-01-03T21:46:22+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/publication_types/</loc>
-    <lastmod>2021-01-03T21:46:22+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/tag/quantum-simulation/</loc>
     <lastmod>2021-01-03T21:46:22+01:00</lastmod>
   </url>
   
