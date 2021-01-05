@@ -28,7 +28,7 @@ links:
  - icon: github
    icon_pack: fab
    name: Code
-   link: https://github.com/fretchen/synqs_devices
+   url: https://github.com/fretchen/synqs_devices
 ---
 
 Labscript devices as used at SynQS.

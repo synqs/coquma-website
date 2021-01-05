@@ -29,7 +29,7 @@ links:
   - icon: github
     icon_pack: fab
     name: Code
-    link: https://github.com/synqs/DeviceControlServer
+    url: https://github.com/synqs/DeviceControlServer
 ---
 
 A flask server that should simplify the logging of our experimental components. Most of the time the components are Arduinos. The website assumes that the Arduinos are connected via ethernet. For the moment we have to following abilities:
