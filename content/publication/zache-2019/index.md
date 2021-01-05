@@ -10,8 +10,8 @@ authors:
 - N. Mueller
 - J. T. Schneider
 - jendrzejewski
-- J. Berges
-- P. Hauke
+- berges
+- hauke
 tags:
 - '"doi:10.1103/PhysRevLett.122.050403 url:https://doi"'
 categories: []

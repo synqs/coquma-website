@@ -9,8 +9,8 @@ authors:
 - F. Hebenstreit
 - jendrzejewski
 - oberthaler
-- J. Berges
-- P. Hauke
+- berges
+- hauke
 tags: []
 categories: []
 date: '2018-07-01'

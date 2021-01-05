@@ -9,7 +9,7 @@ authors:
 - F Hebenstreit
 - jendrzejewski
 - oberthaler
-- Jürgen Berges
+- berges
 tags:
 - '"lattice gauge theory"'
 - '"original content from this"'

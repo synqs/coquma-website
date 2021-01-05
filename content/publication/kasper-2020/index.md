@@ -15,7 +15,7 @@ authors:
 - Eberhard Tiemann
 - Maciej Lewenstein
 - jendrzejewski
-- Philipp Hauke
+- hauke
 tags: ['quantum-simulation', 'quantum-computation', 'theory', 'atomic-mixtures', 'kip']
 categories: []
 date: '2020-10-29'

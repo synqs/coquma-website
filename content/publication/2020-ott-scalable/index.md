@@ -6,7 +6,7 @@ authors:
 - Robert Ott
 - Torsten V. Zache
 - jendrzejewski
-- Jürgen Berges
+- berges
 tags: ['quantum simulation', 'dynamical gauge fields', 'atomic mixture', 'kip']
 categories: []
 date: '2020-12-18'
