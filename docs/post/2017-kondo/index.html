@@ -1,0 +1,3312 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Fred Jendrzejewski">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="The Kondo effect is one of the hallmarks of condensed-matter physics. It describes the peculiar interactions between previously non-interacting Fermions, which are induced by a single spin impurity at a certain temperature.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://jendrzejewski.synqs.org/post/2017-kondo/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.570c0666a24511c27bb6001877169437.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2845W2HYQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-N2845W2HYQ', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://jendrzejewski.synqs.org/post/2017-kondo/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@synqs">
+  <meta property="twitter:creator" content="@synqs">
+  
+  <meta property="og:site_name" content="Jendrzejewski Group">
+  <meta property="og:url" content="https://jendrzejewski.synqs.org/post/2017-kondo/">
+  <meta property="og:title" content="Short notes on the Kondo effect and its potential realization in ultracold atomic gases | Jendrzejewski Group">
+  <meta property="og:description" content="The Kondo effect is one of the hallmarks of condensed-matter physics. It describes the peculiar interactions between previously non-interacting Fermions, which are induced by a single spin impurity at a certain temperature."><meta property="og:image" content="https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2017-10-17T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-01-05T20:02:42&#43;01:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jendrzejewski.synqs.org/post/2017-kondo/"
+  },
+  "headline": "Short notes on the Kondo effect and its potential realization in ultracold atomic gases",
+  
+  "datePublished": "2017-10-17T00:00:00Z",
+  "dateModified": "2021-01-05T20:02:42+01:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Fred Jendrzejewski"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jendrzejewski Group",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "The Kondo effect is one of the hallmarks of condensed-matter physics. It describes the peculiar interactions between previously non-interacting Fermions, which are induced by a single spin impurity at a certain temperature."
+}
+</script>
+
+  
+
+  
+
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#2962ff",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#2962ff"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "https://www.cookiesandyou.com"
+      }
+    })});
+  </script>
+
+
+
+  <link rel="stylesheet" type="text/css" href="/hugo-cite.css" />
+
+
+  <title>Short notes on the Kondo effect and its potential realization in ultracold atomic gases | Jendrzejewski Group</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.25bb65fc185bceea61395d5b0560127a.js"></script>
+
+  
+
+<aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Jendrzejewski Group</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Jendrzejewski Group</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Research</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/research"><span>Overview</span></a>
+            
+              <a class="dropdown-item" href="/publication"><span>Publications</span></a>
+            
+              <a class="dropdown-item" href="/talk"><span>Talks & Posters</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/teaching"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/technologies"><span>Technology</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/people"><span>People</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/post"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Short notes on the Kondo effect and its potential realization in ultracold atomic gases</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/fred-jendrzejewski/">Fred Jendrzejewski</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    2021-01-05
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    11 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="/project/sopa/">
+    Project
+  </a>
+  
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="/project/nali/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>The Kondo effect is one of the hallmarks of condensed-matter physics. It
+describes the peculiar interactions between previously non-interacting
+Fermions, which are induced by a single spin impurity at a certain
+temperature. Despite (or maybe because of) its large interest as a
+benchmark for various theoretical frameworks, it is typically quite hard
+to find accessible introductions in the literature. Here, I will give a
+very naive interpretation of the Kondo effect and discuss its possible
+observation in ultracold atomic gases.</p>
+<h1 id="a-short-history-and-a-naive-picture-of-the-kondo-effect">A short history and a naive picture of the Kondo effect</h1>
+<p>The Kondo model was originally proposed in 1964 to describe the
+appearance of a resistive minimum at a characteristic temperature $T_K$
+in certain alloys 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#kondo_1964"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="J."><span itemprop="familyName">Kondo</span></span>,&#32;
+      <span itemprop="datePublished">1964</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Kondo</span>,&#32;
+    <meta itemprop="givenName" content="J." />
+    J.</span>
+  &#32;
+    (<span itemprop="datePublished">1964</span>).
+  &#32;<span itemprop="name">Resistance Minimum in Dilute Magnetic Alloys</span>.<i>
+    <span itemprop="about">Progress of Theoretical Physics</span>,&#32;32(1)</i>.&#32;<span itemprop="pagination">37–49</span>.
+  <a href="https://doi.org/10.1143/ptp.32.37"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1143/ptp.32.37</a></span>
+
+
+
+</span></span>. In this model, a localized magnetic
+impurity of spin S = 1/2 is interacting with a metal host of
+non-interacting Fermions with spin s = 1/2. The interaction is described
+through an anti-ferromagnetic exchange term
+$H_I = J\mathbf{s}(0)\cdot \mathbf{S}$ with $J &gt; 0$. Because of the
+anti-ferrmagnetic interaction, we can identify the groundstate of the
+system as the singlet state, where impurity and electron of opposite
+spins.</p>
+<p>At high temperatures, this coupling can be well described by the weak
+scattering of the Fermions on the impurity and the resistivity is
+decreasing as the temperature is lowered. Jun Kondo discovered in his
+seminal paper that the perturbative approach fails in the vicinity of
+the Kondo temperature $T_K$ as higher order perturbative terms diverge
+in this regime. Ever since, the Kondo model has inspired a large number
+of different theoretical approaches to explain the properties of this
+strongly correlated regime
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#hewson_1993"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Alexander Cyril"><span itemprop="familyName">Hewson</span></span>,&#32;
+      <span itemprop="datePublished">1993</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope 
+      itemtype="https://schema.org/Book"
+      data-type="book"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Hewson</span>,&#32;
+    <meta itemprop="givenName" content="Alexander Cyril" />
+    A.</span>&#32;
+    (<span itemprop="datePublished">1993</span>).
+  &#32;<span itemprop="name">
+    <i>The Kondo Problem to Heavy Fermions</i></span>.
+  &#32;
+  <span itemprop="publisher"
+             itemtype="http://schema.org/Organization"
+             itemscope="">
+    <span itemprop="name">Cambridge University Press</span></span>.
+  <a href="https://doi.org/10.1017/cbo9780511470752"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1017/cbo9780511470752</a></span>
+
+
+
+</span></span>, 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#nozieres1975"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="P"><span itemprop="familyName">Nozieres</span></span>,&#32;
+      <span itemprop="datePublished">1975</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/CreativeWork"
+      data-type="no-type"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Nozieres</span>,&#32;
+    <meta itemprop="givenName" content="P" />
+    P.</span>
+  &#32;
+    (<span itemprop="datePublished">1975</span>).
+  &#32;<span itemprop="name">
+    <i>The Kondo problem : Fancy mathematical techniques versus simple physical ideas</i></span>.
+  </span>
+</span></span> or 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#iopscience"><span class="visually-hidden">Citation: </span><span rel="noauthor">N.A.</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/CreativeWork"
+      data-type="no-type">
+  (N.A.).
+  &#32;
+  (n.d.).
+  &#32;<span itemprop="name">
+    <i>Condensed matter: strongly correlated electrons - IOPscience</i></span>.
+  &#32;
+  <span itemprop="publisher" itemtype="http://schema.org/Organization" itemscope="">
+    <span itemprop="name">http://iopscience.iop.org/article/10.1088/2058-7058/8/12/20/meta</span></span>.&#32;Retrieved from&#32;
+  <a href="http://iopscience.iop.org/article/10.1088/2058-7058/8/12/20/meta"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">http://iopscience.iop.org/article/10.1088/2058-7058/8/12/20/meta</a></span>
+</span></span>.
+(The review by Nozieres 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#nozieres1975"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="P"><span itemprop="familyName">Nozieres</span></span>,&#32;
+      <span itemprop="datePublished">1975</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/CreativeWork"
+      data-type="no-type"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Nozieres</span>,&#32;
+    <meta itemprop="givenName" content="P" />
+    P.</span>
+  &#32;
+    (<span itemprop="datePublished">1975</span>).
+  &#32;<span itemprop="name">
+    <i>The Kondo problem : Fancy mathematical techniques versus simple physical ideas</i></span>.
+  </span>
+</span></span> is really remarkable as it was
+maybe the only paper I found that really explained the phyiscal ideas in
+a remotely understandable way to me).</p>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-a-fermi-sea-of-s--12-particles-is-orange-is-coupled-to-a--localized-impurity-blue-whose-only-degree-of-freedom-is-its-spin-orientation-s--12-they-interact-through-an-anti-ferromagnetic-exchange-interaction-a-for-low-temperatures-the-interaction-leads-to-the-formation-of-a-spin-singlet-between-a-fermion-and-the-impurity-the-high-energy-cost-of-creating-an-excitation-in-the-region-of-the-impurity-blocks-it-entirely-from-the-dynamics-of-the-fermi-sea-the-fermions-can-now-be-treated-as-a-fermi-liquid-with-the-impurity-region-removed-b-for-intermediate-temperatures-the-singlet-gets-deconfined-and-virtual-excitations-in-the-impurity-region-are-allowed-as-they-involve-the-neighboring-fermions-they-can-lead-to-strong-interactions-between-the-previously-non-interacting-particles-these-processes-are-typically-only-describable-by-non-perturbative-techniques-c-for-high-temperatures-the-interaction-with-the-impurity-is-well-described-by-perturbative-scattering-theory-and-the-system-is-once-again-well-described-by-a-fermi-liquid">
+
+
+  <a data-fancybox="" href="/post/2017-kondo/SingleChannelKondov3_hub3993702e29fc2e1bd63ea3b63b75fe8_224511_2000x2000_fit_lanczos_2.png" data-caption="A Fermi  sea of s = 1/2 particles is  (orange) is coupled to a  localized impurity (blue), whose only degree of freedom is its spin orientation S = 1/2. They interact through an anti-ferromagnetic exchange interaction.  a) For low temperatures, the interaction leads to the formation of a spin singlet between a Fermion and the impurity. The high energy cost of creating an excitation in the region of the impurity blocks it entirely from the dynamics of the Fermi sea. The Fermions can now be treated as a Fermi liquid with the impurity region removed. b) For intermediate temperatures the singlet gets deconfined and virtual excitations in the impurity region are allowed. As they involve the neighboring  Fermions, they can lead to strong interactions between the previously non-interacting particles. These processes are typically only describable by non-perturbative techniques. c) For high temperatures, the interaction with the impurity is  well described by perturbative scattering theory and the system is once again well described by a Fermi liquid.">
+
+
+  <img data-src="/post/2017-kondo/SingleChannelKondov3_hub3993702e29fc2e1bd63ea3b63b75fe8_224511_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="5278" height="957">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    A Fermi  sea of s = 1/2 particles is  (orange) is coupled to a  localized impurity (blue), whose only degree of freedom is its spin orientation S = 1/2. They interact through an anti-ferromagnetic exchange interaction.  a) For low temperatures, the interaction leads to the formation of a spin singlet between a Fermion and the impurity. The high energy cost of creating an excitation in the region of the impurity blocks it entirely from the dynamics of the Fermi sea. The Fermions can now be treated as a Fermi liquid with the impurity region removed. b) For intermediate temperatures the singlet gets deconfined and virtual excitations in the impurity region are allowed. As they involve the neighboring  Fermions, they can lead to strong interactions between the previously non-interacting particles. These processes are typically only describable by non-perturbative techniques. c) For high temperatures, the interaction with the impurity is  well described by perturbative scattering theory and the system is once again well described by a Fermi liquid.
+  </figcaption>
+
+
+</figure>
+
+<p>As sketched in the figure, the following picture has emerged from these works.
+For low temperatures, $T\ll T_K$, the impurity spin is confined in a
+many-body singlet ground state of extension
+$\xi_K = \frac{\hbar v_F}{k_B T_K}$ , called the Kondo screening cloud.
+As the spin of the impurity is fully screened, the remaining electrons
+simply scatter on the region and the usual scattering can take place.
+For intermediate temperatures, the impurity is still bound in the
+singlet state, but virtual excitation due to Fermions hopping in the
+impurity region are allowed (see Fig. 1 b). The virtual excitation by one Fermion polarizes
+the impurity and this polarization is felt by the neighboring Fermions.
+Therefore, this process gives rise to interactions between the
+originally non-interacting Fermions. In the strong coupling regime,
+$T\sim T_K$, these interactions are so strong that they cannot be
+treated perturbatively. For high temperatures, $T\gg T_K$, the electrons
+are only weakly scattered by the impurity and the system is again well
+described by a Fermi liquid (see Fig. 1 c).</p>
+<p>Several decades after its first discovery in metals, the Kondo effect
+has been observed in a multitude of solid-state systems such as quantum
+dots 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#kastner_1998"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="M. A."><span itemprop="familyName">Kastner</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">1998</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Kastner</span>,&#32;
+    <meta itemprop="givenName" content="M. A." />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Goldhaber-Gordon</span>,&#32;
+    <meta itemprop="givenName" content="D." />
+    D.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Shtrikman</span>,&#32;
+    <meta itemprop="givenName" content="Hadas" />
+    H.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Mahalu</span>,&#32;
+    <meta itemprop="givenName" content="D." />
+    D.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Abusch-Magder</span>,&#32;
+    <meta itemprop="givenName" content="David" />
+    D.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Meirav</span>,&#32;
+    <meta itemprop="givenName" content="U." />
+    U.</span>
+  &#32;
+    (<span itemprop="datePublished">1998</span>).
+  &#32;<span itemprop="name">Kondo effect in a single-electron transistor</span>.<i>
+    <span itemprop="about">Nature</span>,&#32;391(6663)</i>.&#32;<span itemprop="pagination">156–159</span>.
+  <a href="https://doi.org/10.1038/34373"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1038/34373</a></span>
+
+
+
+</span></span>, 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#cronenwett_1998"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="S. M."><span itemprop="familyName">Cronenwett</span></span>,&#32;
+      <span itemprop="datePublished">1998</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Cronenwett</span>,&#32;
+    <meta itemprop="givenName" content="S. M." />
+    S.</span>
+  &#32;
+    (<span itemprop="datePublished">1998</span>).
+  &#32;<span itemprop="name">A Tunable Kondo Effect in Quantum Dots</span>.<i>
+    <span itemprop="about">Science</span>,&#32;281(5376)</i>.&#32;<span itemprop="pagination">540–544</span>.
+  <a href="https://doi.org/10.1126/science.281.5376.540"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1126/science.281.5376.540</a></span>
+
+
+
+</span></span>, 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#schmid_1998"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Jörg"><span itemprop="familyName">Schmid</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">1998</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Schmid</span>,&#32;
+    <meta itemprop="givenName" content="Jörg" />
+    J.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Weis</span>,&#32;
+    <meta itemprop="givenName" content="Jürgen" />
+    J.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Eberl</span>,&#32;
+    <meta itemprop="givenName" content="Karl" />
+    K.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Klitzing</span>,&#32;
+    <meta itemprop="givenName" content="Klaus" />
+    K.</span>
+  &#32;
+    (<span itemprop="datePublished">1998</span>).
+  &#32;<span itemprop="name">A quantum dot in the limit of strong coupling to reservoirs</span>.<i>
+    <span itemprop="about">Physica B: Condensed Matter</span>,&#32;256-258</i>.&#32;<span itemprop="pagination">182–185</span>.
+  <a href="https://doi.org/10.1016/s0921-4526%2898%2900533-x"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1016/s0921-4526(98)00533-x</a></span>
+
+
+
+</span></span>, carbon nano-tubes
+
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#nyg_rd_2000"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Jesper"><span itemprop="familyName">Nygård</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2000</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Nygård</span>,&#32;
+    <meta itemprop="givenName" content="Jesper" />
+    J.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Cobden</span>,&#32;
+    <meta itemprop="givenName" content="David Henry" />
+    D.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Lindelof</span>,&#32;
+    <meta itemprop="givenName" content="Poul Erik" />
+    P.</span>
+  &#32;
+    (<span itemprop="datePublished">2000</span>).
+  &#32;<span itemprop="name">Kondo physics in carbon nanotubes</span>.<i>
+    <span itemprop="about">Nature</span>,&#32;408(6810)</i>.&#32;<span itemprop="pagination">342–346</span>.
+  <a href="https://doi.org/10.1038/35042545"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1038/35042545</a></span>
+
+
+
+</span></span> , and single molecules 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#liang_2002"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Wenjie"><span itemprop="familyName">Liang</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2002</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Liang</span>,&#32;
+    <meta itemprop="givenName" content="Wenjie" />
+    W.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Shores</span>,&#32;
+    <meta itemprop="givenName" content="Matthew P." />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Bockrath</span>,&#32;
+    <meta itemprop="givenName" content="Marc" />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Long</span>,&#32;
+    <meta itemprop="givenName" content="Jeffrey R." />
+    J.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Park</span>,&#32;
+    <meta itemprop="givenName" content="Hongkun" />
+    H.</span>
+  &#32;
+    (<span itemprop="datePublished">2002</span>).
+  &#32;<span itemprop="name">Kondo resonance in a single-molecule transistor</span>.<i>
+    <span itemprop="about">Nature</span>,&#32;417(6890)</i>.&#32;<span itemprop="pagination">725–729</span>.
+  <a href="https://doi.org/10.1038/nature00790"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1038/nature00790</a></span>
+
+
+
+</span></span>, 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#park_2002"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Jiwoong"><span itemprop="familyName">Park</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2002</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Park</span>,&#32;
+    <meta itemprop="givenName" content="Jiwoong" />
+    J.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Pasupathy</span>,&#32;
+    <meta itemprop="givenName" content="Abhay N." />
+    A.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Goldsmith</span>,&#32;
+    <meta itemprop="givenName" content="Jonas I." />
+    J.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Chang</span>,&#32;
+    <meta itemprop="givenName" content="Connie" />
+    C.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Yaish</span>,&#32;
+    <meta itemprop="givenName" content="Yuval" />
+    Y.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Petta</span>,&#32;
+    <meta itemprop="givenName" content="Jason R." />
+    J.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Rinkoski</span>,&#32;
+    <meta itemprop="givenName" content="Marie" />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Sethna</span>,&#32;
+    <meta itemprop="givenName" content="James P." />
+    J.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Abruña</span>,&#32;
+    <meta itemprop="givenName" content="Héctor D." />
+    H.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">McEuen</span>,&#32;
+    <meta itemprop="givenName" content="Paul L." />
+    P.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Ralph</span>,&#32;
+    <meta itemprop="givenName" content="Daniel C." />
+    D.</span>
+  &#32;
+    (<span itemprop="datePublished">2002</span>).
+  &#32;<span itemprop="name">Coulomb blockade and the Kondo effect in single-atom transistors</span>.<i>
+    <span itemprop="about">Nature</span>,&#32;417(6890)</i>.&#32;<span itemprop="pagination">722–725</span>.
+  <a href="https://doi.org/10.1038/nature00791"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1038/nature00791</a></span>
+
+
+
+</span></span>,
+confirming the presented equilibrium picture. Dynamical and spatial
+properties, which would be observable on time scales of
+$t \ll \frac{\hbar}{k_B T_K} \sim$ps, remain inaccessible in these
+solid-state systems. Such measurement would be however highly desirable,
+as the Kondo model (and its generalization in form of the Anderson
+model) is nowadays one of the standard benchmarks for calculations on
+dynamical and real space properties, where our theoretical understanding
+is much less complete than in the equilibrium case 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#polkovnikov_2011"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Anatoli"><span itemprop="familyName">Polkovnikov</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2011</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Polkovnikov</span>,&#32;
+    <meta itemprop="givenName" content="Anatoli" />
+    A.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Sengupta</span>,&#32;
+    <meta itemprop="givenName" content="Krishnendu" />
+    K.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Silva</span>,&#32;
+    <meta itemprop="givenName" content="Alessandro" />
+    A.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Vengalattore</span>,&#32;
+    <meta itemprop="givenName" content="Mukund" />
+    M.</span>
+  &#32;
+    (<span itemprop="datePublished">2011</span>).
+  &#32;<span itemprop="name">Colloquium: Nonequilibrium dynamics of closed interacting quantum systems</span>.<i>
+    <span itemprop="about">Reviews of Modern Physics</span>,&#32;83(3)</i>.&#32;<span itemprop="pagination">863–883</span>.
+  <a href="https://doi.org/10.1103/revmodphys.83.863"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1103/revmodphys.83.863</a></span>
+
+
+
+</span></span>, 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#bock_2016"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Sebastian"><span itemprop="familyName">Bock</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2016</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Bock</span>,&#32;
+    <meta itemprop="givenName" content="Sebastian" />
+    S.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Liluashvili</span>,&#32;
+    <meta itemprop="givenName" content="Alexander" />
+    A.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Gasenzer</span>,&#32;
+    <meta itemprop="givenName" content="Thomas" />
+    T.</span>
+  &#32;
+    (<span itemprop="datePublished">2016</span>).
+  &#32;<span itemprop="name">Buildup of the Kondo effect from real-time effective action for the Anderson impurity model</span>.<i>
+    <span itemprop="about">Physical Review B</span>,&#32;94(4)</i>.
+  <a href="https://doi.org/10.1103/physrevb.94.045108"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1103/physrevb.94.045108</a></span>
+
+
+
+</span></span>. As several aspect of these open
+questions are captured in the properties of the debated Kondo screening
+cloud 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#park_2013"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Jinhong"><span itemprop="familyName">Park</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2013</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Park</span>,&#32;
+    <meta itemprop="givenName" content="Jinhong" />
+    J.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Lee</span>,&#32;
+    <meta itemprop="givenName" content="S.-S. B." />
+    S.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Oreg</span>,&#32;
+    <meta itemprop="givenName" content="Yuval" />
+    Y.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Sim</span>,&#32;
+    <meta itemprop="givenName" content="H.-S." />
+    H.</span>
+  &#32;
+    (<span itemprop="datePublished">2013</span>).
+  &#32;<span itemprop="name">How to Directly Measure a Kondo Cloud’s Length</span>.<i>
+    <span itemprop="about">Physical Review Letters</span>,&#32;110(24)</i>.
+  <a href="https://doi.org/10.1103/physrevlett.110.246603"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1103/physrevlett.110.246603</a></span>
+
+
+
+</span></span>, it would be of one of the key objectives for any new
+experiment with ultracold atomic gases to provide precise experimental
+studies of the Kondo screening cloud and its dynamics with ultracold
+quantum gases.</p>
+<h1 id="ultracold-atoms-as-experimental-platform-for-impurity-models">Ultracold atoms as experimental platform for impurity models</h1>
+<p>The experimental achievement of fabricating gases of ultracold atoms
+(either Bosons or Fermions) opened the way to study a multitude of
+fundamental physical phenomena that were otherwise very difficult to
+realize 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#bloch_2008"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Immanuel"><span itemprop="familyName">Bloch</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2008</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Bloch</span>,&#32;
+    <meta itemprop="givenName" content="Immanuel" />
+    I.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Dalibard</span>,&#32;
+    <meta itemprop="givenName" content="Jean" />
+    J.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Zwerger</span>,&#32;
+    <meta itemprop="givenName" content="Wilhelm" />
+    W.</span>
+  &#32;
+    (<span itemprop="datePublished">2008</span>).
+  &#32;<span itemprop="name">Many-body physics with ultracold gases</span>.<i>
+    <span itemprop="about">Reviews of Modern Physics</span>,&#32;80(3)</i>.&#32;<span itemprop="pagination">885–964</span>.
+  <a href="https://doi.org/10.1103/revmodphys.80.885"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1103/revmodphys.80.885</a></span>
+
+
+
+</span></span>. They have already proven to be a fantastic tool
+for the study of several simple impurity problems resulting in numerous
+intriguing quantum effects. In the simplest case, the impurities are
+static. They form a static disorder, which first leads to the well-known
+diffusion, but can eventually result in Anderson localization via the
+quantum interference between different diffusive paths 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#anderson_1958"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="P. W."><span itemprop="familyName">Anderson</span></span>,&#32;
+      <span itemprop="datePublished">1958</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Anderson</span>,&#32;
+    <meta itemprop="givenName" content="P. W." />
+    P.</span>
+  &#32;
+    (<span itemprop="datePublished">1958</span>).
+  &#32;<span itemprop="name">Absence of Diffusion in Certain Random Lattices</span>.<i>
+    <span itemprop="about">Physical Review</span>,&#32;109(5)</i>.&#32;<span itemprop="pagination">1492–1505</span>.
+  <a href="https://doi.org/10.1103/physrev.109.1492"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1103/physrev.109.1492</a></span>
+
+
+
+</span></span>.
+Even sixty years after its initial prediction fundamental questions
+remain, especially in the higher dimensional case, and ultracold atoms
+are now a well established tool to investigate this long-standing
+problem 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#billy_2008"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Juliette"><span itemprop="familyName">Billy</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2008</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Billy</span>,&#32;
+    <meta itemprop="givenName" content="Juliette" />
+    J.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Josse</span>,&#32;
+    <meta itemprop="givenName" content="Vincent" />
+    V.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Zuo</span>,&#32;
+    <meta itemprop="givenName" content="Zhanchun" />
+    Z.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Bernard</span>,&#32;
+    <meta itemprop="givenName" content="Alain" />
+    A.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Hambrecht</span>,&#32;
+    <meta itemprop="givenName" content="Ben" />
+    B.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Lugan</span>,&#32;
+    <meta itemprop="givenName" content="Pierre" />
+    P.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Clément</span>,&#32;
+    <meta itemprop="givenName" content="David" />
+    D.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Sanchez-Palencia</span>,&#32;
+    <meta itemprop="givenName" content="Laurent" />
+    L.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Bouyer</span>,&#32;
+    <meta itemprop="givenName" content="Philippe" />
+    P.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Aspect</span>,&#32;
+    <meta itemprop="givenName" content="Alain" />
+    A.</span>
+  &#32;
+    (<span itemprop="datePublished">2008</span>).
+  &#32;<span itemprop="name">Direct observation of Anderson localization of matter waves in a controlled disorder</span>.<i>
+    <span itemprop="about">Nature</span>,&#32;453(7197)</i>.&#32;<span itemprop="pagination">891–894</span>.
+  <a href="https://doi.org/10.1038/nature07000"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1038/nature07000</a></span>
+
+
+
+</span></span>, 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#roati_2008"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Giacomo"><span itemprop="familyName">Roati</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2008</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Roati</span>,&#32;
+    <meta itemprop="givenName" content="Giacomo" />
+    G.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">D’Errico</span>,&#32;
+    <meta itemprop="givenName" content="Chiara" />
+    C.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Fallani</span>,&#32;
+    <meta itemprop="givenName" content="Leonardo" />
+    L.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Fattori</span>,&#32;
+    <meta itemprop="givenName" content="Marco" />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Fort</span>,&#32;
+    <meta itemprop="givenName" content="Chiara" />
+    C.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Zaccanti</span>,&#32;
+    <meta itemprop="givenName" content="Matteo" />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Modugno</span>,&#32;
+    <meta itemprop="givenName" content="Giovanni" />
+    G.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Modugno</span>,&#32;
+    <meta itemprop="givenName" content="Michele" />
+    M.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Inguscio</span>,&#32;
+    <meta itemprop="givenName" content="Massimo" />
+    M.</span>
+  &#32;
+    (<span itemprop="datePublished">2008</span>).
+  &#32;<span itemprop="name">Anderson localization of a non-interacting BoseEinstein condensate</span>.<i>
+    <span itemprop="about">Nature</span>,&#32;453(7197)</i>.&#32;<span itemprop="pagination">895–898</span>.
+  <a href="https://doi.org/10.1038/nature07071"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1038/nature07071</a></span>
+
+
+
+</span></span>,
+
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#jendrzejewski_2012"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="F."><span itemprop="familyName">Jendrzejewski</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2012</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Jendrzejewski</span>,&#32;
+    <meta itemprop="givenName" content="F." />
+    F.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Bernard</span>,&#32;
+    <meta itemprop="givenName" content="A." />
+    A.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Müller</span>,&#32;
+    <meta itemprop="givenName" content="K." />
+    K.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Cheinet</span>,&#32;
+    <meta itemprop="givenName" content="P." />
+    P.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Josse</span>,&#32;
+    <meta itemprop="givenName" content="V." />
+    V.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Piraud</span>,&#32;
+    <meta itemprop="givenName" content="M." />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Pezzé</span>,&#32;
+    <meta itemprop="givenName" content="L." />
+    L.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Sanchez-Palencia</span>,&#32;
+    <meta itemprop="givenName" content="L." />
+    L.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Aspect</span>,&#32;
+    <meta itemprop="givenName" content="A." />
+    A.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Bouyer</span>,&#32;
+    <meta itemprop="givenName" content="P." />
+    P.</span>
+  &#32;
+    (<span itemprop="datePublished">2012</span>).
+  &#32;<span itemprop="name">Three-dimensional localization of ultracold atoms in an optical disordered potential</span>.<i>
+    <span itemprop="about">Nature Physics</span>,&#32;8(5)</i>.&#32;<span itemprop="pagination">398–403</span>.
+  <a href="https://doi.org/10.1038/nphys2256"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1038/nphys2256</a></span>
+
+
+
+</span></span>, 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#semeghini_2015"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="G."><span itemprop="familyName">Semeghini</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2015</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Semeghini</span>,&#32;
+    <meta itemprop="givenName" content="G." />
+    G.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Landini</span>,&#32;
+    <meta itemprop="givenName" content="M." />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Castilho</span>,&#32;
+    <meta itemprop="givenName" content="P." />
+    P.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Roy</span>,&#32;
+    <meta itemprop="givenName" content="S." />
+    S.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Spagnolli</span>,&#32;
+    <meta itemprop="givenName" content="G." />
+    G.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Trenkwalder</span>,&#32;
+    <meta itemprop="givenName" content="A." />
+    A.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Fattori</span>,&#32;
+    <meta itemprop="givenName" content="M." />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Inguscio</span>,&#32;
+    <meta itemprop="givenName" content="M." />
+    M.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Modugno</span>,&#32;
+    <meta itemprop="givenName" content="G." />
+    G.</span>
+  &#32;
+    (<span itemprop="datePublished">2015</span>).
+  &#32;<span itemprop="name">Measurement of the mobility edge for 3D Anderson localization</span>.<i>
+    <span itemprop="about">Nature Physics</span>,&#32;11(7)</i>.&#32;<span itemprop="pagination">554–559</span>.
+  <a href="https://doi.org/10.1038/nphys3339"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1038/nphys3339</a></span>
+
+
+
+</span></span>.</p>
+<p>In the slightly more general polaron models, the impurity can move, but
+has no internal degrees of freedom. The moving impurity is then dressed
+by a cloud of surrounding particles, leading to the formation of the
+polaron quasiparticles. Ultracold atomic mixtures are a remarkable tool
+to investigate the properties of such polarons  
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#chevy_2010"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Frédéric"><span itemprop="familyName">Chevy</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2010</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Chevy</span>,&#32;
+    <meta itemprop="givenName" content="Frédéric" />
+    F.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Mora</span>,&#32;
+    <meta itemprop="givenName" content="Christophe" />
+    C.</span>
+  &#32;
+    (<span itemprop="datePublished">2010</span>).
+  &#32;<span itemprop="name">Ultra-cold polarized Fermi gases</span>.<i>
+    <span itemprop="about">Reports on Progress in Physics</span>,&#32;73(11)</i>.&#32;<span itemprop="pagination">112401</span>.
+  <a href="https://doi.org/10.1088/0034-4885/73/11/112401"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1088/0034-4885/73/11/112401</a></span>
+
+
+
+</span></span>. In such
+experiments a small number of atoms of one species act as an impurity.
+They are immersed in a large Fermi sea or Bose-Einstein condensate,
+formed by a second species. One can then read out the effective mass
+
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#nascimb_ne_2009"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="S."><span itemprop="familyName">Nascimbène</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2009</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Nascimbène</span>,&#32;
+    <meta itemprop="givenName" content="S." />
+    S.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Navon</span>,&#32;
+    <meta itemprop="givenName" content="N." />
+    N.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Jiang</span>,&#32;
+    <meta itemprop="givenName" content="K. J." />
+    K.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Tarruell</span>,&#32;
+    <meta itemprop="givenName" content="L." />
+    L.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Teichmann</span>,&#32;
+    <meta itemprop="givenName" content="M." />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">McKeever</span>,&#32;
+    <meta itemprop="givenName" content="J." />
+    J.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Chevy</span>,&#32;
+    <meta itemprop="givenName" content="F." />
+    F.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Salomon</span>,&#32;
+    <meta itemprop="givenName" content="C." />
+    C.</span>
+  &#32;
+    (<span itemprop="datePublished">2009</span>).
+  &#32;<span itemprop="name">Collective Oscillations of an Imbalanced Fermi Gas: Axial Compression Modes and Polaron Effective Mass</span>.<i>
+    <span itemprop="about">Physical Review Letters</span>,&#32;103(17)</i>.
+  <a href="https://doi.org/10.1103/physrevlett.103.170402"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1103/physrevlett.103.170402</a></span>
+
+
+
+</span></span> and the binding energy of the impurity
+
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#schirotzek_2009"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="André"><span itemprop="familyName">Schirotzek</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2009</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Schirotzek</span>,&#32;
+    <meta itemprop="givenName" content="André" />
+    A.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Wu</span>,&#32;
+    <meta itemprop="givenName" content="Cheng-Hsun" />
+    C.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Sommer</span>,&#32;
+    <meta itemprop="givenName" content="Ariel" />
+    A.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Zwierlein</span>,&#32;
+    <meta itemprop="givenName" content="Martin W." />
+    M.</span>
+  &#32;
+    (<span itemprop="datePublished">2009</span>).
+  &#32;<span itemprop="name">Observation of Fermi Polarons in a Tunable Fermi Liquid of Ultracold Atoms</span>.<i>
+    <span itemprop="about">Physical Review Letters</span>,&#32;102(23)</i>.
+  <a href="https://doi.org/10.1103/physrevlett.102.230402"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1103/physrevlett.102.230402</a></span>
+
+
+
+</span></span>. With a bosonic bath, these studies have opened the 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#rentrop_2016"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="T."><span itemprop="familyName">Rentrop</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2016</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Rentrop</span>,&#32;
+    <meta itemprop="givenName" content="T." />
+    T.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Trautmann</span>,&#32;
+    <meta itemprop="givenName" content="A." />
+    A.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Olivares</span>,&#32;
+    <meta itemprop="givenName" content="F.\hspace{0.167em}A." />
+    F.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Jendrzejewski</span>,&#32;
+    <meta itemprop="givenName" content="F." />
+    F.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Komnik</span>,&#32;
+    <meta itemprop="givenName" content="A." />
+    A.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Oberthaler</span>,&#32;
+    <meta itemprop="givenName" content="M.\hspace{0.167em}K." />
+    M.</span>
+  &#32;
+    (<span itemprop="datePublished">2016</span>).
+  &#32;<span itemprop="name">Observation of the Phononic Lamb Shift with a Synthetic Vacuum</span>.<i>
+    <span itemprop="about">Physical Review X</span>,&#32;6(4)</i>.
+  <a href="https://doi.org/10.1103/physrevx.6.041041"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1103/physrevx.6.041041</a></span>
+
+
+
+</span></span>, 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#j_rgensen_2016"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Nils B."><span itemprop="familyName">Jørgensen</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2016</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Jørgensen</span>,&#32;
+    <meta itemprop="givenName" content="Nils B." />
+    N.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Wacker</span>,&#32;
+    <meta itemprop="givenName" content="Lars" />
+    L.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Skalmstang</span>,&#32;
+    <meta itemprop="givenName" content="Kristoffer T." />
+    K.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Parish</span>,&#32;
+    <meta itemprop="givenName" content="Meera M." />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Levinsen</span>,&#32;
+    <meta itemprop="givenName" content="Jesper" />
+    J.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Christensen</span>,&#32;
+    <meta itemprop="givenName" content="Rasmus S." />
+    R.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Bruun</span>,&#32;
+    <meta itemprop="givenName" content="Georg M." />
+    G.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Arlt</span>,&#32;
+    <meta itemprop="givenName" content="Jan J." />
+    J.</span>
+  &#32;
+    (<span itemprop="datePublished">2016</span>).
+  &#32;<span itemprop="name">Observation of Attractive and Repulsive Polarons in a Bose-Einstein Condensate</span>.<i>
+    <span itemprop="about">Physical Review Letters</span>,&#32;117(5)</i>.
+  <a href="https://doi.org/10.1103/physrevlett.117.055302"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1103/physrevlett.117.055302</a></span>
+
+
+
+</span></span>, 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#hu_2016"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Ming-Guang"><span itemprop="familyName">Hu</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2016</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Hu</span>,&#32;
+    <meta itemprop="givenName" content="Ming-Guang" />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Graaff</span>,&#32;
+    <meta itemprop="givenName" content="Michael J. Van" />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Kedar</span>,&#32;
+    <meta itemprop="givenName" content="Dhruv" />
+    D.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Corson</span>,&#32;
+    <meta itemprop="givenName" content="John P." />
+    J.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Cornell</span>,&#32;
+    <meta itemprop="givenName" content="Eric A." />
+    E.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Jin</span>,&#32;
+    <meta itemprop="givenName" content="Deborah S." />
+    D.</span>
+  &#32;
+    (<span itemprop="datePublished">2016</span>).
+  &#32;<span itemprop="name">Bose Polarons in the Strongly Interacting Regime</span>.<i>
+    <span itemprop="about">Physical Review Letters</span>,&#32;117(5)</i>.
+  <a href="https://doi.org/10.1103/physrevlett.117.055301"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1103/physrevlett.117.055301</a></span>
+
+
+
+</span></span>
+path towards a synthetic quantum vacuum.</p>
+<h1 id="on-a-possible-implementation">On a possible implementation</h1>
+<p>Despite this progress, the observation of the Kondo effect remains
+elusive in the field of ultracold atoms. The impurity should have an
+internal spin degree of freedom, but remain localized on its site in
+these systems. Given its fundamental importance, this topic received
+intense attention recently 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#bauer_2013"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Johannes"><span itemprop="familyName">Bauer</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2013</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Bauer</span>,&#32;
+    <meta itemprop="givenName" content="Johannes" />
+    J.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Salomon</span>,&#32;
+    <meta itemprop="givenName" content="Christophe" />
+    C.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Demler</span>,&#32;
+    <meta itemprop="givenName" content="Eugene" />
+    E.</span>
+  &#32;
+    (<span itemprop="datePublished">2013</span>).
+  &#32;<span itemprop="name">Realizing a Kondo-Correlated State with Ultracold Atoms</span>.<i>
+    <span itemprop="about">Physical Review Letters</span>,&#32;111(21)</i>.
+  <a href="https://doi.org/10.1103/physrevlett.111.215304"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1103/physrevlett.111.215304</a></span>
+
+
+
+</span></span>, 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#nishida_2013"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Yusuke"><span itemprop="familyName">Nishida</span></span>,&#32;
+      <span itemprop="datePublished">2013</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Nishida</span>,&#32;
+    <meta itemprop="givenName" content="Yusuke" />
+    Y.</span>
+  &#32;
+    (<span itemprop="datePublished">2013</span>).
+  &#32;<span itemprop="name">SU(3) Orbital Kondo Effect with Ultracold Atoms</span>.<i>
+    <span itemprop="about">Physical Review Letters</span>,&#32;111(13)</i>.
+  <a href="https://doi.org/10.1103/physrevlett.111.135301"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1103/physrevlett.111.135301</a></span>
+
+
+
+</span></span>, 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#kuzmenko_2015"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="I."><span itemprop="familyName">Kuzmenko</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2015</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Kuzmenko</span>,&#32;
+    <meta itemprop="givenName" content="I." />
+    I.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Kuzmenko</span>,&#32;
+    <meta itemprop="givenName" content="T." />
+    T.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Avishai</span>,&#32;
+    <meta itemprop="givenName" content="Y." />
+    Y.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Kikoin</span>,&#32;
+    <meta itemprop="givenName" content="K." />
+    K.</span>
+  &#32;
+    (<span itemprop="datePublished">2015</span>).
+  &#32;<span itemprop="name">Model for overscreened Kondo effect in ultracold Fermi gas</span>.<i>
+    <span itemprop="about">Physical Review B</span>,&#32;91(16)</i>.
+  <a href="https://doi.org/10.1103/physrevb.91.165131"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1103/physrevb.91.165131</a></span>
+
+
+
+</span></span>, 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#sundar_2016"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Bhuvanesh"><span itemprop="familyName">Sundar</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2016</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Sundar</span>,&#32;
+    <meta itemprop="givenName" content="Bhuvanesh" />
+    B.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Mueller</span>,&#32;
+    <meta itemprop="givenName" content="Erich J." />
+    E.</span>
+  &#32;
+    (<span itemprop="datePublished">2016</span>).
+  &#32;<span itemprop="name">Proposal to directly observe the Kondo effect through enhanced photoinduced scattering of cold fermionic and bosonic atoms</span>.<i>
+    <span itemprop="about">Physical Review A</span>,&#32;93(2)</i>.
+  <a href="https://doi.org/10.1103/physreva.93.023635"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1103/physreva.93.023635</a></span>
+
+
+
+</span></span>, 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#gorshkov_2010"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="A. V."><span itemprop="familyName">Gorshkov</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2010</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Gorshkov</span>,&#32;
+    <meta itemprop="givenName" content="A. V." />
+    A.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Hermele</span>,&#32;
+    <meta itemprop="givenName" content="M." />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Gurarie</span>,&#32;
+    <meta itemprop="givenName" content="V." />
+    V.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Xu</span>,&#32;
+    <meta itemprop="givenName" content="C." />
+    C.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Julienne</span>,&#32;
+    <meta itemprop="givenName" content="P. S." />
+    P.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Ye</span>,&#32;
+    <meta itemprop="givenName" content="J." />
+    J.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Zoller</span>,&#32;
+    <meta itemprop="givenName" content="P." />
+    P.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Demler</span>,&#32;
+    <meta itemprop="givenName" content="E." />
+    E.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Lukin</span>,&#32;
+    <meta itemprop="givenName" content="M. D." />
+    M.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Rey</span>,&#32;
+    <meta itemprop="givenName" content="A. M." />
+    A.</span>
+  &#32;
+    (<span itemprop="datePublished">2010</span>).
+  &#32;<span itemprop="name">Two-orbital SU(N) magnetism with ultracold alkaline-earth atoms</span>.<i>
+    <span itemprop="about">Nature Physics</span>,&#32;6(4)</i>.&#32;<span itemprop="pagination">289–295</span>.
+  <a href="https://doi.org/10.1038/nphys1535"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1038/nphys1535</a></span>
+
+
+
+</span></span>.
+While quantum magnetism of Fermi gases has seen tremendous progress in
+recent years 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#mazurenko_2017"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Anton"><span itemprop="familyName">Mazurenko</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2017</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Mazurenko</span>,&#32;
+    <meta itemprop="givenName" content="Anton" />
+    A.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Chiu</span>,&#32;
+    <meta itemprop="givenName" content="Christie S." />
+    C.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Ji</span>,&#32;
+    <meta itemprop="givenName" content="Geoffrey" />
+    G.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Parsons</span>,&#32;
+    <meta itemprop="givenName" content="Maxwell F." />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Kanász-Nagy</span>,&#32;
+    <meta itemprop="givenName" content="Márton" />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Schmidt</span>,&#32;
+    <meta itemprop="givenName" content="Richard" />
+    R.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Grusdt</span>,&#32;
+    <meta itemprop="givenName" content="Fabian" />
+    F.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Demler</span>,&#32;
+    <meta itemprop="givenName" content="Eugene" />
+    E.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Greif</span>,&#32;
+    <meta itemprop="givenName" content="Daniel" />
+    D.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Greiner</span>,&#32;
+    <meta itemprop="givenName" content="Markus" />
+    M.</span>
+  &#32;
+    (<span itemprop="datePublished">2017</span>).
+  &#32;<span itemprop="name">A cold-atom FermiHubbard antiferromagnet</span>.<i>
+    <span itemprop="about">Nature</span>,&#32;545(7655)</i>.&#32;<span itemprop="pagination">462–466</span>.
+  <a href="https://doi.org/10.1038/nature22362"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1038/nature22362</a></span>
+
+
+
+</span></span>, the Kondo effect seems still out of
+enormously challenging in existing set-ups 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#folling2017"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Luis"><span itemprop="familyName">Riegger</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2017</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Riegger</span>,&#32;
+    <meta itemprop="givenName" content="Luis" />
+    L.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Oppong</span>,&#32;
+    <meta itemprop="givenName" content="Nelson Darkwah" />
+    N.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Höfer</span>,&#32;
+    <meta itemprop="givenName" content="Moritz" />
+    M.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Fernandes</span>,&#32;
+    <meta itemprop="givenName" content="Diogo Rio" />
+    D.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Bloch</span>,&#32;
+    <meta itemprop="givenName" content="Immanuel" />
+    I.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Fölling</span>,&#32;
+    <meta itemprop="givenName" content="Simon" />
+    S.</span>
+  &#32;
+    (<span itemprop="datePublished">2017</span>).
+  &#32;<span itemprop="name">Localized magnetic moments with tunable spin exchange in a gas of ultracold fermions</span>.<i>
+    <span itemprop="about">arXiv</span></i>.&#32;Retrieved from&#32;
+  <a href="https://arxiv.org/abs/1708.03810"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://arxiv.org/abs/1708.03810</a></span>
+
+
+
+</span></span> .</p>
+<p>It seems quite natural to implement the Kondo model with a mixture of
+ultracold atomic gases 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#kuzmenko_2015"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="I."><span itemprop="familyName">Kuzmenko</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2015</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Kuzmenko</span>,&#32;
+    <meta itemprop="givenName" content="I." />
+    I.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Kuzmenko</span>,&#32;
+    <meta itemprop="givenName" content="T." />
+    T.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Avishai</span>,&#32;
+    <meta itemprop="givenName" content="Y." />
+    Y.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Kikoin</span>,&#32;
+    <meta itemprop="givenName" content="K." />
+    K.</span>
+  &#32;
+    (<span itemprop="datePublished">2015</span>).
+  &#32;<span itemprop="name">Model for overscreened Kondo effect in ultracold Fermi gas</span>.<i>
+    <span itemprop="about">Physical Review B</span>,&#32;91(16)</i>.
+  <a href="https://doi.org/10.1103/physrevb.91.165131"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1103/physrevb.91.165131</a></span>
+
+
+
+</span></span>. A first species, e.g. $^{40}$K or
+$^6$Li, would form the Fermi sea. A second species, e.g. $^{23}$Na, would
+then be tightly trapped by species-selective optical potentials and from
+the spin impurity. The spin-exchange could then be mediated by
+spin-changing collisions, very much in the spirit of our work on
+dynamical gauge fields 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#kasper_2016"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="V."><span itemprop="familyName">Kasper</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2016</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Kasper</span>,&#32;
+    <meta itemprop="givenName" content="V." />
+    V.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Hebenstreit</span>,&#32;
+    <meta itemprop="givenName" content="F." />
+    F.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Oberthaler</span>,&#32;
+    <meta itemprop="givenName" content="M. K." />
+    M.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Berges</span>,&#32;
+    <meta itemprop="givenName" content="J." />
+    J.</span>
+  &#32;
+    (<span itemprop="datePublished">2016</span>).
+  &#32;<span itemprop="name">Schwinger pair production with ultracold atoms</span>.<i>
+    <span itemprop="about">Physics Letters B</span>,&#32;760</i>.&#32;<span itemprop="pagination">742–746</span>.
+  <a href="https://doi.org/10.1016/j.physletb.2016.07.036"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1016/j.physletb.2016.07.036</a></span>
+
+
+
+</span></span>, 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#kasper_2017"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="V"><span itemprop="familyName">Kasper</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2017</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Kasper</span>,&#32;
+    <meta itemprop="givenName" content="V" />
+    V.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Hebenstreit</span>,&#32;
+    <meta itemprop="givenName" content="F" />
+    F.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Jendrzejewski</span>,&#32;
+    <meta itemprop="givenName" content="F" />
+    F.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Oberthaler</span>,&#32;
+    <meta itemprop="givenName" content="M K" />
+    M.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Berges</span>,&#32;
+    <meta itemprop="givenName" content="J" />
+    J.</span>
+  &#32;
+    (<span itemprop="datePublished">2017</span>).
+  &#32;<span itemprop="name">Implementing quantum electrodynamics with ultracold atomic systems</span>.<i>
+    <span itemprop="about">New Journal of Physics</span>,&#32;19(2)</i>.&#32;<span itemprop="pagination">023030</span>.
+  <a href="https://doi.org/10.1088/1367-2630/aa54e0"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1088/1367-2630/aa54e0</a></span>
+
+
+
+</span></span>, 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#jendrzejewski"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Fred"><span itemprop="familyName">Jendrzejewski</span></span>
+      <em>&amp; al.</em></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/CreativeWork"
+      data-type="no-type"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Jendrzejewski</span>,&#32;
+    <meta itemprop="givenName" content="Fred" />
+    F.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Zache</span>,&#32;
+    <meta itemprop="givenName" content="Torsten" />
+    T.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">hauke</span></span>
+  &#32;
+  (n.d.).
+  &#32;<span itemprop="name">
+    <i>What are dynamical gauge fields ? A simplistic introduction by an AMO experimentalist.</i></span>.
+  &#32;
+  <span itemprop="publisher" itemtype="http://schema.org/Organization" itemscope="">
+    <span itemprop="name">Authorea Inc.</span></span>.
+  <a href="https://doi.org/10.22541/au.150663310.07882650"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.22541/au.150663310.07882650</a></span>
+</span></span>. We
+will see where the journey goes from here.</p>
+
+    </div>
+
+    
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/magnetism/">magnetism</a>
+  
+  <a class="badge badge-light" href="/tag/quantum-simulation/">quantum simulation</a>
+  
+  <a class="badge badge-light" href="/tag/ultracold-mixtures/">ultracold mixtures</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://jendrzejewski.synqs.org/post/2017-kondo/&amp;text=Short%20notes%20on%20the%20Kondo%20effect%20and%20its%20potential%20realization%20in%20ultracold%20atomic%20gases" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://jendrzejewski.synqs.org/post/2017-kondo/&amp;t=Short%20notes%20on%20the%20Kondo%20effect%20and%20its%20potential%20realization%20in%20ultracold%20atomic%20gases" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Short%20notes%20on%20the%20Kondo%20effect%20and%20its%20potential%20realization%20in%20ultracold%20atomic%20gases&amp;body=https://jendrzejewski.synqs.org/post/2017-kondo/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://jendrzejewski.synqs.org/post/2017-kondo/&amp;title=Short%20notes%20on%20the%20Kondo%20effect%20and%20its%20potential%20realization%20in%20ultracold%20atomic%20gases" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Short%20notes%20on%20the%20Kondo%20effect%20and%20its%20potential%20realization%20in%20ultracold%20atomic%20gases%20https://jendrzejewski.synqs.org/post/2017-kondo/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://jendrzejewski.synqs.org/post/2017-kondo/&amp;title=Short%20notes%20on%20the%20Kondo%20effect%20and%20its%20potential%20realization%20in%20ultracold%20atomic%20gases" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="/author/fred-jendrzejewski/"><img class="avatar mr-3 avatar-circle" src="/author/fred-jendrzejewski/avatar_hu8a4ca81b43cdb712256470b33f5a3081_9951_270x270_fill_q75_lanczos_center.jpg" alt="Fred Jendrzejewski"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/author/fred-jendrzejewski/">Fred Jendrzejewski</a></h5>
+      <h6 class="card-subtitle">Assistant Professor</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:fnj@kip.uni-heidelberg.de" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="tel:%28&#43;49%296221/545182" >
+        <i class="fas fa-phone"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0003-1488-7901" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/fretchen86" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=-22MXD8AAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/publication/2021-bhatt/">Stochastic dynamics of a few sodium atoms in a cold potassium cloud</a></li>
+      
+      <li><a href="/publication/2020-ott-scalable/">Scalable cold-atom quantum simulator for two-dimensional QED</a></li>
+      
+      <li><a href="/publication/2020-kasper-decoupling/">Non-Abelian gauge invariance from dynamical decoupling</a></li>
+      
+      <li><a href="/publication/2020-kasper-jaynes/">From the Jaynes–Cummings model to non-abelian gauge theories: a guided tour for the quantum engineer.</a></li>
+      
+      <li><a href="/teaching/2020-solving-problems/">Solving problems on quantum hardware</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © SynQS
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'event' : "Events",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/js/wowchemy.min.572b7caf7fe601716a0f74d67d754c21.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
