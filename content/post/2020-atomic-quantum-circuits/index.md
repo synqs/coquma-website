@@ -1,7 +1,7 @@
 ---
 # created through pandoc -s full_article.tex -o test.md
-
 # the bib gets created through pandoc-citeproc --bib2json biblio.bib > biblio.json
+
 title: 'Can we run quantum circuits on ultra-cold atom devices?'
 summary: 'In this blog-post, we present our path and thoughts towards using
   ultra-cold atom experiments for quantum computation. They are the
