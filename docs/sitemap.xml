@@ -124,7 +124,7 @@
   
   <url>
     <loc>https://jendrzejewski.synqs.org/</loc>
-    <lastmod>2021-01-05T13:01:26+01:00</lastmod>
+    <lastmod>2021-01-05T16:08:39+01:00</lastmod>
   </url>
   
   <url>
@@ -429,11 +429,6 @@
   
   <url>
     <loc>https://jendrzejewski.synqs.org/tag/machine-learning/</loc>
-    <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/post/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
   </url>
   
@@ -1259,6 +1254,11 @@
   
   <url>
     <loc>https://jendrzejewski.synqs.org/tag/doi10.1103/physrevlett.122.050403-urlhttps/doi/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/post/</loc>
+    <lastmod>2021-01-05T16:08:39+01:00</lastmod>
   </url>
   
   <url>
