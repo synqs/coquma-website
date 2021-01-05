@@ -286,44 +286,29 @@ Our group uses the [**Labscript suite**](http://labscriptsuite.org/)
 >  
 
 On the deepest level it is very nuts and bolts with plenty of commands
-in the style of Fig. [4](#799186){reference-type="ref"
-reference="799186"} below.
+in the style of Fig. 4 below.
 
-![The Experiment.py (left) defines the experimental sequence of a
-Labscript-controlled lab experiment, here by calling functions from
-NaLiFunctions.py at given times. The function UMPUMP (right) shows the
-exact low level hardware instructions that are to be executed.
-[\[799186\]]{#799186 label="799186"}
-](figures/Labscript-NaLi-code/Labscript-NaLi-code){#799186
-width="0.98\\columnwidth"}
+{{< figure src="Labscript_NaLi_code.png" title="The Experiment.py (left) defines the experimental sequence of a Labscript-controlled lab experiment, here by calling functions from NaLiFunctions.py at given times. The function UMPUMP (right) shows the exact low level hardware instructions that are to be executed." numbered="true">}}
 
-The ***Experiment.py*** **file **(Fig. [4](#799186){reference-type="ref"
-reference="799186"}) **determines the exact sequence of hardware
-controls** that is executed during the measurement. It contains
-Labscript syntax and is fed into the Labscript Python
-compiler ***Runmanager**.  *
+The *Experiment.py*  **file determines the exact sequence of hardware controls** that is executed during the measurement. It contains Labscript syntax and is fed into the Labscript Python
+compiler **Runmanager**. 
 
 Our approach for **combining Labscript with PennyLane** is sumarized in
-Fig. [5](#547624){reference-type="ref" reference="547624"}.
+Fig. 5.
 
-With the help of the plugin functions ***pre\_apply()**,
-**apply()** *and ***post\_apply()***, **we generate a
-new *****Experiment.py*** **on the fly** depending on the quantum
+With the help of the plugin functions *pre\_apply()*,
+*apply()* and *post\_apply()*, we generate a
+new *Experiment.py* on the fly depending on the quantum
 circuit programmed through the PennyLane interface.
 
-![The functions *pre\_apply(), apply() *and *post\_apply()* are used to
-generate a new *Experiment.py* on the fly for each quantum circuit in
-PennyLane. *apply()* loops through the operations in the circuit while
-the other functions always write the same necessary code for the
-compilation. [\[547624\]]{#547624 label="547624"}
-](figures/pre-post-apply/pre-post-apply){#547624
-width="0.56\\columnwidth"}
+{{< figure src="pre_post_apply.png" title="The functions pre_apply(), apply() and post_apply() are used to generate a  new Experiment.py on the fly for each quantum circuit in PennyLane. apply() loops through the operations in the circuit while  the other functions always write the same necessary code for the compilation." numbered="true">}}
+
 
 In other words, **our PennyLane plugin translates a quantum circuit to
-an** ***Experiment.py*** which our control system can interpret.
+an** *Experiment.py* which our control system can interpret.
 
-The ***expval()*** method from the plugin is then used to **send the
-newly generated file to the *****Runmanager*** and engage the sequence.
+The *expval()* method from the plugin is then used to send the
+newly generated file to the **Runmanager** and engage the sequence.
 The output shots are then evaluated and the method returns an
 expectation.
 
@@ -345,8 +330,7 @@ The framework device in *SynQSDevice.py* is written such that **a group
 which uses the Labscript Suite** to run their experiment **can** **adapt
 the module easily to their own setup**.
 
-Finishing up this project, we have **succeed in providing first circuit
-control to our experiments **through PennyLane and extract the results.
+Finishing up this project, we have **succeed in providing first circuit control to our experiments** through PennyLane and extract the results.
 However, much **further automation will be needed** to fully leverage
 the possibilities of the quantum circuits that we can run on our
 ultra-cold atom devices.
