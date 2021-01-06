@@ -3,7 +3,7 @@ authors:
 - jendrzejewski
 title: Short notes on the Kondo effect and its potential realization in
   ultracold atomic gases
-
+summary: The Kondo effect is one of the hallmarks of condensed-matter physics. It describes the peculiar interactions between previously non-interacting Fermions, which are induced by a single spin impurity at a certain temperature. Despite (or maybe because of) its large interest as a benchmark for various theoretical frameworks, it is typically quite hard to find accessible introductions in the literature. Here, I will give a very naive interpretation of the Kondo effect and discuss its possible observation in ultracold atomic gases.
 tags:
 - magnetism
 - quantum simulation
