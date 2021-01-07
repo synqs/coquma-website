@@ -6,14 +6,23 @@ authors:
 - Torsten V. Zache
 - hauke
 
+tags:
+- dynamical gauge fields
+- lattice gauge theory
+- gauge transformations
+- ultracold atoms
+- local symmetries
+- tutorial
+
 summary: Dynamical gauge fields are a fundamental concept of high-energy physics. However, learning about them typically takes enormous amounts of time and effort. As such, they are typically a bit mystical to students (including me) of other fields of physics like condensed-matter or AMO. Here, we will give a simple introduction into some of the concepts that might allow for the quantum simulation of these theories with ultracold atomic gases.The reader should know about second quantization and the basics of quantum mechanics as the arguments are based on this formalism.
 
 draft: false
 
-bibFile: content/post/2017-kondo/biblio.json
+bibFile: content/post/2017-intro-dynamical/biblio.json
 projects:
 - sopa
 - nali
+- lattice-gauge
 ---
 # Motivation
 
@@ -23,19 +32,17 @@ or QED, whose only effect on me is profound sadness. Here, we will
 discuss a naive derivation of some of the concepts that might allow for
 the simulation of these dynamical gauge fields with ultracold atomic
 gases. We will start out the discussion, with a few basic principles of gauge
-transformations in quantum mechanics in Sec [2](#gauge-transformations-in-quantum-mechanics).
+transformations in quantum mechanics in Sec [2](#2-gauge-transformations-in-quantum-mechanics).
 
-In _Sec. [3]_ we
-will see that these gauge transformations, especially the U(1)
+In Sec. [3](#3-non-relativistic-motion-in-an-electric-and-magnetic-field) we will see that these gauge transformations, especially the U(1)
 transformations, have a deep relationship with the dynamics for
 non-relativistic particles in a magnetic and an electric field. Then we
 will get an effective Hamiltonian on a lattice.
 
 After this step, we can discuss a bit physics of dynamical gauge fields
-as they were originially introduced by Wilson in _Sec. [4](#Sec:Wilson)_.
+as they were originially introduced by Wilson in Sec. [4](#4-the-wilson-approach-to-dynamical-gauge-fields).
 
-And finally, we will discuss in Sec. _[5](#Sec:QLM)_ the formalism of Quantum Link models, which seems
-currently most promising for experimental set-ups. Actual experimental
+And finally, we will discuss in Sec. [5](#5-the-quantum-link-approach-to-dynamical-gauge-fields) the formalism of Quantum Link models, which seems currently most promising for experimental set-ups. Actual experimental
 proposals will not be discussed here, as they typically involved the
 discretization of the Dirac equation.
 
@@ -45,9 +52,9 @@ interesting dynamics [^1]. However, it teaches us the most fundamental
 ingredients to design dynamical gauge fields on lattices. For further
 reading, I will guide the reader to the specialized literature, which
 will discuss such exciting problems like *Schwinger pair production*
-[@Kasper_2017] or *Coleman's phase transition*.
+{{< cite "Kasper_2017" >}} or *Coleman's phase transition*.
 
-# Gauge transformations in quantum mechanics
+# 2. Gauge transformations in quantum mechanics
 
 We will start out our discussion of dynamical gauge fields with a short
 review of gauge transformations in quantum mechanics. This is slightly
@@ -57,7 +64,7 @@ by Valentin
 Kasper](http://archiv.ub.uni-heidelberg.de/volltextserver/20372/1/Thesis.pdf).
 However, the AMO community used the gauge transformations very
 successfully to implement **static** gauge fields as very nicely
-reviewed in Ref. [@Goldman_2014] or the phantastic [lecture by Jean
+reviewed in Ref. {{< cite "Goldman_2014" >}} or the phantastic [lecture by Jean
 Dalibard](http://www.college-de-france.fr/site/en-jean-dalibard/course-2013-2014.htm)
 at the College de France [^2].
 
@@ -130,7 +137,7 @@ $$i\dot{A}_H = [H,A_H]$$
 A few calculations show that we obtain again as expected:
 $$i \frac{d\tilde{A}}{dt} =[\tilde{H},\tilde{A}]$$
 
-# U(1) gauge transformations
+## U(1) gauge transformations
 
 As a first important example for gauge transformation, we will study the
 multiplication of the wavefunction with a phase, i.e. U(1) gauge
@@ -171,9 +178,11 @@ And for the time derivative we have:
 $$i \dot{U}U^\dagger = -\dot{\varphi}(\hat{x},t)$$ In this frame the
 Hamiltonian has therefore the following form:
 
-$$\begin{aligned}
+$$
+\tag{1}
 \label{Eq:HunderU1}
-H_1 = \frac{\left(p+\nabla \varphi(\hat{x},t)\right)^2}{2m}+V(\hat{x})-\dot{\varphi}(\hat{x},t)\end{aligned}$$
+H_1 = \frac{\left(p+\nabla \varphi(\hat{x},t)\right)^2}{2m}+V(\hat{x})-\dot{\varphi}(\hat{x},t)
+$$
 
 To summarize:
 
@@ -190,11 +199,9 @@ Hamiltonian. But before we get into this connection, let us finish the
 discussion here with the relationship between gauge symmetry and
 particle conservation, which the reader might skip in a first read.
 
-# Non-relativistic motion in an electric and magnetic field
+## 3. Non-relativistic motion in an electric and magnetic field
 
-We have seen that Eq.
-[\[Eq:HunderU1\]](#Eq:HunderU1){reference-type="eqref"
-reference="Eq:HunderU1"} looks a lot like a Hamiltonian of a charged
+We have seen that Eq. (\ref{Eq:HunderU1}) looks a lot like a Hamiltonian of a charged
 electron that we know from EM, namely: $$\begin{aligned}
 H_1 &= \frac{(\mathbf{p}+eA(\mathbf{r},t))^2}{2m}+e\phi(\mathbf{r},t)\end{aligned}$$
 $eA(\mathbf{r},t)$ is then the vectore potential and
@@ -204,13 +211,16 @@ Let us clarify this connection a bit more. In Hamiltonian mechanics we
 have to solve the equations of motion: $$\begin{aligned}
 \frac{dp_i}{dt}&=-\frac{\partial H}{\partial r_i}\\
 \frac{dr_i}{dt}&=\frac{\partial H}{\partial p_i}\end{aligned}$$ We can
-now rewrite the Hamiltonian
-[\[Eq:HunderU1\]](#Eq:HunderU1){reference-type="eqref"
-reference="Eq:HunderU1"} as: $$\begin{aligned}
+now rewrite the Hamiltonian (\ref{Eq:HunderU1}) as:
+
+$$\begin{aligned}
 H_1 &= \frac{(\mathbf{p}+eA(\mathbf{r},t))^2}{2m}+e\phi(\mathbf{r},t)\\
 &= \frac{\mathbf{p}^2 +2e\mathbf{A}(\mathbf{r})\mathbf{p}+e^2\mathbf{A}^2(\mathbf{r})}{2m}+e\phi(\mathbf{r},t)\\
 \text{with }\mathbf{A}(\mathbf{r},t) &=\frac{\nabla \varphi(\mathbf{r},t)}{e}\text{ and } \phi(\mathbf{r},t) =\frac{ V(\mathbf{r})-\dot{\varphi}(\mathbf{r},t) }{e}\end{aligned}$$
-We actually find: $$\begin{aligned}
+
+We actually find:
+
+$$\begin{aligned}
 v_i &= \frac{dr_i}{dt}= \frac{p_i+eA_i(\mathbf{r})}{m}\\
 \frac{dp_i}{dt}&= -\left[e\frac{\partial\phi(\mathbf{r},t)}{\partial r_i}+e\sum_j \frac{p_j}{m} \frac{\partial A_j(\mathbf{r})}{\partial r_i}+e^2\sum_j \frac{A_j(\mathbf{r})}{m}\frac{A_j(\mathbf{r})}{\partial r_i}\right]\\
 \frac{dp_i}{dt}&= -e\left[\frac{\partial\phi(\mathbf{r},t)}{\partial r_i}+\sum_j v_j \frac{\partial A_j(\mathbf{r},t)}{\partial r_i}\right]\end{aligned}$$
@@ -220,8 +230,10 @@ F_i &= m \dot{v}_i = \dot{p}_i+\dot{A}_i(\mathbf{r})\\
 In three dimensions we can now make the identification with the Lorentz
 force: $$\begin{aligned}
 \mathbf{F} &= e\left(\mathbf{E} + \mathbf{v}\times\mathbf{B}\right)\end{aligned}$$
-And we obtain: $$\label{Eq:DefElectricField}
-\mathbf{E} = -\nabla \phi(\mathbf{r},t) + \partial_t \mathbf{A}(\mathbf{r},t)$$
+And we obtain:
+$$\label{Eq:DefElectricField}\tag{2}
+\mathbf{E} = -\nabla \phi(\mathbf{r},t) + \partial_t \mathbf{A}(\mathbf{r},t)
+$$
 and for the magnetic field $$\mathbf{B} = \nabla \times \mathbf{A}$$
 
 So we can obtain the equations of motion in a static electric or
@@ -234,8 +246,7 @@ of electro**dynamics** we should also include this dynamic degree of
 freedom. We will see later on that this is done conveniently on a
 lattice.
 
-Discretization in 1D
---------------------
+## Discretization in 1D
 
 While we typically think about electromagnetism in continuous space, it
 is actually quite common to do most calculations on a lattice. As most
@@ -283,12 +294,10 @@ We will typically obtain on a lattice only the effective tunneling
 element, which we identify therefore as: $$\begin{aligned}
 J \equiv \frac{1}{2m a_L^2}\end{aligned}$$
 
-# U(1) gauge transformations on a lattice
+## U(1) gauge transformations on a lattice
 
-For clarity, we will now reperform the U(1) gauge transformations of
-Sec. [2.1](#Sec:U1Conti){reference-type="ref" reference="Sec:U1Conti"}
-on a lattice. This will greatly simplify the identification with an
-electric field etc. Skip it if you know it already.
+For clarity, we will now reperform the U(1) gauge transformations  on a lattice.
+This will greatly simplify the identification with an electric field etc. Skip it if you know it already.
 
 We will employ the formalism of second quantization in the tight binding
 approximation:
@@ -346,10 +355,13 @@ $$\begin{aligned}
 i\dot{U}U^\dagger = -\sum_j \hat{N}_j \dot{\varphi}_j
 \end{aligned}$$
 
-So the transformed Hamiltonian reads: $$\begin{aligned}
+So the transformed Hamiltonian reads:
+$$
+\tag{3}
 \label{Eq:LatticeWithMagField}
  \tilde{H} = -J\sum_i \left[a_i^\dagger a_{i+1} e^{-i\delta \varphi_i} +a_{i+1}^\dagger a_i e^{i\delta \varphi_i} - \dot{\varphi}_i \hat{N}_i\right]
- \end{aligned}$$ We can now identify the derivative of the phase with
+$$
+  We can now identify the derivative of the phase with
 the vector potential and the time derivative with the scalar potential:
 $$\begin{aligned}
  \delta \varphi_i &= eA_i a_L\\
@@ -359,24 +371,16 @@ $$\begin{aligned}
 We can now summarize these findings in Fig.
 [1](#840410){reference-type="ref" reference="840410"}. The
 identification with the magnetic field and the electric field are then
-again like in Eq.
-[\[Eq:DefElectricField\]](#Eq:DefElectricField){reference-type="eqref"
-reference="Eq:DefElectricField"} [^5].
+again like in Eq.(\ref{Eq:DefElectricField})[^5].
 
-![Hopping in the lattice after a U(1) gauge transformation. At each
-hopping event to right, the particle acquires a phase $e\ A_i\ a$, which
-is proportional to the vector potential. Hopping to the left leads to
-the accumulation of the inverse phase $-e\ A_ia$. [\[840410\]]{#840410
-label="840410"} ](figures/SimpleHopping/SimpleHoppingv2){#840410
-width="0.70\\columnwidth"}
 
-# From the gauge symmetry to particle conservation
+{{< figure src="SimpleHoppingv2.png" title="Hopping in the lattice after a U(1) gauge transformation. At each hopping event to right, the particle acquires a phase $e\ A_i\ a$, which is proportional to the vector potential. Hopping to the left leads to the accumulation of the inverse phase $-e\ A_ia$." numbered="true">}}
+
+## From the gauge symmetry to particle conservation
 
 We have seen that the equations of motion remain the same if the wave
 function is multiplied by a phase that is constant in space and time. We
-can see this directly from Eq.
-[\[Eq:LatticeWithMagField\]](#Eq:LatticeWithMagField){reference-type="eqref"
-reference="Eq:LatticeWithMagField"} with $\varphi_j(t) = \varphi$. So we
+can see this directly from Eq. (\ref{Eq:LatticeWithMagField}) with $\varphi_j(t) = \varphi$. So we
 obtain:
 
 $$\begin{aligned}
@@ -389,12 +393,13 @@ $$\begin{aligned}
 If the unitary operator commutes with the Hamiltonian,
 we also now that its generator $\hat{N} = \sum_j\hat{N}_j$ commutes:
 $$\begin{aligned}
-=0
- \end{aligned}$$ And as the number generator does not depend explicitly
+~[H, N]=0
+\end{aligned}$$
+And as the number generator does not depend explicitly
 on time we obtain from the Heisenberg equation that the total number of
 atoms is conserved.
 
-# The Wilson approach to dynamical gauge fields
+# 4. The Wilson approach to dynamical gauge fields
 
 Until now we seen that there is an intimate relation between the
 existance of electric and magnetic fields and $U(1)$ gauge
@@ -403,26 +408,25 @@ fields are not changing in any way as we are moving a charge. This is in
 direct constrast to electrodynamics where the motion of the charge
 implies directly the change of the electric field, see Fig.
 [2](#333433){reference-type="ref" reference="333433"}. This relationship
-is captured by Gauss' Law: $$\label{Eq:GaussLaw}
- \mathbf{div} \mathbf{E} = \rho$$
+is captured by Gauss' Law:
+$$\tag{4}
+\label{Eq:GaussLaw}
+ \mathbf{div} \mathbf{E} = \rho
+ $$
 
 Further the time evolution of the vector potential is not at all
 captured in the previous section. In electrodynamics we actually have to
-fulfill the relation: $$\label{Eq:MaxwellTime}
- \partial_t \mathbf{A} = \mathbf{E}$$
+fulfill the relation:
+$$\tag{5}
+\label{Eq:MaxwellTime}
+ \partial_t \mathbf{A} = \mathbf{E}
+ $$
 
-![Gauss law of electrodynamics. As the charge (blue) is displacted, the
-electric fiel is also modified. This perfect correlation between
-electric field and matter field, is one of the cornerstones of any
-realization of dynamical gauge fields in synthetic systems.
-[\[333433\]]{#333433 label="333433"}
-](figures/output-wsBM9r/output-wsBM9r){#333433
-width="0.70\\columnwidth"}
+
+{{< figure src="gauss_law.gif" title="Gauss law of electrodynamics. As the charge (blue) is displaced, the electric field is also modified. This perfect correlation between electric field and matter field, is one of the cornerstones of any realization of dynamical gauge fields in synthetic systems.">}}
 
 To implement these two constraint, we will have to modify the underlying
-Hamiltonian. So we look once again at the Hamiltonian
-[\[Eq:LatticeWithMagField\]](#Eq:LatticeWithMagField){reference-type="eqref"
-reference="Eq:LatticeWithMagField"} and rewrite it in a more suggestive
+Hamiltonian. So we look once again at the Hamiltonian (\ref{Eq:LatticeWithMagField}) and rewrite it in a more suggestive
 way:
 
 $$\label{eq:LatticeWithLink}
@@ -432,17 +436,14 @@ $$
 If the $L_i$ was an operator it would actually have a very similiar
 structure to the Gauss law. As the particle hops from site to site it
 would change the operator $L_i$. We will call them in the following the
-**link operators**. In the next section
-[4.1](#Sec:GaussLaw){reference-type="ref" reference="Sec:GaussLaw"} , we
+**link operators**. In the next section, we
 adapt the Hamiltonian with dynamical links such that the system now
 fulfills Gauss' Law. Then we will also add an additional term to the
-Hamiltonian to obtain the appropiate time dynamics of ED in Sec.
-[4.2](#Sec:TD){reference-type="ref" reference="Sec:TD"}.
+Hamiltonian to obtain the appropiate time dynamics of ED afterwards.
 
 # Gauss law
 
-Eq. [\[Eq:GaussLaw\]](#Eq:GaussLaw){reference-type="eqref"
-reference="Eq:GaussLaw"} describes a local conservation law combining
+Eq. (\ref{Eq:GaussLaw}) describes a local conservation law combining
 the matter field and the electric field. So we will be able to obtain
 such a relation by enforcing local gauge symmetry. To derive the *local*
 transformation laws, we will first perform a local gauge transformation
@@ -477,8 +478,9 @@ $$\begin{aligned}
 \end{aligned}$$
 
 We end up with:
-$$\label{Eq:CommLinkOps}
-~[L,G^L] = L$$
+$$\tag{6}\label{Eq:CommLinkOps}
+[L,G^L] = L
+$$
 
 So we can actually now know that the Hamiltonian remains unchanged under a gauge transformation with the generator $$\begin{aligned}
 G_j &= \hat{N}\_j + G^L_j - G^L_{j-1}\\\\
@@ -501,9 +503,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 So we know that the electric field is basically the generator of the local gauge
-transformation of the link operators. Using Eq.
-[\[Eq:CommLinkOps\]](#Eq:CommLinkOps){reference-type="eqref"
-reference="Eq:CommLinkOps"} we can write down the commutation relation
+transformation of the link operators. Using Eq. (\ref{Eq:CommLinkOps}) we can write down the commutation relation
 between link operator and electric field as: $$~[L_i,E_i] = eL_i$$
 However, we do not know the value of the charge, nor the commutation
 relations of the link operators. We will obtain them from the time
@@ -520,13 +520,11 @@ H = \chi_L \sum_i (G^L_i)^2 - J\sum_i \left[a_i^\dagger L^\dagger_i a_{i+1} +a_{
 $$
 We now have to look at the time dynamics of the link operators. We obtain:
 $$i\dot{L}_j = \chi_L [(G^L_j)^2,L_j] - J\sum_i \left[a_i^\dagger [L^\dagger_i,L_j] a_{i+1} +a_{i+1}^\dagger [\hat{L}_i,L_j] a_i \right]\nonumber$$
-Comparing to Eq.
-[\[Eq:MaxwellTime\]](#Eq:MaxwellTime){reference-type="eqref"
-reference="Eq:MaxwellTime"} we see that the commutators between the
+Comparing to Eq. (\ref{Eq:MaxwellTime}) we see that the commutators between the
 links should disappear. So we should enforce:
 $$\begin{aligned}
-&= 0\\
- ~[L_i,L_j]  &= 0\\
+~[L\_i^\dagger,L_j] &= 0\\\\
+ ~[L_i,L_j]  &= 0\\\\
  ~[L^\dagger_i,L^\dagger_j]  &= 0
 \end{aligned}$$
 
@@ -561,22 +559,23 @@ $$\begin{aligned}
 
 Our Hamiltonian reads therefore:
 $$H = \frac{a_L}{2} \sum_i E_i^2 + \frac{1}{2m a_L^2}\sum_i \left[a_i^\dagger L^\dagger_i a_{i+1} +a_{i+1}^\dagger \hat{L}_i a_i \right]$$
-End then we can identify [^6]: $$\begin{aligned}
+End then we can identify :
+$$\begin{aligned}
 \chi_L= \frac{e^2 a_L}{2}\\
 J= \frac{1}{2ma_L^2}\end{aligned}$$
 
-# The quantum link approach to dynamical gauge fields
+# 5. The quantum link approach to dynamical gauge fields
 
 The previous approach relies on unitary link operatores, which are
 extremely hard to implement with ultracold atomic gases. The idea of QLM
 is relax the constraints on the link operators a bit, while keeping
 exactly the local gauge invariance. This is also the only formalism for
 which proposals of analog quantum simulation exist as discussed in Ref.
-[@Wiese2013; @Zohar2016; @Kasper_2016; @Kasper_2017] and citations
+{{< cite "Zohar2016" >}} , {{< cite "Kasper_2016" >}} , {{< cite "Wiese2013" >}}  and citations
 therein. The discussion on the Gauss' law remains the same as in the
 previous section, so we would like to have:
 
-$$\label{eq:CommutRelLinks}
+$$\tag{7}\label{eq:CommutRelLinks}
 [L_i,G^L_i] = L_i ~~[L^\dagger_i,G^L_i] = -L^\dagger_i
 $$
 
@@ -595,11 +594,9 @@ $$\begin{aligned}
  \hat{L}_i^\dagger = \hat{C}_i - i\hat{S}_i
 \end{aligned}$$
 
-We can now plug in these definitions into equation
-[\[eq:CommutRelLinks\]](#eq:CommutRelLinks){reference-type="eqref"
-reference="eq:CommutRelLinks"} and obtain:
+We can now plug in these definitions into equation (\ref{eq:CommutRelLinks}) and obtain:
 $$\begin{aligned}
-&= C + iS \\\\
+~[C+iS, G]&= C + iS \\\\
 ~[C,G] + i [S,G] &= C + iS \\\\
 ~[C,G] &= iS \label{Eq:CommSpinLinks}
 \end{aligned}$$
@@ -607,9 +604,9 @@ $$\begin{aligned}
 In a similiar fashion we have:
 
 $$\begin{aligned}
-= -(C - iS)\\\\
-~[C,G] - i [S,G] = iS -C\nonumber\\\\
-~[G,S] = iC
+~[C-iS, G]&= -(C - iS)\\\\
+~[C,G] - i [S,G] &= iS -C\\\\
+~[G,S] &= iC
 \end{aligned}$$
 
 The last line sets the commutation relationship of the links. These can be directly
@@ -631,7 +628,9 @@ L^\dagger &=J_x - iJ_y = J_-
 
 Let us write down explicitly
 once more the commutation relationships that we have in the QLM:
-$$=[J_+, -J_z] =J_+\label{eq:CommLinkQLM}$$
+$$
+[L_i, G_i^L]=[J_+, -J_z] =J_+\label{eq:CommLinkQLM}\tag{8}
+$$
 
 So while we keep local gauge invariance, we have now non-commutating
 link operators. This means that we implement properly the Gauss' law.
@@ -651,9 +650,7 @@ J_-\left|m,\ell\right\rangle &= \sqrt{\ell(\ell+1)-m(m-1)}\left|m-1,\ell\right\r
 We can once again write down our microscopic Hamiltonian:
 $$H_{QL} = \chi_L \sum_i (J_z^i)^2-J\sum_i \left[a_i^\dagger \hat{J}^+_i a_{i+1} +a_{i+1}^\dagger \hat{J}^-_i a_i \right]$$
 We would now like to make the connection to QED. For that we need the
-commutators in equation
-[\[eq:CommLinkQLM\]](#eq:CommLinkQLM){reference-type="eqref"
-reference="eq:CommLinkQLM"} to become negligable. We actually know that
+commutators in equation \ref{eq:CommLinkQLM} to become negligable. We actually know that
 this will typically happen in the limit of large occupation numbers for
 the spin. In this case we can write [(PhD by Christian
 Gross)](http://www.kip.uni-heidelberg.de/Veroeffentlichungen/details.php?id=2160):
@@ -694,11 +691,10 @@ where we found that: $$\begin{aligned}
 # From theory towards experiments
 
 The theoretical concepts of dynamical gauge fields in ultracold atomic
-systems have been relatively well established in the last few years
-CITATIONS and stuied in several theory groups. However, the experimental
+systems have been relatively well established in the last few years and studied in several theory groups. However, the experimental
 efforts are still way behind the theoretical framework. The gap is
 actually so strong that only a single experiment has been performed with
-ultracold ions [@Martinez_2016], which performed a digital quantum
+ultracold ions  {{< cite "Martinez_2016" >}}, which performed a digital quantum
 simulation with *four* qubits. With ultracold atomic gases,up to the
 groups to decide on the specific experimental implementation, which best
 implements the:
@@ -723,12 +719,8 @@ lab](https://www.kip.uni-heidelberg.de/synqs/dyngauge) in Heidelberg.
 
 [^4]: Kudos to Torsten Zache for this part.
 
-[^5]: **Attention:** From Eq.
-    [\[Eq:LatticeWithMagField\]](#Eq:LatticeWithMagField){reference-type="eqref"
-    reference="Eq:LatticeWithMagField"} it becomes immediatly clear that
+[^5]: **Attention:** From Eq. (\ref{Eq:LatticeWithMagField}) it becomes immediatly clear that
     it is different to hop to the left then hopping to the right. So the
     left-right symmetry is explicitly broken by external factors. This
     is an important point to remember when we discuss dynamical gauge
     fields in the following sections.
-
-[^6]: What do we learn from that ? Does the theorist agree ?
