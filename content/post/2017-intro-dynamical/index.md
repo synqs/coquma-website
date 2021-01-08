@@ -14,6 +14,7 @@ tags:
 - local symmetries
 - tutorial
 
+date: 2017-09-28
 summary: Dynamical gauge fields are a fundamental concept of high-energy physics. However, learning about them typically takes enormous amounts of time and effort. As such, they are typically a bit mystical to students (including me) of other fields of physics like condensed-matter or AMO. Here, we will give a simple introduction into some of the concepts that might allow for the quantum simulation of these theories with ultracold atomic gases.The reader should know about second quantization and the basics of quantum mechanics as the arguments are based on this formalism.
 
 draft: false
@@ -103,11 +104,13 @@ generators will later play the role of local conservation laws.
 
 As we would like to use such gauge transformations to engineer our
 Hamiltonians, we better also understand the connection between the
-Schrödinger equations in the different reference frames:
-
+Schrödinger equations in the different reference frames. In the standard frame, we can simply write:
+$$
+i\left|\dot{\psi}\right\rangle = \hat{H}\left|\psi\right\rangle
+$$
+Let us now solve the Schrödinger equation for $\tilde{\psi}$, to see how see how we can connect the two frames.
 $$\begin{aligned}
 \label{eq:GaugeTransformation}
-i\left|\dot{\psi}\right\rangle &= \hat{H}\left|\psi\right\rangle\\\\
 i\left|\dot{\tilde{\psi}}\right\rangle &= \hat{H}\left|\tilde{\psi}\right\rangle\\\\
 &=  Ui\left|\dot{\psi}\right\rangle + i \dot{U}\left|\psi\right\rangle\\\\
 &= \left(UH + i\dot{U}\right)\left|\psi\right\rangle\\\\
@@ -170,7 +173,7 @@ other hand:
 $$\begin{aligned}
 U\hat{p}U^\dagger &\approx (1+i\varphi(\hat{x},t)) \hat{p}(1-i\varphi(\hat{x},t))\\\\
 &= \hat{p} +i[\varphi(\hat{x},t),\hat{p}]\\\\
- &= \hat{p}+\nabla_x \varphi(\hat{x},t)
+ &= \hat{p}-\nabla_x \varphi(\hat{x},t)
 \end{aligned}$$
 
 And for the time derivative we have:
@@ -214,19 +217,21 @@ have to solve the equations of motion: $$\begin{aligned}
 now rewrite the Hamiltonian (\ref{Eq:HunderU1}) as:
 
 $$\begin{aligned}
-H_1 &= \frac{(\mathbf{p}+eA(\mathbf{r},t))^2}{2m}+e\phi(\mathbf{r},t)\\
-&= \frac{\mathbf{p}^2 +2e\mathbf{A}(\mathbf{r})\mathbf{p}+e^2\mathbf{A}^2(\mathbf{r})}{2m}+e\phi(\mathbf{r},t)\\
+H_1 &= \frac{(\mathbf{p}+eA(\mathbf{r},t))^2}{2m}+e\phi(\mathbf{r},t)\\\\
+&= \frac{\mathbf{p}^2 +2e\mathbf{A}(\mathbf{r})\mathbf{p}+e^2\mathbf{A}^2(\mathbf{r})}{2m}+e\phi(\mathbf{r},t)\\\\
 \text{with }\mathbf{A}(\mathbf{r},t) &=\frac{\nabla \varphi(\mathbf{r},t)}{e}\text{ and } \phi(\mathbf{r},t) =\frac{ V(\mathbf{r})-\dot{\varphi}(\mathbf{r},t) }{e}\end{aligned}$$
 
 We actually find:
 
 $$\begin{aligned}
-v_i &= \frac{dr_i}{dt}= \frac{p_i+eA_i(\mathbf{r})}{m}\\
-\frac{dp_i}{dt}&= -\left[e\frac{\partial\phi(\mathbf{r},t)}{\partial r_i}+e\sum_j \frac{p_j}{m} \frac{\partial A_j(\mathbf{r})}{\partial r_i}+e^2\sum_j \frac{A_j(\mathbf{r})}{m}\frac{A_j(\mathbf{r})}{\partial r_i}\right]\\
+v_i &= \frac{dr_i}{dt}= \frac{p_i+eA_i(\mathbf{r})}{m}\\\\
+\frac{dp_i}{dt}&= -\left[e\frac{\partial\phi(\mathbf{r},t)}{\partial r_i}+e\sum_j \frac{p_j}{m} \frac{\partial A_j(\mathbf{r})}{\partial r_i}+e^2\sum_j \frac{A_j(\mathbf{r})}{m}\frac{\partial A_j(\mathbf{r})}{\partial r_i}\right]\\\\
 \frac{dp_i}{dt}&= -e\left[\frac{\partial\phi(\mathbf{r},t)}{\partial r_i}+\sum_j v_j \frac{\partial A_j(\mathbf{r},t)}{\partial r_i}\right]\end{aligned}$$
-For the time dynamics we finally obtain: $$\begin{aligned}
-F_i &= m \dot{v}_i = \dot{p}_i+\dot{A}_i(\mathbf{r})\\
-&= -e\left[\frac{\partial\phi(\mathbf{r},t)}{\partial r_i}+\sum_j v_j \frac{\partial A_j(\mathbf{r},t)}{\partial r_i}\right]+e\dot{A}_i(\mathbf{r})\end{aligned}$$
+For the time dynamics we finally obtain:
+$$\begin{aligned}
+F_i &= m \dot{v}_i = \dot{p}_i+\dot{A}_i(\mathbf{r})\\\\
+&= -e\left[\frac{\partial\phi(\mathbf{r},t)}{\partial r_i}+\sum_j v_j \frac{\partial A_j(\mathbf{r},t)}{\partial r_i}\right]+e\dot{A}_i(\mathbf{r})
+\end{aligned}$$
 In three dimensions we can now make the identification with the Lorentz
 force: $$\begin{aligned}
 \mathbf{F} &= e\left(\mathbf{E} + \mathbf{v}\times\mathbf{B}\right)\end{aligned}$$
@@ -335,7 +340,7 @@ a_j +i\varphi_ja_j &= a_j + i\varphi_j (Ga_j - a_jG)\\\\
 
 This last equation is solved by:
 
-$$\hat{G}\_j = \hat{N}\_j = a^\dagger_j a_j$$
+$$\hat{G}\_j = -\hat{N}\_j =-a^\dagger_j a_j$$
 
 As each component commutes we can therefore write now:
 
@@ -368,8 +373,7 @@ $$\begin{aligned}
  \dot{\varphi}_i &=  e\phi_i
  \end{aligned}$$
 
-We can now summarize these findings in Fig.
-[1](#840410){reference-type="ref" reference="840410"}. The
+We can now summarize these findings in the figure below. The
 identification with the magnetic field and the electric field are then
 again like in Eq.(\ref{Eq:DefElectricField})[^5].
 
@@ -406,8 +410,7 @@ existance of electric and magnetic fields and $U(1)$ gauge
 transformations that depend on time and position. However, the gauge
 fields are not changing in any way as we are moving a charge. This is in
 direct constrast to electrodynamics where the motion of the charge
-implies directly the change of the electric field, see Fig.
-[2](#333433){reference-type="ref" reference="333433"}. This relationship
+implies directly the change of the electric field, see Figure below. This relationship
 is captured by Gauss' Law:
 $$\tag{4}
 \label{Eq:GaussLaw}
@@ -441,7 +444,7 @@ adapt the Hamiltonian with dynamical links such that the system now
 fulfills Gauss' Law. Then we will also add an additional term to the
 Hamiltonian to obtain the appropiate time dynamics of ED afterwards.
 
-# Gauss law
+## Gauss law
 
 Eq. (\ref{Eq:GaussLaw}) describes a local conservation law combining
 the matter field and the electric field. So we will be able to obtain
@@ -509,7 +512,7 @@ However, we do not know the value of the charge, nor the commutation
 relations of the link operators. We will obtain them from the time
 evolution of the gauge field.
 
-# Time dynamics
+## Time dynamics
 
 In analogy with classical mechanics we can introduce the Hamiltonian
 dynamics of the electric field via an $E^2$ term. So the full
@@ -705,8 +708,18 @@ implements the:
 -   Time dynamics, which connects the vector potential dynamics to the
     electric field dynamics
 
-And this is exactly, what we are working on in our [mixture
-lab](https://www.kip.uni-heidelberg.de/synqs/dyngauge) in Heidelberg.
+And this is exactly, what we are working on in our group.
+
+
+# Updates
+
+Since we first wrote this article there has been substantial progress on the experimental side.
+
+- In trapped ions there was an experiment with a much larger number of ions {{< cite "Kokail2018" >}}
+- In cold atoms there have been a number of experiments. See {{< cite "Goerg2019" >}}, {{< cite "Schweizer2019" >}}, {{< cite "Mil2020" >}}, {{< cite "Bing2020" >}} .
+- Concerning non-abelian gauge theories we wrote a paper of similiar style as this tutorial {{< cite "Kasper2020-jaynes" >}}.
+
+Feel free to comment and or write us if you would like to know more and have specific requests.
 
 [^1]: If I am wrong about this part, please tell me.
 
