@@ -58,7 +58,7 @@
   
   
   
-  <meta name="theme-color" content="#2962ff">
+  <meta name="theme-color" content="#1565c0">
   
 
   
@@ -76,7 +76,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" media="print" onload="this.media='all'">
 
     
     
@@ -87,14 +87,14 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
         
       
     
 
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
     
 
     
@@ -236,7 +236,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.570c0666a24511c27bb6001877169437.css">
+  <link rel="stylesheet" href="/css/wowchemy.cc5407d180025dbc4182bc4adec604ec.css">
 
   
 
@@ -293,7 +293,10 @@
   <link rel="alternate" href="/publication/index.xml" type="application/rss+xml" title="Jendrzejewski Group">
   
 
+  
   <link rel="manifest" href="/index.webmanifest">
+  
+
   <link rel="icon" type="image/png" href="/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_192x192_fill_lanczos_center_2.png">
 
@@ -342,12 +345,12 @@
     window.cookieconsent.initialise({
       "palette": {
         "popup": {
-          "background": "#2962ff",
+          "background": "#1565c0",
           "text": "rgb(255, 255, 255)"
         },
         "button": {
           "background": "rgb(255, 255, 255)",
-          "text": "#2962ff"
+          "text": "#1565c0"
         }
       },
       "theme": "classic",
@@ -380,11 +383,11 @@
   
   
   
-  <script src="/js/wowchemy-init.min.25bb65fc185bceea61395d5b0560127a.js"></script>
+  <script src="/js/wowchemy-init.min.7d92a95e871a711a5c03f82410d0fe5d.js"></script>
 
   
 
-<aside class="search-results" id="search">
+<aside class="search-modal" id="search">
   <div class="container">
     <section class="search-header">
 
@@ -393,14 +396,15 @@
           <h1>Search</h1>
         </div>
         <div class="col-6 col-search-close">
-          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
         </div>
       </div>
 
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
         
       </div>
 
@@ -942,7 +946,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2101.01135" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2101.01135" target="_blank" rel="noopener">
   Preprint
 </a>
 
@@ -953,7 +957,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/2021-bhatt/2021-bhatt.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/2021-bhatt/2021-bhatt.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -968,7 +972,7 @@
   
 
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/sopa/">
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/sopa/">
     Project
   </a>
   
@@ -1028,7 +1032,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2012.10432" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2012.10432" target="_blank" rel="noopener">
   Preprint
 </a>
 
@@ -1105,7 +1109,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2012.08620" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2012.08620" target="_blank" rel="noopener">
   Preprint
 </a>
 
@@ -1187,7 +1191,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://arxiv.org/abs/2010.15923" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://arxiv.org/abs/2010.15923" target="_blank" rel="noopener">
   Preprint
 </a>
 
@@ -1200,10 +1204,10 @@
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/kasper-2020/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -1274,16 +1278,16 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://iopscience.iop.org/article/10.1088/1367-2630/abb961" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://iopscience.iop.org/article/10.1088/1367-2630/abb961" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/2020-kasper-jaynes/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -1301,7 +1305,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1088/1367-2630/abb961" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1088/1367-2630/abb961" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -1351,7 +1355,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/thesis/mil-2020/mil-2020.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/thesis/mil-2020/mil-2020.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -1363,14 +1367,14 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.11588/data/YH80DI" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.11588/data/YH80DI" target="_blank" rel="noopener">
   Dataset
 </a>
 
 
 
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/nali/">
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/nali/">
     Project
   </a>
   
@@ -1434,7 +1438,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://arxiv.org/abs/2003.08101" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://arxiv.org/abs/2003.08101" target="_blank" rel="noopener">
   Preprint
 </a>
 
@@ -1447,10 +1451,10 @@
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/hesse-2020/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -1514,7 +1518,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/thesis/rudolph-2020/rudolph-2020.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/thesis/rudolph-2020/rudolph-2020.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -1525,7 +1529,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://git.kip.uni-heidelberg.de/fnj/kipqml" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://git.kip.uni-heidelberg.de/fnj/kipqml" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -1592,7 +1596,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/1909.07641" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/1909.07641" target="_blank" rel="noopener">
   Preprint
 </a>
 
@@ -1605,16 +1609,16 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/1909.07641.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/pdf/1909.07641.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -1625,7 +1629,7 @@
   
 
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/nali/">
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/nali/">
     Project
   </a>
   
@@ -1638,7 +1642,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1126/science.aaz5312" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1126/science.aaz5312" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -1688,7 +1692,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/thesis/hesse-2019/hesse-2019.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/thesis/hesse-2019/hesse-2019.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -1699,13 +1703,13 @@
 
 
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/nali/">
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/nali/">
     Project
   </a>
   
 
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/sopa/">
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/sopa/">
     Project
   </a>
   
@@ -1764,7 +1768,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/thesis/hoecker-2019/hoecker-2019.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/thesis/hoecker-2019/hoecker-2019.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -1775,7 +1779,7 @@
 
 
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/sopa/">
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/sopa/">
     Project
   </a>
   
@@ -1840,16 +1844,16 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://quantum-journal.org/papers/q-2019-06-28-155/" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://quantum-journal.org/papers/q-2019-06-28-155/" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/niedenzu-2019/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -1883,7 +1887,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.22331/q-2019-06-28-155" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.22331/q-2019-06-28-155" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -1933,7 +1937,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/thesis/kilinc-2019/kilinc-2019.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/thesis/kilinc-2019/kilinc-2019.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -1944,7 +1948,7 @@
 
 
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/sopa/">
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/sopa/">
     Project
   </a>
   
@@ -2016,16 +2020,16 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://link.aps.org/doi/10.1103/PhysRevLett.122.100403" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://link.aps.org/doi/10.1103/PhysRevLett.122.100403" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/richard-2019/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -2039,7 +2043,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1103/PhysRevLett.122.100403" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1103/PhysRevLett.122.100403" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -2102,16 +2106,16 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://iopscience.iop.org/10.1088/1367-2630/ab466f" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://iopscience.iop.org/10.1088/1367-2630/ab466f" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/2019-signoles/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -2125,7 +2129,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1088/1367-2630/ab466f" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1088/1367-2630/ab466f" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -2183,16 +2187,16 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1103/PhysRevLett.122.050403" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1103/PhysRevLett.122.050403" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/zache-2019/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -2210,7 +2214,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1103/PhysRevLett.122.050403" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1103/PhysRevLett.122.050403" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -2260,7 +2264,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/thesis/schymik-2018/schymik-2018.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/thesis/schymik-2018/schymik-2018.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -2271,7 +2275,7 @@
 
 
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/nali/">
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/nali/">
     Project
   </a>
   
@@ -2342,10 +2346,10 @@
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/bienias-2018/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -2359,7 +2363,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1103/PhysRevA.102.013306" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1103/PhysRevA.102.013306" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -2417,16 +2421,16 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://arxiv.org/abs/1802.06704%20http://stacks.iop.org/2058-9565/3/i=3/a=034010?key=crossref.df88045d77c98bcb9d33fa933a8d2db5" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://arxiv.org/abs/1802.06704%20http://stacks.iop.org/2058-9565/3/i=3/a=034010?key=crossref.df88045d77c98bcb9d33fa933a8d2db5" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/zache-2018/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -2444,7 +2448,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1088/2058-9565/aac33b" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1088/2058-9565/aac33b" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -2501,16 +2505,16 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://dx.doi.org/10.1088/1367-2630/aa54e0" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://dx.doi.org/10.1088/1367-2630/aa54e0" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/kasper-2017/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -2528,7 +2532,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1088/1367-2630/aa54e0" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1088/1367-2630/aa54e0" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -2584,16 +2588,16 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://arxiv.org/abs/1608.02894" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://arxiv.org/abs/1608.02894" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/kumar-2017/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -2607,7 +2611,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1103/PhysRevA.95.021602" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1103/PhysRevA.95.021602" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -2657,7 +2661,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/thesis/mil-2016/mil-2016.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/thesis/mil-2016/mil-2016.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -2668,7 +2672,7 @@
 
 
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/nali/">
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/nali/">
     Project
   </a>
   
@@ -2735,16 +2739,16 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.063619%20http://link.aps.org/doi/10.1103/PhysRevA.93.063619" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.063619%20http://link.aps.org/doi/10.1103/PhysRevA.93.063619" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/lee-2015-a/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -2758,7 +2762,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1103/PhysRevA.93.063619" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1103/PhysRevA.93.063619" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -2817,10 +2821,10 @@
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/jendrzejewski-2016/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -2834,7 +2838,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1103/PhysRevA.94.063422" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1103/PhysRevA.94.063422" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -2892,16 +2896,16 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://arxiv.org/abs/1605.01874" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://arxiv.org/abs/1605.01874" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/rentrop-2016/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -2912,7 +2916,7 @@
   
 
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/nali/">
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/nali/">
     Project
   </a>
   
@@ -2925,7 +2929,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1103/PhysRevX.6.041041" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1103/PhysRevX.6.041041" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -2985,16 +2989,16 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://arxiv.org/abs/1510.02968" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://arxiv.org/abs/1510.02968" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/wang-2015/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -3008,7 +3012,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1088/1367-2630/17/12/125012" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1088/1367-2630/17/12/125012" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -3067,16 +3071,16 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://link.aps.org/doi/10.1103/PhysRevA.92.033602" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://link.aps.org/doi/10.1103/PhysRevA.92.033602" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/mathew-2015/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -3090,7 +3094,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1103/PhysRevA.92.033602" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1103/PhysRevA.92.033602" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -3147,16 +3151,16 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://link.aps.org/doi/10.1103/PhysRevX.4.031052" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://link.aps.org/doi/10.1103/PhysRevX.4.031052" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/eckel-2014-a/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -3170,7 +3174,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1103/PhysRevX.4.031052" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1103/PhysRevX.4.031052" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -3229,16 +3233,16 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://link.aps.org/doi/10.1103/PhysRevLett.113.045305" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://link.aps.org/doi/10.1103/PhysRevLett.113.045305" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/jendrzejewski-2014/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -3252,7 +3256,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1103/PhysRevLett.113.045305" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1103/PhysRevLett.113.045305" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -3313,16 +3317,16 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://www.nature.com/doifinder/10.1038/nature12958" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://www.nature.com/doifinder/10.1038/nature12958" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/eckel-2014/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -3336,7 +3340,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1038/nature12958" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1038/nature12958" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -3388,16 +3392,16 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://tel.archives-ouvertes.fr/tel-00809290" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://tel.archives-ouvertes.fr/tel-00809290" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/thesis/jendrzejewski-2012-b/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -3467,16 +3471,16 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://link.aps.org/doi/10.1103/PhysRevLett.109.195302" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://link.aps.org/doi/10.1103/PhysRevLett.109.195302" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/jendrzejewski-2012/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -3490,7 +3494,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1103/PhysRevLett.109.195302" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1103/PhysRevLett.109.195302" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -3552,16 +3556,16 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://www.nature.com/nphys/journal/vaop/ncurrent/full/nphys2256.html" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://www.nature.com/nphys/journal/vaop/ncurrent/full/nphys2256.html" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/jendrzejewski-2012-a/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -3575,7 +3579,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1038/NPHYS2256" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1038/NPHYS2256" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -3635,16 +3639,16 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://stacks.iop.org/1367-2630/13/i=6/a=065015?key=crossref.03eaa2fc75839821bf18fc2756105158" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://stacks.iop.org/1367-2630/13/i=6/a=065015?key=crossref.03eaa2fc75839821bf18fc2756105158" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/bernard-2011/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -3658,7 +3662,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1088/1367-2630/13/6/065015" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1088/1367-2630/13/6/065015" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -3847,7 +3851,7 @@
       
     
     
-    <script src="/js/wowchemy.min.572b7caf7fe601716a0f74d67d754c21.js"></script>
+    <script src="/js/wowchemy.min.aeecf26c1eff6b9588dbafc1a9f3953c.js"></script>
 
     
 

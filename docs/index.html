@@ -58,7 +58,7 @@
   
   
   
-  <meta name="theme-color" content="#2962ff">
+  <meta name="theme-color" content="#1565c0">
   
 
   
@@ -76,7 +76,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" media="print" onload="this.media='all'">
 
     
     
@@ -87,14 +87,14 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
         
       
     
 
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
     
 
     
@@ -236,7 +236,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.570c0666a24511c27bb6001877169437.css">
+  <link rel="stylesheet" href="/css/wowchemy.cc5407d180025dbc4182bc4adec604ec.css">
 
   
 
@@ -295,7 +295,10 @@
   <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Jendrzejewski Group">
   
 
+  
   <link rel="manifest" href="/index.webmanifest">
+  
+
   <link rel="icon" type="image/png" href="/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_192x192_fill_lanczos_center_2.png">
 
@@ -383,12 +386,12 @@
     window.cookieconsent.initialise({
       "palette": {
         "popup": {
-          "background": "#2962ff",
+          "background": "#1565c0",
           "text": "rgb(255, 255, 255)"
         },
         "button": {
           "background": "rgb(255, 255, 255)",
-          "text": "#2962ff"
+          "text": "#1565c0"
         }
       },
       "theme": "classic",
@@ -421,11 +424,11 @@
   
   
   
-  <script src="/js/wowchemy-init.min.25bb65fc185bceea61395d5b0560127a.js"></script>
+  <script src="/js/wowchemy-init.min.7d92a95e871a711a5c03f82410d0fe5d.js"></script>
 
   
 
-<aside class="search-results" id="search">
+<aside class="search-modal" id="search">
   <div class="container">
     <section class="search-header">
 
@@ -434,14 +437,15 @@
           <h1>Search</h1>
         </div>
         <div class="col-6 col-search-close">
-          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
         </div>
       </div>
 
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
         
       </div>
 
@@ -767,10 +771,6 @@
   
     
     
-      
-    
-    
-    
     
     
       
@@ -779,6 +779,10 @@
     
       
       
+    
+  
+
+  
     
   
 
@@ -815,7 +819,7 @@
 
   
   <section id="hero" class="home-section wg-hero dark "  >
-   <div class="home-section-bg  bg-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(&#39;https://jendrzejewski.synqs.org/media/SoPa.jpg&#39;);background-size: cover;background-position: center;"></div>
+   <div class="home-section-bg  bg-image" style="background-image: url(&#39;https://jendrzejewski.synqs.org/media/SoPa.jpg&#39;);background-size: cover;background-position: center;filter: brightness(0.5);"></div>
     <div class="container">
 
     
@@ -850,7 +854,7 @@
         
       
     <p class="cta-btns">
-      <a href="/publication"  class="btn btn-light btn-lg"><i class="fas fa-file pr-1" aria-hidden="true"></i>View publications</a>
+      <a href="/publication"  class="btn btn-light btn-lg mb-3 mb-md-1"><i class="fas fa-file pr-1" aria-hidden="true"></i>View publications</a>
 
       
       
@@ -860,7 +864,7 @@
         
           
         
-      <a href="/#people"  class="hero-cta-alt pl-4">Join the team <i class="fas fa-angle-right"></i></a>
+      <a href="/#people"  class="hero-cta-alt btn-lg pl-md-4">Join the team <i class="fas fa-angle-right"></i></a>
       
     </p>
     
@@ -880,6 +884,8 @@
   
   
   
+  
+
   
 
   
@@ -960,6 +966,8 @@
   
   
   
+  
+
   
 
   
@@ -1095,9 +1103,9 @@
 <div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0">
+    <div class="section-subheading article-title mb-0 mt-0">
       <a href="/publication/2021-bhatt/" >Stochastic dynamics of a few sodium atoms in a cold potassium cloud</a>
-    </h3>
+    </div>
 
     
     <a href="/publication/2021-bhatt/"  class="summary-link">
@@ -1136,7 +1144,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2101.01135" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2101.01135" target="_blank" rel="noopener">
   Preprint
 </a>
 
@@ -1147,7 +1155,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/2021-bhatt/2021-bhatt.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/2021-bhatt/2021-bhatt.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -1162,7 +1170,7 @@
   
 
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/sopa/">
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/sopa/">
     Project
   </a>
   
@@ -1219,9 +1227,9 @@
 <div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0">
+    <div class="section-subheading article-title mb-0 mt-0">
       <a href="/publication/2020-ott-scalable/" >Scalable cold-atom quantum simulator for two-dimensional QED</a>
-    </h3>
+    </div>
 
     
     <a href="/publication/2020-ott-scalable/"  class="summary-link">
@@ -1260,7 +1268,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2012.10432" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2012.10432" target="_blank" rel="noopener">
   Preprint
 </a>
 
@@ -1326,9 +1334,9 @@
 <div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0">
+    <div class="section-subheading article-title mb-0 mt-0">
       <a href="/publication/2020-kasper-decoupling/" >Non-Abelian gauge invariance from dynamical decoupling</a>
-    </h3>
+    </div>
 
     
     <a href="/publication/2020-kasper-decoupling/"  class="summary-link">
@@ -1368,7 +1376,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2012.08620" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2012.08620" target="_blank" rel="noopener">
   Preprint
 </a>
 
@@ -1434,9 +1442,9 @@
 <div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0">
+    <div class="section-subheading article-title mb-0 mt-0">
       <a href="/publication/kasper-2020/" >Universal quantum computation and quantum error correction with ultracold atomic mixtures</a>
-    </h3>
+    </div>
 
     
     <a href="/publication/kasper-2020/"  class="summary-link">
@@ -1481,7 +1489,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://arxiv.org/abs/2010.15923" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://arxiv.org/abs/2010.15923" target="_blank" rel="noopener">
   Preprint
 </a>
 
@@ -1494,10 +1502,10 @@
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/kasper-2020/cite.bib">
   Cite
-</button>
+</a>
 
 
 
@@ -1562,6 +1570,8 @@
   
   
   
+  
+
   
 
   
@@ -1689,9 +1699,9 @@
 <div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0">
+    <div class="section-subheading article-title mb-0 mt-0">
       <a href="/teaching/2021-quantum-simulation-seminar/" >Building synthetic quantum systems with photons, ions and neutral atoms</a>
-    </h3>
+    </div>
 
     
     <a href="/teaching/2021-quantum-simulation-seminar/"  class="summary-link">
@@ -1785,9 +1795,9 @@
 <div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0">
+    <div class="section-subheading article-title mb-0 mt-0">
       <a href="/teaching/2020-solving-problems/" >Solving problems on quantum hardware</a>
-    </h3>
+    </div>
 
     
     <a href="/teaching/2020-solving-problems/"  class="summary-link">
@@ -1883,9 +1893,9 @@
 <div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0">
+    <div class="section-subheading article-title mb-0 mt-0">
       <a href="/teaching/2019-aamo/" >Advanced Atomic, Molecular and Optical Physics</a>
-    </h3>
+    </div>
 
     
     <a href="/teaching/2019-aamo/"  class="summary-link">
@@ -1992,6 +2002,8 @@
   
   
   
+  
+
   
 
   
@@ -2370,6 +2382,8 @@
   
   
   
+  
+
   
 
   
@@ -3027,7 +3041,7 @@
       
     
     
-    <script src="/js/wowchemy.min.572b7caf7fe601716a0f74d67d754c21.js"></script>
+    <script src="/js/wowchemy.min.aeecf26c1eff6b9588dbafc1a9f3953c.js"></script>
 
     
 

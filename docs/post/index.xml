@@ -3814,5 +3814,1362 @@ will see where the journey goes from here.&lt;/p&gt;
 </description>
     </item>
     
+    <item>
+      <title>What are dynamical gauge fields ? A simplistic introduction by an AMO experimentalist.</title>
+      <link>https://jendrzejewski.synqs.org/post/2017-intro-dynamical/</link>
+      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/post/2017-intro-dynamical/</guid>
+      <description>&lt;h1 id=&#34;motivation&#34;&gt;Motivation&lt;/h1&gt;
+&lt;p&gt;Dynamical gauge fields are a carrot that the AMO rabbit would like to
+understand. However they are typically formulated in the context of QCD
+or QED, whose only effect on me is profound sadness. Here, we will
+discuss a naive derivation of some of the concepts that might allow for
+the simulation of these dynamical gauge fields with ultracold atomic
+gases. We will start out the discussion, with a few basic principles of gauge
+transformations in quantum mechanics in Sec &lt;a href=&#34;#2-gauge-transformations-in-quantum-mechanics&#34;&gt;2&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In Sec. &lt;a href=&#34;#3-non-relativistic-motion-in-an-electric-and-magnetic-field&#34;&gt;3&lt;/a&gt; we will see that these gauge transformations, especially the U(1)
+transformations, have a deep relationship with the dynamics for
+non-relativistic particles in a magnetic and an electric field. Then we
+will get an effective Hamiltonian on a lattice.&lt;/p&gt;
+&lt;p&gt;After this step, we can discuss a bit physics of dynamical gauge fields
+as they were originially introduced by Wilson in Sec. &lt;a href=&#34;#4-the-wilson-approach-to-dynamical-gauge-fields&#34;&gt;4&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And finally, we will discuss in Sec. &lt;a href=&#34;#5-the-quantum-link-approach-to-dynamical-gauge-fields&#34;&gt;5&lt;/a&gt; the formalism of Quantum Link models, which seems currently most promising for experimental set-ups. Actual experimental
+proposals will not be discussed here, as they typically involved the
+discretization of the Dirac equation.&lt;/p&gt;
+&lt;p&gt;We will exclusively discuss non-relativistic particles in 1D. This very
+simple system actually is so simplified, that it does not contain any
+interesting dynamics &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. However, it teaches us the most fundamental
+ingredients to design dynamical gauge fields on lattices. For further
+reading, I will guide the reader to the specialized literature, which
+will discuss such exciting problems like &lt;em&gt;Schwinger pair production&lt;/em&gt;
+
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#kasper_2017&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;V&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Kasper&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;,&amp;#32;
+      &lt;span itemprop=&#34;datePublished&#34;&gt;2017&lt;/span&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Kasper&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;V&#34; /&gt;
+    V.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Hebenstreit&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;F&#34; /&gt;
+    F.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Jendrzejewski&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;F&#34; /&gt;
+    F.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Oberthaler&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;M K&#34; /&gt;
+    M.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Berges&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;J&#34; /&gt;
+    J.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2017&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Implementing quantum electrodynamics with ultracold atomic systems&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;New Journal of Physics&lt;/span&gt;,&amp;#32;19(2)&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;023030&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1088/1367-2630/aa54e0&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1088/1367-2630/aa54e0&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt; or &lt;em&gt;Coleman&amp;rsquo;s phase transition&lt;/em&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;2-gauge-transformations-in-quantum-mechanics&#34;&gt;2. Gauge transformations in quantum mechanics&lt;/h1&gt;
+&lt;p&gt;We will start out our discussion of dynamical gauge fields with a short
+review of gauge transformations in quantum mechanics. This is slightly
+unusual to the high-energy physicist, who will typcially start out with
+some Lagrangien and some symmetries as discussed for example in the &lt;a href=&#34;http://archiv.ub.uni-heidelberg.de/volltextserver/20372/1/Thesis.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PhD
+by Valentin
+Kasper&lt;/a&gt;.
+However, the AMO community used the gauge transformations very
+successfully to implement &lt;strong&gt;static&lt;/strong&gt; gauge fields as very nicely
+reviewed in Ref. 
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#goldman_2014&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;N&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Goldman&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;,&amp;#32;
+      &lt;span itemprop=&#34;datePublished&#34;&gt;2014&lt;/span&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Goldman&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;N&#34; /&gt;
+    N.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Juzeliūnas&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;G&#34; /&gt;
+    G.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Öhberg&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;P&#34; /&gt;
+    P.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Spielman&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;I B&#34; /&gt;
+    I.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2014&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Light-induced gauge fields for ultracold atoms&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;Reports on Progress in Physics&lt;/span&gt;,&amp;#32;77(12)&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;126401&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1088/0034-4885/77/12/126401&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1088/0034-4885/77/12/126401&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt; or the phantastic &lt;a href=&#34;http://www.college-de-france.fr/site/en-jean-dalibard/course-2013-2014.htm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lecture by Jean
+Dalibard&lt;/a&gt;
+at the College de France &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Given a certain Hamiltonian, we can describe the time evolution of the
+wave function in terms of the Schrödinger equation:&lt;/p&gt;
+&lt;p&gt;$$
+i\left|\dot{\psi}\right\rangle = \hat{H}\left|\psi\right\rangle
+$$
+However, the choice of the reference frame is arbitrary and we could
+decide to look at the system in a different frame. Think about the
+rotating earth for example. We can try to understand it by rotating with
+it or by looking at it from the outside, where we see its rotation. Both
+are perfectly valid choices and should give the same predictions for
+observables. In quantum mechanics such a gauge transformation is
+expressed by an operator, which changes the wave function:&lt;/p&gt;
+&lt;p&gt;$$
+\left|\tilde{\psi}\right\rangle = U\left|\psi\right\rangle
+$$
+We can now directly see that it should be unitary from the condition
+that the normalization of the wave function should not change :
+$$
+\left\langle \tilde{\psi}|\tilde{\psi}\right\rangle  \equiv \left\langle \psi|\psi\right\rangle\\&lt;br&gt;
+=\left\langle\psi\right|U^\dagger U\left|\psi\right\rangle\\&lt;br&gt;
+\Rightarrow U^\dagger U  = 1
+$$&lt;/p&gt;
+&lt;p&gt;Any such unitary operators can also be written as a complex exponential with a hermitian &lt;em&gt;generator&lt;/em&gt;
+$G = G^\dagger$:&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+U &amp;amp;= e^{i \hat{G}}\\&lt;br&gt;
+UU^\dagger &amp;amp;= e^{i \hat{G}}e^{-i \hat{G}^\dagger} = 1\end{aligned}$$ These
+generators will later play the role of local conservation laws.&lt;/p&gt;
+&lt;p&gt;As we would like to use such gauge transformations to engineer our
+Hamiltonians, we better also understand the connection between the
+Schrödinger equations in the different reference frames. In the standard frame, we can simply write:
+$$
+i\left|\dot{\psi}\right\rangle = \hat{H}\left|\psi\right\rangle
+$$
+Let us now solve the Schrödinger equation for $\tilde{\psi}$, to see how see how we can connect the two frames.
+$$\begin{aligned}
+\label{eq:GaugeTransformation}
+i\left|\dot{\tilde{\psi}}\right\rangle &amp;amp;= \hat{H}\left|\tilde{\psi}\right\rangle\\&lt;br&gt;
+&amp;amp;=  Ui\left|\dot{\psi}\right\rangle + i \dot{U}\left|\psi\right\rangle\\&lt;br&gt;
+&amp;amp;= \left(UH + i\dot{U}\right)\left|\psi\right\rangle\\&lt;br&gt;
+&amp;amp;= \left(UH + i\dot{U}\right)U^\dagger \left|\tilde{\psi}\right\rangle\\&lt;br&gt;
+\Rightarrow \tilde{H} &amp;amp;= UHU^\dagger + i\dot{U}U^\dagger
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;So as we change the reference frame, the Hamiltonian contains different
+terms. A typical example from the classical world is the Coriolis force
+experienced by a person on the earth.&lt;/p&gt;
+&lt;p&gt;Finally, we would also like to understand how observables are
+transforming under a gauge transformation. We will always measure an
+observable given a certain state, so we should use:&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+\langle A \rangle &amp;amp;= \left\langle\psi\right|A\left|\psi\right\rangle\\&lt;br&gt;
+&amp;amp;=\left\langle\tilde{\psi}\right|UAU^\dagger\left|\tilde{\psi}\right\rangle\\&lt;br&gt;
+&amp;amp;= \left\langle\tilde{\psi}\right|\tilde{A}\left|\tilde{\psi}\right\rangle\\&lt;br&gt;
+\Rightarrow\tilde{A} &amp;amp;=  UAU^\dagger
+\end{aligned}$$
+Most of the time we are actually only interested in the time evolution of certain operators in
+the Heisenberg picture:&lt;/p&gt;
+&lt;p&gt;$$i\dot{A}_H = [H,A_H]$$&lt;/p&gt;
+&lt;p&gt;A few calculations show that we obtain again as expected:
+$$i \frac{d\tilde{A}}{dt} =[\tilde{H},\tilde{A}]$$&lt;/p&gt;
+&lt;h2 id=&#34;u1-gauge-transformations&#34;&gt;U(1) gauge transformations&lt;/h2&gt;
+&lt;p&gt;As a first important example for gauge transformation, we will study the
+multiplication of the wavefunction with a phase, i.e. U(1) gauge
+transformations. If the phase is constant in space and time, it leads to
+global number conservation. For a phase that is varying, the Hamiltonian
+emulates the motion of a charged particle in an EM field.&lt;/p&gt;
+&lt;p&gt;The U(1) transformation is then defined through:&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+U_1 &amp;amp;= e^{i\varphi(\hat{x},t)}\\&lt;br&gt;
+\left|\tilde{\psi}\right\rangle &amp;amp;= e^{i\varphi(\hat{x},t)}\left|\psi\right\rangle
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;Given that we work in the lab with non-relativistic particles we use the
+normal single particle Hamiltonian:&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+\hat{H}_0 &amp;amp;= \frac{\hat{p}^2}{2m}+V(\hat{x})\\&lt;br&gt;
+[\hat{x}_i,\hat{p}_j] &amp;amp;= i\delta_{ij}
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;So to understand how the Hamiltonian transforms, we can now analyze how $U_1$ transfroms
+$\hat{p}$ and $\hat{x}$. As $U$ is a function of $\hat{x}$ and $t$ it
+commutes with $\hat{x}$ and leaves it unchanged&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+U\hat{x}U^\dagger = \hat{x}\end{aligned}$$ For the momentum we have on the
+other hand:
+$$\begin{aligned}
+U\hat{p}U^\dagger &amp;amp;\approx (1+i\varphi(\hat{x},t)) \hat{p}(1-i\varphi(\hat{x},t))\\&lt;br&gt;
+&amp;amp;= \hat{p} +i[\varphi(\hat{x},t),\hat{p}]\\&lt;br&gt;
+&amp;amp;= \hat{p}-\nabla_x \varphi(\hat{x},t)
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;And for the time derivative we have:&lt;/p&gt;
+&lt;p&gt;$$i \dot{U}U^\dagger = -\dot{\varphi}(\hat{x},t)$$ In this frame the
+Hamiltonian has therefore the following form:&lt;/p&gt;
+&lt;p&gt;$$
+\tag{1}
+\label{Eq:HunderU1}
+H_1 = \frac{\left(p+\nabla \varphi(\hat{x},t)\right)^2}{2m}+V(\hat{x})-\dot{\varphi}(\hat{x},t)
+$$&lt;/p&gt;
+&lt;p&gt;To summarize:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If the externally imprinted phase of the wavefunction is changing
+over, the time derivative looks like a scalar potential or just some
+kind of energy shift.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the gauge transformation has a position dependence, the
+derivative of the phase looks like a vector potential.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To get a better understanding of the relationship to electrodynamics we
+can just look at the classical equation of motion that comes out of this
+Hamiltonian. But before we get into this connection, let us finish the
+discussion here with the relationship between gauge symmetry and
+particle conservation, which the reader might skip in a first read.&lt;/p&gt;
+&lt;h2 id=&#34;3-non-relativistic-motion-in-an-electric-and-magnetic-field&#34;&gt;3. Non-relativistic motion in an electric and magnetic field&lt;/h2&gt;
+&lt;p&gt;We have seen that Eq. (\ref{Eq:HunderU1}) looks a lot like a Hamiltonian of a charged
+electron that we know from EM, namely: $$\begin{aligned}
+H_1 &amp;amp;= \frac{(\mathbf{p}+eA(\mathbf{r},t))^2}{2m}+e\phi(\mathbf{r},t)\end{aligned}$$
+$eA(\mathbf{r},t)$ is then the vectore potential and
+$e\phi(\mathbf{r},t)$ the scalar potential.&lt;/p&gt;
+&lt;p&gt;Let us clarify this connection a bit more. In Hamiltonian mechanics we
+have to solve the equations of motion: $$\begin{aligned}
+\frac{dp_i}{dt}&amp;amp;=-\frac{\partial H}{\partial r_i}\&lt;br&gt;
+\frac{dr_i}{dt}&amp;amp;=\frac{\partial H}{\partial p_i}\end{aligned}$$ We can
+now rewrite the Hamiltonian (\ref{Eq:HunderU1}) as:&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+H_1 &amp;amp;= \frac{(\mathbf{p}+eA(\mathbf{r},t))^2}{2m}+e\phi(\mathbf{r},t)\\&lt;br&gt;
+&amp;amp;= \frac{\mathbf{p}^2 +2e\mathbf{A}(\mathbf{r})\mathbf{p}+e^2\mathbf{A}^2(\mathbf{r})}{2m}+e\phi(\mathbf{r},t)\\&lt;br&gt;
+\text{with }\mathbf{A}(\mathbf{r},t) &amp;amp;=\frac{\nabla \varphi(\mathbf{r},t)}{e}\text{ and } \phi(\mathbf{r},t) =\frac{ V(\mathbf{r})-\dot{\varphi}(\mathbf{r},t) }{e}\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;We actually find:&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+v_i &amp;amp;= \frac{dr_i}{dt}= \frac{p_i+eA_i(\mathbf{r})}{m}\\&lt;br&gt;
+\frac{dp_i}{dt}&amp;amp;= -\left[e\frac{\partial\phi(\mathbf{r},t)}{\partial r_i}+e\sum_j \frac{p_j}{m} \frac{\partial A_j(\mathbf{r})}{\partial r_i}+e^2\sum_j \frac{A_j(\mathbf{r})}{m}\frac{\partial A_j(\mathbf{r})}{\partial r_i}\right]\\&lt;br&gt;
+\frac{dp_i}{dt}&amp;amp;= -e\left[\frac{\partial\phi(\mathbf{r},t)}{\partial r_i}+\sum_j v_j \frac{\partial A_j(\mathbf{r},t)}{\partial r_i}\right]\end{aligned}$$
+For the time dynamics we finally obtain:
+$$\begin{aligned}
+F_i &amp;amp;= m \dot{v}_i = \dot{p}_i+\dot{A}_i(\mathbf{r})\\&lt;br&gt;
+&amp;amp;= -e\left[\frac{\partial\phi(\mathbf{r},t)}{\partial r_i}+\sum_j v_j \frac{\partial A_j(\mathbf{r},t)}{\partial r_i}\right]+e\dot{A}_i(\mathbf{r})
+\end{aligned}$$
+In three dimensions we can now make the identification with the Lorentz
+force: $$\begin{aligned}
+\mathbf{F} &amp;amp;= e\left(\mathbf{E} + \mathbf{v}\times\mathbf{B}\right)\end{aligned}$$
+And we obtain:
+$$\label{Eq:DefElectricField}\tag{2}
+\mathbf{E} = -\nabla \phi(\mathbf{r},t) + \partial_t \mathbf{A}(\mathbf{r},t)
+$$
+and for the magnetic field $$\mathbf{B} = \nabla \times \mathbf{A}$$&lt;/p&gt;
+&lt;p&gt;So we can obtain the equations of motion in a static electric or
+magnetic field by doing position and time-dependent U(1)
+transformations. &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; We have seen a first indication the a change in
+reference frame and electrodynamics are strongly linked. However, in
+this approach the external fields are static and not at all correlated
+with the dynamics of the matter field. To create a more complete picture
+of electro&lt;strong&gt;dynamics&lt;/strong&gt; we should also include this dynamic degree of
+freedom. We will see later on that this is done conveniently on a
+lattice.&lt;/p&gt;
+&lt;h2 id=&#34;discretization-in-1d&#34;&gt;Discretization in 1D&lt;/h2&gt;
+&lt;p&gt;While we typically think about electromagnetism in continuous space, it
+is actually quite common to do most calculations on a lattice. As most
+AMO experiments and proposals work on a lattice, we will therefore just
+derive the formulation of electromagnetism on a lattice here &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.
+Again, if you know static synthetic gauge fields on a lattice, you might
+skip this section.&lt;/p&gt;
+&lt;p&gt;The Hamiltonian in the continuum limit was: $$\begin{aligned}
+H = \int dx ; \psi^\dagger(x) \frac{\left[p-eA(x)\right]^2}{2m} \psi(x) = \frac{1}{2m} \int dx ; \left|\left[\partial_x + ie A(x) \right]\psi(x)\right|^2; .\end{aligned}$$
+Now we discretize with lattice spacing $a$, $$\begin{aligned}
+\left[\partial_x + ie A(x) \right]\psi(x) \rightarrow \frac{1}{a}\left(\psi_{n+1} - \psi_n\right)  + ie A_n \psi_n = \frac{1}{a} \left(\psi_{n+1} - \psi_n +iea A_n \psi_n\right) ; .\end{aligned}$$
+Thus we find with $A_n = A_n^\dagger$ , $$\begin{aligned}
+H \rightarrow \frac{1}{2m a} \sum_n \left(\psi_{n+1}^\dagger - \psi_n^\dagger - iea \psi_n^\dagger A_n\right) \left(\psi_{n+1} - \psi_n +iea A_n \psi_n\right) \equiv H_a ; .\end{aligned}$$
+Shifting the index of terms involving
+$\psi_{n+1}^\dagger \rightarrow \psi_n^\dagger$, the summand becomes
+$$\begin{aligned}
+\psi_n^\dagger \left\lbrace\left(\psi_n -\psi_{n-1} +ie A_{n-1} \psi_{n-1}\right) - \left(\psi_{n+1} - \psi_n +iea A_n \psi_n\right) -ie A_n \left(\psi_{n+1} - \psi_n +iea A_n \psi_n\right)\right\rbrace ; .\end{aligned}$$
+Rearranging the terms, we find $$\begin{aligned}
+2ma H_a = \sum_n \left\lbrace -\psi_n^\dagger \left(1 + iea A_n\right) \psi_{n+1} + 2\psi_n^\dagger \psi_n - \psi_n^\dagger \left(1-ieaA_{n-1}\right)\psi_{n-1} +e^2 a^2 \psi_n^\dagger A_n^2 \psi_n\right\rbrace \end{aligned}$$
+The lattice theory is not unique, in particular we can add any term
+$\propto a$ because they will vanish in the continuum limit, where
+($a\rightarrow 0, N -&amp;gt; \infty$ and $aN = const.$). For example a
+derivative term like $$\begin{aligned}
+a\sum_n \psi_n^\dagger A_n^2  \cdot \left(\psi_{n+1} - \psi_n\right) \approx \int dx ; \psi^\dagger(x) A^2(x) \cdot  a \partial_x \psi(x)\end{aligned}$$
+should not contribute in the end. We thus consider the equivalent
+Hamiltonian $$\begin{aligned}
+H_a \simeq H_a + \frac{1}{2ma} \sum_n \left(\frac{a^2 e^2}{2}\right) \left\lbrace\psi_n^\dagger A_n^2 \left(\psi_{n+1} - \psi_n\right) + \left(\psi_{n+1}^\dagger - \psi_n^\dagger\right)A_n^2 \psi_n\right\rbrace ; ,\end{aligned}$$
+such that all terms involving $A^2$ combine to $$\begin{aligned}
+\frac{ae^2}{2} \left(\psi_n^\dagger A_n^2 \psi_{n+1} + \psi_{n+1}^\dagger A_n^2 \psi_n\right)\end{aligned}$$
+Shifting everything to $\psi_{n+1}^\dagger$ as before, we arrive at
+$$\begin{aligned}
+2ma H_a = &amp;amp;-\sum_n \left\lbrace \psi_n^\dagger \left(1 + iea A_n -\frac{1}{2} e^2 a^2 A_n^2\right) \psi_{n+1} + \psi_n^\dagger \left(1-ieaA_{n-1} - \frac{1}{2}e^2 a^2 A_{n-1}^2\right)\psi_{n-1} \right\rbrace \nonumber\&lt;br&gt;
+&amp;amp;+ \sum_n 2\psi_n^\dagger \psi_n\end{aligned}$$ Now we can define
+$U_n \equiv \exp \left(iea A_n\right) = 1 + iea A_n - \frac{1}{2}e^2 a^2 A_n^2 + \cdots$
+and find the expected form $$\begin{aligned}
+H_a \simeq -\frac{1}{2ma}\sum_n  \psi_n^\dagger \left(U_n \psi_{n+1} - 2\psi_n + U_{n-1}^\dagger \psi_{n-1} \right) ; ,\end{aligned}$$
+where we have again used that terms of order $\mathcal{O}(a)$ don&amp;rsquo;t
+contribute to the continuum limit. For convenience, we may redefine
+$\psi_n \rightarrow \sqrt{a} \psi_n$, which makes the fields
+dimensionless and we end up with $$\begin{aligned}
+H_a = -\frac{1}{2ma^2}\sum_n  \psi_n^\dagger\left(U_n \psi_{n+1} + 2\psi_n + U_{n+1}^\dagger \psi_{n-1}\right); .\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;We will typically obtain on a lattice only the effective tunneling
+element, which we identify therefore as: $$\begin{aligned}
+J \equiv \frac{1}{2m a_L^2}\end{aligned}$$&lt;/p&gt;
+&lt;h2 id=&#34;u1-gauge-transformations-on-a-lattice&#34;&gt;U(1) gauge transformations on a lattice&lt;/h2&gt;
+&lt;p&gt;For clarity, we will now reperform the U(1) gauge transformations  on a lattice.
+This will greatly simplify the identification with an electric field etc. Skip it if you know it already.&lt;/p&gt;
+&lt;p&gt;We will employ the formalism of second quantization in the tight binding
+approximation:&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+\hat{H} = - J \sum_i \left(a_i^\dagger a_{i+1} +a_{i+1}^\dagger a_i \right)
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;The wave function is now formulated in terms of the field operator:
+$$\begin{aligned}
+\left|\psi\right\rangle = \sum_j \hat{a}_j w_j(x)
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;The operators are defined to operate on the vacuum with the following
+commutation relationship:
+$$\begin{aligned}
+a_j \left|n_j\right\rangle = \sqrt{n_j}\left|n_j-1\right\rangle\\&lt;br&gt;
+a_j^\dagger \left|n_j\right\rangle = \sqrt{n_j+1}\left|n_j+1\right\rangle\\&lt;br&gt;
+~[a_i,a_j^\dagger] = \delta_{ij}
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;A transformation of the phase corresponds therefore too:
+$$\begin{aligned}
+\tilde{a}_j = e^{i\varphi_j(t)}\hat{a}_j\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;Now we have to find the unitary operator that does the necessary transformation. We
+typically obtain the relation for the for small case $\varphi_j$of smal
+$$\begin{aligned}
+\tilde{a}_j &amp;amp;= U_j a_j U_j^\dagger\\&lt;br&gt;
+U_j &amp;amp;= e^{i\varphi_j(t)\hat{G}_j}\\&lt;br&gt;
+(1+i\varphi_j)a_j &amp;amp;= (1+i\varphi_j G_j)a_j (1-i\varphi_j G_j)\\&lt;br&gt;
+a_j +i\varphi_ja_j &amp;amp;= a_j + i\varphi_j (Ga_j - a_jG)\\&lt;br&gt;
+a_j &amp;amp;= [G_j,a_j]
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;This last equation is solved by:&lt;/p&gt;
+&lt;p&gt;$$\hat{G}_j = -\hat{N}_j =-a^\dagger_j a_j$$&lt;/p&gt;
+&lt;p&gt;As each component commutes we can therefore write now:&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+U_1 = e^{i\sum_j \varphi_j(t) \hat{N}_j}
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;Therefore we obtain:
+$$\begin{aligned}
+U_1HU_1^\dagger &amp;amp;= -J\sum_i \left[a_i^\dagger a_{i+1} e^{-i\delta \varphi_i} +a_{i+1}^\dagger a_i e^{i\delta \varphi_i} \right]\\&lt;br&gt;
+\delta \varphi &amp;amp;= \varphi_i-\varphi_{i+1}
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;For the time dependence we have:&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+i\dot{U}U^\dagger = -\sum_j \hat{N}_j \dot{\varphi}_j
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;So the transformed Hamiltonian reads:
+$$
+\tag{3}
+\label{Eq:LatticeWithMagField}
+\tilde{H} = -J\sum_i \left[a_i^\dagger a_{i+1} e^{-i\delta \varphi_i} +a_{i+1}^\dagger a_i e^{i\delta \varphi_i} - \dot{\varphi}_i \hat{N}_i\right]
+$$
+We can now identify the derivative of the phase with
+the vector potential and the time derivative with the scalar potential:
+$$\begin{aligned}
+\delta \varphi_i &amp;amp;= eA_i a_L\&lt;br&gt;
+\dot{\varphi}_i &amp;amp;=  e\phi_i
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;We can now summarize these findings in the figure below. The
+identification with the magnetic field and the electric field are then
+again like in Eq.(\ref{Eq:DefElectricField})&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-hopping-in-the-lattice-after-a-u1-gauge-transformation-at-each-hopping-event-to-right-the-particle-acquires-a-phase-e-a_i-a-which-is-proportional-to-the-vector-potential-hopping-to-the-left-leads-to-the-accumulation-of-the-inverse-phase--e-a_ia&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Hopping in the lattice after a U(1) gauge transformation. At each hopping event to right, the particle acquires a phase $e\ A_i\ a$, which is proportional to the vector potential. Hopping to the left leads to the accumulation of the inverse phase $-e\ A_ia$.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1565&#34; height=&#34;336&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    Hopping in the lattice after a U(1) gauge transformation. At each hopping event to right, the particle acquires a phase $e\ A_i\ a$, which is proportional to the vector potential. Hopping to the left leads to the accumulation of the inverse phase $-e\ A_ia$.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;from-the-gauge-symmetry-to-particle-conservation&#34;&gt;From the gauge symmetry to particle conservation&lt;/h2&gt;
+&lt;p&gt;We have seen that the equations of motion remain the same if the wave
+function is multiplied by a phase that is constant in space and time. We
+can see this directly from Eq. (\ref{Eq:LatticeWithMagField}) with $\varphi_j(t) = \varphi$. So we
+obtain:&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+U_C &amp;amp;= e^{i\varphi\sum_j\hat{N}_j }\\&lt;br&gt;
+\tilde{H} &amp;amp;= UHU^\dagger  = H\\&lt;br&gt;
+\Rightarrow UH &amp;amp;= HU\\&lt;br&gt;
+\Rightarrow [H,U] &amp;amp;= 0
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;If the unitary operator commutes with the Hamiltonian,
+we also now that its generator $\hat{N} = \sum_j\hat{N}_j$ commutes:
+$$\begin{aligned}
+~[H, N]=0
+\end{aligned}$$
+And as the number generator does not depend explicitly
+on time we obtain from the Heisenberg equation that the total number of
+atoms is conserved.&lt;/p&gt;
+&lt;h1 id=&#34;4-the-wilson-approach-to-dynamical-gauge-fields&#34;&gt;4. The Wilson approach to dynamical gauge fields&lt;/h1&gt;
+&lt;p&gt;Until now we seen that there is an intimate relation between the
+existance of electric and magnetic fields and $U(1)$ gauge
+transformations that depend on time and position. However, the gauge
+fields are not changing in any way as we are moving a charge. This is in
+direct constrast to electrodynamics where the motion of the charge
+implies directly the change of the electric field, see Figure below. This relationship
+is captured by Gauss&#39; Law:
+$$\tag{4}
+\label{Eq:GaussLaw}
+\mathbf{div} \mathbf{E} = \rho
+$$&lt;/p&gt;
+&lt;p&gt;Further the time evolution of the vector potential is not at all
+captured in the previous section. In electrodynamics we actually have to
+fulfill the relation:
+$$\tag{5}
+\label{Eq:MaxwellTime}
+\partial_t \mathbf{A} = \mathbf{E}
+$$&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-gauss-law-of-electrodynamics-as-the-charge-blue-is-displaced-the-electric-field-is-also-modified-this-perfect-correlation-between-electric-field-and-matter-field-is-one-of-the-cornerstones-of-any-realization-of-dynamical-gauge-fields-in-synthetic-systems&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_2000x2000_fit_lanczos.gif&#34; data-caption=&#34;Gauss law of electrodynamics. As the charge (blue) is displaced, the electric field is also modified. This perfect correlation between electric field and matter field, is one of the cornerstones of any realization of dynamical gauge fields in synthetic systems.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;600&#34; height=&#34;400&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Gauss law of electrodynamics. As the charge (blue) is displaced, the electric field is also modified. This perfect correlation between electric field and matter field, is one of the cornerstones of any realization of dynamical gauge fields in synthetic systems.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;To implement these two constraint, we will have to modify the underlying
+Hamiltonian. So we look once again at the Hamiltonian (\ref{Eq:LatticeWithMagField}) and rewrite it in a more suggestive
+way:&lt;/p&gt;
+&lt;p&gt;$$\label{eq:LatticeWithLink}
+\tilde{H} = -J\sum_i \left[a_i^\dagger L^*_i a_{i+1} +a_{i+1}^\dagger L_i a_i - \dot{\varphi}_j \hat{N}_j\right]
+$$&lt;/p&gt;
+&lt;p&gt;If the $L_i$ was an operator it would actually have a very similiar
+structure to the Gauss law. As the particle hops from site to site it
+would change the operator $L_i$. We will call them in the following the
+&lt;strong&gt;link operators&lt;/strong&gt;. In the next section, we
+adapt the Hamiltonian with dynamical links such that the system now
+fulfills Gauss&#39; Law. Then we will also add an additional term to the
+Hamiltonian to obtain the appropiate time dynamics of ED afterwards.&lt;/p&gt;
+&lt;h2 id=&#34;gauss-law&#34;&gt;Gauss law&lt;/h2&gt;
+&lt;p&gt;Eq. (\ref{Eq:GaussLaw}) describes a local conservation law combining
+the matter field and the electric field. So we will be able to obtain
+such a relation by enforcing local gauge symmetry. To derive the &lt;em&gt;local&lt;/em&gt;
+transformation laws, we will first perform a local gauge transformation
+of the matter field:&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+U =&amp;amp; e^{i\varphi_j \hat{N}_j}\\&lt;br&gt;
+\tilde{H} =&amp;amp;-J\sum_{i\neq j, j-1}\left[a_i^\dagger \hat{L}^\dagger_i a_{i+1} +a_{i+1}^\dagger \hat{L}_i a_i\right]\\&lt;br&gt;
+&amp;amp;- J \left[a_{j-1}^\dagger \hat{L}^\dagger_{j-1} a_{j} e^{i\varphi_j} +a_{j}^\dagger \hat{L}_{j-1}a_{j-1} e^{-i \varphi_j}\right]  \nonumber\\&lt;br&gt;
+&amp;amp;- J \left[a_{j}^\dagger \hat{L}^\dagger_{j} a_{j+1} e^{-i\varphi_j} +a_{j+1}^\dagger \hat{L}_{j}a_{j} e^{i \varphi_j} - \dot{\varphi}_{j}\hat{N}_j\right]
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;So we would obtain local gauge symmetry if we find a transformation of
+the form:
+$$\begin{aligned}
+~\tilde{L}_j &amp;amp;= L_j e^{-i\varphi_j}\\&lt;br&gt;
+~\tilde{L}_{j-1} &amp;amp;= L_{j-1} e^{i\varphi_j}
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;This gauge transformation enforces the following
+conditions on the generator of the gauge transformation:
+$$\begin{aligned}
+\exp(i\varphi G^L)L \exp(-i\varphi G^L) = \exp(-i\varphi)L
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;Let me write it in an infinitisimal way:
+$$\begin{aligned}
+\exp(i\varphi G^L)L \exp(-i\varphi G^L)  &amp;amp;= (1+i\varphi G^L)L (1-i\varphi G^L) \nonumber\\&lt;br&gt;
+&amp;amp;= (L+i\varphi G^L L) (1-i\varphi G^L)\nonumber\\&lt;br&gt;
+&amp;amp;= (L+i\varphi G^L L - i\varphi L G^L)\nonumber\\&lt;br&gt;
+&amp;amp;= (1-i\varphi )L\nonumber
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;We end up with:
+$$\tag{6}\label{Eq:CommLinkOps}
+[L,G^L] = L
+$$&lt;/p&gt;
+&lt;p&gt;So we can actually now know that the Hamiltonian remains unchanged under a gauge transformation with the generator $$\begin{aligned}
+G_j &amp;amp;= \hat{N}_j + G^L_j - G^L_{j-1}\\&lt;br&gt;
+\tilde{H} =&amp;amp; -J\sum_{i}\left[a_i^\dagger \hat{L}^\dagger_i a_{i+1} +a_{i+1}^\dagger \hat{L}_i a_i\right]- J \dot{\varphi}_{j}\hat{G}_j
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;So if we want to have gauge symmetry even for time dependent gauge
+transformations we have to fulfill
+$$\begin{aligned}
+\hat{G}_j\left|\psi\right\rangle = 0
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;Additionally we can take a closer look at the structure of the
+generator, which can actuall rewrite as something similiar to Gauss&#39;
+law:
+$$\begin{aligned}
+\hat{G}_j &amp;amp;= \hat{N}_j + G^L_j - G^L_{j-1} \\&lt;br&gt;
+&amp;amp;= \hat{N}_j + (\mathbf{div}G^L)_j\\&lt;br&gt;
+&amp;amp;= \hat{N}_j + \frac{1}{e}(\mathbf{div}E)_j
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;So we know that the electric field is basically the generator of the local gauge
+transformation of the link operators. Using Eq. (\ref{Eq:CommLinkOps}) we can write down the commutation relation
+between link operator and electric field as: $$~[L_i,E_i] = eL_i$$
+However, we do not know the value of the charge, nor the commutation
+relations of the link operators. We will obtain them from the time
+evolution of the gauge field.&lt;/p&gt;
+&lt;h2 id=&#34;time-dynamics&#34;&gt;Time dynamics&lt;/h2&gt;
+&lt;p&gt;In analogy with classical mechanics we can introduce the Hamiltonian
+dynamics of the electric field via an $E^2$ term. So the full
+Hamiltonian reads now:&lt;/p&gt;
+&lt;p&gt;$$
+H = \chi_L \sum_i (G^L_i)^2 - J\sum_i \left[a_i^\dagger L^\dagger_i a_{i+1} +a_{i+1}^\dagger \hat{L}_i a_i \right]
+$$
+We now have to look at the time dynamics of the link operators. We obtain:
+$$i\dot{L}_j = \chi_L [(G^L_j)^2,L_j] - J\sum_i \left[a_i^\dagger [L^\dagger_i,L_j] a_{i+1} +a_{i+1}^\dagger [\hat{L}_i,L_j] a_i \right]\nonumber$$
+Comparing to Eq. (\ref{Eq:MaxwellTime}) we see that the commutators between the
+links should disappear. So we should enforce:
+$$\begin{aligned}
+~[L_i^\dagger,L_j] &amp;amp;= 0\\&lt;br&gt;
+~[L_i,L_j]  &amp;amp;= 0\\&lt;br&gt;
+~[L^\dagger_i,L^\dagger_j]  &amp;amp;= 0
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;At this stage we know that
+the link operators are unitary:&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+L_i^\dagger L_i = L_i L_i^\dagger
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;So in analogy with the classical case we will identify its phase with the vector potential as:
+$$\begin{aligned}
+L_i = e^{ieA_i a_L}
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;Let us now continue to look into the time evolution.&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+i\dot{L}_j &amp;amp;= \chi_L [(G^L_j)^2,L_j] \\&lt;br&gt;
+&amp;amp;=\chi_L \left(G^L_j[G^L_j,L_j]+[G^L_j,L_j]G^L_j\right)\\&lt;br&gt;
+&amp;amp;= -\chi_L \left(G^L_jL_j+L_jG^L_j\right)
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;And in the classical limit we find now:&lt;/p&gt;
+&lt;p&gt;$$-ea_L\dot{A}_j = -2\chi_L  \frac{E_j}{e}$$&lt;/p&gt;
+&lt;p&gt;So we know now that:
+$$\begin{aligned}
+\chi_L= \frac{e^2 a_L}{2}
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;Our Hamiltonian reads therefore:
+$$H = \frac{a_L}{2} \sum_i E_i^2 + \frac{1}{2m a_L^2}\sum_i \left[a_i^\dagger L^\dagger_i a_{i+1} +a_{i+1}^\dagger \hat{L}_i a_i \right]$$
+End then we can identify :
+$$\begin{aligned}
+\chi_L= \frac{e^2 a_L}{2}\&lt;br&gt;
+J= \frac{1}{2ma_L^2}\end{aligned}$$&lt;/p&gt;
+&lt;h1 id=&#34;5-the-quantum-link-approach-to-dynamical-gauge-fields&#34;&gt;5. The quantum link approach to dynamical gauge fields&lt;/h1&gt;
+&lt;p&gt;The previous approach relies on unitary link operatores, which are
+extremely hard to implement with ultracold atomic gases. The idea of QLM
+is relax the constraints on the link operators a bit, while keeping
+exactly the local gauge invariance. This is also the only formalism for
+which proposals of analog quantum simulation exist as discussed in Ref.
+
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#zohar2016&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;Erez&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Zohar&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;,&amp;#32;
+      &lt;span itemprop=&#34;datePublished&#34;&gt;2016&lt;/span&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Zohar&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Erez&#34; /&gt;
+    E.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Cirac&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;J Ignacio&#34; /&gt;
+    J.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Reznik&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Benni&#34; /&gt;
+    B.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2016&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Quantum simulations of lattice gauge theories using ultracold atoms in optical lattices&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;Reports Prog. Phys.&lt;/span&gt;,&amp;#32;79(1)&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;014401&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1088/0034-4885/79/1/014401&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1088/0034-4885/79/1/014401&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt; , 
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#kasper_2016&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;V.&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Kasper&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;,&amp;#32;
+      &lt;span itemprop=&#34;datePublished&#34;&gt;2016&lt;/span&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Kasper&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;V.&#34; /&gt;
+    V.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Hebenstreit&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;F.&#34; /&gt;
+    F.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Oberthaler&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;M. K.&#34; /&gt;
+    M.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Berges&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;J.&#34; /&gt;
+    J.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2016&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Schwinger pair production with ultracold atoms&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;Physics Letters B&lt;/span&gt;,&amp;#32;760&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;742–746&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1016/j.physletb.2016.07.036&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1016/j.physletb.2016.07.036&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt; , 
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#wiese2013&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;U.-J.&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Wiese&lt;/span&gt;&lt;/span&gt;,&amp;#32;
+      &lt;span itemprop=&#34;datePublished&#34;&gt;2013&lt;/span&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Wiese&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;U.-J.&#34; /&gt;
+    U.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2013&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Ultracold quantum gases and lattice systems: quantum simulation of lattice gauge theories&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;Ann. Phys.&lt;/span&gt;,&amp;#32;525(10-11)&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;777–796&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1002/andp.201300104&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1002/andp.201300104&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt;  and citations
+therein. The discussion on the Gauss&#39; law remains the same as in the
+previous section, so we would like to have:&lt;/p&gt;
+&lt;p&gt;$$\tag{7}\label{eq:CommutRelLinks}
+[L_i,G^L_i] = L_i ~~[L^\dagger_i,G^L_i] = -L^\dagger_i
+$$&lt;/p&gt;
+&lt;h2 id=&#34;using-spins-as-links&#34;&gt;Using spins as links&lt;/h2&gt;
+&lt;p&gt;A nice way out of the problems with finding a unitary link operator was
+suggested by [@Chandrasekharan1997; @Horn1981; @Orland1990]. Actually,
+we can decompose the link into its real and imaginary part:
+$$\label{Eq:LatticeWithLink}
+L_i = e^{ieA_i a_L} =\cos(eA_i a_L) + i\sin(eA_i a_L)
+$$
+Instead of using a cosine function we now simply set the real and imaginary part as
+operators:
+$$\begin{aligned}
+\hat{L}_i = \hat{C}_i + i\hat{S}_i\&lt;br&gt;
+\hat{L}_i^\dagger = \hat{C}_i - i\hat{S}_i
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;We can now plug in these definitions into equation (\ref{eq:CommutRelLinks}) and obtain:
+$$\begin{aligned}
+~[C+iS, G]&amp;amp;= C + iS \\&lt;br&gt;
+~[C,G] + i [S,G] &amp;amp;= C + iS \\&lt;br&gt;
+~[C,G] &amp;amp;= iS \label{Eq:CommSpinLinks}
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;In a similiar fashion we have:&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+~[C-iS, G]&amp;amp;= -(C - iS)\\&lt;br&gt;
+~[C,G] - i [S,G] &amp;amp;= iS -C\\&lt;br&gt;
+~[G,S] &amp;amp;= iC
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;The last line sets the commutation relationship of the links. These can be directly
+identified with the commutation relationships of a spin. So we directly
+find that we will be able to represent the link operator by composition
+of spins:&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+C = J_x\\&lt;br&gt;
+S = J_y\\&lt;br&gt;
+G = -J_z
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;And we can also write down the link operator as:
+$$\begin{aligned}
+L &amp;amp;= J_x + iJ_y = J_+\\&lt;br&gt;
+L^\dagger &amp;amp;=J_x - iJ_y = J_-
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;Let us write down explicitly
+once more the commutation relationships that we have in the QLM:
+$$
+[L_i, G_i^L]=[J_+, -J_z] =J_+\label{eq:CommLinkQLM}\tag{8}
+$$&lt;/p&gt;
+&lt;p&gt;So while we keep local gauge invariance, we have now non-commutating
+link operators. This means that we implement properly the Gauss&#39; law.
+However, the time evolution will only correspond in certain limits to
+the time evolution of QED. As reminder each operator acts in the
+following way on an eigenstate:&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+J^2 \left|m,\ell\right\rangle &amp;amp;= \ell(\ell+1)\left|m,\ell\right\rangle\\&lt;br&gt;
+J_z \left|m,\ell\right\rangle &amp;amp;= m\left|m,\ell\right\rangle\\&lt;br&gt;
+J_+\left|m,\ell\right\rangle &amp;amp;= \sqrt{\ell(\ell+1)-m(m+1)}\left|m+1,\ell\right\rangle\\&lt;br&gt;
+J_-\left|m,\ell\right\rangle &amp;amp;= \sqrt{\ell(\ell+1)-m(m-1)}\left|m-1,\ell\right\rangle
+\end{aligned}$$&lt;/p&gt;
+&lt;h1 id=&#34;identification-with-qed&#34;&gt;Identification with QED&lt;/h1&gt;
+&lt;p&gt;We can once again write down our microscopic Hamiltonian:
+$$H_{QL} = \chi_L \sum_i (J_z^i)^2-J\sum_i \left[a_i^\dagger \hat{J}^+_i a_{i+1} +a_{i+1}^\dagger \hat{J}^-_i a_i \right]$$
+We would now like to make the connection to QED. For that we need the
+commutators in equation \ref{eq:CommLinkQLM} to become negligable. We actually know that
+this will typically happen in the limit of large occupation numbers for
+the spin. In this case we can write &lt;a href=&#34;http://www.kip.uni-heidelberg.de/Veroeffentlichungen/details.php?id=2160&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;(PhD by Christian
+Gross)&lt;/a&gt;:
+$$\begin{aligned}
+\hat{J}_x &amp;amp;\approx \ell \cos(\hat{\varphi})~~\hat{J}_y \approx \ell \sin(\hat{\varphi})\&lt;br&gt;
+\Rightarrow J_+ &amp;amp;\approx \ell e^{i\hat{\varphi}}~~ J_- \approx \ell e^{-i\hat{\varphi}}\end{aligned}$$
+So we definitely want to take the prefactor $\ell$ out of hopping
+element and define: $$\begin{aligned}
+L_i^\dagger = \frac{J_i^+}{\ell}~~L_i = \frac{J_i^-}{\ell}\end{aligned}$$
+So the Hamiltonian should now be written as:
+$$H_{QL} = \chi_L \sum_i (J_z^i)^2+\frac{\ell}{m^* a_L^2}\sum_i \left[a_i^\dagger \hat{L}^\dagger_i a_{i+1} +a_{i+1}^\dagger \hat{L}_i a_i \right]$$&lt;/p&gt;
+&lt;p&gt;In the next step, we have to verify that the equations of motion are the
+appropiate ones. We obtain:&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+i\dot{J}^+_i &amp;amp;= \chi_L [(J_z^i)^2, J_i^+]-Ja_{i+1}^\dagger a_i [J_i^-,J_i^+]\\&lt;br&gt;
+&amp;amp;=-\chi_L (J_i^zJ_i^++J_i^+J_z^i)+2Ja_{i+1}^\dagger a_i J^z_i
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;In the classical limit we obtain now:&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+-\ell e\dot{A}_i a_L=  \left(\frac{-2\chi_L \ell}{e}+2Ja_{i+1}^\dagger a_i\right)E_i\\&lt;br&gt;
+\dot{A}_i=  \left(\frac{2\chi_L }{e^2a_L}-\frac{2Ja_{i+1}^\dagger a_i}{e\ell a_L}\right)E_i
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;So the coherence could now be driving the dynamics as in the usual spin
+changing collision. However, let us simply assume that it is in the
+order of one. Then obtain the condition for finding the QED limit that:
+$$\begin{aligned}
+\frac{2\chi_L }{e^2a_L}&amp;amp;\gg\frac{2J}{e\ell a_L}\&lt;br&gt;
+\ell&amp;amp;\gg\frac{Je}{\chi_L}\end{aligned}$$ If we have this condition we
+can actually write down once again the previous equation of motion,
+where we found that: $$\begin{aligned}
+\chi_L=\frac{e^2}{2a_L}\end{aligned}$$&lt;/p&gt;
+&lt;h1 id=&#34;from-theory-towards-experiments&#34;&gt;From theory towards experiments&lt;/h1&gt;
+&lt;p&gt;The theoretical concepts of dynamical gauge fields in ultracold atomic
+systems have been relatively well established in the last few years and studied in several theory groups. However, the experimental
+efforts are still way behind the theoretical framework. The gap is
+actually so strong that only a single experiment has been performed with
+ultracold ions  
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#martinez_2016&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;Esteban A.&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Martinez&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;,&amp;#32;
+      &lt;span itemprop=&#34;datePublished&#34;&gt;2016&lt;/span&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Martinez&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Esteban A.&#34; /&gt;
+    E.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Muschik&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Christine A.&#34; /&gt;
+    C.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Schindler&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Philipp&#34; /&gt;
+    P.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Nigg&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Daniel&#34; /&gt;
+    D.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Erhard&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Alexander&#34; /&gt;
+    A.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Heyl&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Markus&#34; /&gt;
+    M.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Hauke&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Philipp&#34; /&gt;
+    P.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Dalmonte&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Marcello&#34; /&gt;
+    M.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Monz&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Thomas&#34; /&gt;
+    T.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Zoller&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Peter&#34; /&gt;
+    P.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Blatt&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Rainer&#34; /&gt;
+    R.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2016&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Real-time dynamics of lattice gauge theories with a few-qubit quantum computer&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;Nature&lt;/span&gt;,&amp;#32;534(7608)&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;516–519&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1038/nature18318&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1038/nature18318&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt;, which performed a digital quantum
+simulation with &lt;em&gt;four&lt;/em&gt; qubits. With ultracold atomic gases,up to the
+groups to decide on the specific experimental implementation, which best
+implements the:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Gauss law, which connects the matter field dynamics to the gauge
+field dynamics.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Time dynamics, which connects the vector potential dynamics to the
+electric field dynamics&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And this is exactly, what we are working on in our group.&lt;/p&gt;
+&lt;h1 id=&#34;updates&#34;&gt;Updates&lt;/h1&gt;
+&lt;p&gt;Since we first wrote this article there has been substantial progress on the experimental side.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In trapped ions there was an experiment with a much larger number of ions 
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#kokail2018&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;C.&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Kokail&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;,&amp;#32;
+      &lt;span itemprop=&#34;datePublished&#34;&gt;2019&lt;/span&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Kokail&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;C.&#34; /&gt;
+    C.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Maier&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;C.&#34; /&gt;
+    C.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Bijnen&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;R.&#34; /&gt;
+    R.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Brydges&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;T.&#34; /&gt;
+    T.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Joshi&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;M. K.&#34; /&gt;
+    M.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Jurcevic&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;P.&#34; /&gt;
+    P.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Muschik&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;C. A.&#34; /&gt;
+    C.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Silvi&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;P.&#34; /&gt;
+    P.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Blatt&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;R.&#34; /&gt;
+    R.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Roos&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;C. F.&#34; /&gt;
+    C.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Zoller&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;P.&#34; /&gt;
+    P.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2019&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Self-verifying variational quantum simulation of lattice models&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;Nature&lt;/span&gt;,&amp;#32;569(7756)&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;355–360&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1038/s41586-019-1177-4&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1038/s41586-019-1177-4&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;In cold atoms there have been a number of experiments. See 
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#goerg2019&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;Frederik&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Görg&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;,&amp;#32;
+      &lt;span itemprop=&#34;datePublished&#34;&gt;2019&lt;/span&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Görg&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Frederik&#34; /&gt;
+    F.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Sandholzer&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Kilian&#34; /&gt;
+    K.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Minguzzi&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Joaquín&#34; /&gt;
+    J.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Desbuquois&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Rémi&#34; /&gt;
+    R.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Messer&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Michael&#34; /&gt;
+    M.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Esslinger&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Tilman&#34; /&gt;
+    T.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2019&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Realization of density-dependent Peierls phases to engineer quantized gauge fields coupled to ultracold matter&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;Nature Physics&lt;/span&gt;,&amp;#32;15(11)&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;1161–1167&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1038/s41567-019-0615-4&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1038/s41567-019-0615-4&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt;, 
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#schweizer2019&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;Christian&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Schweizer&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;,&amp;#32;
+      &lt;span itemprop=&#34;datePublished&#34;&gt;2019&lt;/span&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Schweizer&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Christian&#34; /&gt;
+    C.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Grusdt&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Fabian&#34; /&gt;
+    F.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Berngruber&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Moritz&#34; /&gt;
+    M.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Barbiero&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Luca&#34; /&gt;
+    L.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Demler&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Eugene&#34; /&gt;
+    E.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Goldman&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Nathan&#34; /&gt;
+    N.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Bloch&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Immanuel&#34; /&gt;
+    I.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Aidelsburger&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Monika&#34; /&gt;
+    M.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2019&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Floquet approach to ℤ2 lattice gauge theories with ultracold atoms in optical lattices&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;Nature Physics&lt;/span&gt;,&amp;#32;15(11)&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;1168–1173&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1038/s41567-019-0649-7&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1038/s41567-019-0649-7&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt;, 
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#mil2020&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;Alexander&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Mil&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;,&amp;#32;
+      &lt;span itemprop=&#34;datePublished&#34;&gt;2020&lt;/span&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Mil&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Alexander&#34; /&gt;
+    A.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Zache&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Torsten V.&#34; /&gt;
+    T.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Hegde&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Apoorva&#34; /&gt;
+    A.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Xia&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Andy&#34; /&gt;
+    A.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Bhatt&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Rohit P.&#34; /&gt;
+    R.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Oberthaler&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Markus K.&#34; /&gt;
+    M.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Hauke&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Philipp&#34; /&gt;
+    P.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Berges&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Jürgen&#34; /&gt;
+    J.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Jendrzejewski&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Fred&#34; /&gt;
+    F.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2020&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;A scalable realization of local U(1) gauge invariance in cold atomic mixtures&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;Science&lt;/span&gt;,&amp;#32;367(6482)&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;1128–1130&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1126/science.aaz5312&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1126/science.aaz5312&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt;, 
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#bing2020&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;Bing&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Yang&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;,&amp;#32;
+      &lt;span itemprop=&#34;datePublished&#34;&gt;2020&lt;/span&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Yang&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Bing&#34; /&gt;
+    B.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Sun&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Hui&#34; /&gt;
+    H.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Ott&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Robert&#34; /&gt;
+    R.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Wang&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Han-Yi&#34; /&gt;
+    H.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Zache&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Torsten V.&#34; /&gt;
+    T.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Halimeh&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Jad C.&#34; /&gt;
+    J.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Yuan&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Zhen-Sheng&#34; /&gt;
+    Z.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Hauke&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Philipp&#34; /&gt;
+    P.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Pan&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Jian-Wei&#34; /&gt;
+    J.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2020&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Observation of gauge invariance in a 71-site Bose–Hubbard quantum simulator&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;Nature&lt;/span&gt;,&amp;#32;587(7834)&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;392–396&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1038/s41586-020-2910-8&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1038/s41586-020-2910-8&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt; .&lt;/li&gt;
+&lt;li&gt;Concerning non-abelian gauge theories we wrote a paper of similiar style as this tutorial 
+
+
+
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;a href=&#34;#kasper2020-jaynes&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;Valentin&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Kasper&lt;/span&gt;&lt;/span&gt;
+      &lt;em&gt;&amp;amp; al.&lt;/em&gt;,&amp;#32;
+      &lt;span itemprop=&#34;datePublished&#34;&gt;2020&lt;/span&gt;&lt;/a&gt;)
+    &lt;span class=&#34;hugo-cite-citation&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Kasper&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Valentin&#34; /&gt;
+    V.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Juzeliūnas&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Gediminas&#34; /&gt;
+    G.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Lewenstein&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Maciej&#34; /&gt;
+    M.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Jendrzejewski&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Fred&#34; /&gt;
+    F.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Zohar&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Erez&#34; /&gt;
+    E.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2020&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;From the Jaynes–Cummings model to non-abelian gauge theories: a guided tour for the quantum engineer&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;New Journal of Physics&lt;/span&gt;,&amp;#32;22(10)&lt;/i&gt;.&amp;#32;&lt;span itemprop=&#34;pagination&#34;&gt;103027&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1088/1367-2630/abb961&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1088/1367-2630/abb961&lt;/a&gt;&lt;/span&gt;
+
+
+
+&lt;/span&gt;&lt;/span&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Feel free to comment and or write us if you would like to know more and have specific requests.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;If I am wrong about this part, please tell me. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;If you do not speak french, this lecture series might be a good
+motivation to change this. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;While we obtained here the right equations of motion for the
+particle we are still missing the equation of motion for the
+electric field. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Kudos to Torsten Zache for this part. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Attention:&lt;/strong&gt; From Eq. (\ref{Eq:LatticeWithMagField}) it becomes immediatly clear that
+it is different to hop to the left then hopping to the right. So the
+left-right symmetry is explicitly broken by external factors. This
+is an important point to remember when we discuss dynamical gauge
+fields in the following sections. &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

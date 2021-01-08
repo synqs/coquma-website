@@ -62,7 +62,7 @@ Our results open up the possibility for extended lattice gauge theories based on
   
   
   
-  <meta name="theme-color" content="#2962ff">
+  <meta name="theme-color" content="#1565c0">
   
 
   
@@ -80,7 +80,7 @@ Our results open up the possibility for extended lattice gauge theories based on
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" media="print" onload="this.media='all'">
 
     
     
@@ -91,14 +91,14 @@ Our results open up the possibility for extended lattice gauge theories based on
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
         
       
     
 
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
     
 
     
@@ -240,7 +240,7 @@ Our results open up the possibility for extended lattice gauge theories based on
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.570c0666a24511c27bb6001877169437.css">
+  <link rel="stylesheet" href="/css/wowchemy.cc5407d180025dbc4182bc4adec604ec.css">
 
   
 
@@ -295,7 +295,10 @@ Our results open up the possibility for extended lattice gauge theories based on
 
   
 
+  
   <link rel="manifest" href="/index.webmanifest">
+  
+
   <link rel="icon" type="image/png" href="/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_192x192_fill_lanczos_center_2.png">
 
@@ -394,12 +397,12 @@ Our results open up the possibility for extended lattice gauge theories based on
     window.cookieconsent.initialise({
       "palette": {
         "popup": {
-          "background": "#2962ff",
+          "background": "#1565c0",
           "text": "rgb(255, 255, 255)"
         },
         "button": {
           "background": "rgb(255, 255, 255)",
-          "text": "#2962ff"
+          "text": "#1565c0"
         }
       },
       "theme": "classic",
@@ -432,11 +435,11 @@ Our results open up the possibility for extended lattice gauge theories based on
   
   
   
-  <script src="/js/wowchemy-init.min.25bb65fc185bceea61395d5b0560127a.js"></script>
+  <script src="/js/wowchemy-init.min.7d92a95e871a711a5c03f82410d0fe5d.js"></script>
 
   
 
-<aside class="search-results" id="search">
+<aside class="search-modal" id="search">
   <div class="container">
     <section class="search-header">
 
@@ -445,14 +448,15 @@ Our results open up the possibility for extended lattice gauge theories based on
           <h1>Search</h1>
         </div>
         <div class="col-6 col-search-close">
-          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
         </div>
       </div>
 
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
         
       </div>
 
@@ -849,7 +853,7 @@ Our results open up the possibility for extended lattice gauge theories based on
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="/publication/thesis/mil-2020/mil-2020.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="/publication/thesis/mil-2020/mil-2020.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -861,14 +865,14 @@ Our results open up the possibility for extended lattice gauge theories based on
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="https://doi.org/10.11588/data/YH80DI" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="https://doi.org/10.11588/data/YH80DI" target="_blank" rel="noopener">
   Dataset
 </a>
 
 
 
   
-  <a class="btn btn-outline-primary my-1 mr-1" href="/project/nali/">
+  <a class="btn btn-outline-primary btn-page-header" href="/project/nali/">
     Project
   </a>
   
@@ -942,7 +946,7 @@ Our results open up the possibility for extended lattice gauge theories based on
   
   <a class="badge badge-light" href="/tag/sodium/">sodium</a>
   
-  <a class="badge badge-light" href="/tag/lattice-gauge-theory/">Lattice Gauge Theory</a>
+  <a class="badge badge-light" href="/tag/lattice-gauge-theory/">lattice gauge theory</a>
   
   <a class="badge badge-light" href="/tag/dynamical-gauge-fields/">dynamical gauge fields</a>
   
@@ -1098,6 +1102,15 @@ Our results open up the possibility for extended lattice gauge theories based on
 
 
 
+<section id="comments">
+  
+    <div id="commento"></div>
+
+<script src="https://cdn.commento.io/js/commento.js" defer></script>
+
+  
+</section>
+
 
 
 
@@ -1119,7 +1132,7 @@ Our results open up the possibility for extended lattice gauge theories based on
       
       <li><a href="/publication/2020-ott-scalable/">Scalable cold-atom quantum simulator for two-dimensional QED</a></li>
       
-      <li><a href="/project/sopa/">SoPa machine</a></li>
+      <li><a href="/post/2017-intro-dynamical/">What are dynamical gauge fields ? A simplistic introduction by an AMO experimentalist.</a></li>
       
     </ul>
   </div>
@@ -1300,7 +1313,7 @@ Our results open up the possibility for extended lattice gauge theories based on
       
     
     
-    <script src="/js/wowchemy.min.572b7caf7fe601716a0f74d67d754c21.js"></script>
+    <script src="/js/wowchemy.min.aeecf26c1eff6b9588dbafc1a9f3953c.js"></script>
 
     
 
