@@ -103,6 +103,61 @@
   </url>
   
   <url>
+    <loc>https://jendrzejewski.synqs.org/authors/</loc>
+    <lastmod>2021-01-08T08:58:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/</loc>
+    <lastmod>2021-01-08T08:58:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/matplotlib/</loc>
+    <lastmod>2021-01-04T17:18:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/numpy/</loc>
+    <lastmod>2021-01-04T17:18:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/python/</loc>
+    <lastmod>2021-01-04T17:18:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/quantum-mechanics/</loc>
+    <lastmod>2021-01-04T17:18:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/post/2021-plotting-in-python/</loc>
+    <lastmod>2021-01-04T17:18:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tags/</loc>
+    <lastmod>2021-01-08T08:58:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/teaching/</loc>
+    <lastmod>2021-01-04T17:18:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/tutorial/</loc>
+    <lastmod>2021-01-08T08:58:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/undergrad/</loc>
+    <lastmod>2021-01-04T17:18:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jendrzejewski.synqs.org/publication-type/3/</loc>
     <lastmod>2021-01-05T13:01:26+01:00</lastmod>
   </url>
@@ -113,18 +168,8 @@
   </url>
   
   <url>
-    <loc>https://jendrzejewski.synqs.org/authors/</loc>
-    <lastmod>2021-01-08T08:58:09+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jendrzejewski.synqs.org/tag/impurity/</loc>
     <lastmod>2021-01-05T10:27:31+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/</loc>
-    <lastmod>2021-01-08T08:58:09+01:00</lastmod>
   </url>
   
   <url>
@@ -145,11 +190,6 @@
   <url>
     <loc>https://jendrzejewski.synqs.org/publication/2021-bhatt/</loc>
     <lastmod>2021-01-05T10:27:31+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/tags/</loc>
-    <lastmod>2021-01-08T08:58:09+01:00</lastmod>
   </url>
   
   <url>
@@ -413,11 +453,6 @@
   </url>
   
   <url>
-    <loc>https://jendrzejewski.synqs.org/tag/teaching/</loc>
-    <lastmod>2020-12-30T18:44:52+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jendrzejewski.synqs.org/talk/2020-jan-damop/</loc>
     <lastmod>2020-12-30T16:04:47+01:00</lastmod>
   </url>
@@ -550,11 +585,6 @@
   <url>
     <loc>https://jendrzejewski.synqs.org/tag/optics/</loc>
     <lastmod>2020-12-30T18:44:52+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/tag/quantum-mechanics/</loc>
-    <lastmod>2020-12-30T20:27:00+01:00</lastmod>
   </url>
   
   <url>
@@ -825,11 +855,6 @@
   <url>
     <loc>https://jendrzejewski.synqs.org/tag/pid/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/tag/tutorial/</loc>
-    <lastmod>2021-01-08T08:58:09+01:00</lastmod>
   </url>
   
   <url>

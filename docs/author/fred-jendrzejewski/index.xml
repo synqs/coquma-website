@@ -29,6 +29,132 @@
     </item>
     
     <item>
+      <title>Some simple quantum mechanics in python</title>
+      <link>https://jendrzejewski.synqs.org/post/2021-plotting-in-python/</link>
+      <pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/post/2021-plotting-in-python/</guid>
+      <description>&lt;h1 id=&#34;numerics-in-python&#34;&gt;Numerics in python&lt;/h1&gt;
+&lt;p&gt;This notebook stems from the undergrad lectures at Heidelberg University on quantum mechanics. As the questions on the topic keep coming back, I thought to share it here.&lt;/p&gt;
+&lt;p&gt;In this notebook we discuss a bit the basics of numerical methods and plotting in python. &lt;a href=&#34;https://www.python.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;python&lt;/a&gt; as the standard language. A nice tutorial is this a &lt;a href=&#34;https://python.swaroopch.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A byte of Python&lt;/a&gt;.  Importantly, we will not reinvent the wheel, but use some standard libraries for scientific programming. They will be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;a href=&#34;https://jupyter.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jupyter notebook&lt;/a&gt;, for simple interactive coding.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://numpy.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Numpy&lt;/a&gt; for all kinds of numerical methods.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://matplotlib.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matplotlib&lt;/a&gt; for all kind of plotting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;quantum-harmonical-oscillator&#34;&gt;Quantum harmonical oscillator&lt;/h1&gt;
+&lt;p&gt;We will work our way through quantum harmonic oscillator for which the potential is:
+$$
+V(x) = \frac{m\omega^2}{2}x^2
+$$&lt;/p&gt;
+&lt;p&gt;We would now like to plot it up. For that we will need to import some routines, which simplify this.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# import plotting and numerics
+import matplotlib.pyplot as plt
+import numpy as np
+from numpy import linalg as LA
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;now let us plot the potential&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#parameters of the harmonic potential
+
+omega = 2*np.pi; m = 1;hbar = 1
+
+# parameters of the grid
+Ngrid = 1001; xmin = -10; xmax = 10;
+
+xvec = np.linspace(xmin,xmax,Ngrid);#a vector spanning from -10 to 10 with 100 grid points
+Vx = m*omega**2/2*xvec**2;
+
+f, ax = plt.subplots()
+ax.plot(xvec,Vx);
+ax.set_xlabel(&#39;position $x$&#39;);
+ax.set_ylabel(&#39;potential $V(x)$&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;./PlottingTutorial_4_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;numerical-diagonalization&#34;&gt;Numerical diagonalization&lt;/h1&gt;
+&lt;p&gt;While the potential is nice to look at, we would actually like to use python to do some more powerful stuff than simple plots. One of them is the numerical diagonialization of the problem.&lt;/p&gt;
+&lt;h2 id=&#34;kinetic-energy&#34;&gt;Kinetic energy&lt;/h2&gt;
+&lt;p&gt;So we first have to build the matrix that represents the kinetic energy. For that to work we discretize the second order derivative as:
+$$
+f&#39;&#39;(x) = \frac{f(x-dx)+f(x+dx)-2f(x)}{dx^2}
+$$&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#resolution of the grid
+dx = np.diff(xvec).mean()
+
+
+dia = -2*np.ones(Ngrid)
+offdia = np.ones(Ngrid-1)
+d2grid = np.mat(np.diag(dia,0) + np.diag(offdia,-1) + np.diag(offdia,1))/dx**2
+#avoid strange things at the edge of the grid
+d2grid[0,:]=0
+d2grid[Ngrid-1,:]=0
+
+Ekin = -hbar**2/(2*m)*d2grid
+Ekin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;matrix([[    0.,     0.,     0., ...,     0.,     0.,     0.],
+        [-1250.,  2500., -1250., ...,     0.,     0.,     0.],
+        [    0., -1250.,  2500., ...,     0.,     0.,     0.],
+        ...,
+        [    0.,     0.,     0., ...,  2500., -1250.,     0.],
+        [    0.,     0.,     0., ..., -1250.,  2500., -1250.],
+        [    0.,     0.,     0., ...,     0.,     0.,     0.]])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;potential-energy&#34;&gt;Potential energy&lt;/h2&gt;
+&lt;p&gt;This one is just a diagonal matrix that we have to initialize properly.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#potential energy as matrix
+Epot = np.mat(np.diag(Vx,0))
+Epot
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;matrix([[1973.92088022,    0.        ,    0.        , ...,    0.        ,
+            0.        ,    0.        ],
+        [   0.        , 1966.03309238,    0.        , ...,    0.        ,
+            0.        ,    0.        ],
+        [   0.        ,    0.        , 1958.16109591, ...,    0.        ,
+            0.        ,    0.        ],
+        ...,
+        [   0.        ,    0.        ,    0.        , ..., 1958.16109591,
+            0.        ,    0.        ],
+        [   0.        ,    0.        ,    0.        , ...,    0.        ,
+         1966.03309238,    0.        ],
+        [   0.        ,    0.        ,    0.        , ...,    0.        ,
+            0.        , 1973.92088022]])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;diagonalization&#34;&gt;Diagonalization&lt;/h1&gt;
+&lt;p&gt;We can now put them together as:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#%% combine to Hamiltonian, diagonalize and plot the lowest 30 energy eigenvalues
+H =  Ekin + Epot
+
+# diagonalization
+w, v = LA.eig(H)
+# sort it such that things look nice later
+sortinds = np.argsort(w)
+EigVecs = v[:,sortinds]
+EigVals = w[sortinds]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Time to plot up the eigenvalues.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;f, ax = plt.subplots()
+ax.plot(EigVals[0:30],&#39;o&#39;)
+ax.set_ylabel(&#39;Energy&#39;)
+ax.set_xlabel(&#39;index $n$&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Text(0.5, 0, &#39;index $n$&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;./PlottingTutorial_12_1.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;and now some eigenfunctions&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;n=2
+fig, (ax1,ax2) = plt.subplots(2,1, sharex=True)
+
+ax1.plot(xvec,np.real(EigVecs[:,n]))
+ax1.set(title=&#39;Realteil Eigenfunktion %d&#39;%(n),xlabel=&#39;x&#39;)
+ax2.plot(xvec,np.power(np.abs(EigVecs[:,n]),2))
+ax2.set(title=&#39;AbsQuadrat Eigenfunktion %d&#39;%(n),xlabel=&#39;x&#39;)
+fig.tight_layout()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;./PlottingTutorial_14_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Feel free to extend this further as you wish at some later stage.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Stochastic dynamics of a few sodium atoms in a cold potassium cloud</title>
       <link>https://jendrzejewski.synqs.org/publication/2021-bhatt/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
