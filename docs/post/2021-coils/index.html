@@ -1,0 +1,1743 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Fred Jendrzejewski">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="We recently installed new water-cooled magnetic field coils.  Here, I will share our experiences when making these coils and discuss the experimental challenges we faced along the way.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://jendrzejewski.synqs.org/post/2021-coils/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#1565c0">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" media="print" onload="this.media='all'">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.d108ea35c56370e2da19d10e4a2e45b5.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2845W2HYQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-N2845W2HYQ', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  
+  <link rel="manifest" href="/index.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://jendrzejewski.synqs.org/post/2021-coils/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@synqs">
+  <meta property="twitter:creator" content="@synqs">
+  
+  <meta property="og:site_name" content="Jendrzejewski Group">
+  <meta property="og:url" content="https://jendrzejewski.synqs.org/post/2021-coils/">
+  <meta property="og:title" content="Making water-cooled magnetic field coils | Jendrzejewski Group">
+  <meta property="og:description" content="We recently installed new water-cooled magnetic field coils.  Here, I will share our experiences when making these coils and discuss the experimental challenges we faced along the way."><meta property="og:image" content="https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2021-01-18T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-01-18T14:14:51&#43;01:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jendrzejewski.synqs.org/post/2021-coils/"
+  },
+  "headline": "Making water-cooled magnetic field coils",
+  
+  "datePublished": "2021-01-18T00:00:00Z",
+  "dateModified": "2021-01-18T14:14:51+01:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Jan Kilinc"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jendrzejewski Group",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "We recently installed new water-cooled magnetic field coils.  Here, I will share our experiences when making these coils and discuss the experimental challenges we faced along the way."
+}
+</script>
+
+  
+
+  
+
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#1565c0",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#1565c0"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "https://www.cookiesandyou.com"
+      }
+    })});
+  </script>
+
+
+
+  <link rel="stylesheet" type="text/css" href="/hugo-cite.css" />
+
+
+  <title>Making water-cooled magnetic field coils | Jendrzejewski Group</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.7d92a95e871a711a5c03f82410d0fe5d.js"></script>
+
+  
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Jendrzejewski Group</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Jendrzejewski Group</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Research</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/research"><span>Overview</span></a>
+            
+              <a class="dropdown-item" href="/publication"><span>Publications</span></a>
+            
+              <a class="dropdown-item" href="/talk"><span>Talks & Posters</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/teaching"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/technologies"><span>Technology</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/people"><span>People</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/post"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Making water-cooled magnetic field coils</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/author/jan-kilinc/">Jan Kilinc</a></span>, <span >
+      <a href="/author/lilo-hocker/">Lilo Höcker</a></span>, <span >
+      <a href="/author/rohit-prasad-bhatt/">Rohit Prasad Bhatt</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    2021-01-18
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    8 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header" href="/project/sopa/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>For trapping atoms in a <strong>magneto-optical trap (MOT)</strong> one usually requires magnetic field gradients on the order of tens of G/cm. To produce such gradients water-cooling the magnetic field coils is typically not required. In our configuration we operated the coils at 20A current, which led to gradient of roughly 17G/cm and increased the coil body temperature to approximately 70°C.</p>
+<p>When we recently started imaging and <strong>counting single atoms in a dual-species MOT</strong> 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#bhatt2021"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Rohit Prasad"><span itemprop="familyName">Bhatt</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2021</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope 
+      itemtype="https://schema.org/Book"
+      data-type="book"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Bhatt</span>,&#32;
+    <meta itemprop="givenName" content="Rohit Prasad" />
+    R.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Kilinc</span>,&#32;
+    <meta itemprop="givenName" content="Jan" />
+    J.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Höcker</span>,&#32;
+    <meta itemprop="givenName" content="Lilo" />
+    L.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Jendrzejewski</span>,&#32;
+    <meta itemprop="givenName" content="Fred" />
+    F.</span>&#32;
+    (<span itemprop="datePublished">2021</span>).
+  &#32;<span itemprop="name">
+    <i>Stochastic dynamics of a few sodium atoms in a cold potassium cloud</i></span>.
+  </span>
+
+
+
+</span></span>, it became quite clear that higher field gradients would be very much beneficiary. Especially for potassium, the atomic cloud was very dilute, which means that the signal spreads over a big region on the camera sensor. A high field gradient (on the order of 200G/cm) compresses the atomic cloud and concentrates the fluorescence on a smaller area, which reduces the influence of stray light.<br>
+Furthermore, higher magnetic field gradients would enable us to implement a quadrupole <strong>magnetic trap</strong> stage between the MOT and the dipole trap stage on the road to condensation 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#spielman2009"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Y.-J."><span itemprop="familyName">Lin</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2009</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Lin</span>,&#32;
+    <meta itemprop="givenName" content="Y.-J." />
+    Y.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Perry</span>,&#32;
+    <meta itemprop="givenName" content="A. R." />
+    A.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Compton</span>,&#32;
+    <meta itemprop="givenName" content="R. L." />
+    R.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Spielman</span>,&#32;
+    <meta itemprop="givenName" content="I. B." />
+    I.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Porto</span>,&#32;
+    <meta itemprop="givenName" content="J. V." />
+    J.</span>
+  &#32;
+    (<span itemprop="datePublished">2009</span>).
+  &#32;<span itemprop="name">Rapid production of $^87\textR\textb$ Bose-Einstein condensates in a combined magnetic and optical potential</span>.<i>
+    <span itemprop="about">Phys. Rev. A</span>,&#32;79(6)</i>.&#32;<span itemprop="pagination">063631</span>.
+  <a href="https://doi.org/10.1103/PhysRevA.79.063631"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1103/PhysRevA.79.063631</a></span>
+
+
+
+</span></span>. The atoms would be captured from the MOT in the magnetic trap, after which an rf-evaporation scheme would follow. After transferring the cold atoms into a mode-matched dipole trap, the atoms would be evaporatively cooled by lowering the trap depth until condensation is reached. As we had some troubles transferring the pre-cooled atoms from the MOT (after a molasses stage) directly into the dipole trap, this technique should lead to a more efficient transfer.</p>
+<p>Basically there are four different approaches to coil systems:</p>
+<ol>
+<li><strong>Non-cooled coils.</strong> Wind enamelled copper wire around frame of desired shape and pass current through the wire. This approach is typically used in simple systems. There are no problems with possible leaks, but the coils will heat up.</li>
+<li><strong>Hollow-core coils.</strong> A hollow copper tube is used and water flows through the internal water-channel. This is the standard approach, which is used in most experiments in Heidelberg. However, it has numerous drawbacks: High water pressure, inefficient cooling, expansive, hard to recreate the same coils.</li>
+<li><strong>Bitter electromagnet.</strong> Circular metal plates are stacked on top of each other with current flowing in a helical path through the electromagnet. Holes in the copper plates allow for efficient cooling. These coils solve most of the problems of the hollow-core coils, but have other problems like complex assembly and possible leaks.</li>
+<li><strong>Bulk-machined electromagnet.</strong> Similar to the bitter coils, these coils are produced from a bulk copper piece. Here, a spiral is cut into the copper and filled with epoxy. The water is in direct contact with the top layer of the copper 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#roux2019"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Kevin"><span itemprop="familyName">Roux</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2019</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Roux</span>,&#32;
+    <meta itemprop="givenName" content="Kevin" />
+    K.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Cilenti</span>,&#32;
+    <meta itemprop="givenName" content="Barbara" />
+    B.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Helson</span>,&#32;
+    <meta itemprop="givenName" content="Victor" />
+    V.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Konishi</span>,&#32;
+    <meta itemprop="givenName" content="Hideki" />
+    H.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Brantut</span>,&#32;
+    <meta itemprop="givenName" content="Jean-Philippe" />
+    J.</span>
+  &#32;
+    (<span itemprop="datePublished">2019</span>).
+  &#32;<span itemprop="name">Compact bulk-machined electromagnets for quantum gas experiments</span>.<i>
+    <span itemprop="about">SciPost Physics</span>,&#32;6(4)</i>.&#32;<span itemprop="pagination">048</span>.
+  <a href="https://doi.org/10.21468/SciPostPhys.6.4.048"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.21468/SciPostPhys.6.4.048</a></span>
+
+
+
+</span></span>.</li>
+</ol>
+<p>After fruitful discussions with the Brantut group, we decided to follow their approach with the bulk-machined electromagnet.
+The main idea for these coils is that you take a piece of copper and carve out a spiral without opening the coil to the outside. Then you fill the gaps between the thin copper layers with epoxy and, once the epoxy has hardened, machine the copper piece to your desired shape. A PEEK cap with the same dimensions as the copper coil is screwed onto the coil. This cap is U-shaped, such that the cooling water can flow in a channel between the PEEK part and the top copper surface.</p>
+<h1 id="design-considerations">Design considerations</h1>
+<p>When designing the coils, there were a few <strong>constraints</strong> to keep in mind:</p>
+<ul>
+<li>The elongated viewports of the science chamber enable very good optical access, which should not be blocked by the coils. Therefore, we decided to match the <strong>shape</strong> of the viewports and go for race-track shaped magnetic field coils. The width of the inner hole should be large enough to let the dipole beams pass through (see figure below).</li>
+<li>The coils are operated in anti-Helmholtz configuration, which gives a homogeneous field gradient at a distance $d = \sqrt{3}R$, with R: effective radius of coil. The distance between the coils is set by the width of the science chamber (roughly 75mm), which is why the effective <strong>coil radius</strong> has to be matched.</li>
+<li>The <strong>number of windings</strong> is one of the parameters, which determines the magnetic field gradient. Similar to our previous set of coils we decided to go for 40 windings, which meant a gradient of 1G/cm/A. To still keep the coil rather compact we chose a pitch of 1mm/winding. Thus, between each 0.7mm thin copper winding there would be a 0.3mm layer of epoxy.
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-sketch-of-our-science-chamber-with-magnetic-field-coils-laser-beams-and-optics">
+
+
+  <a data-fancybox="" href="/post/2021-coils/Chamber_Coils_hu3177f204f9b1af742e9d3dc5867f0d6d_375877_2000x2000_fit_lanczos_2.png" data-caption="Sketch of our science chamber with magnetic field coils, laser beams and optics.">
+
+
+  <img data-src="/post/2021-coils/Chamber_Coils_hu3177f204f9b1af742e9d3dc5867f0d6d_375877_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="2021" height="943">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    Sketch of our science chamber with magnetic field coils, laser beams and optics.
+  </figcaption>
+
+
+</figure>
+</li>
+</ul>
+<h1 id="manufacturing-the-coils">Manufacturing the coils</h1>
+<p>When manufacturing the coils we mainly followed the detailed description given in 
+
+
+
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<a href="#roux2019"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Kevin"><span itemprop="familyName">Roux</span></span>
+      <em>&amp; al.</em>,&#32;
+      <span itemprop="datePublished">2019</span></a>)
+    <span class="hugo-cite-citation">
+
+
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Roux</span>,&#32;
+    <meta itemprop="givenName" content="Kevin" />
+    K.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Cilenti</span>,&#32;
+    <meta itemprop="givenName" content="Barbara" />
+    B.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Helson</span>,&#32;
+    <meta itemprop="givenName" content="Victor" />
+    V.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Konishi</span>,&#32;
+    <meta itemprop="givenName" content="Hideki" />
+    H.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Brantut</span>,&#32;
+    <meta itemprop="givenName" content="Jean-Philippe" />
+    J.</span>
+  &#32;
+    (<span itemprop="datePublished">2019</span>).
+  &#32;<span itemprop="name">Compact bulk-machined electromagnets for quantum gas experiments</span>.<i>
+    <span itemprop="about">SciPost Physics</span>,&#32;6(4)</i>.&#32;<span itemprop="pagination">048</span>.
+  <a href="https://doi.org/10.21468/SciPostPhys.6.4.048"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.21468/SciPostPhys.6.4.048</a></span>
+
+
+
+</span></span>.
+The spiral was created using a <strong>wire erosion machine</strong> (wire diameter 0.25mm). As we started carving out from the middle towards the outside, the weight of the middle copper piece was dragged down like a spring, which hindered the operation of the machine. To circumvent this issue, a plate had to be placed below the coil as a support. The coil would rest on this plate and it featured a hole, where the erosion wire passes through.
+After carving out the spiral, the distance between the copper layers was not at all uniform, which is why <strong>fiber-glass spacers were inserted into the ridges</strong>. This stabilizes the spiral and also acts as an insulation between the layers.
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-bulk-copper-piece-with-carved-out-spiral-before-and-after-inserting-fiber-glass-spacers-into-the-gaps-which-were-carved-out-with-the-wire-erosion-machine">
+
+
+  <a data-fancybox="" href="/post/2021-coils/Coils_manufactured_hude8012b30339a1e692c5010103078b00_3478100_2000x2000_fit_lanczos_2.png" data-caption="Bulk copper piece with carved out spiral before and after inserting fiber-glass spacers into the gaps, which were carved out with the wire-erosion machine.">
+
+
+  <img data-src="/post/2021-coils/Coils_manufactured_hude8012b30339a1e692c5010103078b00_3478100_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="2063" height="774">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    Bulk copper piece with carved out spiral before and after inserting fiber-glass spacers into the gaps, which were carved out with the wire-erosion machine.
+  </figcaption>
+
+
+</figure>
+</p>
+<p>In the next step, <strong>epoxy was filled into the gaps</strong>. This was the most challenging part for us, as we did not have any experience with epoxy at all. First, we made a mould for the coil, put the coil inside, filled it with epoxy and put it under vacuum using an old pre-pump. This was supposed to remove any air bubbles from the epoxy, which could cause problems in terms of leak tightness. However, this plan did not really work out for us, as the epoxy was sticking too much to the mould (even though we had used wax to stop that from happening) and the epoxy was not going into all gaps evenly. Moreover, there were still some air bubbles remaining.<br>
+For the second try we, therefore, decided to fill the coil with epoxy using a syringe. In the end we had to fill some cavities with extra epoxy, but then (finally) had a leak-tight copper coil.
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-filling-epoxy-into-carved-out-gaps-with-pump-left-and-final-product-where-we-did-not-use-a-pump-right">
+
+
+  <a data-fancybox="" href="/post/2021-coils/Coils_Epoxy_hu7947f035f9420224f6b620fc810271a1_2514300_2000x2000_fit_lanczos_2.png" data-caption="Filling epoxy into carved out gaps with pump (left) and final product where we did not use a pump (right).">
+
+
+  <img data-src="/post/2021-coils/Coils_Epoxy_hu7947f035f9420224f6b620fc810271a1_2514300_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="2063" height="774">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    Filling epoxy into carved out gaps with pump (left) and final product where we did not use a pump (right).
+  </figcaption>
+
+
+</figure>
+</p>
+<h1 id="water-cooling">Water cooling</h1>
+<p>The cooling water flows in a water-channel between the coil body and a Peek part. The <strong>PEEK part</strong> is screwed to the copper piece with eight titanium screws. For that we made threads into the copper and used PEEK inlets for electrical insulation (figure left). To make the connection between the two parts leak-tight, we used O-rings on the inner and outer side of the PEEK part. Even though these parts are (like the copper coil) shaped like a race track, standard EPDM O-rings can be used (we used <a href="https://oringcalculator.eriksgroup.com/" target="_blank" rel="noopener">this website</a> to find the correct dimensions with respect to cross section and inner diameter).<br>
+In the beginning, we had some issues with water leaking out of the titanium screw holes on the PEEK part, but were able to get rid of these leaks by using Teflon tape and tightening the screws some more.
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-u-shaped-peek-part-which-is-screwed-onto-the-copper-coil-and-has-a-3mm-deep-channel-for-water-flow-the-connection-is-rendered-leak-tight-by-o-rings-bottom-right">
+
+
+  <a data-fancybox="" href="/post/2021-coils/Coils_PEEK_hu24b616cfe720875efdf2fcccede98c6b_4399279_2000x2000_fit_lanczos_2.png" data-caption="U-shaped PEEK part, which is screwed onto the copper coil and has a 3mm deep channel for water flow. The connection is rendered leak-tight by O-rings (bottom right).">
+
+
+  <img data-src="/post/2021-coils/Coils_PEEK_hu24b616cfe720875efdf2fcccede98c6b_4399279_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="2063" height="1547">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    U-shaped PEEK part, which is screwed onto the copper coil and has a 3mm deep channel for water flow. The connection is rendered leak-tight by O-rings (bottom right).
+  </figcaption>
+
+
+</figure>
+</p>
+<p><strong>Chiller.</strong> We went for the <a href="https://glendimplex.de/riedel/industriekuehlung/sc" target="_blank" rel="noopener">Riedel SC21 chiller</a>, which is very compact, simple and inexpensive.  As it is on the lower side with respect to the cooling power it can provide, an upgrade might be required to operate the coil at 300A with negligible heating.</p>
+<h1 id="installing-the-coils">Installing the Coils</h1>
+<p><strong>Electrical connections</strong>. To operate the coils in proper anti-Helmholtz configuration, we have to pass the current through the coils in opposite directions. At high currents, required for the magnetic trap, thick copper cables or copper bars are needed to pass the current from power supply to the coils, as thin ones would heat up dramatically. For initial testing we used thin copper wires and were able to recover the MOT (shown in image below).<br>
+The fast control of the current in the coils, during an experimental sequence, is implemented through a simple IGBT switching circuit.</p>
+<p>Furthermore, an <strong>interlock</strong> interrupts the electrical connection in case the coils get too hot. The hottest points on the coil are the outermost and innermost windings, as these are not in direct contact with the cooling water. Therefore, we placed K-type thermocouples at these points. An Arduino Uno reads the temperatures and shuts down the power supply in case the temperature goes above 50°C.</p>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-installing-the-coils-into-our-experiment-and-first-mot-signal-with-the-new-coils-the-electrical-connections-used-here-are-just-for-initial-testing-and-will-not-sustain-high-current-up-to-300a">
+
+
+  <a data-fancybox="" href="/post/2021-coils/Coils_Installation_hu6d9fb84978054d81e4009ade4023d166_2414233_2000x2000_fit_lanczos_2.png" data-caption="Installing the coils into our experiment and first MOT-signal with the new coils. The electrical connections used here are just for initial testing and will not sustain high current up to 300A.">
+
+
+  <img data-src="/post/2021-coils/Coils_Installation_hu6d9fb84978054d81e4009ade4023d166_2414233_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="2063" height="774">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    Installing the coils into our experiment and first MOT-signal with the new coils. The electrical connections used here are just for initial testing and will not sustain high current up to 300A.
+  </figcaption>
+
+
+</figure>
+
+
+    </div>
+
+    
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/magnetic-fields/">magnetic fields</a>
+  
+  <a class="badge badge-light" href="/tag/magneto-optical-trap/">magneto-optical trap</a>
+  
+  <a class="badge badge-light" href="/tag/ultracold-atoms/">ultracold atoms</a>
+  
+  <a class="badge badge-light" href="/tag/electromagnet/">electromagnet</a>
+  
+  <a class="badge badge-light" href="/tag/water-cooling/">water cooling</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://jendrzejewski.synqs.org/post/2021-coils/&amp;text=Making%20water-cooled%20magnetic%20field%20coils" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://jendrzejewski.synqs.org/post/2021-coils/&amp;t=Making%20water-cooled%20magnetic%20field%20coils" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Making%20water-cooled%20magnetic%20field%20coils&amp;body=https://jendrzejewski.synqs.org/post/2021-coils/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://jendrzejewski.synqs.org/post/2021-coils/&amp;title=Making%20water-cooled%20magnetic%20field%20coils" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Making%20water-cooled%20magnetic%20field%20coils%20https://jendrzejewski.synqs.org/post/2021-coils/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://jendrzejewski.synqs.org/post/2021-coils/&amp;title=Making%20water-cooled%20magnetic%20field%20coils" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="/author/jan-kilinc/"><img class="avatar mr-3 avatar-circle" src="/author/jan-kilinc/avatar_hu4723fc8891220a6657a5f96fcf82c477_5885_270x270_fill_q75_lanczos_center.jpg" alt="Jan Kilinc"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/author/jan-kilinc/">Jan Kilinc</a></h5>
+      <h6 class="card-subtitle">PhD Student</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="/author/lilo-hocker/"><img class="avatar mr-3 avatar-circle" src="/author/lilo-hocker/avatar_hu72fe62647b19d434e52cc173295e0eb0_93457_270x270_fill_q75_lanczos_center.jpg" alt="Lilo Höcker"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/author/lilo-hocker/">Lilo Höcker</a></h5>
+      <h6 class="card-subtitle">PhD Student</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="/author/rohit-prasad-bhatt/"><img class="avatar mr-3 avatar-circle" src="/author/rohit-prasad-bhatt/avatar_hu9fff79f9a212b3d04b79c0ccdd57e6d0_6967_270x270_fill_q75_lanczos_center.jpg" alt="Rohit Prasad Bhatt"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/author/rohit-prasad-bhatt/">Rohit Prasad Bhatt</a></h5>
+      <h6 class="card-subtitle">PhD Student</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+<section id="comments">
+  
+    <div id="commento"></div>
+
+<script src="https://cdn.commento.io/js/commento.js" defer></script>
+
+  
+</section>
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/2020-atomic-quantum-circuits/">Can we run quantum circuits on ultra-cold atom devices?</a></li>
+      
+      <li><a href="/post/2017-intro-dynamical/">What are dynamical gauge fields ? A simplistic introduction by an AMO experimentalist.</a></li>
+      
+      <li><a href="/project/labscript-devices/">Devices for labscript</a></li>
+      
+      <li><a href="/project/pennylane-ls/">Pennylane-ls</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © SynQS
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+        <div class="search-hit-content">
+          <div class="search-hit-name">
+            <a href="{{relpermalink}}">{{title}}</a>
+            <div class="article-metadata search-hit-type">{{type}}</div>
+            <p class="search-hit-description">{{snippet}}</p>
+          </div>
+        </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.297f736e130400781cfee00eff1f1afd.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
