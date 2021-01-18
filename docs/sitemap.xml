@@ -104,12 +104,12 @@
   
   <url>
     <loc>https://jendrzejewski.synqs.org/authors/</loc>
-    <lastmod>2021-01-14T13:21:22+01:00</lastmod>
+    <lastmod>2021-01-14T15:49:33+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://jendrzejewski.synqs.org/</loc>
-    <lastmod>2021-01-14T13:21:22+01:00</lastmod>
+    <lastmod>2021-01-14T15:49:33+01:00</lastmod>
   </url>
   
   <url>
@@ -129,7 +129,7 @@
   
   <url>
     <loc>https://jendrzejewski.synqs.org/tag/quantum-mechanics/</loc>
-    <lastmod>2021-01-14T13:21:22+01:00</lastmod>
+    <lastmod>2021-01-14T15:49:33+01:00</lastmod>
   </url>
   
   <url>
@@ -139,7 +139,7 @@
   
   <url>
     <loc>https://jendrzejewski.synqs.org/tags/</loc>
-    <lastmod>2021-01-14T13:21:22+01:00</lastmod>
+    <lastmod>2021-01-14T15:49:33+01:00</lastmod>
   </url>
   
   <url>
@@ -303,8 +303,38 @@
   </url>
   
   <url>
+    <loc>https://jendrzejewski.synqs.org/publication-type/7/</loc>
+    <lastmod>2021-01-05T11:49:57+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/classical-electric-circuits/</loc>
+    <lastmod>2020-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/publication/thesis/riechert-2020/</loc>
+    <lastmod>2020-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/electronics/</loc>
+    <lastmod>2020-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jendrzejewski.synqs.org/author/erez-zohar/</loc>
     <lastmod>2021-01-05T13:01:26+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/lattice-gauge-theories/</loc>
+    <lastmod>2020-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jendrzejewski.synqs.org/tag/local-symmetry/</loc>
+    <lastmod>2020-12-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -444,7 +474,7 @@
   
   <url>
     <loc>https://jendrzejewski.synqs.org/tag/master/</loc>
-    <lastmod>2021-01-14T13:21:22+01:00</lastmod>
+    <lastmod>2021-01-14T15:49:33+01:00</lastmod>
   </url>
   
   <url>
@@ -464,11 +494,6 @@
   
   <url>
     <loc>https://jendrzejewski.synqs.org/tag/machine-learning/</loc>
-    <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/publication-type/7/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
   </url>
   
@@ -569,22 +594,22 @@
   
   <url>
     <loc>https://jendrzejewski.synqs.org/teaching/2019-aamo/</loc>
-    <lastmod>2021-01-14T13:21:22+01:00</lastmod>
+    <lastmod>2021-01-14T15:49:33+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://jendrzejewski.synqs.org/tag/atomic-physics/</loc>
-    <lastmod>2021-01-14T13:21:22+01:00</lastmod>
+    <lastmod>2021-01-14T15:49:33+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://jendrzejewski.synqs.org/tag/laser/</loc>
-    <lastmod>2021-01-14T13:21:22+01:00</lastmod>
+    <lastmod>2021-01-14T15:49:33+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://jendrzejewski.synqs.org/tag/optics/</loc>
-    <lastmod>2021-01-14T13:21:22+01:00</lastmod>
+    <lastmod>2021-01-14T15:49:33+01:00</lastmod>
   </url>
   
   <url>
