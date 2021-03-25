@@ -1,1394 +1,847 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://jendrzejewski.synqs.org/author/jurgen-berges/</loc>
     <lastmod>2021-01-05T12:54:53+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/philipp-hauke/</loc>
     <lastmod>2020-12-31T06:55:50+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/valentin-kasper/</loc>
     <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/project/nali/</loc>
     <lastmod>2021-01-02T00:49:05+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/fred-jendrzejewski/</loc>
     <lastmod>2021-01-05T20:02:42+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/project/sopa/</loc>
     <lastmod>2021-01-02T00:49:05+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/jan-kilinc/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/rohit-prasad-bhatt/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/lilo-hocker/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/apoorva-hegde/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/alexander-hesse/</loc>
     <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/alexander-mil/</loc>
     <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/andy-xia/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/hannes-riechert/</loc>
     <lastmod>2020-12-30T16:20:12+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/ingrid-m.-dippel/</loc>
     <lastmod>2020-12-30T16:20:12+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/kai-niklas-schymik/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/manuel-rudolph/</loc>
     <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/noah-wach/</loc>
     <lastmod>2020-12-30T16:20:12+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/yannick-deller/</loc>
     <lastmod>2020-12-30T16:20:12+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://jendrzejewski.synqs.org/author/jolan-kerrien/</loc>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/markus-k.-oberthaler/</loc>
     <lastmod>2020-12-31T06:55:50+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://jendrzejewski.synqs.org/publication-type/2/</loc>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/authors/</loc>
-    <lastmod>2021-01-18T14:14:51+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/tag/electromagnet/</loc>
-    <lastmod>2021-01-18T14:14:51+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
+    <loc>https://jendrzejewski.synqs.org/tag/cold-atoms/</loc>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
+    <loc>https://jendrzejewski.synqs.org/publication/hesse-2020/</loc>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
+    <loc>https://jendrzejewski.synqs.org/author/durga-dasari/</loc>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
+    <loc>https://jendrzejewski.synqs.org/author/jakob-steiner/</loc>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/</loc>
-    <lastmod>2021-01-18T14:14:51+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/tag/magnetic-fields/</loc>
-    <lastmod>2021-01-18T14:14:51+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/tag/magneto-optical-trap/</loc>
-    <lastmod>2021-01-18T14:14:51+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/post/2021-coils/</loc>
-    <lastmod>2021-01-18T14:14:51+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
+    <loc>https://jendrzejewski.synqs.org/author/julia-michl/</loc>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
+    <loc>https://jendrzejewski.synqs.org/author/jorg-wrachtrup/</loc>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
+    <loc>https://jendrzejewski.synqs.org/author/kerim-koster/</loc>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
+    <loc>https://jendrzejewski.synqs.org/tag/magnetic-field-control/</loc>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
+    <loc>https://jendrzejewski.synqs.org/tag/magnetometry/</loc>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
+    <loc>https://jendrzejewski.synqs.org/tag/nv-center/</loc>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
+    <loc>https://jendrzejewski.synqs.org/publication_types/</loc>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
+    <loc>https://jendrzejewski.synqs.org/tag/qubits/</loc>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tags/</loc>
-    <lastmod>2021-01-18T14:14:51+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
+    <loc>https://jendrzejewski.synqs.org/author/vadim-vorobyov/</loc>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
+    <loc>https://jendrzejewski.synqs.org/tag/electromagnet/</loc>
+    <lastmod>2021-01-18T15:28:09+01:00</lastmod>
+  </url><url>
+    <loc>https://jendrzejewski.synqs.org/tag/magnetic-fields/</loc>
+    <lastmod>2021-01-18T15:28:09+01:00</lastmod>
+  </url><url>
+    <loc>https://jendrzejewski.synqs.org/tag/magneto-optical-trap/</loc>
+    <lastmod>2021-01-18T15:28:09+01:00</lastmod>
+  </url><url>
+    <loc>https://jendrzejewski.synqs.org/post/2021-coils/</loc>
+    <lastmod>2021-01-18T15:28:09+01:00</lastmod>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/ultracold-atoms/</loc>
-    <lastmod>2021-01-18T14:14:51+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-01-18T15:28:09+01:00</lastmod>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/water-cooling/</loc>
-    <lastmod>2021-01-18T14:14:51+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-01-18T15:28:09+01:00</lastmod>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/matplotlib/</loc>
     <lastmod>2021-01-14T10:36:35+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/numpy/</loc>
     <lastmod>2021-01-14T10:36:35+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/python/</loc>
     <lastmod>2021-01-14T10:36:35+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/quantum-mechanics/</loc>
     <lastmod>2021-01-14T15:49:33+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/post/2021-plotting-in-python/</loc>
     <lastmod>2021-01-14T10:36:35+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/teaching/</loc>
     <lastmod>2021-01-14T10:36:35+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/tutorial/</loc>
     <lastmod>2021-01-14T10:36:35+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/undergrad/</loc>
     <lastmod>2021-01-14T10:36:35+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication-type/3/</loc>
-    <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/atomic-mixture/</loc>
-    <lastmod>2021-01-05T12:54:53+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/impurity/</loc>
-    <lastmod>2021-01-05T10:27:31+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/kip/</loc>
-    <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/publication_types/</loc>
-    <lastmod>2021-01-18T10:46:26+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/quantum-simulation/</loc>
-    <lastmod>2021-01-06T07:28:31+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/2021-bhatt/</loc>
-    <lastmod>2021-01-05T10:27:31+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/dynamical-gauge-fields/</loc>
     <lastmod>2021-01-08T08:58:09+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/lithium/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/machine/</loc>
     <lastmod>2021-01-02T00:49:05+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/sodium/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/spin-changing-collisions/</loc>
     <lastmod>2021-01-02T00:49:05+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/project/labscript-devices/</loc>
     <lastmod>2021-01-04T17:05:13+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/labscript/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/software/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/teaching/2021-quantum-simulation-seminar/</loc>
-    <lastmod>2020-12-30T18:44:52+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-03-25T07:58:20+01:00</lastmod>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/component/</loc>
     <lastmod>2021-01-04T17:05:13+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/flask/</loc>
     <lastmod>2021-01-04T17:05:13+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/pennylane/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/project/pennylane-ls/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/quantum-computing/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/quantum-information/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/temp-control/</loc>
     <lastmod>2021-01-04T17:05:13+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/project/temp-control/</loc>
     <lastmod>2021-01-04T17:05:13+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/project/pd-board/</loc>
     <lastmod>2021-01-04T17:05:13+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/robert-ott/</loc>
     <lastmod>2021-01-05T12:54:53+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/2020-ott-scalable/</loc>
     <lastmod>2021-01-05T12:54:53+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/torsten-v.-zache/</loc>
     <lastmod>2021-01-08T08:58:09+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication-type/7/</loc>
     <lastmod>2021-01-18T10:46:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/classical-electric-circuits/</loc>
     <lastmod>2021-01-18T10:46:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/thesis/riechert-2020/</loc>
     <lastmod>2021-01-18T10:46:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/electronics/</loc>
     <lastmod>2021-01-18T10:46:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/erez-zohar/</loc>
     <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/lattice-gauge-theories/</loc>
     <lastmod>2021-01-18T10:46:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/local-symmetry/</loc>
     <lastmod>2021-01-18T10:46:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/maciej-lewenstein/</loc>
     <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/non-abelian/</loc>
     <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/2020-kasper-decoupling/</loc>
     <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/talk/2020-lilo-qtd/</loc>
     <lastmod>2020-12-30T16:04:47+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/categories/</loc>
     <lastmod>2020-12-30T16:04:47+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/poster/</loc>
     <lastmod>2020-12-30T16:04:47+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/category/poster/</loc>
     <lastmod>2020-12-30T16:04:47+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/alexander-mil/</loc>
     <lastmod>2020-12-30T16:04:47+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/jurgen-berges/</loc>
     <lastmod>2020-12-30T16:04:47+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/markus-oberthaler/</loc>
     <lastmod>2020-12-30T16:04:47+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/philipp-hauke/</loc>
     <lastmod>2020-12-30T16:04:47+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/talk/2020-hegde-coolme/</loc>
     <lastmod>2020-12-30T16:04:47+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/torsten-zache/</loc>
     <lastmod>2020-12-30T16:04:47+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/alexandre-dauphin/</loc>
     <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/atomic-mixtures/</loc>
     <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/daniel-gonzalez-cuadra/</loc>
     <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/eberhard-tiemann/</loc>
     <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/felix-huber/</loc>
     <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/quantum-computation/</loc>
     <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/theory/</loc>
     <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/kasper-2020/</loc>
     <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/publication-type/2/</loc>
-    <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/2020-kasper-jaynes/</loc>
     <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/gediminas-juzeliunas/</loc>
     <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/lattice-gauge-theory/</loc>
     <lastmod>2021-01-08T08:58:09+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/block-seminar/</loc>
     <lastmod>2020-12-30T18:44:52+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/ibmq/</loc>
     <lastmod>2020-12-30T18:44:52+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/master/</loc>
     <lastmod>2021-01-14T15:49:33+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/teaching/2020-solving-problems/</loc>
     <lastmod>2020-12-30T18:44:52+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/talk/2020-jan-damop/</loc>
     <lastmod>2020-12-30T16:04:47+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/machine-learning/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/thesis/mil-2020/</loc>
     <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/ultracold/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/publication/hesse-2020/</loc>
-    <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/author/durga-dasari/</loc>
-    <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/tag/experiment/</loc>
-    <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/author/jakob-steiner/</loc>
-    <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/author/julia-michl/</loc>
-    <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/author/jorg-wrachtrup/</loc>
-    <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/author/kerim-koster/</loc>
-    <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/tag/magnetometry/</loc>
-    <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/tag/nv/</loc>
-    <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/tag/under-grad/</loc>
-    <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/author/vadim-vorobyov/</loc>
-    <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jendrzejewski.synqs.org/tag/cold-atoms/</loc>
-    <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/thesis/rudolph-2020/</loc>
     <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/generative-models/</loc>
     <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/vacuum/</loc>
     <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/2020-mil-a-scalable-realization-of-local-u1-gauge-invariance-in-cold-atomic-mixtures/</loc>
     <lastmod>2021-01-05T12:54:53+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/thesis/hesse-2019/</loc>
     <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://jendrzejewski.synqs.org/tag/nv/</loc>
+    <lastmod>2021-01-03T07:55:32+01:00</lastmod>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/teaching/2019-aamo/</loc>
     <lastmod>2021-01-14T15:49:33+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/atomic-physics/</loc>
     <lastmod>2021-01-14T15:49:33+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/laser/</loc>
     <lastmod>2021-01-14T15:49:33+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/optics/</loc>
     <lastmod>2021-01-14T15:49:33+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/thesis/hoecker-2019/</loc>
     <lastmod>2021-01-02T00:49:05+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/sopa/</loc>
     <lastmod>2021-01-02T00:49:05+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/spectroscopy/</loc>
     <lastmod>2021-01-02T00:49:05+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/gershon-kurizki/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/igor-mazets/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/niedenzu-2019/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/wolfgang-niedenzu/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/teaching/2019-running-qc/</loc>
     <lastmod>2020-12-30T20:27:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/trapped-ions/</loc>
     <lastmod>2020-12-30T20:27:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/thesis/kilinc-2019/</loc>
     <lastmod>2021-01-02T00:49:05+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/adrien-signoles/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/alain-aspect/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/baptiste-lecoutre/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/disordered/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/richard-2019/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://jendrzejewski.synqs.org/tag/experiment/</loc>
+    <lastmod>2020-12-30T07:46:59+01:00</lastmod>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/iogs/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/jeremie-richard/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/laurent-sanchez-palencia/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/lih-king-lim/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/musawwadah-mukhtar/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/valentin-v.-volchkov/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/vincent-denechaud/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/vincent-josse/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/zache-2019/</loc>
     <lastmod>2021-01-05T12:54:53+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/j.-t.-schneider/</loc>
     <lastmod>2021-01-05T12:54:53+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/lih-king-king-lim/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/n.-mueller/</loc>
     <lastmod>2021-01-05T12:54:53+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/t.-v.-zache/</loc>
     <lastmod>2021-01-05T12:54:53+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/2019-signoles/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/valentin-v-volchkov/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/vasiliki-angelopoulou/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/teaching/2018-aamo/</loc>
     <lastmod>2020-12-30T21:18:52+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/accordion-lattice/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/thesis/schymik-2018/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/quantum-thermodynamics/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/quantumthermo/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/a-v-gorshkov/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/bienias-2018/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/j-v-porto/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/jqi/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/l-jiang/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/p-bienias/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/s-l-rolston/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/s-subhankar/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/t-tiecke/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/t-c-tsui/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/y-wang/</loc>
     <lastmod>2020-12-30T07:46:59+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/f.-hebenstreit/</loc>
     <lastmod>2021-01-05T12:54:53+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/zache-2018/</loc>
     <lastmod>2021-01-05T12:54:53+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/feedback/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/intensity-stabilization/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/laser-control/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/pid/</loc>
     <lastmod>2021-01-05T11:49:57+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/magnetism/</loc>
     <lastmod>2021-01-06T07:28:31+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/post/2017-kondo/</loc>
     <lastmod>2021-01-06T07:28:31+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/ultracold-mixtures/</loc>
     <lastmod>2021-01-06T07:28:31+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/gauge-transformations/</loc>
     <lastmod>2021-01-08T08:58:09+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/local-symmetries/</loc>
     <lastmod>2021-01-08T08:58:09+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/post/2017-intro-dynamical/</loc>
     <lastmod>2021-01-08T08:58:09+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/original-content-from-this/</loc>
     <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/schwinger-pair-production/</loc>
     <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/f-hebenstreit/</loc>
     <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/kasper-2017/</loc>
     <lastmod>2021-01-05T13:01:26+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/atomtronics/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/avinash-kumar/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/gretchen-k.-campbell/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/stephen-eckel/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/superfluid/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/kumar-2017/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/thesis/mil-2016/</loc>
     <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/high-na/</loc>
     <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/imaging/</loc>
     <lastmod>2021-01-03T07:55:32+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/c.-j.-lobb/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/lee-2015-a/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/jeffrey-g.-lee/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/s.-eckel/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/w.-t.-hill/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/atomic-and-molecular-physics/</loc>
     <lastmod>2021-01-02T00:49:05+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/a.-komnik/</loc>
     <lastmod>2021-01-02T00:49:05+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/a.-trautmann/</loc>
     <lastmod>2021-01-02T00:49:05+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/f.-a.-olivares/</loc>
     <lastmod>2021-01-02T00:49:05+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/g-k-campbell/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/liang-jiang/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/rentrop-2016/</loc>
     <lastmod>2021-01-02T00:49:05+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/s-eckel/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/jendrzejewski-2016/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/t-g-tiecke/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/t.-rentrop/</loc>
     <lastmod>2021-01-02T00:49:05+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/tunneling/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/atom-trap/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/boseeinstein-condensation/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/quasiparticle/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/shock-waves/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/a.-kumar/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/charles-w.-clark/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/g.-k.-campbell/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/mark-edwards/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/wang-2015/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/ryan-m.-wilson/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/soliton/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/yi-hsieh-wang/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/e.-tiesinga/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/r.-mathew/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/mathew-2015/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/a-kumar/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/eckel-2014-a/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/weak-link/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/c-lanier/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/m-edwards/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/n-murray/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/jendrzejewski-2014/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/resistivity/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/christopher-j.-lobb/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/hysteresis/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/eckel-2014/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/noel-murray/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/william-d.-phillips/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/bose-einstein-condensate/</loc>
     <lastmod>2020-12-30T21:18:52+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/coherent-backscattering/</loc>
     <lastmod>2020-12-30T21:18:52+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/disorder/</loc>
     <lastmod>2020-12-30T21:18:52+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/matter-wave/</loc>
     <lastmod>2020-12-30T21:18:52+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/quantum-transport/</loc>
     <lastmod>2020-12-30T21:18:52+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/aditya-date/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/anderson-localization/</loc>
     <lastmod>2020-12-30T21:18:52+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/kilian-muller/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/localization/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/philippe-bouyer/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/thesis/jendrzejewski-2012-b/</loc>
     <lastmod>2020-12-30T21:18:52+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/thomas-plisson/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/alain-bernard/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/luca-pezze/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/marie-piraud/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/patrick-cheinet/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/jendrzejewski-2012-a/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/atom-laser/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/juliette-billy/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/bernard-2011/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/author/william-guerin/</loc>
     <lastmod>2020-12-30T12:38:23+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/contact/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/people/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/research/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/technologies/</loc>
     <lastmod>2021-01-02T00:49:05+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/doi10.1103/physrevlett.122.050403-urlhttps/doi/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/post/</loc>
     <lastmod>2021-01-06T07:28:31+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/tag/potassium/</loc>
     <lastmod>2021-01-02T00:49:05+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/publication/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/project/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/talk/</loc>
     <lastmod>2020-12-30T16:04:47+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jendrzejewski.synqs.org/teaching/</loc>
     <lastmod>2020-12-29T07:59:22+01:00</lastmod>
   </url>
-  
 </urlset>

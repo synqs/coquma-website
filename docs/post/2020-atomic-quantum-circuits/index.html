@@ -1,19 +1,15 @@
 <!DOCTYPE html><html lang="en-us" >
 
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
   
   
-  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
-  
-
+    <meta name="generator" content="Wowchemy 5.1.0 for Hugo" />
   
 
-  
   
 
   
@@ -27,44 +23,44 @@
   
   
 
-  <meta name="author" content="Fred Jendrzejewski">
+  <meta name="author" content="Fred Jendrzejewski" />
 
   
   
   
     
   
-  <meta name="description" content="In this blog-post, we present our path and thoughts towards using ultra-cold atom experiments for quantum computation. They are the result of a two month internship where we studied the feasibility of such an undertaking in our group. Many associate only universal devices, especially qubit devices, to be valid quantum computers. We show how we think of our ultra-cold atoms in terms of quantum circuits and implement first steps in the software framework [PennyLane](https://pennylane.ai/).">
+  <meta name="description" content="In this blog-post, we present our path and thoughts towards using ultra-cold atom experiments for quantum computation. They are the result of a two month internship where we studied the feasibility of such an undertaking in our group. Many associate only universal devices, especially qubit devices, to be valid quantum computers. We show how we think of our ultra-cold atoms in terms of quantum circuits and implement first steps in the software framework [PennyLane](https://pennylane.ai/)." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/">
-
-  
-
-
-
-
-
-
+  <link rel="alternate" hreflang="en-us" href="https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/" />
 
   
 
 
 
 
+
+
+
+  
+
+
+
+
   
   
 
   
   
   
-  <meta name="theme-color" content="#1565c0">
+    <meta name="theme-color" content="#1565c0" />
   
 
   
   
-  
-  <script src="/js/mathjax-config.js"></script>
+    
+    <script src="/js/mathjax-config.js"></script>
   
 
   
@@ -76,7 +72,9 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" media="print" onload="this.media='all'">
+
+    
+    
 
     
     
@@ -94,7 +92,7 @@
     
 
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
     
 
     
@@ -102,12 +100,6 @@
     
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -116,12 +108,6 @@
       
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -130,12 +116,6 @@
       
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -144,12 +124,6 @@
       
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -158,12 +132,6 @@
       
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -172,21 +140,6 @@
       
     
       
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
-      
-    
       
 
       
@@ -195,12 +148,62 @@
       
     
       
+      
 
       
       
 
       
     
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
       
 
       
@@ -211,12 +214,6 @@
       
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -224,22 +221,28 @@
 
       
     
+      
+      
+
+      
+      
+
+      
+    
+  
 
   
+  
+  
 
   
   
   
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.6dec3979a987e53633d83ca756efd57b.css" />
 
   
-  
-  
-  
-  
-  <link rel="stylesheet" href="/css/wowchemy.d108ea35c56370e2da19d10e4a2e45b5.css">
-
-  
-
 
 
 
@@ -275,6 +278,7 @@
 
   gtag('js', new Date());
   gtag('config', 'G-N2845W2HYQ', { 'anonymize_ip': true });
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
 
   
   document.addEventListener('click', onClickCallback, false);
@@ -285,21 +289,27 @@
 
   
 
+  
+
+
+
 
   
   
-
   
 
   
-  <link rel="manifest" href="/index.webmanifest">
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
   
 
-  <link rel="icon" type="image/png" href="/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/media/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_180x180_fill_lanczos_center_2.png" />
 
-  <link rel="canonical" href="https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/">
+  <link rel="canonical" href="https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/" />
 
+  
   
   
   
@@ -311,19 +321,22 @@
     
   
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary" />
   
-  <meta property="twitter:site" content="@synqs">
-  <meta property="twitter:creator" content="@synqs">
+    <meta property="twitter:site" content="@synqs" />
+    <meta property="twitter:creator" content="@synqs" />
   
-  <meta property="og:site_name" content="Jendrzejewski Group">
-  <meta property="og:url" content="https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/">
-  <meta property="og:title" content="Can we run quantum circuits on ultra-cold atom devices? | Jendrzejewski Group">
-  <meta property="og:description" content="In this blog-post, we present our path and thoughts towards using ultra-cold atom experiments for quantum computation. They are the result of a two month internship where we studied the feasibility of such an undertaking in our group. Many associate only universal devices, especially qubit devices, to be valid quantum computers. We show how we think of our ultra-cold atoms in terms of quantum circuits and implement first steps in the software framework [PennyLane](https://pennylane.ai/)."><meta property="og:image" content="https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  <meta property="og:site_name" content="Jendrzejewski Group" />
+  <meta property="og:url" content="https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/" />
+  <meta property="og:title" content="Can we run quantum circuits on ultra-cold atom devices? | Jendrzejewski Group" />
+  <meta property="og:description" content="In this blog-post, we present our path and thoughts towards using ultra-cold atom experiments for quantum computation. They are the result of a two month internship where we studied the feasibility of such an undertaking in our group. Many associate only universal devices, especially qubit devices, to be valid quantum computers. We show how we think of our ultra-cold atoms in terms of quantum circuits and implement first steps in the software framework [PennyLane](https://pennylane.ai/)." /><meta property="og:image" content="https://jendrzejewski.synqs.org/media/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://jendrzejewski.synqs.org/media/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="article:published_time" content="2020-05-25T00:00:00&#43;00:00">
+      <meta
+        property="article:published_time"
+        content="2020-05-25T00:00:00&#43;00:00"
+      />
     
     <meta property="article:modified_time" content="2021-01-05T11:49:57&#43;01:00">
   
@@ -366,7 +379,7 @@
     "name": "Jendrzejewski Group",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_192x192_fill_lanczos_center_2.png"
+      "url": "https://jendrzejewski.synqs.org/media/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_192x192_fill_lanczos_center_2.png"
     }
   },
   "description": "In this blog-post, we present our path and thoughts towards using ultra-cold atom experiments for quantum computation. They are the result of a two month internship where we studied the feasibility of such an undertaking in our group. Many associate only universal devices, especially qubit devices, to be valid quantum computers. We show how we think of our ultra-cold atoms in terms of quantum circuits and implement first steps in the software framework [PennyLane](https://pennylane.ai/)."
@@ -376,7 +389,6 @@
   
 
   
-
 
   
   
@@ -410,16 +422,14 @@
   </script>
 
 
-
   <link rel="stylesheet" type="text/css" href="/hugo-cite.css" />
 
 
   <title>Can we run quantum circuits on ultra-cold atom devices? | Jendrzejewski Group</title>
-
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="bc6b7d038c1284e30e6cbb6f57910004" >
 
   
   
@@ -429,46 +439,10 @@
   
   
   
-  <script src="/js/wowchemy-init.min.7d92a95e871a711a5c03f82410d0fe5d.js"></script>
+  <script src="/js/wowchemy-init.min.9dad2fecac7f370e439d06c4a1b59e05.js"></script>
 
   
 
-<aside class="search-modal" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div id="search-box">
-        
-        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
-        aria-label="Search...">
-        
-      </div>
-
-      
-      
-
-      
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
-</aside>
 
 
 
@@ -722,14 +696,11 @@
 
       
       
-      <li class="nav-item">
-        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
-      </li>
-      
 
       
       
 
+      
       
 
     </ul>
@@ -812,6 +783,7 @@
   
   
   
+  
 
   
   
@@ -819,15 +791,6 @@
 </div>
 
     
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1608,12 +1571,6 @@ to <strong>readers with varying backgrounds</strong> when plotting the
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1622,28 +1579,20 @@ to <strong>readers with varying backgrounds</strong> when plotting the
 
 
 
-
-
-
-<figure id="figure-sketched-quantum-circuits-that-correspond-to-selected-figures-from-mil-et-al-the-results-gain-a-clear-intuitive-meaning-through-the-quantum-circuits-even-though-the-system-that-is-being-simulated-is-not-known-the-color-blue-signifies-the-sodium-atoms-and-the-orange-color-lithium">
-
-
-  <a data-fancybox="" href="/post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_2000x2000_fit_lanczos_2.png" data-caption="Sketched quantum circuits that correspond to selected figures from Mil et al. The results gain a clear intuitive meaning through the quantum circuits even though the system that is being simulated is not known. The color blue signifies the Sodium atoms and the orange color Lithium.">
-
-
-  <img data-src="/post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="789" height="670">
-</a>
-
-
-  
-  
-  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
-    Sketched quantum circuits that correspond to selected figures from Mil et al. The results gain a clear intuitive meaning through the quantum circuits even though the system that is being simulated is not known. The color blue signifies the Sodium atoms and the orange color Lithium.
-  </figcaption>
-
-
-</figure>
-
+<figure  id="figure-sketched-quantum-circuits-that-correspond-to-selected-figures-from-mil-et-al-the-results-gain-a-clear-intuitive-meaning-through-the-quantum-circuits-even-though-the-system-that-is-being-simulated-is-not-known-the-color-blue-signifies-the-sodium-atoms-and-the-orange-color-lithium">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="Sketched quantum circuits that correspond to selected figures from Mil et al. The results gain a clear intuitive meaning through the quantum circuits even though the system that is being simulated is not known. The color blue signifies the Sodium atoms and the orange color Lithium." srcset="
+               /post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_0e01a044773fbe010cf909721c807296.png 400w,
+               /post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_ea7a0f724aaf70c80dcc8d9677363940.png 760w,
+               /post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_1200x1200_fit_lanczos_2.png 1200w"
+               src="/post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_0e01a044773fbe010cf909721c807296.png"
+               width="760"
+               height="645"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+      Sketched quantum circuits that correspond to selected figures from Mil et al. The results gain a clear intuitive meaning through the quantum circuits even though the system that is being simulated is not known. The color blue signifies the Sodium atoms and the orange color Lithium.
+    </figcaption></figure>
 <p><strong>Additional benefits of using the circuit language</strong> include</p>
 <ul>
 <li>
@@ -1725,12 +1674,6 @@ quantum-classical computations.</em></p>
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1739,28 +1682,20 @@ quantum-classical computations.</em></p>
 
 
 
-
-
-
-<figure id="figure-pennylane-as-the-connecting-puzzle-piece">
-
-
-  <a data-fancybox="" href="/post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_2000x2000_fit_lanczos_2.png" data-caption="PennyLane as the connecting puzzle piece.">
-
-
-  <img data-src="/post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="1063" height="545">
-</a>
-
-
-  
-  
-  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
-    PennyLane as the connecting puzzle piece.
-  </figcaption>
-
-
-</figure>
-
+<figure  id="figure-pennylane-as-the-connecting-puzzle-piece">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="PennyLane as the connecting puzzle piece." srcset="
+               /post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_ebc96810ab9337fe526f9c54efedc18c.png 400w,
+               /post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_0b5f1ee4e81859d055b4354b94ebe7b1.png 760w,
+               /post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_1200x1200_fit_lanczos_2.png 1200w"
+               src="/post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_ebc96810ab9337fe526f9c54efedc18c.png"
+               width="760"
+               height="390"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+      PennyLane as the connecting puzzle piece.
+    </figcaption></figure>
 <p><a href="https://pennylane.ai/" target="_blank" rel="noopener">PennyLane</a> is
 created by <a href="https://www.xanadu.ai/" target="_blank" rel="noopener">Xanadu </a> and presents itself as
 the <strong>connecting puzzle piece between powerful established python libraries for machine learning, and quantum computing platforms</strong>. It provides readily implemented quantum algorithms for quantum machine
@@ -1793,12 +1728,6 @@ quantum backend</strong> (especially when they support the same operations).</p>
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1807,28 +1736,20 @@ quantum backend</strong> (especially when they support the same operations).</p>
 
 
 
-
-
-
-<figure id="figure-typical-simple-way-of-using-pennylane-by-instantiating-the-device-defining-the-parametrized-quantum-circuit-and-the-cost-and-calculating-the-gradient-for-the-classical-parameters">
-
-
-  <a data-fancybox="" href="/post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_2000x2000_fit_lanczos_2.png" data-caption="Typical simple way of using PennyLane by instantiating the device, defining the parametrized quantum circuit and the cost, and calculating the gradient for the classical parameters.">
-
-
-  <img data-src="/post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="710" height="755">
-</a>
-
-
-  
-  
-  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
-    Typical simple way of using PennyLane by instantiating the device, defining the parametrized quantum circuit and the cost, and calculating the gradient for the classical parameters.
-  </figcaption>
-
-
-</figure>
-
+<figure  id="figure-typical-simple-way-of-using-pennylane-by-instantiating-the-device-defining-the-parametrized-quantum-circuit-and-the-cost-and-calculating-the-gradient-for-the-classical-parameters">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="Typical simple way of using PennyLane by instantiating the device, defining the parametrized quantum circuit and the cost, and calculating the gradient for the classical parameters." srcset="
+               /post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_4e95552ba1ae8f4e768f98bf95aa149e.png 400w,
+               /post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_ec0bffa9f0db1ae056697cb58adb3f39.png 760w,
+               /post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_1200x1200_fit_lanczos_2.png 1200w"
+               src="/post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_4e95552ba1ae8f4e768f98bf95aa149e.png"
+               width="710"
+               height="755"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+      Typical simple way of using PennyLane by instantiating the device, defining the parametrized quantum circuit and the cost, and calculating the gradient for the classical parameters.
+    </figcaption></figure>
 <h1 id="our-workflow-and-connecting-pennylane-to-our-hardware">Our workflow and connecting PennyLane to our hardware</h1>
 <p>The current state of our <em><strong>pennylane_ls</strong></em> <strong>plugin for ultra-cold
 atom experiments</strong> can be viewed in <a href="https://github.com/synqs/pennylane-ls" target="_blank" rel="noopener"><strong>this public github
@@ -1850,12 +1771,6 @@ in the style of Fig. 4 below.</p>
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1864,28 +1779,20 @@ in the style of Fig. 4 below.</p>
 
 
 
-
-
-
-<figure id="figure-the-experimentpy-left-defines-the-experimental-sequence-of-a-labscript-controlled-lab-experiment-here-by-calling-functions-from-nalifunctionspy-at-given-times-the-function-umpump-right-shows-the-exact-low-level-hardware-instructions-that-are-to-be-executed">
-
-
-  <a data-fancybox="" href="/post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_2000x2000_fit_lanczos_2.png" data-caption="The Experiment.py (left) defines the experimental sequence of a Labscript-controlled lab experiment, here by calling functions from NaLiFunctions.py at given times. The function UMPUMP (right) shows the exact low level hardware instructions that are to be executed.">
-
-
-  <img data-src="/post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="1366" height="338">
-</a>
-
-
-  
-  
-  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
-    The Experiment.py (left) defines the experimental sequence of a Labscript-controlled lab experiment, here by calling functions from NaLiFunctions.py at given times. The function UMPUMP (right) shows the exact low level hardware instructions that are to be executed.
-  </figcaption>
-
-
-</figure>
-
+<figure  id="figure-the-experimentpy-left-defines-the-experimental-sequence-of-a-labscript-controlled-lab-experiment-here-by-calling-functions-from-nalifunctionspy-at-given-times-the-function-umpump-right-shows-the-exact-low-level-hardware-instructions-that-are-to-be-executed">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="The Experiment.py (left) defines the experimental sequence of a Labscript-controlled lab experiment, here by calling functions from NaLiFunctions.py at given times. The function UMPUMP (right) shows the exact low level hardware instructions that are to be executed." srcset="
+               /post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_6eec91c8b7312ba4cac813bea16bbd6b.png 400w,
+               /post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_78df18d03a665a27a86f15966b005cc1.png 760w,
+               /post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_1200x1200_fit_lanczos_2.png 1200w"
+               src="/post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_6eec91c8b7312ba4cac813bea16bbd6b.png"
+               width="760"
+               height="188"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+      The Experiment.py (left) defines the experimental sequence of a Labscript-controlled lab experiment, here by calling functions from NaLiFunctions.py at given times. The function UMPUMP (right) shows the exact low level hardware instructions that are to be executed.
+    </figcaption></figure>
 <p>The <em>Experiment.py</em>  <strong>file determines the exact sequence of hardware controls</strong> that is executed during the measurement. It contains Labscript syntax and is fed into the Labscript Python
 compiler <strong>Runmanager</strong>. </p>
 <p>Our approach for <strong>combining Labscript with PennyLane</strong> is sumarized in
@@ -1900,12 +1807,6 @@ circuit programmed through the PennyLane interface.</p>
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1914,28 +1815,20 @@ circuit programmed through the PennyLane interface.</p>
 
 
 
-
-
-
-<figure id="figure-the-functionspre_apply-applyandpost_apply-are-used-to-generate-a--newexperimentpy-on-the-fly-for-each-quantum-circuit-in-pennylaneapply-loops-through-the-operations-in-the-circuit-while--the-other-functions-always-write-the-same-necessary-code-for-the-compilation">
-
-
-  <a data-fancybox="" href="/post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_2000x2000_fit_lanczos_2.png" data-caption="The functions pre_apply(), apply() and post_apply() are used to generate a  new Experiment.py on the fly for each quantum circuit in PennyLane. apply() loops through the operations in the circuit while  the other functions always write the same necessary code for the compilation.">
-
-
-  <img data-src="/post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="654" height="518">
-</a>
-
-
-  
-  
-  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
-    The functions pre_apply(), apply() and post_apply() are used to generate a  new Experiment.py on the fly for each quantum circuit in PennyLane. apply() loops through the operations in the circuit while  the other functions always write the same necessary code for the compilation.
-  </figcaption>
-
-
-</figure>
-
+<figure  id="figure-the-functionspre_apply-applyandpost_apply-are-used-to-generate-a--newexperimentpy-on-the-fly-for-each-quantum-circuit-in-pennylaneapply-loops-through-the-operations-in-the-circuit-while--the-other-functions-always-write-the-same-necessary-code-for-the-compilation">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="The functions pre_apply(), apply() and post_apply() are used to generate a  new Experiment.py on the fly for each quantum circuit in PennyLane. apply() loops through the operations in the circuit while  the other functions always write the same necessary code for the compilation." srcset="
+               /post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_ae9c7ad68d5e47b2a40f2a0e6a8cddd4.png 400w,
+               /post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_64696088f70b29ec90662948148d1b59.png 760w,
+               /post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_1200x1200_fit_lanczos_2.png 1200w"
+               src="/post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_ae9c7ad68d5e47b2a40f2a0e6a8cddd4.png"
+               width="654"
+               height="518"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+      The functions pre_apply(), apply() and post_apply() are used to generate a  new Experiment.py on the fly for each quantum circuit in PennyLane. apply() loops through the operations in the circuit while  the other functions always write the same necessary code for the compilation.
+    </figcaption></figure>
 <p>In other words, <strong>our PennyLane plugin translates a quantum circuit to
 an</strong> <em>Experiment.py</em> which our control system can interpret.</p>
 <p>The <em>expval()</em> method from the plugin is then used to send the
@@ -2274,15 +2167,6 @@ experiments.</p>
 
 
 
-<section id="comments">
-  
-    <div id="commento"></div>
-
-<script src="https://cdn.commento.io/js/commento.js" defer></script>
-
-  
-</section>
-
 
 
 
@@ -2323,6 +2207,9 @@ experiments.</p>
     
     <div class="container">
       <footer class="site-footer">
+
+  
+
   
 
   <p class="powered-by">
@@ -2341,10 +2228,13 @@ experiments.</p>
     
     
     
-    Published with
-    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
-    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
-    open source</a> website builder that empowers creators.
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
     
   </p>
 </footer>
@@ -2385,6 +2275,7 @@ experiments.</p>
     
     
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
 
       
       
@@ -2392,8 +2283,8 @@ experiments.</p>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
       
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+      
+      
 
       
 
@@ -2407,34 +2298,8 @@ experiments.</p>
 
     
     
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
     
 
-    
-    
-
-    
-    
-    <script id="search-hit-fuse-template" type="text/x-template">
-      <div class="search-hit" id="summary-{{key}}">
-        <div class="search-hit-content">
-          <div class="search-hit-name">
-            <a href="{{relpermalink}}">{{title}}</a>
-            <div class="article-metadata search-hit-type">{{type}}</div>
-            <p class="search-hit-description">{{snippet}}</p>
-          </div>
-        </div>
-      </div>
-    </script>
-    
-
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-    
-
-    
     
     
 
@@ -2447,19 +2312,15 @@ experiments.</p>
 
     
     
-
     
-    
-      
-      
-      
-      
-      
-      
-      
     
 
     
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+
     
     
     
@@ -2469,11 +2330,7 @@ experiments.</p>
     
     
     
-      
-      
-    
-    
-    <script src="/en/js/wowchemy.min.297f736e130400781cfee00eff1f1afd.js"></script>
+    <script src="/en/js/wowchemy.min.163b8d9708d5ac450497c0142c0dad35.js"></script>
 
     
 

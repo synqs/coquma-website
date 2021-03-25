@@ -745,12 +745,6 @@ to &lt;strong&gt;readers with varying backgrounds&lt;/strong&gt; when plotting t
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -759,28 +753,20 @@ to &lt;strong&gt;readers with varying backgrounds&lt;/strong&gt; when plotting t
 
 
 
-
-
-
-&lt;figure id=&#34;figure-sketched-quantum-circuits-that-correspond-to-selected-figures-from-mil-et-al-the-results-gain-a-clear-intuitive-meaning-through-the-quantum-circuits-even-though-the-system-that-is-being-simulated-is-not-known-the-color-blue-signifies-the-sodium-atoms-and-the-orange-color-lithium&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Sketched quantum circuits that correspond to selected figures from Mil et al. The results gain a clear intuitive meaning through the quantum circuits even though the system that is being simulated is not known. The color blue signifies the Sodium atoms and the orange color Lithium.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;789&#34; height=&#34;670&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Sketched quantum circuits that correspond to selected figures from Mil et al. The results gain a clear intuitive meaning through the quantum circuits even though the system that is being simulated is not known. The color blue signifies the Sodium atoms and the orange color Lithium.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-sketched-quantum-circuits-that-correspond-to-selected-figures-from-mil-et-al-the-results-gain-a-clear-intuitive-meaning-through-the-quantum-circuits-even-though-the-system-that-is-being-simulated-is-not-known-the-color-blue-signifies-the-sodium-atoms-and-the-orange-color-lithium&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Sketched quantum circuits that correspond to selected figures from Mil et al. The results gain a clear intuitive meaning through the quantum circuits even though the system that is being simulated is not known. The color blue signifies the Sodium atoms and the orange color Lithium.&#34; srcset=&#34;
+               /post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_0e01a044773fbe010cf909721c807296.png 400w,
+               /post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_ea7a0f724aaf70c80dcc8d9677363940.png 760w,
+               /post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_0e01a044773fbe010cf909721c807296.png&#34;
+               width=&#34;760&#34;
+               height=&#34;645&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Sketched quantum circuits that correspond to selected figures from Mil et al. The results gain a clear intuitive meaning through the quantum circuits even though the system that is being simulated is not known. The color blue signifies the Sodium atoms and the orange color Lithium.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;strong&gt;Additional benefits of using the circuit language&lt;/strong&gt; include&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -862,12 +848,6 @@ quantum-classical computations.&lt;/em&gt;&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -876,28 +856,20 @@ quantum-classical computations.&lt;/em&gt;&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-pennylane-as-the-connecting-puzzle-piece&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;PennyLane as the connecting puzzle piece.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1063&#34; height=&#34;545&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    PennyLane as the connecting puzzle piece.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-pennylane-as-the-connecting-puzzle-piece&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;PennyLane as the connecting puzzle piece.&#34; srcset=&#34;
+               /post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_ebc96810ab9337fe526f9c54efedc18c.png 400w,
+               /post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_0b5f1ee4e81859d055b4354b94ebe7b1.png 760w,
+               /post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_ebc96810ab9337fe526f9c54efedc18c.png&#34;
+               width=&#34;760&#34;
+               height=&#34;390&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      PennyLane as the connecting puzzle piece.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;a href=&#34;https://pennylane.ai/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PennyLane&lt;/a&gt; is
 created by &lt;a href=&#34;https://www.xanadu.ai/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Xanadu &lt;/a&gt; and presents itself as
 the &lt;strong&gt;connecting puzzle piece between powerful established python libraries for machine learning, and quantum computing platforms&lt;/strong&gt;. It provides readily implemented quantum algorithms for quantum machine
@@ -930,12 +902,6 @@ quantum backend&lt;/strong&gt; (especially when they support the same operations
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -944,28 +910,20 @@ quantum backend&lt;/strong&gt; (especially when they support the same operations
 
 
 
-
-
-
-&lt;figure id=&#34;figure-typical-simple-way-of-using-pennylane-by-instantiating-the-device-defining-the-parametrized-quantum-circuit-and-the-cost-and-calculating-the-gradient-for-the-classical-parameters&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Typical simple way of using PennyLane by instantiating the device, defining the parametrized quantum circuit and the cost, and calculating the gradient for the classical parameters.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;710&#34; height=&#34;755&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Typical simple way of using PennyLane by instantiating the device, defining the parametrized quantum circuit and the cost, and calculating the gradient for the classical parameters.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-typical-simple-way-of-using-pennylane-by-instantiating-the-device-defining-the-parametrized-quantum-circuit-and-the-cost-and-calculating-the-gradient-for-the-classical-parameters&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Typical simple way of using PennyLane by instantiating the device, defining the parametrized quantum circuit and the cost, and calculating the gradient for the classical parameters.&#34; srcset=&#34;
+               /post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_4e95552ba1ae8f4e768f98bf95aa149e.png 400w,
+               /post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_ec0bffa9f0db1ae056697cb58adb3f39.png 760w,
+               /post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_4e95552ba1ae8f4e768f98bf95aa149e.png&#34;
+               width=&#34;710&#34;
+               height=&#34;755&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Typical simple way of using PennyLane by instantiating the device, defining the parametrized quantum circuit and the cost, and calculating the gradient for the classical parameters.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;h1 id=&#34;our-workflow-and-connecting-pennylane-to-our-hardware&#34;&gt;Our workflow and connecting PennyLane to our hardware&lt;/h1&gt;
 &lt;p&gt;The current state of our &lt;em&gt;&lt;strong&gt;pennylane_ls&lt;/strong&gt;&lt;/em&gt; &lt;strong&gt;plugin for ultra-cold
 atom experiments&lt;/strong&gt; can be viewed in &lt;a href=&#34;https://github.com/synqs/pennylane-ls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;this public github
@@ -987,12 +945,6 @@ in the style of Fig. 4 below.&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1001,28 +953,20 @@ in the style of Fig. 4 below.&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-the-experimentpy-left-defines-the-experimental-sequence-of-a-labscript-controlled-lab-experiment-here-by-calling-functions-from-nalifunctionspy-at-given-times-the-function-umpump-right-shows-the-exact-low-level-hardware-instructions-that-are-to-be-executed&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;The Experiment.py (left) defines the experimental sequence of a Labscript-controlled lab experiment, here by calling functions from NaLiFunctions.py at given times. The function UMPUMP (right) shows the exact low level hardware instructions that are to be executed.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1366&#34; height=&#34;338&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    The Experiment.py (left) defines the experimental sequence of a Labscript-controlled lab experiment, here by calling functions from NaLiFunctions.py at given times. The function UMPUMP (right) shows the exact low level hardware instructions that are to be executed.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-the-experimentpy-left-defines-the-experimental-sequence-of-a-labscript-controlled-lab-experiment-here-by-calling-functions-from-nalifunctionspy-at-given-times-the-function-umpump-right-shows-the-exact-low-level-hardware-instructions-that-are-to-be-executed&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;The Experiment.py (left) defines the experimental sequence of a Labscript-controlled lab experiment, here by calling functions from NaLiFunctions.py at given times. The function UMPUMP (right) shows the exact low level hardware instructions that are to be executed.&#34; srcset=&#34;
+               /post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_6eec91c8b7312ba4cac813bea16bbd6b.png 400w,
+               /post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_78df18d03a665a27a86f15966b005cc1.png 760w,
+               /post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_6eec91c8b7312ba4cac813bea16bbd6b.png&#34;
+               width=&#34;760&#34;
+               height=&#34;188&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      The Experiment.py (left) defines the experimental sequence of a Labscript-controlled lab experiment, here by calling functions from NaLiFunctions.py at given times. The function UMPUMP (right) shows the exact low level hardware instructions that are to be executed.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;The &lt;em&gt;Experiment.py&lt;/em&gt;  &lt;strong&gt;file determines the exact sequence of hardware controls&lt;/strong&gt; that is executed during the measurement. It contains Labscript syntax and is fed into the Labscript Python
 compiler &lt;strong&gt;Runmanager&lt;/strong&gt;. &lt;/p&gt;
 &lt;p&gt;Our approach for &lt;strong&gt;combining Labscript with PennyLane&lt;/strong&gt; is sumarized in
@@ -1037,12 +981,6 @@ circuit programmed through the PennyLane interface.&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1051,28 +989,20 @@ circuit programmed through the PennyLane interface.&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-the-functionspre_apply-applyandpost_apply-are-used-to-generate-a--newexperimentpy-on-the-fly-for-each-quantum-circuit-in-pennylaneapply-loops-through-the-operations-in-the-circuit-while--the-other-functions-always-write-the-same-necessary-code-for-the-compilation&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;The functions pre_apply(), apply() and post_apply() are used to generate a  new Experiment.py on the fly for each quantum circuit in PennyLane. apply() loops through the operations in the circuit while  the other functions always write the same necessary code for the compilation.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;654&#34; height=&#34;518&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    The functions pre_apply(), apply() and post_apply() are used to generate a  new Experiment.py on the fly for each quantum circuit in PennyLane. apply() loops through the operations in the circuit while  the other functions always write the same necessary code for the compilation.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-the-functionspre_apply-applyandpost_apply-are-used-to-generate-a--newexperimentpy-on-the-fly-for-each-quantum-circuit-in-pennylaneapply-loops-through-the-operations-in-the-circuit-while--the-other-functions-always-write-the-same-necessary-code-for-the-compilation&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;The functions pre_apply(), apply() and post_apply() are used to generate a  new Experiment.py on the fly for each quantum circuit in PennyLane. apply() loops through the operations in the circuit while  the other functions always write the same necessary code for the compilation.&#34; srcset=&#34;
+               /post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_ae9c7ad68d5e47b2a40f2a0e6a8cddd4.png 400w,
+               /post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_64696088f70b29ec90662948148d1b59.png 760w,
+               /post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_ae9c7ad68d5e47b2a40f2a0e6a8cddd4.png&#34;
+               width=&#34;654&#34;
+               height=&#34;518&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      The functions pre_apply(), apply() and post_apply() are used to generate a  new Experiment.py on the fly for each quantum circuit in PennyLane. apply() loops through the operations in the circuit while  the other functions always write the same necessary code for the compilation.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;In other words, &lt;strong&gt;our PennyLane plugin translates a quantum circuit to
 an&lt;/strong&gt; &lt;em&gt;Experiment.py&lt;/em&gt; which our control system can interpret.&lt;/p&gt;
 &lt;p&gt;The &lt;em&gt;expval()&lt;/em&gt; method from the plugin is then used to send the

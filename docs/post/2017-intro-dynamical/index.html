@@ -1,19 +1,15 @@
 <!DOCTYPE html><html lang="en-us" >
 
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
   
   
-  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
-  
-
+    <meta name="generator" content="Wowchemy 5.1.0 for Hugo" />
   
 
-  
   
 
   
@@ -27,44 +23,44 @@
   
   
 
-  <meta name="author" content="Fred Jendrzejewski">
+  <meta name="author" content="Fred Jendrzejewski" />
 
   
   
   
     
   
-  <meta name="description" content="Dynamical gauge fields are a fundamental concept of high-energy physics. However, learning about them typically takes enormous amounts of time and effort. As such, they are typically a bit mystical to students (including me) of other fields of physics like condensed-matter or AMO. Here, we will give a simple introduction into some of the concepts that might allow for the quantum simulation of these theories with ultracold atomic gases.The reader should know about second quantization and the basics of quantum mechanics as the arguments are based on this formalism.">
+  <meta name="description" content="Dynamical gauge fields are a fundamental concept of high-energy physics. However, learning about them typically takes enormous amounts of time and effort. As such, they are typically a bit mystical to students (including me) of other fields of physics like condensed-matter or AMO. Here, we will give a simple introduction into some of the concepts that might allow for the quantum simulation of these theories with ultracold atomic gases.The reader should know about second quantization and the basics of quantum mechanics as the arguments are based on this formalism." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://jendrzejewski.synqs.org/post/2017-intro-dynamical/">
-
-  
-
-
-
-
-
-
+  <link rel="alternate" hreflang="en-us" href="https://jendrzejewski.synqs.org/post/2017-intro-dynamical/" />
 
   
 
 
 
 
+
+
+
+  
+
+
+
+
   
   
 
   
   
   
-  <meta name="theme-color" content="#1565c0">
+    <meta name="theme-color" content="#1565c0" />
   
 
   
   
-  
-  <script src="/js/mathjax-config.js"></script>
+    
+    <script src="/js/mathjax-config.js"></script>
   
 
   
@@ -76,7 +72,9 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" media="print" onload="this.media='all'">
+
+    
+    
 
     
     
@@ -94,7 +92,7 @@
     
 
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
     
 
     
@@ -102,12 +100,6 @@
     
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -116,12 +108,6 @@
       
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -130,12 +116,6 @@
       
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -144,12 +124,6 @@
       
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -158,12 +132,6 @@
       
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -172,21 +140,6 @@
       
     
       
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
-      
-    
       
 
       
@@ -195,12 +148,62 @@
       
     
       
+      
 
       
       
 
       
     
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
       
 
       
@@ -211,12 +214,6 @@
       
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -224,22 +221,28 @@
 
       
     
+      
+      
+
+      
+      
+
+      
+    
+  
 
   
+  
+  
 
   
   
   
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.6dec3979a987e53633d83ca756efd57b.css" />
 
   
-  
-  
-  
-  
-  <link rel="stylesheet" href="/css/wowchemy.d108ea35c56370e2da19d10e4a2e45b5.css">
-
-  
-
 
 
 
@@ -275,6 +278,7 @@
 
   gtag('js', new Date());
   gtag('config', 'G-N2845W2HYQ', { 'anonymize_ip': true });
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
 
   
   document.addEventListener('click', onClickCallback, false);
@@ -285,21 +289,27 @@
 
   
 
+  
+
+
+
 
   
   
-
   
 
   
-  <link rel="manifest" href="/index.webmanifest">
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
   
 
-  <link rel="icon" type="image/png" href="/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/media/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_180x180_fill_lanczos_center_2.png" />
 
-  <link rel="canonical" href="https://jendrzejewski.synqs.org/post/2017-intro-dynamical/">
+  <link rel="canonical" href="https://jendrzejewski.synqs.org/post/2017-intro-dynamical/" />
 
+  
   
   
   
@@ -311,19 +321,22 @@
     
   
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary" />
   
-  <meta property="twitter:site" content="@synqs">
-  <meta property="twitter:creator" content="@synqs">
+    <meta property="twitter:site" content="@synqs" />
+    <meta property="twitter:creator" content="@synqs" />
   
-  <meta property="og:site_name" content="Jendrzejewski Group">
-  <meta property="og:url" content="https://jendrzejewski.synqs.org/post/2017-intro-dynamical/">
-  <meta property="og:title" content="What are dynamical gauge fields ? A simplistic introduction by an AMO experimentalist. | Jendrzejewski Group">
-  <meta property="og:description" content="Dynamical gauge fields are a fundamental concept of high-energy physics. However, learning about them typically takes enormous amounts of time and effort. As such, they are typically a bit mystical to students (including me) of other fields of physics like condensed-matter or AMO. Here, we will give a simple introduction into some of the concepts that might allow for the quantum simulation of these theories with ultracold atomic gases.The reader should know about second quantization and the basics of quantum mechanics as the arguments are based on this formalism."><meta property="og:image" content="https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  <meta property="og:site_name" content="Jendrzejewski Group" />
+  <meta property="og:url" content="https://jendrzejewski.synqs.org/post/2017-intro-dynamical/" />
+  <meta property="og:title" content="What are dynamical gauge fields ? A simplistic introduction by an AMO experimentalist. | Jendrzejewski Group" />
+  <meta property="og:description" content="Dynamical gauge fields are a fundamental concept of high-energy physics. However, learning about them typically takes enormous amounts of time and effort. As such, they are typically a bit mystical to students (including me) of other fields of physics like condensed-matter or AMO. Here, we will give a simple introduction into some of the concepts that might allow for the quantum simulation of these theories with ultracold atomic gases.The reader should know about second quantization and the basics of quantum mechanics as the arguments are based on this formalism." /><meta property="og:image" content="https://jendrzejewski.synqs.org/media/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://jendrzejewski.synqs.org/media/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="article:published_time" content="2017-09-28T00:00:00&#43;00:00">
+      <meta
+        property="article:published_time"
+        content="2017-09-28T00:00:00&#43;00:00"
+      />
     
     <meta property="article:modified_time" content="2021-01-08T08:58:09&#43;01:00">
   
@@ -366,7 +379,7 @@
     "name": "Jendrzejewski Group",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_192x192_fill_lanczos_center_2.png"
+      "url": "https://jendrzejewski.synqs.org/media/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_192x192_fill_lanczos_center_2.png"
     }
   },
   "description": "Dynamical gauge fields are a fundamental concept of high-energy physics. However, learning about them typically takes enormous amounts of time and effort. As such, they are typically a bit mystical to students (including me) of other fields of physics like condensed-matter or AMO. Here, we will give a simple introduction into some of the concepts that might allow for the quantum simulation of these theories with ultracold atomic gases.The reader should know about second quantization and the basics of quantum mechanics as the arguments are based on this formalism."
@@ -376,7 +389,6 @@
   
 
   
-
 
   
   
@@ -410,16 +422,14 @@
   </script>
 
 
-
   <link rel="stylesheet" type="text/css" href="/hugo-cite.css" />
 
 
   <title>What are dynamical gauge fields ? A simplistic introduction by an AMO experimentalist. | Jendrzejewski Group</title>
-
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="14129c37964742e7e30163ba1356547b" >
 
   
   
@@ -429,46 +439,10 @@
   
   
   
-  <script src="/js/wowchemy-init.min.7d92a95e871a711a5c03f82410d0fe5d.js"></script>
+  <script src="/js/wowchemy-init.min.9dad2fecac7f370e439d06c4a1b59e05.js"></script>
 
   
 
-<aside class="search-modal" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div id="search-box">
-        
-        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
-        aria-label="Search...">
-        
-      </div>
-
-      
-      
-
-      
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
-</aside>
 
 
 
@@ -722,14 +696,11 @@
 
       
       
-      <li class="nav-item">
-        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
-      </li>
-      
 
       
       
 
+      
       
 
     </ul>
@@ -813,6 +784,7 @@
   
   
   
+  
 
   
   
@@ -820,15 +792,6 @@
 </div>
 
     
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1292,12 +1255,6 @@ again like in Eq.(\ref{Eq:DefElectricField})<sup id="fnref:5"><a href="#fn:5" cl
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1306,28 +1263,20 @@ again like in Eq.(\ref{Eq:DefElectricField})<sup id="fnref:5"><a href="#fn:5" cl
 
 
 
-
-
-
-<figure id="figure-hopping-in-the-lattice-after-a-u1-gauge-transformation-at-each-hopping-event-to-right-the-particle-acquires-a-phase-e-a_i-a-which-is-proportional-to-the-vector-potential-hopping-to-the-left-leads-to-the-accumulation-of-the-inverse-phase--e-a_ia">
-
-
-  <a data-fancybox="" href="/post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_2000x2000_fit_lanczos_2.png" data-caption="Hopping in the lattice after a U(1) gauge transformation. At each hopping event to right, the particle acquires a phase $e\ A_i\ a$, which is proportional to the vector potential. Hopping to the left leads to the accumulation of the inverse phase $-e\ A_ia$.">
-
-
-  <img data-src="/post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="1565" height="336">
-</a>
-
-
-  
-  
-  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
-    Hopping in the lattice after a U(1) gauge transformation. At each hopping event to right, the particle acquires a phase $e\ A_i\ a$, which is proportional to the vector potential. Hopping to the left leads to the accumulation of the inverse phase $-e\ A_ia$.
-  </figcaption>
-
-
-</figure>
-
+<figure  id="figure-hopping-in-the-lattice-after-a-u1-gauge-transformation-at-each-hopping-event-to-right-the-particle-acquires-a-phase-e-a_i-a-which-is-proportional-to-the-vector-potential-hopping-to-the-left-leads-to-the-accumulation-of-the-inverse-phase--e-a_ia">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="Hopping in the lattice after a U(1) gauge transformation. At each hopping event to right, the particle acquires a phase $e\ A_i\ a$, which is proportional to the vector potential. Hopping to the left leads to the accumulation of the inverse phase $-e\ A_ia$." srcset="
+               /post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_c66c7e0126dad85970f85f829806dda3.png 400w,
+               /post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_0b34f7a3b15c065a63b3d1a415949a04.png 760w,
+               /post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_1200x1200_fit_lanczos_2.png 1200w"
+               src="/post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_c66c7e0126dad85970f85f829806dda3.png"
+               width="760"
+               height="163"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+      Hopping in the lattice after a U(1) gauge transformation. At each hopping event to right, the particle acquires a phase $e\ A_i\ a$, which is proportional to the vector potential. Hopping to the left leads to the accumulation of the inverse phase $-e\ A_ia$.
+    </figcaption></figure>
 <h2 id="from-the-gauge-symmetry-to-particle-conservation">From the gauge symmetry to particle conservation</h2>
 <p>We have seen that the equations of motion remain the same if the wave
 function is multiplied by a phase that is constant in space and time. We
@@ -1372,12 +1321,6 @@ $$</p>
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1386,28 +1329,20 @@ $$</p>
 
 
 
-
-
-
-<figure id="figure-gauss-law-of-electrodynamics-as-the-charge-blue-is-displaced-the-electric-field-is-also-modified-this-perfect-correlation-between-electric-field-and-matter-field-is-one-of-the-cornerstones-of-any-realization-of-dynamical-gauge-fields-in-synthetic-systems">
-
-
-  <a data-fancybox="" href="/post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_2000x2000_fit_lanczos.gif" data-caption="Gauss law of electrodynamics. As the charge (blue) is displaced, the electric field is also modified. This perfect correlation between electric field and matter field, is one of the cornerstones of any realization of dynamical gauge fields in synthetic systems.">
-
-
-  <img data-src="/post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_2000x2000_fit_lanczos.gif" class="lazyload" alt="" width="600" height="400">
-</a>
-
-
-  
-  
-  <figcaption>
-    Gauss law of electrodynamics. As the charge (blue) is displaced, the electric field is also modified. This perfect correlation between electric field and matter field, is one of the cornerstones of any realization of dynamical gauge fields in synthetic systems.
-  </figcaption>
-
-
-</figure>
-
+<figure  id="figure-gauss-law-of-electrodynamics-as-the-charge-blue-is-displaced-the-electric-field-is-also-modified-this-perfect-correlation-between-electric-field-and-matter-field-is-one-of-the-cornerstones-of-any-realization-of-dynamical-gauge-fields-in-synthetic-systems">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="Gauss law of electrodynamics. As the charge (blue) is displaced, the electric field is also modified. This perfect correlation between electric field and matter field, is one of the cornerstones of any realization of dynamical gauge fields in synthetic systems." srcset="
+               /post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_6df0b0122e12d488e5d13983c96ea58f.gif 400w,
+               /post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_9da1da5a9428bcdbf9ebfea841e69455.gif 760w,
+               /post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_1200x1200_fit_lanczos.gif 1200w"
+               src="/post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_6df0b0122e12d488e5d13983c96ea58f.gif"
+               width="600"
+               height="400"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Gauss law of electrodynamics. As the charge (blue) is displaced, the electric field is also modified. This perfect correlation between electric field and matter field, is one of the cornerstones of any realization of dynamical gauge fields in synthetic systems.
+    </figcaption></figure>
 <p>To implement these two constraint, we will have to modify the underlying
 Hamiltonian. So we look once again at the Hamiltonian (\ref{Eq:LatticeWithMagField}) and rewrite it in a more suggestive
 way:</p>
@@ -2540,15 +2475,6 @@ fields in the following sections. <a href="#fnref:5" class="footnote-backref" ro
 
 
 
-<section id="comments">
-  
-    <div id="commento"></div>
-
-<script src="https://cdn.commento.io/js/commento.js" defer></script>
-
-  
-</section>
-
 
 
 
@@ -2589,6 +2515,9 @@ fields in the following sections. <a href="#fnref:5" class="footnote-backref" ro
     
     <div class="container">
       <footer class="site-footer">
+
+  
+
   
 
   <p class="powered-by">
@@ -2607,10 +2536,13 @@ fields in the following sections. <a href="#fnref:5" class="footnote-backref" ro
     
     
     
-    Published with
-    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
-    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
-    open source</a> website builder that empowers creators.
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
     
   </p>
 </footer>
@@ -2651,6 +2583,7 @@ fields in the following sections. <a href="#fnref:5" class="footnote-backref" ro
     
     
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
 
       
       
@@ -2658,8 +2591,8 @@ fields in the following sections. <a href="#fnref:5" class="footnote-backref" ro
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
       
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+      
+      
 
       
 
@@ -2673,34 +2606,8 @@ fields in the following sections. <a href="#fnref:5" class="footnote-backref" ro
 
     
     
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
     
 
-    
-    
-
-    
-    
-    <script id="search-hit-fuse-template" type="text/x-template">
-      <div class="search-hit" id="summary-{{key}}">
-        <div class="search-hit-content">
-          <div class="search-hit-name">
-            <a href="{{relpermalink}}">{{title}}</a>
-            <div class="article-metadata search-hit-type">{{type}}</div>
-            <p class="search-hit-description">{{snippet}}</p>
-          </div>
-        </div>
-      </div>
-    </script>
-    
-
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-    
-
-    
     
     
 
@@ -2713,19 +2620,15 @@ fields in the following sections. <a href="#fnref:5" class="footnote-backref" ro
 
     
     
-
     
-    
-      
-      
-      
-      
-      
-      
-      
     
 
     
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+
     
     
     
@@ -2735,11 +2638,7 @@ fields in the following sections. <a href="#fnref:5" class="footnote-backref" ro
     
     
     
-      
-      
-    
-    
-    <script src="/en/js/wowchemy.min.297f736e130400781cfee00eff1f1afd.js"></script>
+    <script src="/en/js/wowchemy.min.163b8d9708d5ac450497c0142c0dad35.js"></script>
 
     
 

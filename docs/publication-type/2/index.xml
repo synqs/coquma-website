@@ -5,12 +5,20 @@
     <link>https://jendrzejewski.synqs.org/publication-type/2/</link>
       <atom:link href="https://jendrzejewski.synqs.org/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Tue, 13 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Fri, 19 Feb 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://jendrzejewski.synqs.org/media/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>2</title>
       <link>https://jendrzejewski.synqs.org/publication-type/2/</link>
     </image>
+    
+    <item>
+      <title>Direct control of high magnetic fields for cold atom experiments based on NV centers</title>
+      <link>https://jendrzejewski.synqs.org/publication/hesse-2020/</link>
+      <pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/hesse-2020/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>From the Jaynes–Cummings model to non-abelian gauge theories: a guided tour for the quantum engineer.</title>

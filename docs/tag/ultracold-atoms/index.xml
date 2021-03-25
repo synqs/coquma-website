@@ -7,7 +7,7 @@
     <description>ultracold atoms</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Mon, 18 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://jendrzejewski.synqs.org/media/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>ultracold atoms</title>
       <link>https://jendrzejewski.synqs.org/tag/ultracold-atoms/</link>
     </image>
@@ -188,12 +188,6 @@ The main idea for these coils is that you take a piece of copper and carve out a
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -202,28 +196,20 @@ The main idea for these coils is that you take a piece of copper and carve out a
 
 
 
-
-
-
-&lt;figure id=&#34;figure-sketch-of-our-science-chamber-with-magnetic-field-coils-laser-beams-and-optics&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2021-coils/Chamber_Coils_hu3177f204f9b1af742e9d3dc5867f0d6d_375877_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Sketch of our science chamber with magnetic field coils, laser beams and optics.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2021-coils/Chamber_Coils_hu3177f204f9b1af742e9d3dc5867f0d6d_375877_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2021&#34; height=&#34;943&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Sketch of our science chamber with magnetic field coils, laser beams and optics.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-&lt;/li&gt;
+&lt;figure  id=&#34;figure-sketch-of-our-science-chamber-with-magnetic-field-coils-laser-beams-and-optics&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Sketch of our science chamber with magnetic field coils, laser beams and optics.&#34; srcset=&#34;
+               /post/2021-coils/Chamber_Coils_hu3177f204f9b1af742e9d3dc5867f0d6d_375877_050dae8194967e34baaf87f01cd12a51.png 400w,
+               /post/2021-coils/Chamber_Coils_hu3177f204f9b1af742e9d3dc5867f0d6d_375877_e6e7079501b183130f8a0646ecb29327.png 760w,
+               /post/2021-coils/Chamber_Coils_hu3177f204f9b1af742e9d3dc5867f0d6d_375877_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2021-coils/Chamber_Coils_hu3177f204f9b1af742e9d3dc5867f0d6d_375877_050dae8194967e34baaf87f01cd12a51.png&#34;
+               width=&#34;760&#34;
+               height=&#34;355&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Sketch of our science chamber with magnetic field coils, laser beams and optics.
+    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;manufacturing-the-coils&#34;&gt;Manufacturing the coils&lt;/h1&gt;
 &lt;p&gt;When manufacturing the coils we mainly followed the detailed description given in 
@@ -286,12 +272,6 @@ After carving out the spiral, the distance between the copper layers was not at 
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -300,28 +280,20 @@ After carving out the spiral, the distance between the copper layers was not at 
 
 
 
-
-
-
-&lt;figure id=&#34;figure-bulk-copper-piece-with-carved-out-spiral-before-and-after-inserting-fiber-glass-spacers-into-the-gaps-which-were-carved-out-with-the-wire-erosion-machine&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2021-coils/Coils_manufactured_hude8012b30339a1e692c5010103078b00_3478100_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Bulk copper piece with carved out spiral before and after inserting fiber-glass spacers into the gaps, which were carved out with the wire-erosion machine.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2021-coils/Coils_manufactured_hude8012b30339a1e692c5010103078b00_3478100_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2063&#34; height=&#34;774&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Bulk copper piece with carved out spiral before and after inserting fiber-glass spacers into the gaps, which were carved out with the wire-erosion machine.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-&lt;/p&gt;
+&lt;figure  id=&#34;figure-bulk-copper-piece-with-carved-out-spiral-before-and-after-inserting-fiber-glass-spacers-into-the-gaps-which-were-carved-out-with-the-wire-erosion-machine&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Bulk copper piece with carved out spiral before and after inserting fiber-glass spacers into the gaps, which were carved out with the wire-erosion machine.&#34; srcset=&#34;
+               /post/2021-coils/Coils_manufactured_hude8012b30339a1e692c5010103078b00_3478100_f13e63bfd7822c71dfe91eec28d6e3f0.png 400w,
+               /post/2021-coils/Coils_manufactured_hude8012b30339a1e692c5010103078b00_3478100_d35366d5f8a78cc018ce5a3734dd9cbe.png 760w,
+               /post/2021-coils/Coils_manufactured_hude8012b30339a1e692c5010103078b00_3478100_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2021-coils/Coils_manufactured_hude8012b30339a1e692c5010103078b00_3478100_f13e63bfd7822c71dfe91eec28d6e3f0.png&#34;
+               width=&#34;760&#34;
+               height=&#34;285&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Bulk copper piece with carved out spiral before and after inserting fiber-glass spacers into the gaps, which were carved out with the wire-erosion machine.
+    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;In the next step, &lt;strong&gt;epoxy was filled into the gaps&lt;/strong&gt;. This was the most challenging part for us, as we did not have any experience with epoxy at all. First, we made a mould for the coil, put the coil inside, filled it with epoxy and put it under vacuum using an old pre-pump. This was supposed to remove any air bubbles from the epoxy, which could cause problems in terms of leak tightness. However, this plan did not really work out for us, as the epoxy was sticking too much to the mould (even though we had used wax to stop that from happening) and the epoxy was not going into all gaps evenly. Moreover, there were still some air bubbles remaining.&lt;br&gt;
 For the second try we, therefore, decided to fill the coil with epoxy using a syringe. In the end we had to fill some cavities with extra epoxy, but then (finally) had a leak-tight copper coil.
 
@@ -330,12 +302,6 @@ For the second try we, therefore, decided to fill the coil with epoxy using a sy
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -344,28 +310,20 @@ For the second try we, therefore, decided to fill the coil with epoxy using a sy
 
 
 
-
-
-
-&lt;figure id=&#34;figure-filling-epoxy-into-carved-out-gaps-with-pump-left-and-final-product-where-we-did-not-use-a-pump-right&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2021-coils/Coils_Epoxy_hu7947f035f9420224f6b620fc810271a1_2514300_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Filling epoxy into carved out gaps with pump (left) and final product where we did not use a pump (right).&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2021-coils/Coils_Epoxy_hu7947f035f9420224f6b620fc810271a1_2514300_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2063&#34; height=&#34;774&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Filling epoxy into carved out gaps with pump (left) and final product where we did not use a pump (right).
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-&lt;/p&gt;
+&lt;figure  id=&#34;figure-filling-epoxy-into-carved-out-gaps-with-pump-left-and-final-product-where-we-did-not-use-a-pump-right&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Filling epoxy into carved out gaps with pump (left) and final product where we did not use a pump (right).&#34; srcset=&#34;
+               /post/2021-coils/Coils_Epoxy_hu7947f035f9420224f6b620fc810271a1_2514300_7df72e548a46718b79ff487d0cd4d37c.png 400w,
+               /post/2021-coils/Coils_Epoxy_hu7947f035f9420224f6b620fc810271a1_2514300_39fb7eec30355ff6e10c3b24f1b5979e.png 760w,
+               /post/2021-coils/Coils_Epoxy_hu7947f035f9420224f6b620fc810271a1_2514300_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2021-coils/Coils_Epoxy_hu7947f035f9420224f6b620fc810271a1_2514300_7df72e548a46718b79ff487d0cd4d37c.png&#34;
+               width=&#34;760&#34;
+               height=&#34;285&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Filling epoxy into carved out gaps with pump (left) and final product where we did not use a pump (right).
+    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;h1 id=&#34;water-cooling&#34;&gt;Water cooling&lt;/h1&gt;
 &lt;p&gt;The cooling water flows in a water-channel between the coil body and a Peek part. The &lt;strong&gt;PEEK part&lt;/strong&gt; is screwed to the copper piece with eight titanium screws. For that we made threads into the copper and used PEEK inlets for electrical insulation (figure left). To make the connection between the two parts leak-tight, we used O-rings on the inner and outer side of the PEEK part. Even though these parts are (like the copper coil) shaped like a race track, standard EPDM O-rings can be used (we used &lt;a href=&#34;https://oringcalculator.eriksgroup.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this website&lt;/a&gt; to find the correct dimensions with respect to cross section and inner diameter).&lt;br&gt;
 In the beginning, we had some issues with water leaking out of the titanium screw holes on the PEEK part, but were able to get rid of these leaks by using Teflon tape and tightening the screws some more.
@@ -375,12 +333,6 @@ In the beginning, we had some issues with water leaking out of the titanium scre
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -389,28 +341,20 @@ In the beginning, we had some issues with water leaking out of the titanium scre
 
 
 
-
-
-
-&lt;figure id=&#34;figure-u-shaped-peek-part-which-is-screwed-onto-the-copper-coil-and-has-a-3mm-deep-channel-for-water-flow-the-connection-is-rendered-leak-tight-by-o-rings-bottom-right&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2021-coils/Coils_PEEK_hu24b616cfe720875efdf2fcccede98c6b_4399279_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;U-shaped PEEK part, which is screwed onto the copper coil and has a 3mm deep channel for water flow. The connection is rendered leak-tight by O-rings (bottom right).&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2021-coils/Coils_PEEK_hu24b616cfe720875efdf2fcccede98c6b_4399279_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2063&#34; height=&#34;1547&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    U-shaped PEEK part, which is screwed onto the copper coil and has a 3mm deep channel for water flow. The connection is rendered leak-tight by O-rings (bottom right).
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-&lt;/p&gt;
+&lt;figure  id=&#34;figure-u-shaped-peek-part-which-is-screwed-onto-the-copper-coil-and-has-a-3mm-deep-channel-for-water-flow-the-connection-is-rendered-leak-tight-by-o-rings-bottom-right&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;U-shaped PEEK part, which is screwed onto the copper coil and has a 3mm deep channel for water flow. The connection is rendered leak-tight by O-rings (bottom right).&#34; srcset=&#34;
+               /post/2021-coils/Coils_PEEK_hu24b616cfe720875efdf2fcccede98c6b_4399279_68b399f8aaa8e4cceb7b2292d2dc0d59.png 400w,
+               /post/2021-coils/Coils_PEEK_hu24b616cfe720875efdf2fcccede98c6b_4399279_b3d3a11f4433661d9c72d1967ab470fc.png 760w,
+               /post/2021-coils/Coils_PEEK_hu24b616cfe720875efdf2fcccede98c6b_4399279_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2021-coils/Coils_PEEK_hu24b616cfe720875efdf2fcccede98c6b_4399279_68b399f8aaa8e4cceb7b2292d2dc0d59.png&#34;
+               width=&#34;760&#34;
+               height=&#34;570&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      U-shaped PEEK part, which is screwed onto the copper coil and has a 3mm deep channel for water flow. The connection is rendered leak-tight by O-rings (bottom right).
+    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Chiller.&lt;/strong&gt; We went for the &lt;a href=&#34;https://glendimplex.de/riedel/industriekuehlung/sc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Riedel SC21 chiller&lt;/a&gt;, which is very compact, simple and inexpensive.  As it is on the lower side with respect to the cooling power it can provide, an upgrade might be required to operate the coil at 300A with negligible heating.&lt;/p&gt;
 &lt;h1 id=&#34;installing-the-coils&#34;&gt;Installing the Coils&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Electrical connections&lt;/strong&gt;. To operate the coils in proper anti-Helmholtz configuration, we have to pass the current through the coils in opposite directions. At high currents, required for the magnetic trap, thick copper cables or copper bars are needed to pass the current from power supply to the coils, as thin ones would heat up dramatically. For initial testing we used thin copper wires and were able to recover the MOT (shown in image below).&lt;br&gt;
@@ -422,12 +366,6 @@ The fast control of the current in the coils, during an experimental sequence, i
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -436,28 +374,20 @@ The fast control of the current in the coils, during an experimental sequence, i
 
 
 
-
-
-
-&lt;figure id=&#34;figure-installing-the-coils-into-our-experiment-and-first-mot-signal-with-the-new-coils-the-electrical-connections-used-here-are-just-for-initial-testing-and-will-not-sustain-high-current-up-to-300a&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2021-coils/Coils_Installation_hu6d9fb84978054d81e4009ade4023d166_2414233_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Installing the coils into our experiment and first MOT-signal with the new coils. The electrical connections used here are just for initial testing and will not sustain high current up to 300A.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2021-coils/Coils_Installation_hu6d9fb84978054d81e4009ade4023d166_2414233_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2063&#34; height=&#34;774&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Installing the coils into our experiment and first MOT-signal with the new coils. The electrical connections used here are just for initial testing and will not sustain high current up to 300A.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-installing-the-coils-into-our-experiment-and-first-mot-signal-with-the-new-coils-the-electrical-connections-used-here-are-just-for-initial-testing-and-will-not-sustain-high-current-up-to-300a&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Installing the coils into our experiment and first MOT-signal with the new coils. The electrical connections used here are just for initial testing and will not sustain high current up to 300A.&#34; srcset=&#34;
+               /post/2021-coils/Coils_Installation_hu6d9fb84978054d81e4009ade4023d166_2414233_77ac50cf7bc7d3c5eff8a6c36a174733.png 400w,
+               /post/2021-coils/Coils_Installation_hu6d9fb84978054d81e4009ade4023d166_2414233_25c069f3bda1076d6ee59f1bcf69609e.png 760w,
+               /post/2021-coils/Coils_Installation_hu6d9fb84978054d81e4009ade4023d166_2414233_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2021-coils/Coils_Installation_hu6d9fb84978054d81e4009ade4023d166_2414233_77ac50cf7bc7d3c5eff8a6c36a174733.png&#34;
+               width=&#34;760&#34;
+               height=&#34;285&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Installing the coils into our experiment and first MOT-signal with the new coils. The electrical connections used here are just for initial testing and will not sustain high current up to 300A.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 </description>
     </item>
     
@@ -1228,12 +1158,6 @@ to &lt;strong&gt;readers with varying backgrounds&lt;/strong&gt; when plotting t
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1242,28 +1166,20 @@ to &lt;strong&gt;readers with varying backgrounds&lt;/strong&gt; when plotting t
 
 
 
-
-
-
-&lt;figure id=&#34;figure-sketched-quantum-circuits-that-correspond-to-selected-figures-from-mil-et-al-the-results-gain-a-clear-intuitive-meaning-through-the-quantum-circuits-even-though-the-system-that-is-being-simulated-is-not-known-the-color-blue-signifies-the-sodium-atoms-and-the-orange-color-lithium&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Sketched quantum circuits that correspond to selected figures from Mil et al. The results gain a clear intuitive meaning through the quantum circuits even though the system that is being simulated is not known. The color blue signifies the Sodium atoms and the orange color Lithium.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;789&#34; height=&#34;670&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Sketched quantum circuits that correspond to selected figures from Mil et al. The results gain a clear intuitive meaning through the quantum circuits even though the system that is being simulated is not known. The color blue signifies the Sodium atoms and the orange color Lithium.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-sketched-quantum-circuits-that-correspond-to-selected-figures-from-mil-et-al-the-results-gain-a-clear-intuitive-meaning-through-the-quantum-circuits-even-though-the-system-that-is-being-simulated-is-not-known-the-color-blue-signifies-the-sodium-atoms-and-the-orange-color-lithium&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Sketched quantum circuits that correspond to selected figures from Mil et al. The results gain a clear intuitive meaning through the quantum circuits even though the system that is being simulated is not known. The color blue signifies the Sodium atoms and the orange color Lithium.&#34; srcset=&#34;
+               /post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_0e01a044773fbe010cf909721c807296.png 400w,
+               /post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_ea7a0f724aaf70c80dcc8d9677363940.png 760w,
+               /post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_0e01a044773fbe010cf909721c807296.png&#34;
+               width=&#34;760&#34;
+               height=&#34;645&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Sketched quantum circuits that correspond to selected figures from Mil et al. The results gain a clear intuitive meaning through the quantum circuits even though the system that is being simulated is not known. The color blue signifies the Sodium atoms and the orange color Lithium.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;strong&gt;Additional benefits of using the circuit language&lt;/strong&gt; include&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1345,12 +1261,6 @@ quantum-classical computations.&lt;/em&gt;&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1359,28 +1269,20 @@ quantum-classical computations.&lt;/em&gt;&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-pennylane-as-the-connecting-puzzle-piece&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;PennyLane as the connecting puzzle piece.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1063&#34; height=&#34;545&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    PennyLane as the connecting puzzle piece.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-pennylane-as-the-connecting-puzzle-piece&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;PennyLane as the connecting puzzle piece.&#34; srcset=&#34;
+               /post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_ebc96810ab9337fe526f9c54efedc18c.png 400w,
+               /post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_0b5f1ee4e81859d055b4354b94ebe7b1.png 760w,
+               /post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_ebc96810ab9337fe526f9c54efedc18c.png&#34;
+               width=&#34;760&#34;
+               height=&#34;390&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      PennyLane as the connecting puzzle piece.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;a href=&#34;https://pennylane.ai/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PennyLane&lt;/a&gt; is
 created by &lt;a href=&#34;https://www.xanadu.ai/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Xanadu &lt;/a&gt; and presents itself as
 the &lt;strong&gt;connecting puzzle piece between powerful established python libraries for machine learning, and quantum computing platforms&lt;/strong&gt;. It provides readily implemented quantum algorithms for quantum machine
@@ -1413,12 +1315,6 @@ quantum backend&lt;/strong&gt; (especially when they support the same operations
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1427,28 +1323,20 @@ quantum backend&lt;/strong&gt; (especially when they support the same operations
 
 
 
-
-
-
-&lt;figure id=&#34;figure-typical-simple-way-of-using-pennylane-by-instantiating-the-device-defining-the-parametrized-quantum-circuit-and-the-cost-and-calculating-the-gradient-for-the-classical-parameters&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Typical simple way of using PennyLane by instantiating the device, defining the parametrized quantum circuit and the cost, and calculating the gradient for the classical parameters.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;710&#34; height=&#34;755&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Typical simple way of using PennyLane by instantiating the device, defining the parametrized quantum circuit and the cost, and calculating the gradient for the classical parameters.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-typical-simple-way-of-using-pennylane-by-instantiating-the-device-defining-the-parametrized-quantum-circuit-and-the-cost-and-calculating-the-gradient-for-the-classical-parameters&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Typical simple way of using PennyLane by instantiating the device, defining the parametrized quantum circuit and the cost, and calculating the gradient for the classical parameters.&#34; srcset=&#34;
+               /post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_4e95552ba1ae8f4e768f98bf95aa149e.png 400w,
+               /post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_ec0bffa9f0db1ae056697cb58adb3f39.png 760w,
+               /post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_4e95552ba1ae8f4e768f98bf95aa149e.png&#34;
+               width=&#34;710&#34;
+               height=&#34;755&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Typical simple way of using PennyLane by instantiating the device, defining the parametrized quantum circuit and the cost, and calculating the gradient for the classical parameters.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;h1 id=&#34;our-workflow-and-connecting-pennylane-to-our-hardware&#34;&gt;Our workflow and connecting PennyLane to our hardware&lt;/h1&gt;
 &lt;p&gt;The current state of our &lt;em&gt;&lt;strong&gt;pennylane_ls&lt;/strong&gt;&lt;/em&gt; &lt;strong&gt;plugin for ultra-cold
 atom experiments&lt;/strong&gt; can be viewed in &lt;a href=&#34;https://github.com/synqs/pennylane-ls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;this public github
@@ -1470,12 +1358,6 @@ in the style of Fig. 4 below.&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1484,28 +1366,20 @@ in the style of Fig. 4 below.&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-the-experimentpy-left-defines-the-experimental-sequence-of-a-labscript-controlled-lab-experiment-here-by-calling-functions-from-nalifunctionspy-at-given-times-the-function-umpump-right-shows-the-exact-low-level-hardware-instructions-that-are-to-be-executed&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;The Experiment.py (left) defines the experimental sequence of a Labscript-controlled lab experiment, here by calling functions from NaLiFunctions.py at given times. The function UMPUMP (right) shows the exact low level hardware instructions that are to be executed.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1366&#34; height=&#34;338&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    The Experiment.py (left) defines the experimental sequence of a Labscript-controlled lab experiment, here by calling functions from NaLiFunctions.py at given times. The function UMPUMP (right) shows the exact low level hardware instructions that are to be executed.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-the-experimentpy-left-defines-the-experimental-sequence-of-a-labscript-controlled-lab-experiment-here-by-calling-functions-from-nalifunctionspy-at-given-times-the-function-umpump-right-shows-the-exact-low-level-hardware-instructions-that-are-to-be-executed&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;The Experiment.py (left) defines the experimental sequence of a Labscript-controlled lab experiment, here by calling functions from NaLiFunctions.py at given times. The function UMPUMP (right) shows the exact low level hardware instructions that are to be executed.&#34; srcset=&#34;
+               /post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_6eec91c8b7312ba4cac813bea16bbd6b.png 400w,
+               /post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_78df18d03a665a27a86f15966b005cc1.png 760w,
+               /post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_6eec91c8b7312ba4cac813bea16bbd6b.png&#34;
+               width=&#34;760&#34;
+               height=&#34;188&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      The Experiment.py (left) defines the experimental sequence of a Labscript-controlled lab experiment, here by calling functions from NaLiFunctions.py at given times. The function UMPUMP (right) shows the exact low level hardware instructions that are to be executed.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;The &lt;em&gt;Experiment.py&lt;/em&gt;  &lt;strong&gt;file determines the exact sequence of hardware controls&lt;/strong&gt; that is executed during the measurement. It contains Labscript syntax and is fed into the Labscript Python
 compiler &lt;strong&gt;Runmanager&lt;/strong&gt;. &lt;/p&gt;
 &lt;p&gt;Our approach for &lt;strong&gt;combining Labscript with PennyLane&lt;/strong&gt; is sumarized in
@@ -1520,12 +1394,6 @@ circuit programmed through the PennyLane interface.&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1534,28 +1402,20 @@ circuit programmed through the PennyLane interface.&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-the-functionspre_apply-applyandpost_apply-are-used-to-generate-a--newexperimentpy-on-the-fly-for-each-quantum-circuit-in-pennylaneapply-loops-through-the-operations-in-the-circuit-while--the-other-functions-always-write-the-same-necessary-code-for-the-compilation&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;The functions pre_apply(), apply() and post_apply() are used to generate a  new Experiment.py on the fly for each quantum circuit in PennyLane. apply() loops through the operations in the circuit while  the other functions always write the same necessary code for the compilation.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;654&#34; height=&#34;518&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    The functions pre_apply(), apply() and post_apply() are used to generate a  new Experiment.py on the fly for each quantum circuit in PennyLane. apply() loops through the operations in the circuit while  the other functions always write the same necessary code for the compilation.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-the-functionspre_apply-applyandpost_apply-are-used-to-generate-a--newexperimentpy-on-the-fly-for-each-quantum-circuit-in-pennylaneapply-loops-through-the-operations-in-the-circuit-while--the-other-functions-always-write-the-same-necessary-code-for-the-compilation&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;The functions pre_apply(), apply() and post_apply() are used to generate a  new Experiment.py on the fly for each quantum circuit in PennyLane. apply() loops through the operations in the circuit while  the other functions always write the same necessary code for the compilation.&#34; srcset=&#34;
+               /post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_ae9c7ad68d5e47b2a40f2a0e6a8cddd4.png 400w,
+               /post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_64696088f70b29ec90662948148d1b59.png 760w,
+               /post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_ae9c7ad68d5e47b2a40f2a0e6a8cddd4.png&#34;
+               width=&#34;654&#34;
+               height=&#34;518&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      The functions pre_apply(), apply() and post_apply() are used to generate a  new Experiment.py on the fly for each quantum circuit in PennyLane. apply() loops through the operations in the circuit while  the other functions always write the same necessary code for the compilation.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;In other words, &lt;strong&gt;our PennyLane plugin translates a quantum circuit to
 an&lt;/strong&gt; &lt;em&gt;Experiment.py&lt;/em&gt; which our control system can interpret.&lt;/p&gt;
 &lt;p&gt;The &lt;em&gt;expval()&lt;/em&gt; method from the plugin is then used to send the
@@ -2024,12 +1884,6 @@ again like in Eq.(\ref{Eq:DefElectricField})&lt;sup id=&#34;fnref:5&#34;&gt;&lt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -2038,28 +1892,20 @@ again like in Eq.(\ref{Eq:DefElectricField})&lt;sup id=&#34;fnref:5&#34;&gt;&lt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-hopping-in-the-lattice-after-a-u1-gauge-transformation-at-each-hopping-event-to-right-the-particle-acquires-a-phase-e-a_i-a-which-is-proportional-to-the-vector-potential-hopping-to-the-left-leads-to-the-accumulation-of-the-inverse-phase--e-a_ia&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Hopping in the lattice after a U(1) gauge transformation. At each hopping event to right, the particle acquires a phase $e\ A_i\ a$, which is proportional to the vector potential. Hopping to the left leads to the accumulation of the inverse phase $-e\ A_ia$.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1565&#34; height=&#34;336&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Hopping in the lattice after a U(1) gauge transformation. At each hopping event to right, the particle acquires a phase $e\ A_i\ a$, which is proportional to the vector potential. Hopping to the left leads to the accumulation of the inverse phase $-e\ A_ia$.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-hopping-in-the-lattice-after-a-u1-gauge-transformation-at-each-hopping-event-to-right-the-particle-acquires-a-phase-e-a_i-a-which-is-proportional-to-the-vector-potential-hopping-to-the-left-leads-to-the-accumulation-of-the-inverse-phase--e-a_ia&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Hopping in the lattice after a U(1) gauge transformation. At each hopping event to right, the particle acquires a phase $e\ A_i\ a$, which is proportional to the vector potential. Hopping to the left leads to the accumulation of the inverse phase $-e\ A_ia$.&#34; srcset=&#34;
+               /post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_c66c7e0126dad85970f85f829806dda3.png 400w,
+               /post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_0b34f7a3b15c065a63b3d1a415949a04.png 760w,
+               /post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_c66c7e0126dad85970f85f829806dda3.png&#34;
+               width=&#34;760&#34;
+               height=&#34;163&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Hopping in the lattice after a U(1) gauge transformation. At each hopping event to right, the particle acquires a phase $e\ A_i\ a$, which is proportional to the vector potential. Hopping to the left leads to the accumulation of the inverse phase $-e\ A_ia$.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;from-the-gauge-symmetry-to-particle-conservation&#34;&gt;From the gauge symmetry to particle conservation&lt;/h2&gt;
 &lt;p&gt;We have seen that the equations of motion remain the same if the wave
 function is multiplied by a phase that is constant in space and time. We
@@ -2104,12 +1950,6 @@ $$&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -2118,28 +1958,20 @@ $$&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-gauss-law-of-electrodynamics-as-the-charge-blue-is-displaced-the-electric-field-is-also-modified-this-perfect-correlation-between-electric-field-and-matter-field-is-one-of-the-cornerstones-of-any-realization-of-dynamical-gauge-fields-in-synthetic-systems&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_2000x2000_fit_lanczos.gif&#34; data-caption=&#34;Gauss law of electrodynamics. As the charge (blue) is displaced, the electric field is also modified. This perfect correlation between electric field and matter field, is one of the cornerstones of any realization of dynamical gauge fields in synthetic systems.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;600&#34; height=&#34;400&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    Gauss law of electrodynamics. As the charge (blue) is displaced, the electric field is also modified. This perfect correlation between electric field and matter field, is one of the cornerstones of any realization of dynamical gauge fields in synthetic systems.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-gauss-law-of-electrodynamics-as-the-charge-blue-is-displaced-the-electric-field-is-also-modified-this-perfect-correlation-between-electric-field-and-matter-field-is-one-of-the-cornerstones-of-any-realization-of-dynamical-gauge-fields-in-synthetic-systems&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Gauss law of electrodynamics. As the charge (blue) is displaced, the electric field is also modified. This perfect correlation between electric field and matter field, is one of the cornerstones of any realization of dynamical gauge fields in synthetic systems.&#34; srcset=&#34;
+               /post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_6df0b0122e12d488e5d13983c96ea58f.gif 400w,
+               /post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_9da1da5a9428bcdbf9ebfea841e69455.gif 760w,
+               /post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_1200x1200_fit_lanczos.gif 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_6df0b0122e12d488e5d13983c96ea58f.gif&#34;
+               width=&#34;600&#34;
+               height=&#34;400&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Gauss law of electrodynamics. As the charge (blue) is displaced, the electric field is also modified. This perfect correlation between electric field and matter field, is one of the cornerstones of any realization of dynamical gauge fields in synthetic systems.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;To implement these two constraint, we will have to modify the underlying
 Hamiltonian. So we look once again at the Hamiltonian (\ref{Eq:LatticeWithMagField}) and rewrite it in a more suggestive
 way:&lt;/p&gt;

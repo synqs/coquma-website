@@ -29,6 +29,14 @@
     </item>
     
     <item>
+      <title>Direct control of high magnetic fields for cold atom experiments based on NV centers</title>
+      <link>https://jendrzejewski.synqs.org/publication/hesse-2020/</link>
+      <pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/hesse-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Some simple quantum mechanics in python</title>
       <link>https://jendrzejewski.synqs.org/post/2021-plotting-in-python/</link>
       <pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate>
@@ -185,7 +193,7 @@ fig.tight_layout()
       <link>https://jendrzejewski.synqs.org/teaching/2021-quantum-simulation-seminar/</link>
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
       <guid>https://jendrzejewski.synqs.org/teaching/2021-quantum-simulation-seminar/</guid>
-      <description>&lt;p&gt;In the upcoming summer semester, I am seminar on quantum experiments together with Lauriane Chomaz.&lt;/p&gt;
+      <description>&lt;p&gt;Nowadays, it has been possible to achieve control of quantum systems to an enormous degree on different hardware platforms. In this seminar we will discuss a variety of experiments based on assemblies of either photons, neutral atoms or ions, that highlight their capabilities to study quantum effects ranging from high precision measurements to complex many-body phenomena.&lt;/p&gt;
 </description>
     </item>
     
@@ -1052,12 +1060,6 @@ to &lt;strong&gt;readers with varying backgrounds&lt;/strong&gt; when plotting t
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1066,28 +1068,20 @@ to &lt;strong&gt;readers with varying backgrounds&lt;/strong&gt; when plotting t
 
 
 
-
-
-
-&lt;figure id=&#34;figure-sketched-quantum-circuits-that-correspond-to-selected-figures-from-mil-et-al-the-results-gain-a-clear-intuitive-meaning-through-the-quantum-circuits-even-though-the-system-that-is-being-simulated-is-not-known-the-color-blue-signifies-the-sodium-atoms-and-the-orange-color-lithium&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Sketched quantum circuits that correspond to selected figures from Mil et al. The results gain a clear intuitive meaning through the quantum circuits even though the system that is being simulated is not known. The color blue signifies the Sodium atoms and the orange color Lithium.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;789&#34; height=&#34;670&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Sketched quantum circuits that correspond to selected figures from Mil et al. The results gain a clear intuitive meaning through the quantum circuits even though the system that is being simulated is not known. The color blue signifies the Sodium atoms and the orange color Lithium.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-sketched-quantum-circuits-that-correspond-to-selected-figures-from-mil-et-al-the-results-gain-a-clear-intuitive-meaning-through-the-quantum-circuits-even-though-the-system-that-is-being-simulated-is-not-known-the-color-blue-signifies-the-sodium-atoms-and-the-orange-color-lithium&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Sketched quantum circuits that correspond to selected figures from Mil et al. The results gain a clear intuitive meaning through the quantum circuits even though the system that is being simulated is not known. The color blue signifies the Sodium atoms and the orange color Lithium.&#34; srcset=&#34;
+               /post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_0e01a044773fbe010cf909721c807296.png 400w,
+               /post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_ea7a0f724aaf70c80dcc8d9677363940.png 760w,
+               /post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/mil_with_circuits_hu9b1e8ff7db4919797c39ba84e0b57b0e_102833_0e01a044773fbe010cf909721c807296.png&#34;
+               width=&#34;760&#34;
+               height=&#34;645&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Sketched quantum circuits that correspond to selected figures from Mil et al. The results gain a clear intuitive meaning through the quantum circuits even though the system that is being simulated is not known. The color blue signifies the Sodium atoms and the orange color Lithium.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;strong&gt;Additional benefits of using the circuit language&lt;/strong&gt; include&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1169,12 +1163,6 @@ quantum-classical computations.&lt;/em&gt;&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1183,28 +1171,20 @@ quantum-classical computations.&lt;/em&gt;&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-pennylane-as-the-connecting-puzzle-piece&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;PennyLane as the connecting puzzle piece.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1063&#34; height=&#34;545&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    PennyLane as the connecting puzzle piece.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-pennylane-as-the-connecting-puzzle-piece&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;PennyLane as the connecting puzzle piece.&#34; srcset=&#34;
+               /post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_ebc96810ab9337fe526f9c54efedc18c.png 400w,
+               /post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_0b5f1ee4e81859d055b4354b94ebe7b1.png 760w,
+               /post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_puzzle_hue1694208b00e322e1dd7c67e8cd034c2_237778_ebc96810ab9337fe526f9c54efedc18c.png&#34;
+               width=&#34;760&#34;
+               height=&#34;390&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      PennyLane as the connecting puzzle piece.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;a href=&#34;https://pennylane.ai/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PennyLane&lt;/a&gt; is
 created by &lt;a href=&#34;https://www.xanadu.ai/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Xanadu &lt;/a&gt; and presents itself as
 the &lt;strong&gt;connecting puzzle piece between powerful established python libraries for machine learning, and quantum computing platforms&lt;/strong&gt;. It provides readily implemented quantum algorithms for quantum machine
@@ -1237,12 +1217,6 @@ quantum backend&lt;/strong&gt; (especially when they support the same operations
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1251,28 +1225,20 @@ quantum backend&lt;/strong&gt; (especially when they support the same operations
 
 
 
-
-
-
-&lt;figure id=&#34;figure-typical-simple-way-of-using-pennylane-by-instantiating-the-device-defining-the-parametrized-quantum-circuit-and-the-cost-and-calculating-the-gradient-for-the-classical-parameters&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Typical simple way of using PennyLane by instantiating the device, defining the parametrized quantum circuit and the cost, and calculating the gradient for the classical parameters.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;710&#34; height=&#34;755&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Typical simple way of using PennyLane by instantiating the device, defining the parametrized quantum circuit and the cost, and calculating the gradient for the classical parameters.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-typical-simple-way-of-using-pennylane-by-instantiating-the-device-defining-the-parametrized-quantum-circuit-and-the-cost-and-calculating-the-gradient-for-the-classical-parameters&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Typical simple way of using PennyLane by instantiating the device, defining the parametrized quantum circuit and the cost, and calculating the gradient for the classical parameters.&#34; srcset=&#34;
+               /post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_4e95552ba1ae8f4e768f98bf95aa149e.png 400w,
+               /post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_ec0bffa9f0db1ae056697cb58adb3f39.png 760w,
+               /post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/PennyLane_use_hue13e364444e68bc85782d84325bcac12_108466_4e95552ba1ae8f4e768f98bf95aa149e.png&#34;
+               width=&#34;710&#34;
+               height=&#34;755&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Typical simple way of using PennyLane by instantiating the device, defining the parametrized quantum circuit and the cost, and calculating the gradient for the classical parameters.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;h1 id=&#34;our-workflow-and-connecting-pennylane-to-our-hardware&#34;&gt;Our workflow and connecting PennyLane to our hardware&lt;/h1&gt;
 &lt;p&gt;The current state of our &lt;em&gt;&lt;strong&gt;pennylane_ls&lt;/strong&gt;&lt;/em&gt; &lt;strong&gt;plugin for ultra-cold
 atom experiments&lt;/strong&gt; can be viewed in &lt;a href=&#34;https://github.com/synqs/pennylane-ls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;this public github
@@ -1294,12 +1260,6 @@ in the style of Fig. 4 below.&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1308,28 +1268,20 @@ in the style of Fig. 4 below.&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-the-experimentpy-left-defines-the-experimental-sequence-of-a-labscript-controlled-lab-experiment-here-by-calling-functions-from-nalifunctionspy-at-given-times-the-function-umpump-right-shows-the-exact-low-level-hardware-instructions-that-are-to-be-executed&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;The Experiment.py (left) defines the experimental sequence of a Labscript-controlled lab experiment, here by calling functions from NaLiFunctions.py at given times. The function UMPUMP (right) shows the exact low level hardware instructions that are to be executed.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1366&#34; height=&#34;338&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    The Experiment.py (left) defines the experimental sequence of a Labscript-controlled lab experiment, here by calling functions from NaLiFunctions.py at given times. The function UMPUMP (right) shows the exact low level hardware instructions that are to be executed.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-the-experimentpy-left-defines-the-experimental-sequence-of-a-labscript-controlled-lab-experiment-here-by-calling-functions-from-nalifunctionspy-at-given-times-the-function-umpump-right-shows-the-exact-low-level-hardware-instructions-that-are-to-be-executed&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;The Experiment.py (left) defines the experimental sequence of a Labscript-controlled lab experiment, here by calling functions from NaLiFunctions.py at given times. The function UMPUMP (right) shows the exact low level hardware instructions that are to be executed.&#34; srcset=&#34;
+               /post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_6eec91c8b7312ba4cac813bea16bbd6b.png 400w,
+               /post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_78df18d03a665a27a86f15966b005cc1.png 760w,
+               /post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/Labscript_NaLi_code_hu9a4f75dce02bafd60702befbbd7258d9_192353_6eec91c8b7312ba4cac813bea16bbd6b.png&#34;
+               width=&#34;760&#34;
+               height=&#34;188&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      The Experiment.py (left) defines the experimental sequence of a Labscript-controlled lab experiment, here by calling functions from NaLiFunctions.py at given times. The function UMPUMP (right) shows the exact low level hardware instructions that are to be executed.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;The &lt;em&gt;Experiment.py&lt;/em&gt;  &lt;strong&gt;file determines the exact sequence of hardware controls&lt;/strong&gt; that is executed during the measurement. It contains Labscript syntax and is fed into the Labscript Python
 compiler &lt;strong&gt;Runmanager&lt;/strong&gt;. &lt;/p&gt;
 &lt;p&gt;Our approach for &lt;strong&gt;combining Labscript with PennyLane&lt;/strong&gt; is sumarized in
@@ -1344,12 +1296,6 @@ circuit programmed through the PennyLane interface.&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1358,28 +1304,20 @@ circuit programmed through the PennyLane interface.&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-the-functionspre_apply-applyandpost_apply-are-used-to-generate-a--newexperimentpy-on-the-fly-for-each-quantum-circuit-in-pennylaneapply-loops-through-the-operations-in-the-circuit-while--the-other-functions-always-write-the-same-necessary-code-for-the-compilation&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;The functions pre_apply(), apply() and post_apply() are used to generate a  new Experiment.py on the fly for each quantum circuit in PennyLane. apply() loops through the operations in the circuit while  the other functions always write the same necessary code for the compilation.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;654&#34; height=&#34;518&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    The functions pre_apply(), apply() and post_apply() are used to generate a  new Experiment.py on the fly for each quantum circuit in PennyLane. apply() loops through the operations in the circuit while  the other functions always write the same necessary code for the compilation.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-the-functionspre_apply-applyandpost_apply-are-used-to-generate-a--newexperimentpy-on-the-fly-for-each-quantum-circuit-in-pennylaneapply-loops-through-the-operations-in-the-circuit-while--the-other-functions-always-write-the-same-necessary-code-for-the-compilation&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;The functions pre_apply(), apply() and post_apply() are used to generate a  new Experiment.py on the fly for each quantum circuit in PennyLane. apply() loops through the operations in the circuit while  the other functions always write the same necessary code for the compilation.&#34; srcset=&#34;
+               /post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_ae9c7ad68d5e47b2a40f2a0e6a8cddd4.png 400w,
+               /post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_64696088f70b29ec90662948148d1b59.png 760w,
+               /post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2020-atomic-quantum-circuits/pre_post_apply_hu54d3970c7d1efed960b37e472c983df4_73595_ae9c7ad68d5e47b2a40f2a0e6a8cddd4.png&#34;
+               width=&#34;654&#34;
+               height=&#34;518&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      The functions pre_apply(), apply() and post_apply() are used to generate a  new Experiment.py on the fly for each quantum circuit in PennyLane. apply() loops through the operations in the circuit while  the other functions always write the same necessary code for the compilation.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;In other words, &lt;strong&gt;our PennyLane plugin translates a quantum circuit to
 an&lt;/strong&gt; &lt;em&gt;Experiment.py&lt;/em&gt; which our control system can interpret.&lt;/p&gt;
 &lt;p&gt;The &lt;em&gt;expval()&lt;/em&gt; method from the plugin is then used to send the
@@ -1440,14 +1378,6 @@ our systems. &lt;/p&gt;
 how the quantum circuits can be efficiently employed in ultra-cold atom
 experiments.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Direct control of high magnetic fields for cold atom experiments based on NV centers</title>
-      <link>https://jendrzejewski.synqs.org/publication/hesse-2020/</link>
-      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://jendrzejewski.synqs.org/publication/hesse-2020/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -1660,12 +1590,6 @@ input for some control law $K(s)$ that tries to minimize the error signal.&lt;/p
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1674,28 +1598,20 @@ input for some control law $K(s)$ that tries to minimize the error signal.&lt;/p
 
 
 
-
-
-
-&lt;figure id=&#34;figure-block-diagram-showing-a-generic-feedback-control-the-system-gs-is-controlled-by-the-control-law-ks&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/text10419-5_huc335cff274b836978f0b8b676a7977d0_19219_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Block diagram showing a generic feedback control. The system G(s) is controlled by the control law K(s).&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/text10419-5_huc335cff274b836978f0b8b676a7977d0_19219_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1089&#34; height=&#34;211&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Block diagram showing a generic feedback control. The system G(s) is controlled by the control law K(s).
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-block-diagram-showing-a-generic-feedback-control-the-system-gs-is-controlled-by-the-control-law-ks&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Block diagram showing a generic feedback control. The system G(s) is controlled by the control law K(s).&#34; srcset=&#34;
+               /post/2018-feedback-for-amo-experimentalists/text10419-5_huc335cff274b836978f0b8b676a7977d0_19219_f9c82c0c1f625d71d8a20d79a08d2c2f.png 400w,
+               /post/2018-feedback-for-amo-experimentalists/text10419-5_huc335cff274b836978f0b8b676a7977d0_19219_588c740c2c764e83a79ab7ee5d5c6a26.png 760w,
+               /post/2018-feedback-for-amo-experimentalists/text10419-5_huc335cff274b836978f0b8b676a7977d0_19219_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/text10419-5_huc335cff274b836978f0b8b676a7977d0_19219_f9c82c0c1f625d71d8a20d79a08d2c2f.png&#34;
+               width=&#34;760&#34;
+               height=&#34;147&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Block diagram showing a generic feedback control. The system G(s) is controlled by the control law K(s).
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;Here we analyze the system in frequency space, where $s=i\omega$. This
 is a convenient way to analyze control systems. An easy way to measure
 quantity of such a system is the closed-loop transfer function $T$:&lt;/p&gt;
@@ -1734,12 +1650,6 @@ output.&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1748,28 +1658,20 @@ output.&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-same-system-as-fig-1-but-added-disturbances-ds-and-detector-noise&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/path3909_hu612e52a87ca1e50fe35ee180e794dd16_25851_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Same system as Fig. 1, but added disturbances d(s) and detector noise.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/path3909_hu612e52a87ca1e50fe35ee180e794dd16_25851_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1089&#34; height=&#34;439&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Same system as Fig. 1, but added disturbances d(s) and detector noise.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-same-system-as-fig-1-but-added-disturbances-ds-and-detector-noise&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Same system as Fig. 1, but added disturbances d(s) and detector noise.&#34; srcset=&#34;
+               /post/2018-feedback-for-amo-experimentalists/path3909_hu612e52a87ca1e50fe35ee180e794dd16_25851_34338db03a6edb92414705ec6fefdd59.png 400w,
+               /post/2018-feedback-for-amo-experimentalists/path3909_hu612e52a87ca1e50fe35ee180e794dd16_25851_1867862db09374fc362d44283dde9e4b.png 760w,
+               /post/2018-feedback-for-amo-experimentalists/path3909_hu612e52a87ca1e50fe35ee180e794dd16_25851_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/path3909_hu612e52a87ca1e50fe35ee180e794dd16_25851_34338db03a6edb92414705ec6fefdd59.png&#34;
+               width=&#34;760&#34;
+               height=&#34;306&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Same system as Fig. 1, but added disturbances d(s) and detector noise.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;Another trade-off - which holds for almost all systems (to be exact: if
 KG has at least two more poles than zeros, and has no poles in the right
 half plane (is stable)) - is the following:
@@ -1822,12 +1724,6 @@ frequency regime (see Fig. 3 taken from
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1836,28 +1732,20 @@ frequency regime (see Fig. 3 taken from
 
 
 
-
-
-
-&lt;figure id=&#34;figure-if-the-sensitivity-to-disturbances-is-suppressed-in-the-low-frequency-regime-it-is-necessarily-increased-in-some-higher-frequency-regime&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/slide_51_hu6816623d607af0873b9af7de55be3880_64067_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;If the Sensitivity to disturbances is suppressed in the low frequency regime, it is necessarily increased in some higher frequency regime.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/slide_51_hu6816623d607af0873b9af7de55be3880_64067_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;374&#34; height=&#34;279&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    If the Sensitivity to disturbances is suppressed in the low frequency regime, it is necessarily increased in some higher frequency regime.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-if-the-sensitivity-to-disturbances-is-suppressed-in-the-low-frequency-regime-it-is-necessarily-increased-in-some-higher-frequency-regime&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;If the Sensitivity to disturbances is suppressed in the low frequency regime, it is necessarily increased in some higher frequency regime.&#34; srcset=&#34;
+               /post/2018-feedback-for-amo-experimentalists/slide_51_hu6816623d607af0873b9af7de55be3880_64067_8671834933982380f935c3b83df9bab8.png 400w,
+               /post/2018-feedback-for-amo-experimentalists/slide_51_hu6816623d607af0873b9af7de55be3880_64067_35adc1b606a9a53596ca1ccd128104fa.png 760w,
+               /post/2018-feedback-for-amo-experimentalists/slide_51_hu6816623d607af0873b9af7de55be3880_64067_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/slide_51_hu6816623d607af0873b9af7de55be3880_64067_8671834933982380f935c3b83df9bab8.png&#34;
+               width=&#34;374&#34;
+               height=&#34;279&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      If the Sensitivity to disturbances is suppressed in the low frequency regime, it is necessarily increased in some higher frequency regime.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;Now before looking at the different systems $G(s)$, we have a look at the
 control law $K(s)$. The most-used controller is the PID-controller, or
 very often experimentally only a PI-controller. The P stands for
@@ -1879,12 +1767,6 @@ by modulating the RF power.&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1893,28 +1775,20 @@ by modulating the RF power.&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-a-photodiode-gets-a-fraction-of-the-first-order-aom-beam-the-power-of-this-beam-can-be-modulated-via-rf-amplitude-modulation&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/rect14858_hu24682bd63c5f5e4ddde27c5da8ea2c1a_124510_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;A photodiode gets a fraction of the first order AOM beam. The power of this beam can be modulated via RF amplitude modulation.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/rect14858_hu24682bd63c5f5e4ddde27c5da8ea2c1a_124510_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1198&#34; height=&#34;702&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    A photodiode gets a fraction of the first order AOM beam. The power of this beam can be modulated via RF amplitude modulation.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-a-photodiode-gets-a-fraction-of-the-first-order-aom-beam-the-power-of-this-beam-can-be-modulated-via-rf-amplitude-modulation&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;A photodiode gets a fraction of the first order AOM beam. The power of this beam can be modulated via RF amplitude modulation.&#34; srcset=&#34;
+               /post/2018-feedback-for-amo-experimentalists/rect14858_hu24682bd63c5f5e4ddde27c5da8ea2c1a_124510_842a72f689829f3ec86b7ae6a9516275.png 400w,
+               /post/2018-feedback-for-amo-experimentalists/rect14858_hu24682bd63c5f5e4ddde27c5da8ea2c1a_124510_8771b3f8b41c6490d8a3580708310492.png 760w,
+               /post/2018-feedback-for-amo-experimentalists/rect14858_hu24682bd63c5f5e4ddde27c5da8ea2c1a_124510_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/rect14858_hu24682bd63c5f5e4ddde27c5da8ea2c1a_124510_842a72f689829f3ec86b7ae6a9516275.png&#34;
+               width=&#34;760&#34;
+               height=&#34;445&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      A photodiode gets a fraction of the first order AOM beam. The power of this beam can be modulated via RF amplitude modulation.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;the-system&#34;&gt;The System&lt;/h2&gt;
 &lt;p&gt;How to characterize the system without PI contol? (&amp;ldquo;system&amp;rdquo; refers to
 AOM+Driver+AOM+Photodiode) The tools needed for that are a function
@@ -1926,12 +1800,6 @@ in the &lt;a href=&#34;https://www.redpitaya.com/&#34; target=&#34;_blank&#34; r
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1940,28 +1808,20 @@ in the &lt;a href=&#34;https://www.redpitaya.com/&#34; target=&#34;_blank&#34; r
 
 
 
-
-
-
-&lt;figure id=&#34;figure-this-shows-how-to-characetrize-the-system-without-pi-controller-the-aom-driver-expects-a-signal-from-0-to-1v-to-attenuate-the-rf-signal-accordingly-this-again-changes-the-1st-order-beam-power-and-therefore-the-voltage-on-the-photodiode-the-redpitaya-can-supply-the-control-voltage-for-the-driver-as-well-as-measure-the-signal-on-the-photodiode&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/text9831_huf6e232415135fb2a73a5885a58f3d88f_151335_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;This shows how to characetrize the system without PI-controller. The AOM Driver expects a signal from 0 to 1V to attenuate the RF signal accordingly. This again changes the 1st order beam power and therefore the voltage on the photodiode. The RedPitaya can supply the control voltage for the driver as well as measure the signal on the photodiode.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/text9831_huf6e232415135fb2a73a5885a58f3d88f_151335_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1204&#34; height=&#34;736&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    This shows how to characetrize the system without PI-controller. The AOM Driver expects a signal from 0 to 1V to attenuate the RF signal accordingly. This again changes the 1st order beam power and therefore the voltage on the photodiode. The RedPitaya can supply the control voltage for the driver as well as measure the signal on the photodiode.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-this-shows-how-to-characetrize-the-system-without-pi-controller-the-aom-driver-expects-a-signal-from-0-to-1v-to-attenuate-the-rf-signal-accordingly-this-again-changes-the-1st-order-beam-power-and-therefore-the-voltage-on-the-photodiode-the-redpitaya-can-supply-the-control-voltage-for-the-driver-as-well-as-measure-the-signal-on-the-photodiode&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;This shows how to characetrize the system without PI-controller. The AOM Driver expects a signal from 0 to 1V to attenuate the RF signal accordingly. This again changes the 1st order beam power and therefore the voltage on the photodiode. The RedPitaya can supply the control voltage for the driver as well as measure the signal on the photodiode.&#34; srcset=&#34;
+               /post/2018-feedback-for-amo-experimentalists/text9831_huf6e232415135fb2a73a5885a58f3d88f_151335_3665925652fd2de3a16d159651971bc3.png 400w,
+               /post/2018-feedback-for-amo-experimentalists/text9831_huf6e232415135fb2a73a5885a58f3d88f_151335_a60152a2b91af9a6da4a88b3aed2c36c.png 760w,
+               /post/2018-feedback-for-amo-experimentalists/text9831_huf6e232415135fb2a73a5885a58f3d88f_151335_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/text9831_huf6e232415135fb2a73a5885a58f3d88f_151335_3665925652fd2de3a16d159651971bc3.png&#34;
+               width=&#34;760&#34;
+               height=&#34;465&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      This shows how to characetrize the system without PI-controller. The AOM Driver expects a signal from 0 to 1V to attenuate the RF signal accordingly. This again changes the 1st order beam power and therefore the voltage on the photodiode. The RedPitaya can supply the control voltage for the driver as well as measure the signal on the photodiode.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;So what do we measure? As mentioned in the Introduction, we can measure
 the closed-loop transfer function $T$ and then calculate the open-loop transfer function $H$ to look for a desired loopshape.&lt;/p&gt;
 &lt;h2 id=&#34;how-to-change-laser-power-by-modulating-rf-power&#34;&gt;How to change laser power by modulating RF power&lt;/h2&gt;
@@ -1980,12 +1840,6 @@ at the AOM driver and the dependency is nonlinear (see figure 6).&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -1994,28 +1848,20 @@ at the AOM driver and the dependency is nonlinear (see figure 6).&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-relationship-between-control-voltage-and-photodiode-voltage-not-that-the-y-axis-is-basically-arbitrary-as-this-depends-on-pick-off-ratio-and-initial-laser-power&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/nonlinearity_hu134c9bc7b615b84c354e5490970f8198_28067_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Relationship between control voltage and photodiode voltage. Not that the y-axis is basically arbitrary, as this depends on pick-off ratio and initial laser power.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/nonlinearity_hu134c9bc7b615b84c354e5490970f8198_28067_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1080&#34; height=&#34;720&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Relationship between control voltage and photodiode voltage. Not that the y-axis is basically arbitrary, as this depends on pick-off ratio and initial laser power.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-relationship-between-control-voltage-and-photodiode-voltage-not-that-the-y-axis-is-basically-arbitrary-as-this-depends-on-pick-off-ratio-and-initial-laser-power&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Relationship between control voltage and photodiode voltage. Not that the y-axis is basically arbitrary, as this depends on pick-off ratio and initial laser power.&#34; srcset=&#34;
+               /post/2018-feedback-for-amo-experimentalists/nonlinearity_hu134c9bc7b615b84c354e5490970f8198_28067_de9a83f42b1d36daf6f7a1a33cc5e54d.png 400w,
+               /post/2018-feedback-for-amo-experimentalists/nonlinearity_hu134c9bc7b615b84c354e5490970f8198_28067_7f1eea58bb8c53d16190de4a9e3ef87c.png 760w,
+               /post/2018-feedback-for-amo-experimentalists/nonlinearity_hu134c9bc7b615b84c354e5490970f8198_28067_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/nonlinearity_hu134c9bc7b615b84c354e5490970f8198_28067_de9a83f42b1d36daf6f7a1a33cc5e54d.png&#34;
+               width=&#34;760&#34;
+               height=&#34;507&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Relationship between control voltage and photodiode voltage. Not that the y-axis is basically arbitrary, as this depends on pick-off ratio and initial laser power.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;analysis-in-frequency-space-with-bode-plots&#34;&gt;Analysis in Frequency space with Bode plots&lt;/h2&gt;
 &lt;p&gt;The RedPitaya with its network analyzer module, allows us to
 characterize the setup in frequency space. In the figure above we saw how the
@@ -2042,12 +1888,6 @@ decreases.&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -2056,28 +1896,20 @@ decreases.&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-system-transfer-function-obtained-by-modulating-the-rf-attenuation-of-the-aom-driver-with-different-frequencies-and-measuring-the-corresponding-signal-on-the-photodiodedo-not-get-confused-by-theabsolute-magnitude-of-the-gain-values-a-sinusoidal-signal-with-1mv-amplitude-going-into-the-aom-driver-doesnot-correspond-to-a-signal-with-1mv-on-the-photodiode-this-is-for-example-dependent-on-the-offset-because-of-the-slope-or-the-photodiode-amplification-therelativenumbers-however-give-you-insight-in-attenuation-at-higher-frequencies-and-therefore-system-bandwidth&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/System-RF-Source&amp;#43;AOM&amp;#43;Photodiode_huab12a83c8241a24735c7173068226d83_28288_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;System Transfer Function: Obtained by modulating the RF attenuation of the AOM driver with different frequencies and measuring the corresponding signal on the Photodiode. Do not get confused by the absolute Magnitude of the Gain values: A sinusoidal signal with 1mV amplitude going into the AOM driver does not correspond to a signal with 1mV on the photodiode. This is for example dependent on the offset (because of the slope) or the photodiode amplification. The relative numbers however give you insight in attenuation at higher frequencies and therefore System bandwidth.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/System-RF-Source&amp;#43;AOM&amp;#43;Photodiode_huab12a83c8241a24735c7173068226d83_28288_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;540&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    System Transfer Function: Obtained by modulating the RF attenuation of the AOM driver with different frequencies and measuring the corresponding signal on the Photodiode. Do not get confused by the absolute Magnitude of the Gain values: A sinusoidal signal with 1mV amplitude going into the AOM driver does not correspond to a signal with 1mV on the photodiode. This is for example dependent on the offset (because of the slope) or the photodiode amplification. The relative numbers however give you insight in attenuation at higher frequencies and therefore System bandwidth.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-system-transfer-function-obtained-by-modulating-the-rf-attenuation-of-the-aom-driver-with-different-frequencies-and-measuring-the-corresponding-signal-on-the-photodiodedo-not-get-confused-by-theabsolute-magnitude-of-the-gain-values-a-sinusoidal-signal-with-1mv-amplitude-going-into-the-aom-driver-doesnot-correspond-to-a-signal-with-1mv-on-the-photodiode-this-is-for-example-dependent-on-the-offset-because-of-the-slope-or-the-photodiode-amplification-therelativenumbers-however-give-you-insight-in-attenuation-at-higher-frequencies-and-therefore-system-bandwidth&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;System Transfer Function: Obtained by modulating the RF attenuation of the AOM driver with different frequencies and measuring the corresponding signal on the Photodiode. Do not get confused by the absolute Magnitude of the Gain values: A sinusoidal signal with 1mV amplitude going into the AOM driver does not correspond to a signal with 1mV on the photodiode. This is for example dependent on the offset (because of the slope) or the photodiode amplification. The relative numbers however give you insight in attenuation at higher frequencies and therefore System bandwidth.&#34; srcset=&#34;
+               /post/2018-feedback-for-amo-experimentalists/System-RF-Source&amp;#43;AOM&amp;#43;Photodiode_huab12a83c8241a24735c7173068226d83_28288_9cdd4391aa913f4dbe548dd40137d7e3.png 400w,
+               /post/2018-feedback-for-amo-experimentalists/System-RF-Source&amp;#43;AOM&amp;#43;Photodiode_huab12a83c8241a24735c7173068226d83_28288_2d92aafca2bc4a83d26177e34e81ea98.png 760w,
+               /post/2018-feedback-for-amo-experimentalists/System-RF-Source&amp;#43;AOM&amp;#43;Photodiode_huab12a83c8241a24735c7173068226d83_28288_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/System-RF-Source&amp;#43;AOM&amp;#43;Photodiode_huab12a83c8241a24735c7173068226d83_28288_9cdd4391aa913f4dbe548dd40137d7e3.png&#34;
+               width=&#34;720&#34;
+               height=&#34;540&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      System Transfer Function: Obtained by modulating the RF attenuation of the AOM driver with different frequencies and measuring the corresponding signal on the Photodiode. Do not get confused by the absolute Magnitude of the Gain values: A sinusoidal signal with 1mV amplitude going into the AOM driver does not correspond to a signal with 1mV on the photodiode. This is for example dependent on the offset (because of the slope) or the photodiode amplification. The relative numbers however give you insight in attenuation at higher frequencies and therefore System bandwidth.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;It&amp;rsquo;s clear that this system doesn&amp;rsquo;t have any resonances and behaves
 quiet nicely in the displayed frequency regime. Therefore time-domain
 tuning methods for a servo like Ziegler-Nichols tuning can be effective
@@ -2101,12 +1933,6 @@ sensitivity &lt;em&gt;S&lt;/em&gt;.&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -2115,28 +1941,20 @@ sensitivity &lt;em&gt;S&lt;/em&gt;.&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-closed-loop-transfer-function-t-measured-by-the-redpitaya-for-low-frequencies-the-photodiode-voltage-follows-the-modulation-well-for-higher-frequencies-the-gain-of-the-system-decreases-for-higher-proportional-constant-the-transfer-function-does-not-decrease-as-much-at-higher-frequencies&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Closed-loop%20Transfer%20function_hudc202502fc277538f2bea1056f0e1ecb_39752_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Closed-loop transfer function T measured by the RedPitaya. For low frequencies the photodiode voltage follows the modulation well. For higher frequencies the gain of the system decreases. For higher proportional constant the transfer function does not decrease as much at higher frequencies.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Closed-loop%20Transfer%20function_hudc202502fc277538f2bea1056f0e1ecb_39752_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;540&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Closed-loop transfer function T measured by the RedPitaya. For low frequencies the photodiode voltage follows the modulation well. For higher frequencies the gain of the system decreases. For higher proportional constant the transfer function does not decrease as much at higher frequencies.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-closed-loop-transfer-function-t-measured-by-the-redpitaya-for-low-frequencies-the-photodiode-voltage-follows-the-modulation-well-for-higher-frequencies-the-gain-of-the-system-decreases-for-higher-proportional-constant-the-transfer-function-does-not-decrease-as-much-at-higher-frequencies&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Closed-loop transfer function T measured by the RedPitaya. For low frequencies the photodiode voltage follows the modulation well. For higher frequencies the gain of the system decreases. For higher proportional constant the transfer function does not decrease as much at higher frequencies.&#34; srcset=&#34;
+               /post/2018-feedback-for-amo-experimentalists/Closed-loop%20Transfer%20function_hudc202502fc277538f2bea1056f0e1ecb_39752_3812127c89c26ee719a89019bed68584.png 400w,
+               /post/2018-feedback-for-amo-experimentalists/Closed-loop%20Transfer%20function_hudc202502fc277538f2bea1056f0e1ecb_39752_5d9e739014f3220284c26d657bc375a7.png 760w,
+               /post/2018-feedback-for-amo-experimentalists/Closed-loop%20Transfer%20function_hudc202502fc277538f2bea1056f0e1ecb_39752_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Closed-loop%20Transfer%20function_hudc202502fc277538f2bea1056f0e1ecb_39752_3812127c89c26ee719a89019bed68584.png&#34;
+               width=&#34;720&#34;
+               height=&#34;540&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Closed-loop transfer function T measured by the RedPitaya. For low frequencies the photodiode voltage follows the modulation well. For higher frequencies the gain of the system decreases. For higher proportional constant the transfer function does not decrease as much at higher frequencies.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;After measuring &lt;em&gt;T&lt;/em&gt; we can can calculate &lt;em&gt;H&lt;/em&gt;. As mentioned in the introduction the criterion for instability is
 $\left|H\right|&amp;gt;1$ for a simultaneously phase lag close to 180°. Be
 careful that the unit in the figure is dB, which means that
@@ -2149,12 +1967,6 @@ only a phase lag of 90°.&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -2163,28 +1975,20 @@ only a phase lag of 90°.&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-open-loop-transfer-function-h&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Loop-Gain_huf54deb1d176909a8dc8f4405de5b3033_42472_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Open-loop transfer function H.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Loop-Gain_huf54deb1d176909a8dc8f4405de5b3033_42472_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;540&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Open-loop transfer function H.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-open-loop-transfer-function-h&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Open-loop transfer function H.&#34; srcset=&#34;
+               /post/2018-feedback-for-amo-experimentalists/Loop-Gain_huf54deb1d176909a8dc8f4405de5b3033_42472_385d1fae78fcda603f12e4a4dfe43637.png 400w,
+               /post/2018-feedback-for-amo-experimentalists/Loop-Gain_huf54deb1d176909a8dc8f4405de5b3033_42472_1697038fd0fa6b90dbe0ac3048888cbb.png 760w,
+               /post/2018-feedback-for-amo-experimentalists/Loop-Gain_huf54deb1d176909a8dc8f4405de5b3033_42472_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Loop-Gain_huf54deb1d176909a8dc8f4405de5b3033_42472_385d1fae78fcda603f12e4a4dfe43637.png&#34;
+               width=&#34;720&#34;
+               height=&#34;540&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Open-loop transfer function H.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;The interesting regime is where the phase lag hits -180° which happens
 for ~40kHz for the orange curve and ~90kHz for the blue curve. But
 both sets of P&amp;amp;I-constants lead to stable behaviour, because the
@@ -2200,12 +2004,6 @@ system.&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -2214,28 +2012,20 @@ system.&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-noise-spectra-locked-and-unlocked&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Noiseplot_hu91374a7a28ff1655f633b48b7e6f813c_32444_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Noise spectra locked and unlocked.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Noiseplot_hu91374a7a28ff1655f633b48b7e6f813c_32444_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;540&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Noise spectra locked and unlocked.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-noise-spectra-locked-and-unlocked&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Noise spectra locked and unlocked.&#34; srcset=&#34;
+               /post/2018-feedback-for-amo-experimentalists/Noiseplot_hu91374a7a28ff1655f633b48b7e6f813c_32444_e5773deae1a5588752d8e7a25971a24f.png 400w,
+               /post/2018-feedback-for-amo-experimentalists/Noiseplot_hu91374a7a28ff1655f633b48b7e6f813c_32444_d70fcb9d815b34c87be0920586400979.png 760w,
+               /post/2018-feedback-for-amo-experimentalists/Noiseplot_hu91374a7a28ff1655f633b48b7e6f813c_32444_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Noiseplot_hu91374a7a28ff1655f633b48b7e6f813c_32444_e5773deae1a5588752d8e7a25971a24f.png&#34;
+               width=&#34;720&#34;
+               height=&#34;540&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Noise spectra locked and unlocked.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;We observe noise suppression for frequencies up to point where the system can react actively, which is about 30kHz.&lt;/p&gt;
 &lt;h2 id=&#34;further-reading-problems-of-intensity-stabilization&#34;&gt;Further Reading: Problems of Intensity stabilization&lt;/h2&gt;
 &lt;p&gt;Here we can already identify the first pitfall of intensity
@@ -2507,12 +2297,6 @@ a remotely understandable way to me).&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -2521,28 +2305,20 @@ a remotely understandable way to me).&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-a-fermi-sea-of-s--12-particles-is-orange-is-coupled-to-a--localized-impurity-blue-whose-only-degree-of-freedom-is-its-spin-orientation-s--12-they-interact-through-an-anti-ferromagnetic-exchange-interaction-a-for-low-temperatures-the-interaction-leads-to-the-formation-of-a-spin-singlet-between-a-fermion-and-the-impurity-the-high-energy-cost-of-creating-an-excitation-in-the-region-of-the-impurity-blocks-it-entirely-from-the-dynamics-of-the-fermi-sea-the-fermions-can-now-be-treated-as-a-fermi-liquid-with-the-impurity-region-removed-b-for-intermediate-temperatures-the-singlet-gets-deconfined-and-virtual-excitations-in-the-impurity-region-are-allowed-as-they-involve-the-neighboring-fermions-they-can-lead-to-strong-interactions-between-the-previously-non-interacting-particles-these-processes-are-typically-only-describable-by-non-perturbative-techniques-c-for-high-temperatures-the-interaction-with-the-impurity-is-well-described-by-perturbative-scattering-theory-and-the-system-is-once-again-well-described-by-a-fermi-liquid&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2017-kondo/SingleChannelKondov3_hub3993702e29fc2e1bd63ea3b63b75fe8_224511_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;A Fermi  sea of s = 1/2 particles is  (orange) is coupled to a  localized impurity (blue), whose only degree of freedom is its spin orientation S = 1/2. They interact through an anti-ferromagnetic exchange interaction.  a) For low temperatures, the interaction leads to the formation of a spin singlet between a Fermion and the impurity. The high energy cost of creating an excitation in the region of the impurity blocks it entirely from the dynamics of the Fermi sea. The Fermions can now be treated as a Fermi liquid with the impurity region removed. b) For intermediate temperatures the singlet gets deconfined and virtual excitations in the impurity region are allowed. As they involve the neighboring  Fermions, they can lead to strong interactions between the previously non-interacting particles. These processes are typically only describable by non-perturbative techniques. c) For high temperatures, the interaction with the impurity is  well described by perturbative scattering theory and the system is once again well described by a Fermi liquid.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2017-kondo/SingleChannelKondov3_hub3993702e29fc2e1bd63ea3b63b75fe8_224511_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;5278&#34; height=&#34;957&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    A Fermi  sea of s = 1/2 particles is  (orange) is coupled to a  localized impurity (blue), whose only degree of freedom is its spin orientation S = 1/2. They interact through an anti-ferromagnetic exchange interaction.  a) For low temperatures, the interaction leads to the formation of a spin singlet between a Fermion and the impurity. The high energy cost of creating an excitation in the region of the impurity blocks it entirely from the dynamics of the Fermi sea. The Fermions can now be treated as a Fermi liquid with the impurity region removed. b) For intermediate temperatures the singlet gets deconfined and virtual excitations in the impurity region are allowed. As they involve the neighboring  Fermions, they can lead to strong interactions between the previously non-interacting particles. These processes are typically only describable by non-perturbative techniques. c) For high temperatures, the interaction with the impurity is  well described by perturbative scattering theory and the system is once again well described by a Fermi liquid.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-a-fermi-sea-of-s--12-particles-is-orange-is-coupled-to-a--localized-impurity-blue-whose-only-degree-of-freedom-is-its-spin-orientation-s--12-they-interact-through-an-anti-ferromagnetic-exchange-interaction-a-for-low-temperatures-the-interaction-leads-to-the-formation-of-a-spin-singlet-between-a-fermion-and-the-impurity-the-high-energy-cost-of-creating-an-excitation-in-the-region-of-the-impurity-blocks-it-entirely-from-the-dynamics-of-the-fermi-sea-the-fermions-can-now-be-treated-as-a-fermi-liquid-with-the-impurity-region-removed-b-for-intermediate-temperatures-the-singlet-gets-deconfined-and-virtual-excitations-in-the-impurity-region-are-allowed-as-they-involve-the-neighboring-fermions-they-can-lead-to-strong-interactions-between-the-previously-non-interacting-particles-these-processes-are-typically-only-describable-by-non-perturbative-techniques-c-for-high-temperatures-the-interaction-with-the-impurity-is-well-described-by-perturbative-scattering-theory-and-the-system-is-once-again-well-described-by-a-fermi-liquid&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;A Fermi  sea of s = 1/2 particles is  (orange) is coupled to a  localized impurity (blue), whose only degree of freedom is its spin orientation S = 1/2. They interact through an anti-ferromagnetic exchange interaction.  a) For low temperatures, the interaction leads to the formation of a spin singlet between a Fermion and the impurity. The high energy cost of creating an excitation in the region of the impurity blocks it entirely from the dynamics of the Fermi sea. The Fermions can now be treated as a Fermi liquid with the impurity region removed. b) For intermediate temperatures the singlet gets deconfined and virtual excitations in the impurity region are allowed. As they involve the neighboring  Fermions, they can lead to strong interactions between the previously non-interacting particles. These processes are typically only describable by non-perturbative techniques. c) For high temperatures, the interaction with the impurity is  well described by perturbative scattering theory and the system is once again well described by a Fermi liquid.&#34; srcset=&#34;
+               /post/2017-kondo/SingleChannelKondov3_hub3993702e29fc2e1bd63ea3b63b75fe8_224511_8515f3a3dabe55aca2671964d53e9899.png 400w,
+               /post/2017-kondo/SingleChannelKondov3_hub3993702e29fc2e1bd63ea3b63b75fe8_224511_ba4ffef714526cb2f7b180478b87319a.png 760w,
+               /post/2017-kondo/SingleChannelKondov3_hub3993702e29fc2e1bd63ea3b63b75fe8_224511_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2017-kondo/SingleChannelKondov3_hub3993702e29fc2e1bd63ea3b63b75fe8_224511_8515f3a3dabe55aca2671964d53e9899.png&#34;
+               width=&#34;760&#34;
+               height=&#34;138&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      A Fermi  sea of s = 1/2 particles is  (orange) is coupled to a  localized impurity (blue), whose only degree of freedom is its spin orientation S = 1/2. They interact through an anti-ferromagnetic exchange interaction.  a) For low temperatures, the interaction leads to the formation of a spin singlet between a Fermion and the impurity. The high energy cost of creating an excitation in the region of the impurity blocks it entirely from the dynamics of the Fermi sea. The Fermions can now be treated as a Fermi liquid with the impurity region removed. b) For intermediate temperatures the singlet gets deconfined and virtual excitations in the impurity region are allowed. As they involve the neighboring  Fermions, they can lead to strong interactions between the previously non-interacting particles. These processes are typically only describable by non-perturbative techniques. c) For high temperatures, the interaction with the impurity is  well described by perturbative scattering theory and the system is once again well described by a Fermi liquid.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;As sketched in the figure, the following picture has emerged from these works.
 For low temperatures, $T\ll T_K$, the impurity spin is confined in a
 many-body singlet ground state of extension
@@ -4684,12 +4460,6 @@ again like in Eq.(\ref{Eq:DefElectricField})&lt;sup id=&#34;fnref:5&#34;&gt;&lt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -4698,28 +4468,20 @@ again like in Eq.(\ref{Eq:DefElectricField})&lt;sup id=&#34;fnref:5&#34;&gt;&lt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-hopping-in-the-lattice-after-a-u1-gauge-transformation-at-each-hopping-event-to-right-the-particle-acquires-a-phase-e-a_i-a-which-is-proportional-to-the-vector-potential-hopping-to-the-left-leads-to-the-accumulation-of-the-inverse-phase--e-a_ia&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Hopping in the lattice after a U(1) gauge transformation. At each hopping event to right, the particle acquires a phase $e\ A_i\ a$, which is proportional to the vector potential. Hopping to the left leads to the accumulation of the inverse phase $-e\ A_ia$.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1565&#34; height=&#34;336&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Hopping in the lattice after a U(1) gauge transformation. At each hopping event to right, the particle acquires a phase $e\ A_i\ a$, which is proportional to the vector potential. Hopping to the left leads to the accumulation of the inverse phase $-e\ A_ia$.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-hopping-in-the-lattice-after-a-u1-gauge-transformation-at-each-hopping-event-to-right-the-particle-acquires-a-phase-e-a_i-a-which-is-proportional-to-the-vector-potential-hopping-to-the-left-leads-to-the-accumulation-of-the-inverse-phase--e-a_ia&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Hopping in the lattice after a U(1) gauge transformation. At each hopping event to right, the particle acquires a phase $e\ A_i\ a$, which is proportional to the vector potential. Hopping to the left leads to the accumulation of the inverse phase $-e\ A_ia$.&#34; srcset=&#34;
+               /post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_c66c7e0126dad85970f85f829806dda3.png 400w,
+               /post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_0b34f7a3b15c065a63b3d1a415949a04.png 760w,
+               /post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_c66c7e0126dad85970f85f829806dda3.png&#34;
+               width=&#34;760&#34;
+               height=&#34;163&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Hopping in the lattice after a U(1) gauge transformation. At each hopping event to right, the particle acquires a phase $e\ A_i\ a$, which is proportional to the vector potential. Hopping to the left leads to the accumulation of the inverse phase $-e\ A_ia$.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;from-the-gauge-symmetry-to-particle-conservation&#34;&gt;From the gauge symmetry to particle conservation&lt;/h2&gt;
 &lt;p&gt;We have seen that the equations of motion remain the same if the wave
 function is multiplied by a phase that is constant in space and time. We
@@ -4764,12 +4526,6 @@ $$&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -4778,28 +4534,20 @@ $$&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-gauss-law-of-electrodynamics-as-the-charge-blue-is-displaced-the-electric-field-is-also-modified-this-perfect-correlation-between-electric-field-and-matter-field-is-one-of-the-cornerstones-of-any-realization-of-dynamical-gauge-fields-in-synthetic-systems&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_2000x2000_fit_lanczos.gif&#34; data-caption=&#34;Gauss law of electrodynamics. As the charge (blue) is displaced, the electric field is also modified. This perfect correlation between electric field and matter field, is one of the cornerstones of any realization of dynamical gauge fields in synthetic systems.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;600&#34; height=&#34;400&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    Gauss law of electrodynamics. As the charge (blue) is displaced, the electric field is also modified. This perfect correlation between electric field and matter field, is one of the cornerstones of any realization of dynamical gauge fields in synthetic systems.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-gauss-law-of-electrodynamics-as-the-charge-blue-is-displaced-the-electric-field-is-also-modified-this-perfect-correlation-between-electric-field-and-matter-field-is-one-of-the-cornerstones-of-any-realization-of-dynamical-gauge-fields-in-synthetic-systems&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Gauss law of electrodynamics. As the charge (blue) is displaced, the electric field is also modified. This perfect correlation between electric field and matter field, is one of the cornerstones of any realization of dynamical gauge fields in synthetic systems.&#34; srcset=&#34;
+               /post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_6df0b0122e12d488e5d13983c96ea58f.gif 400w,
+               /post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_9da1da5a9428bcdbf9ebfea841e69455.gif 760w,
+               /post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_1200x1200_fit_lanczos.gif 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_6df0b0122e12d488e5d13983c96ea58f.gif&#34;
+               width=&#34;600&#34;
+               height=&#34;400&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Gauss law of electrodynamics. As the charge (blue) is displaced, the electric field is also modified. This perfect correlation between electric field and matter field, is one of the cornerstones of any realization of dynamical gauge fields in synthetic systems.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;To implement these two constraint, we will have to modify the underlying
 Hamiltonian. So we look once again at the Hamiltonian (\ref{Eq:LatticeWithMagField}) and rewrite it in a more suggestive
 way:&lt;/p&gt;

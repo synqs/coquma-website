@@ -7,7 +7,7 @@
     <description>ultracold mixtures</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Tue, 17 Oct 2017 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://jendrzejewski.synqs.org/media/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>ultracold mixtures</title>
       <link>https://jendrzejewski.synqs.org/tag/ultracold-mixtures/</link>
     </image>
@@ -240,12 +240,6 @@ a remotely understandable way to me).&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -254,28 +248,20 @@ a remotely understandable way to me).&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-a-fermi-sea-of-s--12-particles-is-orange-is-coupled-to-a--localized-impurity-blue-whose-only-degree-of-freedom-is-its-spin-orientation-s--12-they-interact-through-an-anti-ferromagnetic-exchange-interaction-a-for-low-temperatures-the-interaction-leads-to-the-formation-of-a-spin-singlet-between-a-fermion-and-the-impurity-the-high-energy-cost-of-creating-an-excitation-in-the-region-of-the-impurity-blocks-it-entirely-from-the-dynamics-of-the-fermi-sea-the-fermions-can-now-be-treated-as-a-fermi-liquid-with-the-impurity-region-removed-b-for-intermediate-temperatures-the-singlet-gets-deconfined-and-virtual-excitations-in-the-impurity-region-are-allowed-as-they-involve-the-neighboring-fermions-they-can-lead-to-strong-interactions-between-the-previously-non-interacting-particles-these-processes-are-typically-only-describable-by-non-perturbative-techniques-c-for-high-temperatures-the-interaction-with-the-impurity-is-well-described-by-perturbative-scattering-theory-and-the-system-is-once-again-well-described-by-a-fermi-liquid&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2017-kondo/SingleChannelKondov3_hub3993702e29fc2e1bd63ea3b63b75fe8_224511_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;A Fermi  sea of s = 1/2 particles is  (orange) is coupled to a  localized impurity (blue), whose only degree of freedom is its spin orientation S = 1/2. They interact through an anti-ferromagnetic exchange interaction.  a) For low temperatures, the interaction leads to the formation of a spin singlet between a Fermion and the impurity. The high energy cost of creating an excitation in the region of the impurity blocks it entirely from the dynamics of the Fermi sea. The Fermions can now be treated as a Fermi liquid with the impurity region removed. b) For intermediate temperatures the singlet gets deconfined and virtual excitations in the impurity region are allowed. As they involve the neighboring  Fermions, they can lead to strong interactions between the previously non-interacting particles. These processes are typically only describable by non-perturbative techniques. c) For high temperatures, the interaction with the impurity is  well described by perturbative scattering theory and the system is once again well described by a Fermi liquid.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2017-kondo/SingleChannelKondov3_hub3993702e29fc2e1bd63ea3b63b75fe8_224511_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;5278&#34; height=&#34;957&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    A Fermi  sea of s = 1/2 particles is  (orange) is coupled to a  localized impurity (blue), whose only degree of freedom is its spin orientation S = 1/2. They interact through an anti-ferromagnetic exchange interaction.  a) For low temperatures, the interaction leads to the formation of a spin singlet between a Fermion and the impurity. The high energy cost of creating an excitation in the region of the impurity blocks it entirely from the dynamics of the Fermi sea. The Fermions can now be treated as a Fermi liquid with the impurity region removed. b) For intermediate temperatures the singlet gets deconfined and virtual excitations in the impurity region are allowed. As they involve the neighboring  Fermions, they can lead to strong interactions between the previously non-interacting particles. These processes are typically only describable by non-perturbative techniques. c) For high temperatures, the interaction with the impurity is  well described by perturbative scattering theory and the system is once again well described by a Fermi liquid.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-a-fermi-sea-of-s--12-particles-is-orange-is-coupled-to-a--localized-impurity-blue-whose-only-degree-of-freedom-is-its-spin-orientation-s--12-they-interact-through-an-anti-ferromagnetic-exchange-interaction-a-for-low-temperatures-the-interaction-leads-to-the-formation-of-a-spin-singlet-between-a-fermion-and-the-impurity-the-high-energy-cost-of-creating-an-excitation-in-the-region-of-the-impurity-blocks-it-entirely-from-the-dynamics-of-the-fermi-sea-the-fermions-can-now-be-treated-as-a-fermi-liquid-with-the-impurity-region-removed-b-for-intermediate-temperatures-the-singlet-gets-deconfined-and-virtual-excitations-in-the-impurity-region-are-allowed-as-they-involve-the-neighboring-fermions-they-can-lead-to-strong-interactions-between-the-previously-non-interacting-particles-these-processes-are-typically-only-describable-by-non-perturbative-techniques-c-for-high-temperatures-the-interaction-with-the-impurity-is-well-described-by-perturbative-scattering-theory-and-the-system-is-once-again-well-described-by-a-fermi-liquid&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;A Fermi  sea of s = 1/2 particles is  (orange) is coupled to a  localized impurity (blue), whose only degree of freedom is its spin orientation S = 1/2. They interact through an anti-ferromagnetic exchange interaction.  a) For low temperatures, the interaction leads to the formation of a spin singlet between a Fermion and the impurity. The high energy cost of creating an excitation in the region of the impurity blocks it entirely from the dynamics of the Fermi sea. The Fermions can now be treated as a Fermi liquid with the impurity region removed. b) For intermediate temperatures the singlet gets deconfined and virtual excitations in the impurity region are allowed. As they involve the neighboring  Fermions, they can lead to strong interactions between the previously non-interacting particles. These processes are typically only describable by non-perturbative techniques. c) For high temperatures, the interaction with the impurity is  well described by perturbative scattering theory and the system is once again well described by a Fermi liquid.&#34; srcset=&#34;
+               /post/2017-kondo/SingleChannelKondov3_hub3993702e29fc2e1bd63ea3b63b75fe8_224511_8515f3a3dabe55aca2671964d53e9899.png 400w,
+               /post/2017-kondo/SingleChannelKondov3_hub3993702e29fc2e1bd63ea3b63b75fe8_224511_ba4ffef714526cb2f7b180478b87319a.png 760w,
+               /post/2017-kondo/SingleChannelKondov3_hub3993702e29fc2e1bd63ea3b63b75fe8_224511_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2017-kondo/SingleChannelKondov3_hub3993702e29fc2e1bd63ea3b63b75fe8_224511_8515f3a3dabe55aca2671964d53e9899.png&#34;
+               width=&#34;760&#34;
+               height=&#34;138&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      A Fermi  sea of s = 1/2 particles is  (orange) is coupled to a  localized impurity (blue), whose only degree of freedom is its spin orientation S = 1/2. They interact through an anti-ferromagnetic exchange interaction.  a) For low temperatures, the interaction leads to the formation of a spin singlet between a Fermion and the impurity. The high energy cost of creating an excitation in the region of the impurity blocks it entirely from the dynamics of the Fermi sea. The Fermions can now be treated as a Fermi liquid with the impurity region removed. b) For intermediate temperatures the singlet gets deconfined and virtual excitations in the impurity region are allowed. As they involve the neighboring  Fermions, they can lead to strong interactions between the previously non-interacting particles. These processes are typically only describable by non-perturbative techniques. c) For high temperatures, the interaction with the impurity is  well described by perturbative scattering theory and the system is once again well described by a Fermi liquid.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;As sketched in the figure, the following picture has emerged from these works.
 For low temperatures, $T\ll T_K$, the impurity spin is confined in a
 many-body singlet ground state of extension

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jolan Kerrien | Jendrzejewski Group</title>
+    <link>https://jendrzejewski.synqs.org/author/jolan-kerrien/</link>
+      <atom:link href="https://jendrzejewski.synqs.org/author/jolan-kerrien/index.xml" rel="self" type="application/rss+xml" />
+    <description>Jolan Kerrien</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright>
+    <image>
+      <url>https://jendrzejewski.synqs.org/author/jolan-kerrien/avatar_hucc15352c1b94d7fe7137a4a35a9d7e3b_29893_270x270_fill_q75_lanczos_center.jpg</url>
+      <title>Jolan Kerrien</title>
+      <link>https://jendrzejewski.synqs.org/author/jolan-kerrien/</link>
+    </image>
+    
+  </channel>
+</rss>

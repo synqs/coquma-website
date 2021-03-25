@@ -7,10 +7,18 @@
     <description>Publications</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright>
     <image>
-      <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://jendrzejewski.synqs.org/media/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>Publications</title>
       <link>https://jendrzejewski.synqs.org/publication/</link>
     </image>
+    
+    <item>
+      <title>Direct control of high magnetic fields for cold atom experiments based on NV centers</title>
+      <link>https://jendrzejewski.synqs.org/publication/hesse-2020/</link>
+      <pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/hesse-2020/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Stochastic dynamics of a few sodium atoms in a cold potassium cloud</title>
@@ -65,14 +73,6 @@
       <link>https://jendrzejewski.synqs.org/publication/thesis/mil-2020/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://jendrzejewski.synqs.org/publication/thesis/mil-2020/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Direct control of high magnetic fields for cold atom experiments based on NV centers</title>
-      <link>https://jendrzejewski.synqs.org/publication/hesse-2020/</link>
-      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://jendrzejewski.synqs.org/publication/hesse-2020/</guid>
       <description></description>
     </item>
     

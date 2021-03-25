@@ -7,7 +7,7 @@
     <description>lattice gauge theory</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Tue, 13 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://jendrzejewski.synqs.org/media/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>lattice gauge theory</title>
       <link>https://jendrzejewski.synqs.org/tag/lattice-gauge-theory/</link>
     </image>
@@ -442,12 +442,6 @@ again like in Eq.(\ref{Eq:DefElectricField})&lt;sup id=&#34;fnref:5&#34;&gt;&lt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -456,28 +450,20 @@ again like in Eq.(\ref{Eq:DefElectricField})&lt;sup id=&#34;fnref:5&#34;&gt;&lt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-hopping-in-the-lattice-after-a-u1-gauge-transformation-at-each-hopping-event-to-right-the-particle-acquires-a-phase-e-a_i-a-which-is-proportional-to-the-vector-potential-hopping-to-the-left-leads-to-the-accumulation-of-the-inverse-phase--e-a_ia&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Hopping in the lattice after a U(1) gauge transformation. At each hopping event to right, the particle acquires a phase $e\ A_i\ a$, which is proportional to the vector potential. Hopping to the left leads to the accumulation of the inverse phase $-e\ A_ia$.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1565&#34; height=&#34;336&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Hopping in the lattice after a U(1) gauge transformation. At each hopping event to right, the particle acquires a phase $e\ A_i\ a$, which is proportional to the vector potential. Hopping to the left leads to the accumulation of the inverse phase $-e\ A_ia$.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-hopping-in-the-lattice-after-a-u1-gauge-transformation-at-each-hopping-event-to-right-the-particle-acquires-a-phase-e-a_i-a-which-is-proportional-to-the-vector-potential-hopping-to-the-left-leads-to-the-accumulation-of-the-inverse-phase--e-a_ia&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Hopping in the lattice after a U(1) gauge transformation. At each hopping event to right, the particle acquires a phase $e\ A_i\ a$, which is proportional to the vector potential. Hopping to the left leads to the accumulation of the inverse phase $-e\ A_ia$.&#34; srcset=&#34;
+               /post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_c66c7e0126dad85970f85f829806dda3.png 400w,
+               /post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_0b34f7a3b15c065a63b3d1a415949a04.png 760w,
+               /post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/SimpleHoppingv2_hucb7f140b7804cc42e68da067f954808d_27100_c66c7e0126dad85970f85f829806dda3.png&#34;
+               width=&#34;760&#34;
+               height=&#34;163&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Hopping in the lattice after a U(1) gauge transformation. At each hopping event to right, the particle acquires a phase $e\ A_i\ a$, which is proportional to the vector potential. Hopping to the left leads to the accumulation of the inverse phase $-e\ A_ia$.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;from-the-gauge-symmetry-to-particle-conservation&#34;&gt;From the gauge symmetry to particle conservation&lt;/h2&gt;
 &lt;p&gt;We have seen that the equations of motion remain the same if the wave
 function is multiplied by a phase that is constant in space and time. We
@@ -522,12 +508,6 @@ $$&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -536,28 +516,20 @@ $$&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-gauss-law-of-electrodynamics-as-the-charge-blue-is-displaced-the-electric-field-is-also-modified-this-perfect-correlation-between-electric-field-and-matter-field-is-one-of-the-cornerstones-of-any-realization-of-dynamical-gauge-fields-in-synthetic-systems&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_2000x2000_fit_lanczos.gif&#34; data-caption=&#34;Gauss law of electrodynamics. As the charge (blue) is displaced, the electric field is also modified. This perfect correlation between electric field and matter field, is one of the cornerstones of any realization of dynamical gauge fields in synthetic systems.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;600&#34; height=&#34;400&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    Gauss law of electrodynamics. As the charge (blue) is displaced, the electric field is also modified. This perfect correlation between electric field and matter field, is one of the cornerstones of any realization of dynamical gauge fields in synthetic systems.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-gauss-law-of-electrodynamics-as-the-charge-blue-is-displaced-the-electric-field-is-also-modified-this-perfect-correlation-between-electric-field-and-matter-field-is-one-of-the-cornerstones-of-any-realization-of-dynamical-gauge-fields-in-synthetic-systems&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Gauss law of electrodynamics. As the charge (blue) is displaced, the electric field is also modified. This perfect correlation between electric field and matter field, is one of the cornerstones of any realization of dynamical gauge fields in synthetic systems.&#34; srcset=&#34;
+               /post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_6df0b0122e12d488e5d13983c96ea58f.gif 400w,
+               /post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_9da1da5a9428bcdbf9ebfea841e69455.gif 760w,
+               /post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_1200x1200_fit_lanczos.gif 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2017-intro-dynamical/gauss_law_hu566a4ca741b2949d7c7ccece00ed6f1a_320954_6df0b0122e12d488e5d13983c96ea58f.gif&#34;
+               width=&#34;600&#34;
+               height=&#34;400&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Gauss law of electrodynamics. As the charge (blue) is displaced, the electric field is also modified. This perfect correlation between electric field and matter field, is one of the cornerstones of any realization of dynamical gauge fields in synthetic systems.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;To implement these two constraint, we will have to modify the underlying
 Hamiltonian. So we look once again at the Hamiltonian (\ref{Eq:LatticeWithMagField}) and rewrite it in a more suggestive
 way:&lt;/p&gt;

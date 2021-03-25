@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cold atoms | Jendrzejewski Group</title>
+    <title>cold atoms | Jendrzejewski Group</title>
     <link>https://jendrzejewski.synqs.org/tag/cold-atoms/</link>
       <atom:link href="https://jendrzejewski.synqs.org/tag/cold-atoms/index.xml" rel="self" type="application/rss+xml" />
-    <description>Cold atoms</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Fri, 13 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <description>cold atoms</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Fri, 19 Feb 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
-      <title>Cold atoms</title>
+      <url>https://jendrzejewski.synqs.org/media/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <title>cold atoms</title>
       <link>https://jendrzejewski.synqs.org/tag/cold-atoms/</link>
     </image>
+    
+    <item>
+      <title>Direct control of high magnetic fields for cold atom experiments based on NV centers</title>
+      <link>https://jendrzejewski.synqs.org/publication/hesse-2020/</link>
+      <pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/hesse-2020/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Exploring and Benchmarking Quantum-assisted Neural Networks with Qubit Layers</title>

@@ -7,7 +7,7 @@
     <description>PID</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Sat, 28 Apr 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://jendrzejewski.synqs.org/images/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <url>https://jendrzejewski.synqs.org/media/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
       <title>PID</title>
       <link>https://jendrzejewski.synqs.org/tag/pid/</link>
     </image>
@@ -73,12 +73,6 @@ input for some control law $K(s)$ that tries to minimize the error signal.&lt;/p
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -87,28 +81,20 @@ input for some control law $K(s)$ that tries to minimize the error signal.&lt;/p
 
 
 
-
-
-
-&lt;figure id=&#34;figure-block-diagram-showing-a-generic-feedback-control-the-system-gs-is-controlled-by-the-control-law-ks&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/text10419-5_huc335cff274b836978f0b8b676a7977d0_19219_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Block diagram showing a generic feedback control. The system G(s) is controlled by the control law K(s).&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/text10419-5_huc335cff274b836978f0b8b676a7977d0_19219_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1089&#34; height=&#34;211&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Block diagram showing a generic feedback control. The system G(s) is controlled by the control law K(s).
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-block-diagram-showing-a-generic-feedback-control-the-system-gs-is-controlled-by-the-control-law-ks&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Block diagram showing a generic feedback control. The system G(s) is controlled by the control law K(s).&#34; srcset=&#34;
+               /post/2018-feedback-for-amo-experimentalists/text10419-5_huc335cff274b836978f0b8b676a7977d0_19219_f9c82c0c1f625d71d8a20d79a08d2c2f.png 400w,
+               /post/2018-feedback-for-amo-experimentalists/text10419-5_huc335cff274b836978f0b8b676a7977d0_19219_588c740c2c764e83a79ab7ee5d5c6a26.png 760w,
+               /post/2018-feedback-for-amo-experimentalists/text10419-5_huc335cff274b836978f0b8b676a7977d0_19219_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/text10419-5_huc335cff274b836978f0b8b676a7977d0_19219_f9c82c0c1f625d71d8a20d79a08d2c2f.png&#34;
+               width=&#34;760&#34;
+               height=&#34;147&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Block diagram showing a generic feedback control. The system G(s) is controlled by the control law K(s).
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;Here we analyze the system in frequency space, where $s=i\omega$. This
 is a convenient way to analyze control systems. An easy way to measure
 quantity of such a system is the closed-loop transfer function $T$:&lt;/p&gt;
@@ -147,12 +133,6 @@ output.&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -161,28 +141,20 @@ output.&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-same-system-as-fig-1-but-added-disturbances-ds-and-detector-noise&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/path3909_hu612e52a87ca1e50fe35ee180e794dd16_25851_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Same system as Fig. 1, but added disturbances d(s) and detector noise.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/path3909_hu612e52a87ca1e50fe35ee180e794dd16_25851_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1089&#34; height=&#34;439&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Same system as Fig. 1, but added disturbances d(s) and detector noise.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-same-system-as-fig-1-but-added-disturbances-ds-and-detector-noise&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Same system as Fig. 1, but added disturbances d(s) and detector noise.&#34; srcset=&#34;
+               /post/2018-feedback-for-amo-experimentalists/path3909_hu612e52a87ca1e50fe35ee180e794dd16_25851_34338db03a6edb92414705ec6fefdd59.png 400w,
+               /post/2018-feedback-for-amo-experimentalists/path3909_hu612e52a87ca1e50fe35ee180e794dd16_25851_1867862db09374fc362d44283dde9e4b.png 760w,
+               /post/2018-feedback-for-amo-experimentalists/path3909_hu612e52a87ca1e50fe35ee180e794dd16_25851_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/path3909_hu612e52a87ca1e50fe35ee180e794dd16_25851_34338db03a6edb92414705ec6fefdd59.png&#34;
+               width=&#34;760&#34;
+               height=&#34;306&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Same system as Fig. 1, but added disturbances d(s) and detector noise.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;Another trade-off - which holds for almost all systems (to be exact: if
 KG has at least two more poles than zeros, and has no poles in the right
 half plane (is stable)) - is the following:
@@ -235,12 +207,6 @@ frequency regime (see Fig. 3 taken from
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -249,28 +215,20 @@ frequency regime (see Fig. 3 taken from
 
 
 
-
-
-
-&lt;figure id=&#34;figure-if-the-sensitivity-to-disturbances-is-suppressed-in-the-low-frequency-regime-it-is-necessarily-increased-in-some-higher-frequency-regime&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/slide_51_hu6816623d607af0873b9af7de55be3880_64067_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;If the Sensitivity to disturbances is suppressed in the low frequency regime, it is necessarily increased in some higher frequency regime.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/slide_51_hu6816623d607af0873b9af7de55be3880_64067_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;374&#34; height=&#34;279&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    If the Sensitivity to disturbances is suppressed in the low frequency regime, it is necessarily increased in some higher frequency regime.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-if-the-sensitivity-to-disturbances-is-suppressed-in-the-low-frequency-regime-it-is-necessarily-increased-in-some-higher-frequency-regime&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;If the Sensitivity to disturbances is suppressed in the low frequency regime, it is necessarily increased in some higher frequency regime.&#34; srcset=&#34;
+               /post/2018-feedback-for-amo-experimentalists/slide_51_hu6816623d607af0873b9af7de55be3880_64067_8671834933982380f935c3b83df9bab8.png 400w,
+               /post/2018-feedback-for-amo-experimentalists/slide_51_hu6816623d607af0873b9af7de55be3880_64067_35adc1b606a9a53596ca1ccd128104fa.png 760w,
+               /post/2018-feedback-for-amo-experimentalists/slide_51_hu6816623d607af0873b9af7de55be3880_64067_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/slide_51_hu6816623d607af0873b9af7de55be3880_64067_8671834933982380f935c3b83df9bab8.png&#34;
+               width=&#34;374&#34;
+               height=&#34;279&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      If the Sensitivity to disturbances is suppressed in the low frequency regime, it is necessarily increased in some higher frequency regime.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;Now before looking at the different systems $G(s)$, we have a look at the
 control law $K(s)$. The most-used controller is the PID-controller, or
 very often experimentally only a PI-controller. The P stands for
@@ -292,12 +250,6 @@ by modulating the RF power.&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -306,28 +258,20 @@ by modulating the RF power.&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-a-photodiode-gets-a-fraction-of-the-first-order-aom-beam-the-power-of-this-beam-can-be-modulated-via-rf-amplitude-modulation&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/rect14858_hu24682bd63c5f5e4ddde27c5da8ea2c1a_124510_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;A photodiode gets a fraction of the first order AOM beam. The power of this beam can be modulated via RF amplitude modulation.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/rect14858_hu24682bd63c5f5e4ddde27c5da8ea2c1a_124510_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1198&#34; height=&#34;702&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    A photodiode gets a fraction of the first order AOM beam. The power of this beam can be modulated via RF amplitude modulation.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-a-photodiode-gets-a-fraction-of-the-first-order-aom-beam-the-power-of-this-beam-can-be-modulated-via-rf-amplitude-modulation&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;A photodiode gets a fraction of the first order AOM beam. The power of this beam can be modulated via RF amplitude modulation.&#34; srcset=&#34;
+               /post/2018-feedback-for-amo-experimentalists/rect14858_hu24682bd63c5f5e4ddde27c5da8ea2c1a_124510_842a72f689829f3ec86b7ae6a9516275.png 400w,
+               /post/2018-feedback-for-amo-experimentalists/rect14858_hu24682bd63c5f5e4ddde27c5da8ea2c1a_124510_8771b3f8b41c6490d8a3580708310492.png 760w,
+               /post/2018-feedback-for-amo-experimentalists/rect14858_hu24682bd63c5f5e4ddde27c5da8ea2c1a_124510_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/rect14858_hu24682bd63c5f5e4ddde27c5da8ea2c1a_124510_842a72f689829f3ec86b7ae6a9516275.png&#34;
+               width=&#34;760&#34;
+               height=&#34;445&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      A photodiode gets a fraction of the first order AOM beam. The power of this beam can be modulated via RF amplitude modulation.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;the-system&#34;&gt;The System&lt;/h2&gt;
 &lt;p&gt;How to characterize the system without PI contol? (&amp;ldquo;system&amp;rdquo; refers to
 AOM+Driver+AOM+Photodiode) The tools needed for that are a function
@@ -339,12 +283,6 @@ in the &lt;a href=&#34;https://www.redpitaya.com/&#34; target=&#34;_blank&#34; r
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -353,28 +291,20 @@ in the &lt;a href=&#34;https://www.redpitaya.com/&#34; target=&#34;_blank&#34; r
 
 
 
-
-
-
-&lt;figure id=&#34;figure-this-shows-how-to-characetrize-the-system-without-pi-controller-the-aom-driver-expects-a-signal-from-0-to-1v-to-attenuate-the-rf-signal-accordingly-this-again-changes-the-1st-order-beam-power-and-therefore-the-voltage-on-the-photodiode-the-redpitaya-can-supply-the-control-voltage-for-the-driver-as-well-as-measure-the-signal-on-the-photodiode&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/text9831_huf6e232415135fb2a73a5885a58f3d88f_151335_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;This shows how to characetrize the system without PI-controller. The AOM Driver expects a signal from 0 to 1V to attenuate the RF signal accordingly. This again changes the 1st order beam power and therefore the voltage on the photodiode. The RedPitaya can supply the control voltage for the driver as well as measure the signal on the photodiode.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/text9831_huf6e232415135fb2a73a5885a58f3d88f_151335_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1204&#34; height=&#34;736&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    This shows how to characetrize the system without PI-controller. The AOM Driver expects a signal from 0 to 1V to attenuate the RF signal accordingly. This again changes the 1st order beam power and therefore the voltage on the photodiode. The RedPitaya can supply the control voltage for the driver as well as measure the signal on the photodiode.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-this-shows-how-to-characetrize-the-system-without-pi-controller-the-aom-driver-expects-a-signal-from-0-to-1v-to-attenuate-the-rf-signal-accordingly-this-again-changes-the-1st-order-beam-power-and-therefore-the-voltage-on-the-photodiode-the-redpitaya-can-supply-the-control-voltage-for-the-driver-as-well-as-measure-the-signal-on-the-photodiode&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;This shows how to characetrize the system without PI-controller. The AOM Driver expects a signal from 0 to 1V to attenuate the RF signal accordingly. This again changes the 1st order beam power and therefore the voltage on the photodiode. The RedPitaya can supply the control voltage for the driver as well as measure the signal on the photodiode.&#34; srcset=&#34;
+               /post/2018-feedback-for-amo-experimentalists/text9831_huf6e232415135fb2a73a5885a58f3d88f_151335_3665925652fd2de3a16d159651971bc3.png 400w,
+               /post/2018-feedback-for-amo-experimentalists/text9831_huf6e232415135fb2a73a5885a58f3d88f_151335_a60152a2b91af9a6da4a88b3aed2c36c.png 760w,
+               /post/2018-feedback-for-amo-experimentalists/text9831_huf6e232415135fb2a73a5885a58f3d88f_151335_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/text9831_huf6e232415135fb2a73a5885a58f3d88f_151335_3665925652fd2de3a16d159651971bc3.png&#34;
+               width=&#34;760&#34;
+               height=&#34;465&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      This shows how to characetrize the system without PI-controller. The AOM Driver expects a signal from 0 to 1V to attenuate the RF signal accordingly. This again changes the 1st order beam power and therefore the voltage on the photodiode. The RedPitaya can supply the control voltage for the driver as well as measure the signal on the photodiode.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;So what do we measure? As mentioned in the Introduction, we can measure
 the closed-loop transfer function $T$ and then calculate the open-loop transfer function $H$ to look for a desired loopshape.&lt;/p&gt;
 &lt;h2 id=&#34;how-to-change-laser-power-by-modulating-rf-power&#34;&gt;How to change laser power by modulating RF power&lt;/h2&gt;
@@ -393,12 +323,6 @@ at the AOM driver and the dependency is nonlinear (see figure 6).&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -407,28 +331,20 @@ at the AOM driver and the dependency is nonlinear (see figure 6).&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-relationship-between-control-voltage-and-photodiode-voltage-not-that-the-y-axis-is-basically-arbitrary-as-this-depends-on-pick-off-ratio-and-initial-laser-power&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/nonlinearity_hu134c9bc7b615b84c354e5490970f8198_28067_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Relationship between control voltage and photodiode voltage. Not that the y-axis is basically arbitrary, as this depends on pick-off ratio and initial laser power.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/nonlinearity_hu134c9bc7b615b84c354e5490970f8198_28067_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1080&#34; height=&#34;720&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Relationship between control voltage and photodiode voltage. Not that the y-axis is basically arbitrary, as this depends on pick-off ratio and initial laser power.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-relationship-between-control-voltage-and-photodiode-voltage-not-that-the-y-axis-is-basically-arbitrary-as-this-depends-on-pick-off-ratio-and-initial-laser-power&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Relationship between control voltage and photodiode voltage. Not that the y-axis is basically arbitrary, as this depends on pick-off ratio and initial laser power.&#34; srcset=&#34;
+               /post/2018-feedback-for-amo-experimentalists/nonlinearity_hu134c9bc7b615b84c354e5490970f8198_28067_de9a83f42b1d36daf6f7a1a33cc5e54d.png 400w,
+               /post/2018-feedback-for-amo-experimentalists/nonlinearity_hu134c9bc7b615b84c354e5490970f8198_28067_7f1eea58bb8c53d16190de4a9e3ef87c.png 760w,
+               /post/2018-feedback-for-amo-experimentalists/nonlinearity_hu134c9bc7b615b84c354e5490970f8198_28067_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/nonlinearity_hu134c9bc7b615b84c354e5490970f8198_28067_de9a83f42b1d36daf6f7a1a33cc5e54d.png&#34;
+               width=&#34;760&#34;
+               height=&#34;507&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Relationship between control voltage and photodiode voltage. Not that the y-axis is basically arbitrary, as this depends on pick-off ratio and initial laser power.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;analysis-in-frequency-space-with-bode-plots&#34;&gt;Analysis in Frequency space with Bode plots&lt;/h2&gt;
 &lt;p&gt;The RedPitaya with its network analyzer module, allows us to
 characterize the setup in frequency space. In the figure above we saw how the
@@ -455,12 +371,6 @@ decreases.&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -469,28 +379,20 @@ decreases.&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-system-transfer-function-obtained-by-modulating-the-rf-attenuation-of-the-aom-driver-with-different-frequencies-and-measuring-the-corresponding-signal-on-the-photodiodedo-not-get-confused-by-theabsolute-magnitude-of-the-gain-values-a-sinusoidal-signal-with-1mv-amplitude-going-into-the-aom-driver-doesnot-correspond-to-a-signal-with-1mv-on-the-photodiode-this-is-for-example-dependent-on-the-offset-because-of-the-slope-or-the-photodiode-amplification-therelativenumbers-however-give-you-insight-in-attenuation-at-higher-frequencies-and-therefore-system-bandwidth&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/System-RF-Source&amp;#43;AOM&amp;#43;Photodiode_huab12a83c8241a24735c7173068226d83_28288_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;System Transfer Function: Obtained by modulating the RF attenuation of the AOM driver with different frequencies and measuring the corresponding signal on the Photodiode. Do not get confused by the absolute Magnitude of the Gain values: A sinusoidal signal with 1mV amplitude going into the AOM driver does not correspond to a signal with 1mV on the photodiode. This is for example dependent on the offset (because of the slope) or the photodiode amplification. The relative numbers however give you insight in attenuation at higher frequencies and therefore System bandwidth.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/System-RF-Source&amp;#43;AOM&amp;#43;Photodiode_huab12a83c8241a24735c7173068226d83_28288_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;540&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    System Transfer Function: Obtained by modulating the RF attenuation of the AOM driver with different frequencies and measuring the corresponding signal on the Photodiode. Do not get confused by the absolute Magnitude of the Gain values: A sinusoidal signal with 1mV amplitude going into the AOM driver does not correspond to a signal with 1mV on the photodiode. This is for example dependent on the offset (because of the slope) or the photodiode amplification. The relative numbers however give you insight in attenuation at higher frequencies and therefore System bandwidth.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-system-transfer-function-obtained-by-modulating-the-rf-attenuation-of-the-aom-driver-with-different-frequencies-and-measuring-the-corresponding-signal-on-the-photodiodedo-not-get-confused-by-theabsolute-magnitude-of-the-gain-values-a-sinusoidal-signal-with-1mv-amplitude-going-into-the-aom-driver-doesnot-correspond-to-a-signal-with-1mv-on-the-photodiode-this-is-for-example-dependent-on-the-offset-because-of-the-slope-or-the-photodiode-amplification-therelativenumbers-however-give-you-insight-in-attenuation-at-higher-frequencies-and-therefore-system-bandwidth&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;System Transfer Function: Obtained by modulating the RF attenuation of the AOM driver with different frequencies and measuring the corresponding signal on the Photodiode. Do not get confused by the absolute Magnitude of the Gain values: A sinusoidal signal with 1mV amplitude going into the AOM driver does not correspond to a signal with 1mV on the photodiode. This is for example dependent on the offset (because of the slope) or the photodiode amplification. The relative numbers however give you insight in attenuation at higher frequencies and therefore System bandwidth.&#34; srcset=&#34;
+               /post/2018-feedback-for-amo-experimentalists/System-RF-Source&amp;#43;AOM&amp;#43;Photodiode_huab12a83c8241a24735c7173068226d83_28288_9cdd4391aa913f4dbe548dd40137d7e3.png 400w,
+               /post/2018-feedback-for-amo-experimentalists/System-RF-Source&amp;#43;AOM&amp;#43;Photodiode_huab12a83c8241a24735c7173068226d83_28288_2d92aafca2bc4a83d26177e34e81ea98.png 760w,
+               /post/2018-feedback-for-amo-experimentalists/System-RF-Source&amp;#43;AOM&amp;#43;Photodiode_huab12a83c8241a24735c7173068226d83_28288_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/System-RF-Source&amp;#43;AOM&amp;#43;Photodiode_huab12a83c8241a24735c7173068226d83_28288_9cdd4391aa913f4dbe548dd40137d7e3.png&#34;
+               width=&#34;720&#34;
+               height=&#34;540&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      System Transfer Function: Obtained by modulating the RF attenuation of the AOM driver with different frequencies and measuring the corresponding signal on the Photodiode. Do not get confused by the absolute Magnitude of the Gain values: A sinusoidal signal with 1mV amplitude going into the AOM driver does not correspond to a signal with 1mV on the photodiode. This is for example dependent on the offset (because of the slope) or the photodiode amplification. The relative numbers however give you insight in attenuation at higher frequencies and therefore System bandwidth.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;It&amp;rsquo;s clear that this system doesn&amp;rsquo;t have any resonances and behaves
 quiet nicely in the displayed frequency regime. Therefore time-domain
 tuning methods for a servo like Ziegler-Nichols tuning can be effective
@@ -514,12 +416,6 @@ sensitivity &lt;em&gt;S&lt;/em&gt;.&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -528,28 +424,20 @@ sensitivity &lt;em&gt;S&lt;/em&gt;.&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-closed-loop-transfer-function-t-measured-by-the-redpitaya-for-low-frequencies-the-photodiode-voltage-follows-the-modulation-well-for-higher-frequencies-the-gain-of-the-system-decreases-for-higher-proportional-constant-the-transfer-function-does-not-decrease-as-much-at-higher-frequencies&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Closed-loop%20Transfer%20function_hudc202502fc277538f2bea1056f0e1ecb_39752_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Closed-loop transfer function T measured by the RedPitaya. For low frequencies the photodiode voltage follows the modulation well. For higher frequencies the gain of the system decreases. For higher proportional constant the transfer function does not decrease as much at higher frequencies.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Closed-loop%20Transfer%20function_hudc202502fc277538f2bea1056f0e1ecb_39752_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;540&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Closed-loop transfer function T measured by the RedPitaya. For low frequencies the photodiode voltage follows the modulation well. For higher frequencies the gain of the system decreases. For higher proportional constant the transfer function does not decrease as much at higher frequencies.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-closed-loop-transfer-function-t-measured-by-the-redpitaya-for-low-frequencies-the-photodiode-voltage-follows-the-modulation-well-for-higher-frequencies-the-gain-of-the-system-decreases-for-higher-proportional-constant-the-transfer-function-does-not-decrease-as-much-at-higher-frequencies&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Closed-loop transfer function T measured by the RedPitaya. For low frequencies the photodiode voltage follows the modulation well. For higher frequencies the gain of the system decreases. For higher proportional constant the transfer function does not decrease as much at higher frequencies.&#34; srcset=&#34;
+               /post/2018-feedback-for-amo-experimentalists/Closed-loop%20Transfer%20function_hudc202502fc277538f2bea1056f0e1ecb_39752_3812127c89c26ee719a89019bed68584.png 400w,
+               /post/2018-feedback-for-amo-experimentalists/Closed-loop%20Transfer%20function_hudc202502fc277538f2bea1056f0e1ecb_39752_5d9e739014f3220284c26d657bc375a7.png 760w,
+               /post/2018-feedback-for-amo-experimentalists/Closed-loop%20Transfer%20function_hudc202502fc277538f2bea1056f0e1ecb_39752_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Closed-loop%20Transfer%20function_hudc202502fc277538f2bea1056f0e1ecb_39752_3812127c89c26ee719a89019bed68584.png&#34;
+               width=&#34;720&#34;
+               height=&#34;540&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Closed-loop transfer function T measured by the RedPitaya. For low frequencies the photodiode voltage follows the modulation well. For higher frequencies the gain of the system decreases. For higher proportional constant the transfer function does not decrease as much at higher frequencies.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;After measuring &lt;em&gt;T&lt;/em&gt; we can can calculate &lt;em&gt;H&lt;/em&gt;. As mentioned in the introduction the criterion for instability is
 $\left|H\right|&amp;gt;1$ for a simultaneously phase lag close to 180°. Be
 careful that the unit in the figure is dB, which means that
@@ -562,12 +450,6 @@ only a phase lag of 90°.&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -576,28 +458,20 @@ only a phase lag of 90°.&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-open-loop-transfer-function-h&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Loop-Gain_huf54deb1d176909a8dc8f4405de5b3033_42472_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Open-loop transfer function H.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Loop-Gain_huf54deb1d176909a8dc8f4405de5b3033_42472_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;540&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Open-loop transfer function H.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-open-loop-transfer-function-h&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Open-loop transfer function H.&#34; srcset=&#34;
+               /post/2018-feedback-for-amo-experimentalists/Loop-Gain_huf54deb1d176909a8dc8f4405de5b3033_42472_385d1fae78fcda603f12e4a4dfe43637.png 400w,
+               /post/2018-feedback-for-amo-experimentalists/Loop-Gain_huf54deb1d176909a8dc8f4405de5b3033_42472_1697038fd0fa6b90dbe0ac3048888cbb.png 760w,
+               /post/2018-feedback-for-amo-experimentalists/Loop-Gain_huf54deb1d176909a8dc8f4405de5b3033_42472_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Loop-Gain_huf54deb1d176909a8dc8f4405de5b3033_42472_385d1fae78fcda603f12e4a4dfe43637.png&#34;
+               width=&#34;720&#34;
+               height=&#34;540&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Open-loop transfer function H.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;The interesting regime is where the phase lag hits -180° which happens
 for ~40kHz for the orange curve and ~90kHz for the blue curve. But
 both sets of P&amp;amp;I-constants lead to stable behaviour, because the
@@ -613,12 +487,6 @@ system.&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -627,28 +495,20 @@ system.&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-noise-spectra-locked-and-unlocked&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Noiseplot_hu91374a7a28ff1655f633b48b7e6f813c_32444_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Noise spectra locked and unlocked.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Noiseplot_hu91374a7a28ff1655f633b48b7e6f813c_32444_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;540&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Noise spectra locked and unlocked.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-noise-spectra-locked-and-unlocked&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Noise spectra locked and unlocked.&#34; srcset=&#34;
+               /post/2018-feedback-for-amo-experimentalists/Noiseplot_hu91374a7a28ff1655f633b48b7e6f813c_32444_e5773deae1a5588752d8e7a25971a24f.png 400w,
+               /post/2018-feedback-for-amo-experimentalists/Noiseplot_hu91374a7a28ff1655f633b48b7e6f813c_32444_d70fcb9d815b34c87be0920586400979.png 760w,
+               /post/2018-feedback-for-amo-experimentalists/Noiseplot_hu91374a7a28ff1655f633b48b7e6f813c_32444_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://jendrzejewski.synqs.org/post/2018-feedback-for-amo-experimentalists/Noiseplot_hu91374a7a28ff1655f633b48b7e6f813c_32444_e5773deae1a5588752d8e7a25971a24f.png&#34;
+               width=&#34;720&#34;
+               height=&#34;540&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Noise spectra locked and unlocked.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;We observe noise suppression for frequencies up to point where the system can react actively, which is about 30kHz.&lt;/p&gt;
 &lt;h2 id=&#34;further-reading-problems-of-intensity-stabilization&#34;&gt;Further Reading: Problems of Intensity stabilization&lt;/h2&gt;
 &lt;p&gt;Here we can already identify the first pitfall of intensity

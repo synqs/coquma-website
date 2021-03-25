@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NV center | Jendrzejewski Group</title>
+    <link>https://jendrzejewski.synqs.org/tag/nv-center/</link>
+      <atom:link href="https://jendrzejewski.synqs.org/tag/nv-center/index.xml" rel="self" type="application/rss+xml" />
+    <description>NV center</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© SynQS</copyright><lastBuildDate>Fri, 19 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jendrzejewski.synqs.org/media/icon_hu7e36881ff34112d4b7ce9732fdafadd8_36497_512x512_fill_lanczos_center_2.png</url>
+      <title>NV center</title>
+      <link>https://jendrzejewski.synqs.org/tag/nv-center/</link>
+    </image>
+    
+    <item>
+      <title>Direct control of high magnetic fields for cold atom experiments based on NV centers</title>
+      <link>https://jendrzejewski.synqs.org/publication/hesse-2020/</link>
+      <pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://jendrzejewski.synqs.org/publication/hesse-2020/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
