@@ -573,6 +573,29 @@ fig.tight_layout()
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
       <guid>https://jendrzejewski.synqs.org/teaching/2021-quantum-simulation-seminar/</guid>
       <description>&lt;p&gt;Nowadays, it has been possible to achieve control of quantum systems to an enormous degree on different hardware platforms. In this seminar we will discuss a variety of experiments based on assemblies of either photons, neutral atoms or ions, that highlight their capabilities to study quantum effects ranging from high precision measurements to complex many-body phenomena.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;We schedule it currently as a weekly lecture. However, we would also be happy to set it up as a two or three day workshop in  September if student interest  is big enough. We will discuss this on the first lecture.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The proposed topics include&lt;/p&gt;
+&lt;h1 id=&#34;photons&#34;&gt;Photons&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Bell inequalities&lt;/li&gt;
+&lt;li&gt;Cloning&lt;/li&gt;
+&lt;li&gt;EIT et light storage&lt;/li&gt;
+&lt;li&gt;Super and subradiance&lt;/li&gt;
+&lt;li&gt;Boson sampling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;neutral-atoms&#34;&gt;Neutral atoms&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Tweezer and atom sorting&lt;/li&gt;
+&lt;li&gt;Quantum gas microscopes&lt;/li&gt;
+&lt;li&gt;Super solids&lt;/li&gt;
+&lt;li&gt;Optical lattice clock&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;ions&#34;&gt;Ions&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Cooling and clocks&lt;/li&gt;
+&lt;li&gt;Schrödinger cat&lt;/li&gt;
+&lt;li&gt;Trotterization in ion chains&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
