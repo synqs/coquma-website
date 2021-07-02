@@ -16,6 +16,7 @@ tags:
 - ultracold atoms
 - pennylane
 - labscript
+- technology
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Placement options: 1 = Full column width, 2 = Out-set, 3 = Screen-width
